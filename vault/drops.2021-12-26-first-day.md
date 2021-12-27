@@ -1,9 +1,12 @@
 ---
 id: DTeYpEuPv3KIHugUyqZPu
-title: First Day
-desc: ''
-updated: 1640525366803
+title: 2021 12 26 First Day
+desc: ""
+updated: 1640613386922
 created: 1640525260857
+tags:
+  - 程式
+  - Dendron
 ---
 
 ## 首次使用 Dendron 紀錄
@@ -19,4 +22,5 @@ created: 1640525260857
   NOTE: we're running export with the github target
   `dendron publish export --target github`
 
-https://wiki.dendron.so/notes/yg3EL1x9fEe4NMqxUC3jP/
+  參考資料:
+  https://wiki.dendron.so/notes/yg3EL1x9fEe4NMqxUC3jP/

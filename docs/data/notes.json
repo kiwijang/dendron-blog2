@@ -11,15 +11,15 @@
       "links": [],
       "anchors": {},
       "fname": "403",
-      "updated": 1640612495203,
-      "created": 1640612495204,
+      "updated": 1640613806204,
+      "created": 1640613806204,
       "parent": null,
       "children": [],
       "data": {}
     },
     "root": {
       "id": "root",
-      "title": "一盒雨水",
+      "title": "👾Collections",
       "vault": {
         "fsPath": "vault"
       },
@@ -28,15 +28,14 @@
       "links": [],
       "anchors": {},
       "fname": "root",
-      "updated": 1640568610729,
+      "updated": 1640613629447,
       "created": 1595961348801,
       "parent": null,
       "children": [
-        "eFpQigbHi9Av28fI3Vi6b",
         "u4tSbmkJewrKonY3sL544"
       ],
       "data": {},
-      "contentHash": "7381127af3b50ad372896adf1d7794cd",
+      "contentHash": "b6281a53f889d64fdadeb744fdf2c561",
       "custom": {
         "stub": false,
         "nav_order": 0,
@@ -69,156 +68,70 @@
     },
     "DTeYpEuPv3KIHugUyqZPu": {
       "id": "DTeYpEuPv3KIHugUyqZPu",
-      "title": "First Day",
+      "title": "2021 12 26 First Day",
       "vault": {
         "fsPath": "vault"
       },
       "type": "note",
       "desc": "",
-      "links": [],
+      "links": [
+        {
+          "type": "frontmatterTag",
+          "from": {
+            "fname": "drops.2021-12-26-first-day",
+            "id": "DTeYpEuPv3KIHugUyqZPu",
+            "vaultName": "vault"
+          },
+          "value": "tags.程式",
+          "alias": "程式",
+          "xvault": false,
+          "to": {
+            "fname": "tags.程式"
+          }
+        },
+        {
+          "type": "frontmatterTag",
+          "from": {
+            "fname": "drops.2021-12-26-first-day",
+            "id": "DTeYpEuPv3KIHugUyqZPu",
+            "vaultName": "vault"
+          },
+          "value": "tags.Dendron",
+          "alias": "Dendron",
+          "xvault": false,
+          "to": {
+            "fname": "tags.Dendron"
+          }
+        }
+      ],
       "anchors": {
         "首次使用-dendron-紀錄": {
           "type": "header",
           "text": "首次使用 Dendron 紀錄",
           "value": "首次使用-dendron-紀錄",
-          "line": 8,
+          "line": 11,
           "column": 0,
           "depth": 2
         }
       },
-      "fname": "drops.first-day",
-      "updated": 1640525366803,
+      "fname": "drops.2021-12-26-first-day",
+      "updated": 1640613386922,
       "created": 1640525260857,
       "parent": "u4tSbmkJewrKonY3sL544",
       "children": [],
       "data": {},
-      "contentHash": "404add57e759c3a7fc1f9fbdc7284369",
-      "custom": {}
-    },
-    "eFpQigbHi9Av28fI3Vi6b": {
-      "id": "eFpQigbHi9Av28fI3Vi6b",
-      "title": "Daily",
-      "vault": {
-        "fsPath": "vault"
-      },
-      "type": "note",
-      "desc": "",
-      "links": [],
-      "anchors": {},
-      "fname": "daily",
-      "updated": 1640605292957,
-      "created": 1640605292957,
-      "parent": "root",
-      "children": [
-        "Mh0FQCNSRyQeLNQNyOF3D"
-      ],
-      "data": {},
-      "contentHash": "8dfd2f94c7c8df6df52acb69741f2c68",
-      "stub": false,
-      "custom": {
-        "stub": true
-      }
-    },
-    "Mh0FQCNSRyQeLNQNyOF3D": {
-      "id": "Mh0FQCNSRyQeLNQNyOF3D",
-      "title": "Journal",
-      "vault": {
-        "fsPath": "vault"
-      },
-      "type": "note",
-      "desc": "",
-      "links": [],
-      "anchors": {},
-      "fname": "daily.journal",
-      "updated": 1640605292957,
-      "created": 1640605292957,
-      "parent": "eFpQigbHi9Av28fI3Vi6b",
-      "children": [
-        "wny7OPUnT3nCUg2Gv0BL4"
-      ],
-      "data": {},
-      "contentHash": "41b8916e5b10af073ae4595450e370ec",
-      "stub": false,
-      "custom": {
-        "stub": true
-      }
-    },
-    "wny7OPUnT3nCUg2Gv0BL4": {
-      "id": "wny7OPUnT3nCUg2Gv0BL4",
-      "title": "2021",
-      "vault": {
-        "fsPath": "vault"
-      },
-      "type": "note",
-      "desc": "",
-      "links": [],
-      "anchors": {},
-      "fname": "daily.journal.2021",
-      "updated": 1640605292957,
-      "created": 1640605292957,
-      "parent": "Mh0FQCNSRyQeLNQNyOF3D",
-      "children": [
-        "g7Ch4bC6nNn3JhAd0p6fX"
-      ],
-      "data": {},
-      "contentHash": "a4de9bb774c1ef51d58cc9bc0ac93e86",
-      "stub": false,
-      "custom": {
-        "stub": true
-      }
-    },
-    "g7Ch4bC6nNn3JhAd0p6fX": {
-      "id": "g7Ch4bC6nNn3JhAd0p6fX",
-      "title": "12",
-      "vault": {
-        "fsPath": "vault"
-      },
-      "type": "note",
-      "desc": "",
-      "links": [],
-      "anchors": {},
-      "fname": "daily.journal.2021.12",
-      "updated": 1640605292957,
-      "created": 1640605292957,
-      "parent": "wny7OPUnT3nCUg2Gv0BL4",
-      "children": [
-        "BytbhYvsfny2zRXMVHZGZ"
-      ],
-      "data": {},
-      "contentHash": "93209cc756690f4c454b944f0def8384",
-      "stub": false,
-      "custom": {
-        "stub": true
-      }
-    },
-    "BytbhYvsfny2zRXMVHZGZ": {
-      "id": "BytbhYvsfny2zRXMVHZGZ",
-      "title": "2021-12-27",
-      "vault": {
-        "fsPath": "vault"
-      },
-      "type": "note",
-      "desc": "",
-      "links": [],
-      "anchors": {},
-      "fname": "daily.journal.2021.12.27",
-      "updated": 1640605272516,
-      "created": 1640605263371,
-      "parent": "g7Ch4bC6nNn3JhAd0p6fX",
-      "children": [],
-      "data": {},
-      "contentHash": "c25487484d5f32632d5704f11e1c00c6",
-      "custom": {
-        "traitIds": [
-          "journalNote"
-        ]
-      }
+      "contentHash": "1795ed26852debaaffb298f0aa3b0bd4",
+      "custom": {},
+      "tags": [
+        "程式",
+        "Dendron"
+      ]
     }
   },
   "domains": [
     {
       "id": "root",
-      "title": "一盒雨水",
+      "title": "👾Collections",
       "vault": {
         "fsPath": "vault"
       },
@@ -227,15 +140,14 @@
       "links": [],
       "anchors": {},
       "fname": "root",
-      "updated": 1640568610729,
+      "updated": 1640613629447,
       "created": 1595961348801,
       "parent": null,
       "children": [
-        "eFpQigbHi9Av28fI3Vi6b",
         "u4tSbmkJewrKonY3sL544"
       ],
       "data": {},
-      "contentHash": "7381127af3b50ad372896adf1d7794cd",
+      "contentHash": "b6281a53f889d64fdadeb744fdf2c561",
       "custom": {
         "stub": false,
         "nav_order": 0,
@@ -246,7 +158,7 @@
   ],
   "noteIndex": {
     "id": "root",
-    "title": "一盒雨水",
+    "title": "👾Collections",
     "vault": {
       "fsPath": "vault"
     },
@@ -255,15 +167,14 @@
     "links": [],
     "anchors": {},
     "fname": "root",
-    "updated": 1640568610729,
+    "updated": 1640613629447,
     "created": 1595961348801,
     "parent": null,
     "children": [
-      "eFpQigbHi9Av28fI3Vi6b",
       "u4tSbmkJewrKonY3sL544"
     ],
     "data": {},
-    "contentHash": "7381127af3b50ad372896adf1d7794cd",
+    "contentHash": "b6281a53f889d64fdadeb744fdf2c561",
     "custom": {
       "stub": false,
       "nav_order": 0,

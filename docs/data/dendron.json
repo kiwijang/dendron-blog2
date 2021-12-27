@@ -28,11 +28,10 @@
       ]
     },
     "gh_edit_link": "false",
-    "footer_content": "_",
+    "gh_edit_link_text": "",
     "usePrettyLinks": true,
     "siteNotesDir": "notes",
     "siteFaviconPath": "favicon.ico",
-    "gh_edit_link_text": "Edit this page on GitHub",
     "gh_root": "docs/",
     "gh_edit_view_mode": "edit",
     "writeStubs": true,

@@ -23,7 +23,7 @@ site:
     payload:
       - vault
   gh_edit_link: "false" # show or hide edit this page link
-  footer_content: "_"
+  gh_edit_link_text: ""
 commands:
   lookup:
     note:
