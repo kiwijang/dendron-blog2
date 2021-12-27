@@ -18,3 +18,5 @@ created: 1640525260857
 - Publish your notes
   NOTE: we're running export with the github target
   `dendron publish export --target github`
+
+https://wiki.dendron.so/notes/yg3EL1x9fEe4NMqxUC3jP/
