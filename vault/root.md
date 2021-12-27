@@ -1,6 +1,6 @@
 ---
 id: root
-title: 👾Collections
+title: 👾 Collections
 desc: ""
 updated: 1640613629447
 created: 1595961348801

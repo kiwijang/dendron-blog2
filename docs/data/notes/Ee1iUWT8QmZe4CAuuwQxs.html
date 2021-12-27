@@ -1,0 +1,110 @@
+<h1 id="2021-1227-從-nx-入門-monorepo"><a aria-hidden="true" class="anchor-heading" href="#2021-1227-從-nx-入門-monorepo"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>2021-1227-從 Nx 入門 monorepo</h1>
+<h2 id="前言"><a aria-hidden="true" class="anchor-heading" href="#前言"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>前言</h2>
+<blockquote>
+<p>深入淺出 Monorepo 架構 — 使用 Nx Console 實現一個 Monorepo 架構的專案</p>
+</blockquote>
+<p>導讀影片: <a href="https://www.youtube.com/watch?v=9iU_IE6vnJ8">Monorepos - How the Pros Scale Huge Software Projects // Turborepo vs Nx</a></p>
+<h2 id="簡介-monorepo-架構"><a aria-hidden="true" class="anchor-heading" href="#簡介-monorepo-架構"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>簡介 Monorepo 架構</h2>
+<p>Monorepo (全名 Monolithic Repository)，符合以下三個條件:</p>
+<ol>
+<li>One Repository</li>
+<li>Multiple projects</li>
+<li>Shared Libraries</li>
+</ol>
+<p>如下圖，可以看到:</p>
+<ol>
+<li><strong>一個 repo</strong></li>
+<li><strong>多個 projects</strong> (三個 app 加上兩個 libs)</li>
+<li><strong>共用 libs</strong>。</li>
+</ol>
+<p><img src="/dendron-blog/assets/images/2021-12-27-22-50-05.png" alt="MonoRepo"></p>
+<p>Monorepo 架構的主要目的是希望集中管理套件版本。</p>
+<p>透過只管理一個 <code>package.json</code>，可以發現好處是套件版本管理方便、而壞處是一個 repo 有多個 projects，檔案容易變非常大，讓 git 版控軟體跑起來較吃力。</p>
+<p>另外 Monorepo 讓 apps 之間共用 libs 變得方便簡單，所以可以降低重複程式碼的機率。
+也可以讓 Lerna、yarn 等套件管理工具更方便的減少重複的套件安裝。</p>
+<p>而以 Nx 來說，更酷的特色是可以在同一個 repo 裡同時使用 react 和 angular 共同開發一個 app。</p>
+<p>雖然也可以使用 rollupjs 來達到不同前端框架共同開發一個 app 的效果。</p>
+<p>但 Nx 就像 monorepo 全家桶: 提供一個 Nx workspace 讓你的 monorepo 開發更容易。</p>
+<p>接下來，在看看 Nx 之前，先來一些先備知識 😆</p>
+<h2 id="簡介-nx-工具與專有名詞解釋"><a aria-hidden="true" class="anchor-heading" href="#簡介-nx-工具與專有名詞解釋"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>簡介 Nx 工具與專有名詞解釋</h2>
+<h3 id="什麼是-nx-"><a aria-hidden="true" class="anchor-heading" href="#什麼是-nx-"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>什麼是 Nx ?</h3>
+<p>官網: <a href="https://nx.dev/">https://nx.dev/</a></p>
+<p><img src="/dendron-blog/assets/images/2021-12-27-23-55-50.png"></p>
+<blockquote>
+<p>Smart, Extensible Build Framework
+Nx helps architect, test, build at any scale:</p>
+</blockquote>
+<ul>
+<li>integrations with modern frameworks</li>
+<li>computation caching</li>
+<li>smart rebuilds of affected projects</li>
+<li>distributed task execution</li>
+<li>powerful code generators</li>
+<li>editor support (VSCode, WebStorm)</li>
+<li>GitHub apps</li>
+<li>and more.</li>
+</ul>
+<h3 id="nx-的製作團隊"><a aria-hidden="true" class="anchor-heading" href="#nx-的製作團隊"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Nx 的製作團隊</h3>
+<p>narwhal 簡寫 Nrwl，是獨角鯨的英文。</p>
+<p><img src="/dendron-blog/assets/images/2021-12-27-23-57-12.png"></p>
+<p>Consulting. Engineering. Training.
+Nrwl was founded in December 2016 by Angular team members and former Googlers, Jeff Cross and Victor Savkin, and today has around 18 team members in the US, Canada and UK.
+Nrwl is also the creator of open-source dev tools: Nx for monorepo development, and Angular Console.</p>
+<h3 id="angular-monorepo-patterns"><a aria-hidden="true" class="anchor-heading" href="#angular-monorepo-patterns"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Angular monorepo patterns</h3>
+<p>這本書說明了 nx 是如何實踐 monerepo 概念</p>
+<p><img src="/dendron-blog/assets/images/2021-12-27-23-59-52.png"></p>
+<ul>
+<li><a href="https://connect.nrwl.io/app/books">https://connect.nrwl.io/app/books</a></li>
+<li><a href="https://nrwl.io/products">https://nrwl.io/products</a></li>
+</ul>
+<h3 id="nx-與-angular-淵源不淺"><a aria-hidden="true" class="anchor-heading" href="#nx-與-angular-淵源不淺"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Nx 與 Angular 淵源不淺</h3>
+<p><img src="/dendron-blog/assets/images/2021-12-28-00-06-48.png"></p>
+<p>上面這兩位 Nx 開發的主導者是 Google 的前員工，且對 Angular 都有相當深入的理解。
+但 Nx 官網上有不少 react 的開發教學，如果有公司想要從 react 轉到 angular(或是 angular 轉 react 為主)，感覺透過 Nx 的幫助可以慢慢地移花接木(不然 Nx 也至少可以讓這兩框架和平共處 😆)</p>
+<h3 id="angular-詞彙表"><a aria-hidden="true" class="anchor-heading" href="#angular-詞彙表"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Angular 詞彙表</h3>
+<ul>
+<li>
+<p><a href="https://angular.tw/guide/glossary#workspace">Workspace</a> (工作區)</p>
+<p>一個 Angular 所有專案的集合(可以用 Angular CLI 操作這個集合)，通常會在 git 版本控制的 repository 中。</p>
+</li>
+<li>
+<p><a href="https://angular.tw/guide/glossary#project">Project</a> (專案)</p>
+<p>可以通過 Angular CLI 命令創建或修改的獨立應用程式或函式庫。可在 angular.json 中配置 workspace 中的所有 projects。</p>
+</li>
+<li>
+<p><a href="https://angular.tw/guide/glossary#library">Library</a> (函式庫)</p>
+<p>一種 Angular 專案。用來讓其它 Angular 應用包含它，以提供各種功能。函式庫不是一個完整的 Angular 應用，不能獨立執行。</p>
+</li>
+<li>
+<p><a href="https://angular.tw/guide/typescript-configuration#configuration-files">TypeScript 配置</a></p>
+<p>一個 Angular 工作區中包含多個 TypeScript 配置檔案。在 root，有兩個主要的 TypeScript 配置檔案：tsconfig.json 檔案和 tsconfig.app.json 檔案。<a href="https://www.typescriptlang.org/docs/handbook/tsconfig-json.html#tsconfig-bases">使用 extends 進行配置繼承</a>。</p>
+</li>
+<li>
+<p><a href="https://angular.tw/guide/glossary#schematic">Schematic</a> (原理圖)</p>
+<p>Angular CLI 使用原理圖來產生和修改 Angular 專案及其部件。</p>
+</li>
+<li>
+<p>Collection (集合)</p>
+<p>在 Angular 中，是指收錄在同一個 <a href="https://angular.tw/guide/glossary#npm-package">npm 套件</a> 中的一組原理圖（schematics）。</p>
+<p><img src="/dendron-blog/assets/images/2021-12-28-00-23-52.png"></p>
+</li>
+</ul>
+<h2 id="感受一下-nx-的-monorepo-專案"><a aria-hidden="true" class="anchor-heading" href="#感受一下-nx-的-monorepo-專案"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>感受一下 Nx 的 monorepo 專案</h2>
+<ul>
+<li>
+<p>Angular workspace 的 libs 通常都會有一個自己的 <code>package.json</code>
+<img src="/dendron-blog/assets/images/2021-12-28-00-29-52.png"></p>
+</li>
+<li>
+<p>Nx workspace 預設共用一個 <code>package.json</code>
+<img src="/dendron-blog/assets/images/2021-12-28-00-28-00.png"></p>
+</li>
+</ul>
+<h2 id="產生一個-nx-的-workspace"><a aria-hidden="true" class="anchor-heading" href="#產生一個-nx-的-workspace"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>產生一個 Nx 的 workspace</h2>
+<h2 id="快速上手-nx-console-操作-generaterun"><a aria-hidden="true" class="anchor-heading" href="#快速上手-nx-console-操作-generaterun"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>快速上手 Nx Console 操作 (Generate、Run)</h2>
+<h2 id="其他補充"><a aria-hidden="true" class="anchor-heading" href="#其他補充"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>其他補充</h2>
+<hr>
+<h2 id="tags"><a aria-hidden="true" class="anchor-heading" href="#tags"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Tags</h2>
+<ol>
+<li><a class="color-tag" style="--tag-color: #028f1e;" href="/dendron-blog/notes/Po0jmNACWQVrxnoTRT6kr">PROG.Nx</a></li>
+</ol>

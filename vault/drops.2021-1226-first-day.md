@@ -1,12 +1,11 @@
 ---
 id: DTeYpEuPv3KIHugUyqZPu
-title: 2021 12 26 First Day
+title: 2021-1226-First Day
 desc: ""
-updated: 1640613386922
+updated: 1640615967487
 created: 1640525260857
 tags:
-  - 程式
-  - Dendron
+  - PROG.Dendron
 ---
 
 ## 首次使用 Dendron 紀錄
