@@ -22,8 +22,7 @@ site:
     action: useVault
     payload:
       - vault
-  gh_edit_link: "false" # show or hide edit this page link
-  gh_edit_link_text: ""
+  gh_edit_link: "false"
 commands:
   lookup:
     note:
