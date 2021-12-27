@@ -1,7 +1,7 @@
 ---
 id: DTeYpEuPv3KIHugUyqZPu
 title: First Day
-desc: ""
+desc: ''
 updated: 1640525366803
 created: 1640525260857
 ---
