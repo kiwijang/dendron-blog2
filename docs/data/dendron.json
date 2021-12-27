@@ -16,7 +16,7 @@
     "siteUrl": "https://kiwijang.github.io",
     "assetsPrefix": "/dendron-blog",
     "usePrettyRefs": true,
-    "title": "Dendron",
+    "title": "ｷﾀ━━━━(ﾟ∀ﾟ)━━━━!!",
     "description": "Personal knowledge space",
     "siteLastModified": true,
     "gh_edit_repository": "https://github.com/kiwijang/dendron-blog.git",
@@ -27,10 +27,11 @@
         "vault"
       ]
     },
+    "gh_edit_link": "false",
+    "footer_content": "_",
     "usePrettyLinks": true,
     "siteNotesDir": "notes",
     "siteFaviconPath": "favicon.ico",
-    "gh_edit_link": true,
     "gh_edit_link_text": "Edit this page on GitHub",
     "gh_root": "docs/",
     "gh_edit_view_mode": "edit",

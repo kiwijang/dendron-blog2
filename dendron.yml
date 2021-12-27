@@ -13,7 +13,7 @@ site:
   siteUrl: https://kiwijang.github.io
   assetsPrefix: /dendron-blog
   usePrettyRefs: true
-  title: Dendron
+  title: ｷﾀ━━━━(ﾟ∀ﾟ)━━━━!!
   description: Personal knowledge space
   siteLastModified: true
   gh_edit_repository: "https://github.com/kiwijang/dendron-blog.git"
@@ -22,6 +22,8 @@ site:
     action: useVault
     payload:
       - vault
+  gh_edit_link: "false" # show or hide edit this page link
+  footer_content: "_"
 commands:
   lookup:
     note:
