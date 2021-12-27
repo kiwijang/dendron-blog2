@@ -11,8 +11,8 @@
       "links": [],
       "anchors": {},
       "fname": "403",
-      "updated": 1640568705101,
-      "created": 1640568705101,
+      "updated": 1640605823734,
+      "created": 1640605823734,
       "parent": null,
       "children": [],
       "data": {}
@@ -31,13 +31,187 @@
       "updated": 1640568610729,
       "created": 1595961348801,
       "parent": null,
-      "children": [],
+      "children": [
+        "eFpQigbHi9Av28fI3Vi6b",
+        "u4tSbmkJewrKonY3sL544"
+      ],
       "data": {},
       "contentHash": "7381127af3b50ad372896adf1d7794cd",
       "custom": {
         "stub": false,
         "nav_order": 0,
         "permalink": "/"
+      }
+    },
+    "u4tSbmkJewrKonY3sL544": {
+      "id": "u4tSbmkJewrKonY3sL544",
+      "title": "Drops",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "fname": "drops",
+      "updated": 1640604306691,
+      "created": 1640604306691,
+      "parent": "root",
+      "children": [
+        "DTeYpEuPv3KIHugUyqZPu"
+      ],
+      "data": {},
+      "contentHash": "e354c86da3f20612d2d8435039a55559",
+      "stub": false,
+      "custom": {
+        "stub": true
+      }
+    },
+    "DTeYpEuPv3KIHugUyqZPu": {
+      "id": "DTeYpEuPv3KIHugUyqZPu",
+      "title": "First Day",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "首次使用-dendron-紀錄": {
+          "type": "header",
+          "text": "首次使用 Dendron 紀錄",
+          "value": "首次使用-dendron-紀錄",
+          "line": 8,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "fname": "drops.first-day",
+      "updated": 1640525366803,
+      "created": 1640525260857,
+      "parent": "u4tSbmkJewrKonY3sL544",
+      "children": [],
+      "data": {},
+      "contentHash": "404add57e759c3a7fc1f9fbdc7284369",
+      "custom": {}
+    },
+    "eFpQigbHi9Av28fI3Vi6b": {
+      "id": "eFpQigbHi9Av28fI3Vi6b",
+      "title": "Daily",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "fname": "daily",
+      "updated": 1640605292957,
+      "created": 1640605292957,
+      "parent": "root",
+      "children": [
+        "Mh0FQCNSRyQeLNQNyOF3D"
+      ],
+      "data": {},
+      "contentHash": "8dfd2f94c7c8df6df52acb69741f2c68",
+      "stub": false,
+      "custom": {
+        "stub": true
+      }
+    },
+    "Mh0FQCNSRyQeLNQNyOF3D": {
+      "id": "Mh0FQCNSRyQeLNQNyOF3D",
+      "title": "Journal",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "fname": "daily.journal",
+      "updated": 1640605292957,
+      "created": 1640605292957,
+      "parent": "eFpQigbHi9Av28fI3Vi6b",
+      "children": [
+        "wny7OPUnT3nCUg2Gv0BL4"
+      ],
+      "data": {},
+      "contentHash": "41b8916e5b10af073ae4595450e370ec",
+      "stub": false,
+      "custom": {
+        "stub": true
+      }
+    },
+    "wny7OPUnT3nCUg2Gv0BL4": {
+      "id": "wny7OPUnT3nCUg2Gv0BL4",
+      "title": "2021",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "fname": "daily.journal.2021",
+      "updated": 1640605292957,
+      "created": 1640605292957,
+      "parent": "Mh0FQCNSRyQeLNQNyOF3D",
+      "children": [
+        "g7Ch4bC6nNn3JhAd0p6fX"
+      ],
+      "data": {},
+      "contentHash": "a4de9bb774c1ef51d58cc9bc0ac93e86",
+      "stub": false,
+      "custom": {
+        "stub": true
+      }
+    },
+    "g7Ch4bC6nNn3JhAd0p6fX": {
+      "id": "g7Ch4bC6nNn3JhAd0p6fX",
+      "title": "12",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "fname": "daily.journal.2021.12",
+      "updated": 1640605292957,
+      "created": 1640605292957,
+      "parent": "wny7OPUnT3nCUg2Gv0BL4",
+      "children": [
+        "BytbhYvsfny2zRXMVHZGZ"
+      ],
+      "data": {},
+      "contentHash": "93209cc756690f4c454b944f0def8384",
+      "stub": false,
+      "custom": {
+        "stub": true
+      }
+    },
+    "BytbhYvsfny2zRXMVHZGZ": {
+      "id": "BytbhYvsfny2zRXMVHZGZ",
+      "title": "2021-12-27",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "fname": "daily.journal.2021.12.27",
+      "updated": 1640605272516,
+      "created": 1640605263371,
+      "parent": "g7Ch4bC6nNn3JhAd0p6fX",
+      "children": [],
+      "data": {},
+      "contentHash": "c25487484d5f32632d5704f11e1c00c6",
+      "custom": {
+        "traitIds": [
+          "journalNote"
+        ]
       }
     }
   },
@@ -56,7 +230,10 @@
       "updated": 1640568610729,
       "created": 1595961348801,
       "parent": null,
-      "children": [],
+      "children": [
+        "eFpQigbHi9Av28fI3Vi6b",
+        "u4tSbmkJewrKonY3sL544"
+      ],
       "data": {},
       "contentHash": "7381127af3b50ad372896adf1d7794cd",
       "custom": {
@@ -81,7 +258,10 @@
     "updated": 1640568610729,
     "created": 1595961348801,
     "parent": null,
-    "children": [],
+    "children": [
+      "eFpQigbHi9Av28fI3Vi6b",
+      "u4tSbmkJewrKonY3sL544"
+    ],
     "data": {},
     "contentHash": "7381127af3b50ad372896adf1d7794cd",
     "custom": {
