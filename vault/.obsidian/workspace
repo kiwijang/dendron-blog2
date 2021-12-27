@@ -1,0 +1,102 @@
+{
+  "main": {
+    "id": "d2da0fd1c7f427d5",
+    "type": "split",
+    "children": [
+      {
+        "id": "e47345a8e1cdf9bf",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "tutorial.4-rich-formatting.md",
+            "mode": "source"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "e4bb6a993f21d98e",
+    "type": "split",
+    "children": [
+      {
+        "id": "de69a4bfdb0c4c6a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4e12977c401be2f5",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "11c2e8a171319277",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "05cf4a22bde520be",
+    "type": "split",
+    "children": [
+      {
+        "id": "9ccda6770f36ba2e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "bf3b74bed600ae88",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "tutorial.4-rich-formatting.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": true,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "e47345a8e1cdf9bf",
+  "lastOpenFiles": [
+    "tutorial.4-rich-formatting.md",
+    "tutorial.1-navigation-basics.md",
+    "root.md",
+    "daily.journal.2021.12.md",
+    "daily.md",
+    "tutorial.5-conclusion.md",
+    "tutorial.3-linking-your-notes.md",
+    "daily.journal.2021.12.26..md",
+    "Tutorial Home Page.md",
+    "tutorial.2-taking-notes.md"
+  ]
+}

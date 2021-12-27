@@ -1,0 +1,18 @@
+{
+  "name": "Dendron",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "init": "npx dendron publish init",
+    "serve-dev": "npx dendron publish dev",
+    "deploy": "npx dendron publish export --target github"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@dendronhq/dendron-cli": "^0.74.0"
+  }
+}
