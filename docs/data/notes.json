@@ -11,8 +11,8 @@
       "links": [],
       "anchors": {},
       "fname": "403",
-      "updated": 1640710235356,
-      "created": 1640710235356,
+      "updated": 1640710942662,
+      "created": 1640710942662,
       "parent": null,
       "children": [],
       "data": {}
@@ -227,7 +227,7 @@
     },
     "Ee1iUWT8QmZe4CAuuwQxs": {
       "id": "Ee1iUWT8QmZe4CAuuwQxs",
-      "title": "1227-從Nx入門monorepo",
+      "title": "1227 從Nx入門monorepo",
       "vault": {
         "fsPath": "vault"
       },
@@ -342,12 +342,12 @@
             "start": {
               "line": 150,
               "column": 3,
-              "offset": 4293
+              "offset": 4292
             },
             "end": {
               "line": 150,
               "column": 9,
-              "offset": 4299
+              "offset": 4298
             },
             "indent": []
           },
@@ -440,7 +440,7 @@
         },
         "2-8-小補充-關於-collection-為何都是這樣命名": {
           "type": "header",
-          "text": "2-8. 小補充 關於 collection 為何都是這樣命名?",
+          "text": "2-8. 小補充: 關於 collection 為何都是這樣命名?",
           "value": "2-8-小補充-關於-collection-為何都是這樣命名",
           "line": 153,
           "column": 0,
@@ -486,10 +486,10 @@
           "column": 0,
           "depth": 3
         },
-        "4-2--常見的-collection": {
+        "4-2-nx-generate-常見的-collection": {
           "type": "header",
-          "text": "4-2.  (常見的 collection)",
-          "value": "4-2--常見的-collection",
+          "text": "4-2. nx generate (常見的 collection)",
+          "value": "4-2-nx-generate-常見的-collection",
           "line": 237,
           "column": 0,
           "depth": 3
@@ -502,10 +502,10 @@
           "column": 0,
           "depth": 3
         },
-        "4-4": {
+        "4-4-nx-run": {
           "type": "header",
-          "text": "4-4.",
-          "value": "4-4",
+          "text": "4-4. nx run",
+          "value": "4-4-nx-run",
           "line": 288,
           "column": 0,
           "depth": 3
@@ -560,12 +560,12 @@
         }
       },
       "fname": "drops.2021.1227-從Nx入門monorepo",
-      "updated": 1640706385777,
+      "updated": 1640710918734,
       "created": 1640615759253,
       "parent": "XVdxhzTnAX2SQnuApjkXj",
       "children": [],
       "data": {},
-      "contentHash": "a7cfa9d39d9a4df1cfc4be4da807dff6",
+      "contentHash": "80c0af553a1ae0bdc0cd0e4013bc99af",
       "custom": {},
       "tags": [
         "PROG.Nx"
