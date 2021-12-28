@@ -11,8 +11,8 @@
       "links": [],
       "anchors": {},
       "fname": "403",
-      "updated": 1640704824901,
-      "created": 1640704824901,
+      "updated": 1640707660422,
+      "created": 1640707660422,
       "parent": null,
       "children": [],
       "data": {}
@@ -25,10 +25,38 @@
       },
       "type": "note",
       "desc": "",
-      "links": [],
+      "links": [
+        {
+          "type": "ref",
+          "from": {
+            "fname": "root",
+            "id": "root",
+            "vaultName": "vault"
+          },
+          "value": "drops.2021.1226-first-day",
+          "position": {
+            "start": {
+              "line": 8,
+              "column": 1,
+              "offset": 258
+            },
+            "end": {
+              "line": 8,
+              "column": 66,
+              "offset": 323
+            },
+            "indent": []
+          },
+          "xvault": false,
+          "to": {
+            "fname": "drops.2021.1226-first-day",
+            "anchorHeader": "首次使用-dendron-紀錄:#*"
+          }
+        }
+      ],
       "anchors": {},
       "fname": "root",
-      "updated": 1640613629447,
+      "updated": 1640707605144,
       "created": 1595961348801,
       "parent": null,
       "children": [
@@ -36,7 +64,7 @@
         "rEbR1FrKkZzyjo6ahAgm3"
       ],
       "data": {},
-      "contentHash": "0df6bd26cee0e20abd62109120a4c4dd",
+      "contentHash": "87dfc0e56c942a4dc3ab045d81984aef",
       "custom": {
         "stub": false,
         "nav_order": 0,
@@ -191,7 +219,11 @@
         "Ee1iUWT8QmZe4CAuuwQxs"
       ],
       "data": {},
-      "stub": false
+      "contentHash": "b0023b0feffb4b70858a0cafb7affafb",
+      "stub": false,
+      "custom": {
+        "stub": true
+      }
     },
     "Ee1iUWT8QmZe4CAuuwQxs": {
       "id": "Ee1iUWT8QmZe4CAuuwQxs",
@@ -229,12 +261,12 @@
             "start": {
               "line": 118,
               "column": 15,
-              "offset": 3155
+              "offset": 3191
             },
             "end": {
               "line": 118,
               "column": 27,
-              "offset": 3167
+              "offset": 3203
             },
             "indent": []
           },
@@ -256,12 +288,12 @@
             "start": {
               "line": 118,
               "column": 30,
-              "offset": 3170
+              "offset": 3206
             },
             "end": {
               "line": 118,
               "column": 45,
-              "offset": 3185
+              "offset": 3221
             },
             "indent": []
           },
@@ -283,12 +315,12 @@
             "start": {
               "line": 119,
               "column": 6,
-              "offset": 3200
+              "offset": 3236
             },
             "end": {
               "line": 119,
               "column": 21,
-              "offset": 3215
+              "offset": 3251
             },
             "indent": []
           },
@@ -310,12 +342,12 @@
             "start": {
               "line": 150,
               "column": 3,
-              "offset": 4247
+              "offset": 4293
             },
             "end": {
               "line": 150,
               "column": 9,
-              "offset": 4253
+              "offset": 4299
             },
             "indent": []
           },
@@ -334,214 +366,206 @@
           "column": 0,
           "depth": 2
         },
-        "簡介-monorepo-架構": {
+        "1-簡介-monorepo-架構": {
           "type": "header",
-          "text": "簡介 Monorepo 架構",
-          "value": "簡介-monorepo-架構",
+          "text": "1. 簡介 Monorepo 架構",
+          "value": "1-簡介-monorepo-架構",
           "line": 16,
           "column": 0,
           "depth": 2
         },
-        "簡介-nx-工具與專有名詞解釋": {
+        "2-簡介-nx-工具與專有名詞解釋": {
           "type": "header",
-          "text": "簡介 Nx 工具與專有名詞解釋",
-          "value": "簡介-nx-工具與專有名詞解釋",
+          "text": "2. 簡介 Nx 工具與專有名詞解釋",
+          "value": "2-簡介-nx-工具與專有名詞解釋",
           "line": 47,
           "column": 0,
           "depth": 2
         },
-        "什麼是-nx-": {
+        "2-1-什麼是-nx-": {
           "type": "header",
-          "text": "什麼是 Nx ?",
-          "value": "什麼是-nx-",
+          "text": "2-1. 什麼是 Nx ?",
+          "value": "2-1-什麼是-nx-",
           "line": 49,
           "column": 0,
           "depth": 3
         },
-        "nx-的製作團隊": {
+        "2-2-nx-的製作團隊": {
           "type": "header",
-          "text": "Nx 的製作團隊",
-          "value": "nx-的製作團隊",
+          "text": "2-2. Nx 的製作團隊",
+          "value": "2-2-nx-的製作團隊",
           "line": 67,
           "column": 0,
           "depth": 3
         },
-        "angular-monorepo-patterns": {
+        "2-3-angular-monorepo-patterns": {
           "type": "header",
-          "text": "Angular monorepo patterns",
-          "value": "angular-monorepo-patterns",
+          "text": "2-3. Angular monorepo patterns",
+          "value": "2-3-angular-monorepo-patterns",
           "line": 77,
           "column": 0,
           "depth": 3
         },
-        "nx-與-angular-淵源不淺": {
+        "2-4-nx-與-angular-淵源不淺": {
           "type": "header",
-          "text": "Nx 與 Angular 淵源不淺",
-          "value": "nx-與-angular-淵源不淺",
+          "text": "2-4. Nx 與 Angular 淵源不淺",
+          "value": "2-4-nx-與-angular-淵源不淺",
           "line": 86,
           "column": 0,
           "depth": 3
         },
-        "angular-詞彙表": {
+        "2-5-angular-詞彙表": {
           "type": "header",
-          "text": "Angular 詞彙表",
-          "value": "angular-詞彙表",
+          "text": "2-5. Angular 詞彙表",
+          "value": "2-5-angular-詞彙表",
           "line": 94,
           "column": 0,
           "depth": 3
         },
-        "nx-名詞解釋": {
+        "2-6-nx-名詞解釋": {
           "type": "header",
-          "text": "Nx 名詞解釋",
-          "value": "nx-名詞解釋",
+          "text": "2-6. Nx 名詞解釋",
+          "value": "2-6-nx-名詞解釋",
           "line": 122,
           "column": 0,
           "depth": 3
         },
-        "nx-的-generators-的使用方式": {
+        "2-7-nx-的-generators-的使用方式": {
           "type": "header",
-          "text": "Nx 的 Generators 的使用方式",
-          "value": "nx-的-generators-的使用方式",
+          "text": "2-7. Nx 的 Generators 的使用方式",
+          "value": "2-7-nx-的-generators-的使用方式",
           "line": 133,
           "column": 0,
           "depth": 3
         },
-        "小補充-關於-collection-為何都是這樣命名": {
+        "2-8-小補充-關於-collection-為何都是這樣命名": {
           "type": "header",
-          "text": "小補充 關於 collection 為何都是這樣命名?",
-          "value": "小補充-關於-collection-為何都是這樣命名",
+          "text": "2-8. 小補充 關於 collection 為何都是這樣命名?",
+          "value": "2-8-小補充-關於-collection-為何都是這樣命名",
           "line": 153,
           "column": 0,
           "depth": 3
         },
-        "感受一下-nx-的-monorepo-專案": {
+        "3-感受一下-nx-的-monorepo-專案": {
           "type": "header",
-          "text": "感受一下 Nx 的 monorepo 專案",
-          "value": "感受一下-nx-的-monorepo-專案",
+          "text": "3. 感受一下 Nx 的 monorepo 專案",
+          "value": "3-感受一下-nx-的-monorepo-專案",
           "line": 162,
           "column": 0,
           "depth": 2
         },
-        "產生一個-nx-的-workspace": {
+        "3-1-產生一個-nx-的-workspace": {
           "type": "header",
-          "text": "產生一個 Nx 的 workspace",
-          "value": "產生一個-nx-的-workspace",
+          "text": "3-1. 產生一個 Nx 的 workspace",
+          "value": "3-1-產生一個-nx-的-workspace",
           "line": 172,
           "column": 0,
-          "depth": 2
+          "depth": 3
         },
-        "nx-的-workspace-圖示": {
+        "3-2-nx-的-workspace-圖示": {
           "type": "header",
-          "text": "Nx 的 workspace 圖示",
-          "value": "nx-的-workspace-圖示",
+          "text": "3-2. Nx 的 workspace 圖示",
+          "value": "3-2-nx-的-workspace-圖示",
           "line": 178,
           "column": 0,
-          "depth": 2
+          "depth": 3
         },
-        "快速上手-nx-console-操作-generaterun": {
+        "4-快速上手-nx-console-操作-generaterun": {
           "type": "header",
-          "text": "快速上手 Nx Console 操作 (Generate、Run)",
-          "value": "快速上手-nx-console-操作-generaterun",
+          "text": "4. 快速上手 Nx Console 操作 (Generate、Run)",
+          "value": "4-快速上手-nx-console-操作-generaterun",
           "line": 184,
           "column": 0,
           "depth": 2
         },
-        "nx-console-簡介": {
+        "4-1-nx-console-簡介": {
           "type": "header",
-          "text": "Nx Console 簡介",
-          "value": "nx-console-簡介",
+          "text": "4-1. Nx Console 簡介",
+          "value": "4-1-nx-console-簡介",
           "line": 186,
           "column": 0,
           "depth": 3
         },
-        "": {
+        "4-2--常見的-collection": {
           "type": "header",
-          "text": "",
-          "value": "",
-          "line": 233,
-          "column": 0,
-          "depth": 2
-        },
-        "常見的-collection": {
-          "type": "header",
-          "text": "(常見的 collection)",
-          "value": "常見的-collection",
+          "text": "4-2.  (常見的 collection)",
+          "value": "4-2--常見的-collection",
           "line": 237,
           "column": 0,
           "depth": 3
         },
-        "產生-library-有三個-schematic-可以用": {
+        "4-3-產生-library-有三個-schematic-可以用": {
           "type": "header",
-          "text": "產生 Library 有三個 schematic 可以用",
-          "value": "產生-library-有三個-schematic-可以用",
+          "text": "4-3. 產生 Library 有三個 schematic 可以用",
+          "value": "4-3-產生-library-有三個-schematic-可以用",
           "line": 262,
           "column": 0,
           "depth": 3
         },
-        "-1": {
+        "4-4": {
           "type": "header",
-          "text": "",
-          "value": "-1",
+          "text": "4-4.",
+          "value": "4-4",
           "line": 288,
           "column": 0,
-          "depth": 2
+          "depth": 3
         },
-        "其他補充": {
+        "5-其他補充": {
           "type": "header",
-          "text": "其他補充",
-          "value": "其他補充",
+          "text": "5. 其他補充",
+          "value": "5-其他補充",
           "line": 299,
           "column": 0,
           "depth": 2
         },
-        "常見的-monorepo-架構開發工具": {
+        "5-1-常見的-monorepo-架構開發工具": {
           "type": "header",
-          "text": "常見的 Monorepo 架構開發工具",
-          "value": "常見的-monorepo-架構開發工具",
+          "text": "5-1. 常見的 Monorepo 架構開發工具",
+          "value": "5-1-常見的-monorepo-架構開發工具",
           "line": 301,
           "column": 0,
           "depth": 3
         },
-        "誤解-nx-和-yarn-workspacelerna-只能擇一使用": {
+        "5-2-誤解-nx-和-yarn-workspacelerna-只能擇一使用": {
           "type": "header",
-          "text": "誤解: Nx 和 Yarn Workspace/Lerna 只能擇一使用?",
-          "value": "誤解-nx-和-yarn-workspacelerna-只能擇一使用",
+          "text": "5-2. 誤解: Nx 和 Yarn Workspace/Lerna 只能擇一使用?",
+          "value": "5-2-誤解-nx-和-yarn-workspacelerna-只能擇一使用",
           "line": 307,
           "column": 0,
           "depth": 3
         },
-        "查看有哪些-nx-plugin-可以使用": {
+        "5-3-查看有哪些-nx-plugin-可以使用": {
           "type": "header",
-          "text": "查看有哪些 Nx plugin 可以使用",
-          "value": "查看有哪些-nx-plugin-可以使用",
+          "text": "5-3. 查看有哪些 Nx plugin 可以使用",
+          "value": "5-3-查看有哪些-nx-plugin-可以使用",
           "line": 322,
           "column": 0,
           "depth": 3
         },
-        "nx-13": {
+        "5-4-nx-13": {
           "type": "header",
-          "text": "Nx 13",
-          "value": "nx-13",
+          "text": "5-4. Nx 13",
+          "value": "5-4-nx-13",
           "line": 329,
           "column": 0,
           "depth": 3
         },
-        "nx-學習資源": {
+        "5-5-nx-學習資源": {
           "type": "header",
-          "text": "Nx 學習資源",
-          "value": "nx-學習資源",
+          "text": "5-5. Nx 學習資源",
+          "value": "5-5-nx-學習資源",
           "line": 338,
           "column": 0,
           "depth": 3
         }
       },
       "fname": "drops.2021.1227-從Nx入門monorepo",
-      "updated": 1640704495133,
+      "updated": 1640706385777,
       "created": 1640615759253,
       "parent": "XVdxhzTnAX2SQnuApjkXj",
       "children": [],
       "data": {},
-      "contentHash": "e2bb627f9a5f5c3acd485e509be2d5d2",
+      "contentHash": "a7cfa9d39d9a4df1cfc4be4da807dff6",
       "custom": {},
       "tags": [
         "PROG.Nx"
@@ -569,6 +593,27 @@
           "to": {
             "fname": "tags.PROG.Dendron"
           }
+        },
+        {
+          "from": {
+            "fname": "root",
+            "vaultName": "vault"
+          },
+          "type": "backlink",
+          "position": {
+            "start": {
+              "line": 8,
+              "column": 1,
+              "offset": 258
+            },
+            "end": {
+              "line": 8,
+              "column": 66,
+              "offset": 323
+            },
+            "indent": []
+          },
+          "value": "drops.2021.1226-first-day"
         }
       ],
       "anchors": {
@@ -579,15 +624,23 @@
           "line": 10,
           "column": 0,
           "depth": 2
+        },
+        "build-and-preview-your-notes": {
+          "type": "header",
+          "text": "Build and preview your notes",
+          "value": "build-and-preview-your-notes",
+          "line": 12,
+          "column": 0,
+          "depth": 3
         }
       },
       "fname": "drops.2021.1226-first-day",
-      "updated": 1640615967487,
+      "updated": 1640707546954,
       "created": 1640525260857,
       "parent": "XVdxhzTnAX2SQnuApjkXj",
       "children": [],
       "data": {},
-      "contentHash": "b01a7936185c7ab77a554bdda6f6b0af",
+      "contentHash": "9cef5ea4138c8bd67ed02623b49ad56e",
       "custom": {},
       "tags": [
         "PROG.Dendron"
@@ -603,10 +656,38 @@
       },
       "type": "note",
       "desc": "",
-      "links": [],
+      "links": [
+        {
+          "type": "ref",
+          "from": {
+            "fname": "root",
+            "id": "root",
+            "vaultName": "vault"
+          },
+          "value": "drops.2021.1226-first-day",
+          "position": {
+            "start": {
+              "line": 8,
+              "column": 1,
+              "offset": 258
+            },
+            "end": {
+              "line": 8,
+              "column": 66,
+              "offset": 323
+            },
+            "indent": []
+          },
+          "xvault": false,
+          "to": {
+            "fname": "drops.2021.1226-first-day",
+            "anchorHeader": "首次使用-dendron-紀錄:#*"
+          }
+        }
+      ],
       "anchors": {},
       "fname": "root",
-      "updated": 1640613629447,
+      "updated": 1640707605144,
       "created": 1595961348801,
       "parent": null,
       "children": [
@@ -614,13 +695,13 @@
         "rEbR1FrKkZzyjo6ahAgm3"
       ],
       "data": {},
-      "contentHash": "0df6bd26cee0e20abd62109120a4c4dd",
+      "contentHash": "87dfc0e56c942a4dc3ab045d81984aef",
       "custom": {
         "stub": false,
         "nav_order": 0,
         "permalink": "/"
       },
-      "body": "\nThis is the root for your Dendron vault.\n\nIf you decide to publish your entire vault, it will be your landing page. You are free to customize any part of this page except the frontmatter at the top, between the `---`.\n"
+      "body": "\nThis is the root for your Dendron vault.\n\nIf you decide to publish your entire vault, it will be your landing page. You are free to customize any part of this page except the frontmatter at the top, between the `---`.\n\nDendron 官網: https://wiki.dendron.so/\n\n![[首次使用 Dendron 紀錄|drops.2021.1226-first-day#首次使用-dendron-紀錄:#*]]\n"
     }
   ],
   "noteIndex": {
@@ -631,10 +712,38 @@
     },
     "type": "note",
     "desc": "",
-    "links": [],
+    "links": [
+      {
+        "type": "ref",
+        "from": {
+          "fname": "root",
+          "id": "root",
+          "vaultName": "vault"
+        },
+        "value": "drops.2021.1226-first-day",
+        "position": {
+          "start": {
+            "line": 8,
+            "column": 1,
+            "offset": 258
+          },
+          "end": {
+            "line": 8,
+            "column": 66,
+            "offset": 323
+          },
+          "indent": []
+        },
+        "xvault": false,
+        "to": {
+          "fname": "drops.2021.1226-first-day",
+          "anchorHeader": "首次使用-dendron-紀錄:#*"
+        }
+      }
+    ],
     "anchors": {},
     "fname": "root",
-    "updated": 1640613629447,
+    "updated": 1640707605144,
     "created": 1595961348801,
     "parent": null,
     "children": [
@@ -642,13 +751,13 @@
       "rEbR1FrKkZzyjo6ahAgm3"
     ],
     "data": {},
-    "contentHash": "0df6bd26cee0e20abd62109120a4c4dd",
+    "contentHash": "87dfc0e56c942a4dc3ab045d81984aef",
     "custom": {
       "stub": false,
       "nav_order": 0,
       "permalink": "/"
     },
-    "body": "\nThis is the root for your Dendron vault.\n\nIf you decide to publish your entire vault, it will be your landing page. You are free to customize any part of this page except the frontmatter at the top, between the `---`.\n"
+    "body": "\nThis is the root for your Dendron vault.\n\nIf you decide to publish your entire vault, it will be your landing page. You are free to customize any part of this page except the frontmatter at the top, between the `---`.\n\nDendron 官網: https://wiki.dendron.so/\n\n![[首次使用 Dendron 紀錄|drops.2021.1226-first-day#首次使用-dendron-紀錄:#*]]\n"
   },
   "vaults": [
     {

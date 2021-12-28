@@ -119,6 +119,6 @@
     "enableMermaid": true,
     "enablePrettyRefs": true,
     "enableKatex": true,
-    "automaticallyShowPreview": false
+    "automaticallyShowPreview": true
   }
 }

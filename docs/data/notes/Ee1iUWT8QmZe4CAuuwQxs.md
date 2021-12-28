@@ -5,7 +5,7 @@
 
 導讀影片: [Monorepos - How the Pros Scale Huge Software Projects // Turborepo vs Nx](https://www.youtube.com/watch?v=9iU_IE6vnJ8)
 
-## 簡介 Monorepo 架構
+## 1. 簡介 Monorepo 架構
 
 Monorepo (全名 Monolithic Repository)，符合以下三個條件:
 
@@ -36,9 +36,9 @@ Monorepo 架構的主要目地是希望集中管理套件版本。
 
 接下來，在看看 Nx 之前，先來一些先備知識 😆
 
-## 簡介 Nx 工具與專有名詞解釋
+## 2. 簡介 Nx 工具與專有名詞解釋
 
-### 什麼是 Nx ?
+### 2-1. 什麼是 Nx ?
 
 官網: https://nx.dev/
 
@@ -56,7 +56,7 @@ Monorepo 架構的主要目地是希望集中管理套件版本。
 - GitHub apps
 - and more.
 
-### Nx 的製作團隊
+### 2-2. Nx 的製作團隊
 
 narwhal 簡寫 Nrwl，是獨角鯨的英文。
 
@@ -66,7 +66,7 @@ Consulting. Engineering. Training.
 Nrwl was founded in December 2016 by Angular team members and former Googlers, Jeff Cross and Victor Savkin, and today has around 18 team members in the US, Canada and UK.
 Nrwl is also the creator of open-source dev tools: Nx for monorepo development, and Angular Console.
 
-### Angular monorepo patterns
+### 2-3. Angular monorepo patterns
 
 這本書說明了 nx 是如何實踐 monerepo 概念
 
@@ -75,7 +75,7 @@ Nrwl is also the creator of open-source dev tools: Nx for monorepo development, 
 - https://connect.nrwl.io/app/books
 - https://nrwl.io/products
 
-### Nx 與 Angular 淵源不淺
+### 2-4. Nx 與 Angular 淵源不淺
 
 ![](assets/images/2021-12-28-00-06-48.png)
 
@@ -83,7 +83,7 @@ Nrwl is also the creator of open-source dev tools: Nx for monorepo development, 
 但 Nx 官網上有不少 react 的開發教學，如果有公司想要從 react 轉到 angular(或是 angular 轉 react 為主)，
 感覺透過 Nx 的幫助可以慢慢地移花接木(不然 Nx 也至少可以讓這兩框架和平共處 😆)
 
-### Angular 詞彙表
+### 2-5. Angular 詞彙表
 
 - [Workspace](https://angular.tw/guide/glossary#workspace) (工作區)
 
@@ -111,7 +111,7 @@ Nrwl is also the creator of open-source dev tools: Nx for monorepo development, 
 
   ![](assets/images/2021-12-28-00-23-52.png)
 
-### Nx 名詞解釋
+### 2-6. Nx 名詞解釋
 
 - Generators (產生器)
   產生器提供了一種方法，來自動執行您在開發工作流程中，經常執行的許多任務。
@@ -122,7 +122,7 @@ Nrwl is also the creator of open-source dev tools: Nx for monorepo development, 
 
   ![](assets/images/2021-12-28-21-51-09.png)
 
-### Nx 的 Generators 的使用方式
+### 2-7. Nx 的 Generators 的使用方式
 
 可以發現 Nx 的 `[plugin]:[generator-name]` 就是 Angular 的 `[collections]:[schematic]`。
 
@@ -142,7 +142,7 @@ Nrwl is also the creator of open-source dev tools: Nx for monorepo development, 
 
   It is important to have a clean git working directory before invoking a generator so that you can easily revert changes and re-invoke the generator with different inputs.
 
-### [小補充] 關於 collection 為何都是這樣命名? `@xxx/ooo`
+### 2-8. [小補充] 關於 collection 為何都是這樣命名? `@xxx/ooo`
 
 這是 npm 的命名規則，詳情可以參考 npm 官網影片: [Working with npm private modules
 ](https://www.youtube.com/watch?v=O6JoXGnHK_Y)
@@ -151,7 +151,7 @@ Nrwl is also the creator of open-source dev tools: Nx for monorepo development, 
 
 ![](assets/images/2021-12-28-21-53-15.png)
 
-## 感受一下 Nx 的 monorepo 專案
+## 3. 感受一下 Nx 的 monorepo 專案
 
 - Angular workspace 的 libs 通常都會有一個自己的 `package.json`
 
@@ -161,21 +161,21 @@ Nrwl is also the creator of open-source dev tools: Nx for monorepo development, 
 
   ![](assets/images/2021-12-28-00-28-00.png)
 
-## 產生一個 Nx 的 workspace
+### 3-1. 產生一個 Nx 的 workspace
 
 https://www.npmjs.com/package/create-nx-workspace
 
 ![](assets/images/2021-12-28-21-48-43.png)
 
-## Nx 的 workspace 圖示
+### 3-2. Nx 的 workspace 圖示
 
 除了圖示裡的這些，Nx workspace 也可以用來整合開發其他框架(最後面會補充)。
 
 ![](assets/images/2021-12-28-22-18-03.png)
 
-## 快速上手 Nx Console 操作 (Generate、Run)
+## 4. 快速上手 Nx Console 操作 (Generate、Run)
 
-### Nx Console 簡介
+### 4-1. Nx Console 簡介
 
 - Nx Console 套件安裝
 
@@ -222,11 +222,11 @@ https://www.npmjs.com/package/create-nx-workspace
 
     ![](assets/images/2021-12-28-22-35-51.png)
 
-## `nx generate`
+###`nx generate`
 
 當你按下 `Generate` 的按鈕時，就會幫你執行 `nx generate`，並根據 `generator` (`schematic`) 產生預期的結果。
 
-### `nx generate` (常見的 collection)
+### 4-2. `nx generate` (常見的 collection)
 
 1. `@angular/cdk`
 2. `@angular/material`
@@ -251,7 +251,7 @@ https://www.npmjs.com/package/create-nx-workspace
 
    Angular cli 預設的 collection。
 
-### 產生 Library 有三個 schematic 可以用
+### 4-3. 產生 Library 有三個 schematic 可以用
 
 - `@schematics/angular`
 
@@ -277,7 +277,7 @@ https://www.npmjs.com/package/create-nx-workspace
 
   https://github.com/cyrilletuzi/vscode-angular-schematics/blob/main/src/defaults.ts
 
-## `nx run`
+### 4-4. `nx run`
 
 同時 build 所有 projects 內有 build script 的專案。
 
@@ -288,15 +288,15 @@ https://www.npmjs.com/package/create-nx-workspace
 - https://angular.tw/cli/run
 - https://nx.dev/l/a/cli/run-many
 
-## 其他補充
+## 5. 其他補充
 
-### 常見的 Monorepo 架構開發工具
+### 5-1. 常見的 Monorepo 架構開發工具
 
 ![](assets/images/2021-12-28-23-03-34.png)
 
 還有更多工具: https://github.com/korfuri/awesome-monorepo
 
-### 誤解: Nx 和 Yarn Workspace/Lerna 只能擇一使用?
+### 5-2. 誤解: Nx 和 Yarn Workspace/Lerna 只能擇一使用?
 
 https://nx.dev/l/n/guides/lerna-and-nx#clarifying-misconceptions
 
@@ -311,14 +311,14 @@ Nx 官方 youtube 頻道相關影片
 - [How to Migrate From Lerna to Nx](https://www.youtube.com/watch?v=Edv7ZeI8Bwc)
 - [Lerna/Yarn to Nx: Faster Build Times + Better Dev Ergonomics](https://www.youtube.com/watch?v=BO1rwynFBLM)
 
-### 查看有哪些 Nx plugin 可以使用
+### 5-3. 查看有哪些 Nx plugin 可以使用
 
 `nx list`
 
 或到官網查看列表:
 https://nx.dev/community#community-plugin-list
 
-### Nx 13
+### 5-4. Nx 13
 
 ![](assets/images/2021-12-28-23-07-16.png)
 
@@ -327,7 +327,7 @@ Webpack 5 Module Federation Plugin
 - https://nx.dev/l/a/guides/setup-mfe-with-angular
 - Micro Frontends with Angular using Module Federation - Manfred Steyer
 
-### Nx 學習資源
+### 5-5. Nx 學習資源
 
 - Nx 官網
 
