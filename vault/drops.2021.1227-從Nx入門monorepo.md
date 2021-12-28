@@ -1,8 +1,8 @@
 ---
 id: Ee1iUWT8QmZe4CAuuwQxs
-title: 2021-1227-從 Nx 入門 monorepo
-desc: ""
-updated: 1640704167777
+title: 1227-從Nx入門monorepo
+desc: ''
+updated: 1640704495133
 created: 1640615759253
 tags:
   - PROG.Nx
@@ -30,7 +30,7 @@ Monorepo (全名 Monolithic Repository)，符合以下三個條件:
 
 ![MonoRepo](assets/images/2021-12-27-22-50-05.png)
 
-Monorepo 架構的主要目的是希望集中管理套件版本。
+Monorepo 架構的主要目地是希望集中管理套件版本。
 
 透過只管理一個 `package.json`，可以發現好處是套件版本管理方便、而壞處是一個 repo 有多個 projects，檔案容易變非常大，讓 git 版控軟體跑起來較吃力。
 

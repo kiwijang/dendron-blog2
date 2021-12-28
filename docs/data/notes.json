@@ -11,8 +11,8 @@
       "links": [],
       "anchors": {},
       "fname": "403",
-      "updated": 1640704242153,
-      "created": 1640704242153,
+      "updated": 1640704824901,
+      "created": 1640704824901,
       "parent": null,
       "children": [],
       "data": {}
@@ -103,7 +103,7 @@
       "links": [
         {
           "from": {
-            "fname": "drops.2021-1227-從Nx入門monorepo",
+            "fname": "drops.2021.1227-從Nx入門monorepo",
             "vaultName": "vault"
           },
           "type": "backlink",
@@ -131,7 +131,7 @@
       "links": [
         {
           "from": {
-            "fname": "drops.2021-1226-first-day",
+            "fname": "drops.2021.1226-first-day",
             "vaultName": "vault"
           },
           "type": "backlink",
@@ -163,8 +163,7 @@
       "created": 1640604306691,
       "parent": "root",
       "children": [
-        "DTeYpEuPv3KIHugUyqZPu",
-        "Ee1iUWT8QmZe4CAuuwQxs"
+        "XVdxhzTnAX2SQnuApjkXj"
       ],
       "data": {},
       "contentHash": "e354c86da3f20612d2d8435039a55559",
@@ -173,9 +172,30 @@
         "stub": true
       }
     },
+    "XVdxhzTnAX2SQnuApjkXj": {
+      "id": "XVdxhzTnAX2SQnuApjkXj",
+      "title": "2021",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "fname": "drops.2021",
+      "updated": 1640704824635,
+      "created": 1640704824635,
+      "parent": "u4tSbmkJewrKonY3sL544",
+      "children": [
+        "DTeYpEuPv3KIHugUyqZPu",
+        "Ee1iUWT8QmZe4CAuuwQxs"
+      ],
+      "data": {},
+      "stub": false
+    },
     "Ee1iUWT8QmZe4CAuuwQxs": {
       "id": "Ee1iUWT8QmZe4CAuuwQxs",
-      "title": "2021-1227-從 Nx 入門 monorepo",
+      "title": "1227-從Nx入門monorepo",
       "vault": {
         "fsPath": "vault"
       },
@@ -185,7 +205,7 @@
         {
           "type": "frontmatterTag",
           "from": {
-            "fname": "drops.2021-1227-從Nx入門monorepo",
+            "fname": "drops.2021.1227-從Nx入門monorepo",
             "id": "Ee1iUWT8QmZe4CAuuwQxs",
             "vaultName": "vault"
           },
@@ -199,7 +219,7 @@
         {
           "type": "wiki",
           "from": {
-            "fname": "drops.2021-1227-從Nx入門monorepo",
+            "fname": "drops.2021.1227-從Nx入門monorepo",
             "id": "Ee1iUWT8QmZe4CAuuwQxs",
             "vaultName": "vault"
           },
@@ -226,7 +246,7 @@
         {
           "type": "wiki",
           "from": {
-            "fname": "drops.2021-1227-從Nx入門monorepo",
+            "fname": "drops.2021.1227-從Nx入門monorepo",
             "id": "Ee1iUWT8QmZe4CAuuwQxs",
             "vaultName": "vault"
           },
@@ -253,7 +273,7 @@
         {
           "type": "wiki",
           "from": {
-            "fname": "drops.2021-1227-從Nx入門monorepo",
+            "fname": "drops.2021.1227-從Nx入門monorepo",
             "id": "Ee1iUWT8QmZe4CAuuwQxs",
             "vaultName": "vault"
           },
@@ -280,7 +300,7 @@
         {
           "type": "wiki",
           "from": {
-            "fname": "drops.2021-1227-從Nx入門monorepo",
+            "fname": "drops.2021.1227-從Nx入門monorepo",
             "id": "Ee1iUWT8QmZe4CAuuwQxs",
             "vaultName": "vault"
           },
@@ -515,13 +535,13 @@
           "depth": 3
         }
       },
-      "fname": "drops.2021-1227-從Nx入門monorepo",
-      "updated": 1640704167777,
+      "fname": "drops.2021.1227-從Nx入門monorepo",
+      "updated": 1640704495133,
       "created": 1640615759253,
-      "parent": "u4tSbmkJewrKonY3sL544",
+      "parent": "XVdxhzTnAX2SQnuApjkXj",
       "children": [],
       "data": {},
-      "contentHash": "0e089e7c73f7c43cb52fbb82d8f4547d",
+      "contentHash": "e2bb627f9a5f5c3acd485e509be2d5d2",
       "custom": {},
       "tags": [
         "PROG.Nx"
@@ -529,7 +549,7 @@
     },
     "DTeYpEuPv3KIHugUyqZPu": {
       "id": "DTeYpEuPv3KIHugUyqZPu",
-      "title": "2021-1226-First Day",
+      "title": "1226 First Day",
       "vault": {
         "fsPath": "vault"
       },
@@ -539,7 +559,7 @@
         {
           "type": "frontmatterTag",
           "from": {
-            "fname": "drops.2021-1226-first-day",
+            "fname": "drops.2021.1226-first-day",
             "id": "DTeYpEuPv3KIHugUyqZPu",
             "vaultName": "vault"
           },
@@ -561,13 +581,13 @@
           "depth": 2
         }
       },
-      "fname": "drops.2021-1226-first-day",
+      "fname": "drops.2021.1226-first-day",
       "updated": 1640615967487,
       "created": 1640525260857,
-      "parent": "u4tSbmkJewrKonY3sL544",
+      "parent": "XVdxhzTnAX2SQnuApjkXj",
       "children": [],
       "data": {},
-      "contentHash": "2a56d42363f2729e1d46f9c501a907e3",
+      "contentHash": "b01a7936185c7ab77a554bdda6f6b0af",
       "custom": {},
       "tags": [
         "PROG.Dendron"

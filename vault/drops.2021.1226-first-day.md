@@ -1,7 +1,7 @@
 ---
 id: DTeYpEuPv3KIHugUyqZPu
-title: 2021-1226-First Day
-desc: ""
+title: 1226 First Day
+desc: ''
 updated: 1640615967487
 created: 1640525260857
 tags:
