@@ -11,15 +11,15 @@
       "links": [],
       "anchors": {},
       "fname": "403",
-      "updated": 1640791973949,
-      "created": 1640791973949,
+      "updated": 1640799340782,
+      "created": 1640799340782,
       "parent": null,
       "children": [],
       "data": {}
     },
     "root": {
       "id": "root",
-      "title": "👾 Collections",
+      "title": "Collections",
       "vault": {
         "fsPath": "vault"
       },
@@ -56,7 +56,7 @@
       ],
       "anchors": {},
       "fname": "root",
-      "updated": 1640707605144,
+      "updated": 1640798189756,
       "created": 1595961348801,
       "parent": null,
       "children": [
@@ -64,7 +64,7 @@
         "rEbR1FrKkZzyjo6ahAgm3"
       ],
       "data": {},
-      "contentHash": "87dfc0e56c942a4dc3ab045d81984aef",
+      "contentHash": "0721c92921081b11774f7383d4795e9c",
       "custom": {
         "stub": false,
         "nav_order": 0,
@@ -658,7 +658,7 @@
   "domains": [
     {
       "id": "root",
-      "title": "👾 Collections",
+      "title": "Collections",
       "vault": {
         "fsPath": "vault"
       },
@@ -695,7 +695,7 @@
       ],
       "anchors": {},
       "fname": "root",
-      "updated": 1640707605144,
+      "updated": 1640798189756,
       "created": 1595961348801,
       "parent": null,
       "children": [
@@ -703,7 +703,7 @@
         "rEbR1FrKkZzyjo6ahAgm3"
       ],
       "data": {},
-      "contentHash": "87dfc0e56c942a4dc3ab045d81984aef",
+      "contentHash": "0721c92921081b11774f7383d4795e9c",
       "custom": {
         "stub": false,
         "nav_order": 0,
@@ -714,7 +714,7 @@
   ],
   "noteIndex": {
     "id": "root",
-    "title": "👾 Collections",
+    "title": "Collections",
     "vault": {
       "fsPath": "vault"
     },
@@ -751,7 +751,7 @@
     ],
     "anchors": {},
     "fname": "root",
-    "updated": 1640707605144,
+    "updated": 1640798189756,
     "created": 1595961348801,
     "parent": null,
     "children": [
@@ -759,7 +759,7 @@
       "rEbR1FrKkZzyjo6ahAgm3"
     ],
     "data": {},
-    "contentHash": "87dfc0e56c942a4dc3ab045d81984aef",
+    "contentHash": "0721c92921081b11774f7383d4795e9c",
     "custom": {
       "stub": false,
       "nav_order": 0,
