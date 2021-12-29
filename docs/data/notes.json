@@ -11,8 +11,8 @@
       "links": [],
       "anchors": {},
       "fname": "403",
-      "updated": 1640710942662,
-      "created": 1640710942662,
+      "updated": 1640785553640,
+      "created": 1640785553640,
       "parent": null,
       "children": [],
       "data": {}
@@ -227,7 +227,7 @@
     },
     "Ee1iUWT8QmZe4CAuuwQxs": {
       "id": "Ee1iUWT8QmZe4CAuuwQxs",
-      "title": "1227 從Nx入門monorepo",
+      "title": "1227 從 Nx 入門 monorepo",
       "vault": {
         "fsPath": "vault"
       },
@@ -336,18 +336,45 @@
             "id": "Ee1iUWT8QmZe4CAuuwQxs",
             "vaultName": "vault"
           },
+          "value": "user.xxx/ooo",
+          "alias": "@xxx/ooo",
+          "position": {
+            "start": {
+              "line": 145,
+              "column": 39,
+              "offset": 4166
+            },
+            "end": {
+              "line": 145,
+              "column": 47,
+              "offset": 4174
+            },
+            "indent": []
+          },
+          "xvault": false,
+          "to": {
+            "fname": "user.xxx/ooo"
+          }
+        },
+        {
+          "type": "wiki",
+          "from": {
+            "fname": "drops.2021.1227-從Nx入門monorepo",
+            "id": "Ee1iUWT8QmZe4CAuuwQxs",
+            "vaultName": "vault"
+          },
           "value": "user.後的字稱為",
           "alias": "@後的字稱為",
           "position": {
             "start": {
               "line": 150,
               "column": 3,
-              "offset": 4292
+              "offset": 4290
             },
             "end": {
               "line": 150,
               "column": 9,
-              "offset": 4298
+              "offset": 4296
             },
             "indent": []
           },
@@ -486,26 +513,34 @@
           "column": 0,
           "depth": 3
         },
-        "4-2-nx-generate-常見的-collection": {
+        "4-2-nx-generate": {
           "type": "header",
-          "text": "4-2. nx generate (常見的 collection)",
-          "value": "4-2-nx-generate-常見的-collection",
+          "text": "4-2. nx generate",
+          "value": "4-2-nx-generate",
+          "line": 233,
+          "column": 0,
+          "depth": 3
+        },
+        "4-3-nx-generate-常見的-collection": {
+          "type": "header",
+          "text": "4-3. nx generate (常見的 collection)",
+          "value": "4-3-nx-generate-常見的-collection",
           "line": 237,
           "column": 0,
           "depth": 3
         },
-        "4-3-產生-library-有三個-schematic-可以用": {
+        "4-4-產生-library-有三個-schematic-可以用": {
           "type": "header",
-          "text": "4-3. 產生 Library 有三個 schematic 可以用",
-          "value": "4-3-產生-library-有三個-schematic-可以用",
+          "text": "4-4. 產生 Library 有三個 schematic 可以用",
+          "value": "4-4-產生-library-有三個-schematic-可以用",
           "line": 262,
           "column": 0,
           "depth": 3
         },
-        "4-4-nx-run": {
+        "4-5-nx-run": {
           "type": "header",
-          "text": "4-4. nx run",
-          "value": "4-4-nx-run",
+          "text": "4-5. nx run",
+          "value": "4-5-nx-run",
           "line": 288,
           "column": 0,
           "depth": 3
@@ -560,12 +595,12 @@
         }
       },
       "fname": "drops.2021.1227-從Nx入門monorepo",
-      "updated": 1640710918734,
+      "updated": 1640785439757,
       "created": 1640615759253,
       "parent": "XVdxhzTnAX2SQnuApjkXj",
       "children": [],
       "data": {},
-      "contentHash": "80c0af553a1ae0bdc0cd0e4013bc99af",
+      "contentHash": "9e883e0ba27e276ab8ed22edb9c617d5",
       "custom": {},
       "tags": [
         "PROG.Nx"
