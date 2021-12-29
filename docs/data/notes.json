@@ -11,8 +11,8 @@
       "links": [],
       "anchors": {},
       "fname": "403",
-      "updated": 1640785553640,
-      "created": 1640785553640,
+      "updated": 1640791973949,
+      "created": 1640791973949,
       "parent": null,
       "children": [],
       "data": {}
@@ -336,33 +336,6 @@
             "id": "Ee1iUWT8QmZe4CAuuwQxs",
             "vaultName": "vault"
           },
-          "value": "user.xxx/ooo",
-          "alias": "@xxx/ooo",
-          "position": {
-            "start": {
-              "line": 145,
-              "column": 39,
-              "offset": 4166
-            },
-            "end": {
-              "line": 145,
-              "column": 47,
-              "offset": 4174
-            },
-            "indent": []
-          },
-          "xvault": false,
-          "to": {
-            "fname": "user.xxx/ooo"
-          }
-        },
-        {
-          "type": "wiki",
-          "from": {
-            "fname": "drops.2021.1227-從Nx入門monorepo",
-            "id": "Ee1iUWT8QmZe4CAuuwQxs",
-            "vaultName": "vault"
-          },
           "value": "user.後的字稱為",
           "alias": "@後的字稱為",
           "position": {
@@ -465,10 +438,10 @@
           "column": 0,
           "depth": 3
         },
-        "2-8-小補充-關於-collection-為何都是這樣命名": {
+        "2-8-小補充-關於-collection-為何都是以xxxooo命名": {
           "type": "header",
-          "text": "2-8. 小補充: 關於 collection 為何都是這樣命名?",
-          "value": "2-8-小補充-關於-collection-為何都是這樣命名",
+          "text": "2-8. 小補充: 關於 collection 為何都是以「＠xxx/ooo」命名?",
+          "value": "2-8-小補充-關於-collection-為何都是以xxxooo命名",
           "line": 153,
           "column": 0,
           "depth": 3
@@ -595,12 +568,12 @@
         }
       },
       "fname": "drops.2021.1227-從Nx入門monorepo",
-      "updated": 1640785439757,
+      "updated": 1640786191942,
       "created": 1640615759253,
       "parent": "XVdxhzTnAX2SQnuApjkXj",
       "children": [],
       "data": {},
-      "contentHash": "9e883e0ba27e276ab8ed22edb9c617d5",
+      "contentHash": "52e5569d1d8559ecbd47e35471382133",
       "custom": {},
       "tags": [
         "PROG.Nx"

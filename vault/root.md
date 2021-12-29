@@ -1,8 +1,8 @@
 ---
 id: root
-title: 👾 Collections
+title: Collections
 desc: ""
-updated: 1640707605144
+updated: 1640798189756
 created: 1595961348801
 stub: false
 ---
