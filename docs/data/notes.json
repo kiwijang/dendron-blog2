@@ -11,8 +11,8 @@
       "links": [],
       "anchors": {},
       "fname": "403",
-      "updated": 1640799340782,
-      "created": 1640799340782,
+      "updated": 1640710942662,
+      "created": 1640710942662,
       "parent": null,
       "children": [],
       "data": {}
@@ -227,7 +227,7 @@
     },
     "Ee1iUWT8QmZe4CAuuwQxs": {
       "id": "Ee1iUWT8QmZe4CAuuwQxs",
-      "title": "1227 從 Nx 入門 monorepo",
+      "title": "1227 從Nx入門monorepo",
       "vault": {
         "fsPath": "vault"
       },
@@ -342,12 +342,12 @@
             "start": {
               "line": 150,
               "column": 3,
-              "offset": 4290
+              "offset": 4292
             },
             "end": {
               "line": 150,
               "column": 9,
-              "offset": 4296
+              "offset": 4298
             },
             "indent": []
           },
@@ -486,34 +486,26 @@
           "column": 0,
           "depth": 3
         },
-        "4-2-nx-generate": {
+        "4-2-nx-generate-常見的-collection": {
           "type": "header",
-          "text": "4-2. nx generate",
-          "value": "4-2-nx-generate",
-          "line": 233,
-          "column": 0,
-          "depth": 3
-        },
-        "4-3-nx-generate-常見的-collection": {
-          "type": "header",
-          "text": "4-3. nx generate (常見的 collection)",
-          "value": "4-3-nx-generate-常見的-collection",
+          "text": "4-2. nx generate (常見的 collection)",
+          "value": "4-2-nx-generate-常見的-collection",
           "line": 237,
           "column": 0,
           "depth": 3
         },
-        "4-4-產生-library-有三個-schematic-可以用": {
+        "4-3-產生-library-有三個-schematic-可以用": {
           "type": "header",
-          "text": "4-4. 產生 Library 有三個 schematic 可以用",
-          "value": "4-4-產生-library-有三個-schematic-可以用",
+          "text": "4-3. 產生 Library 有三個 schematic 可以用",
+          "value": "4-3-產生-library-有三個-schematic-可以用",
           "line": 262,
           "column": 0,
           "depth": 3
         },
-        "4-5-nx-run": {
+        "4-4-nx-run": {
           "type": "header",
-          "text": "4-5. nx run",
-          "value": "4-5-nx-run",
+          "text": "4-4. nx run",
+          "value": "4-4-nx-run",
           "line": 288,
           "column": 0,
           "depth": 3
@@ -568,12 +560,20 @@
         }
       },
       "fname": "drops.2021.1227-從Nx入門monorepo",
+<<<<<<< HEAD
       "updated": 1640786191942,
+=======
+      "updated": 1640710918734,
+>>>>>>> parent of a020736... upd 1229
       "created": 1640615759253,
       "parent": "XVdxhzTnAX2SQnuApjkXj",
       "children": [],
       "data": {},
+<<<<<<< HEAD
       "contentHash": "52e5569d1d8559ecbd47e35471382133",
+=======
+      "contentHash": "80c0af553a1ae0bdc0cd0e4013bc99af",
+>>>>>>> parent of a020736... upd 1229
       "custom": {},
       "tags": [
         "PROG.Nx"

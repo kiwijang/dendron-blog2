@@ -142,7 +142,11 @@ Nrwl is also the creator of open-source dev tools: Nx for monorepo development, 
 
   It is important to have a clean git working directory before invoking a generator so that you can easily revert changes and re-invoke the generator with different inputs.
 
+<<<<<<< HEAD
 ### 2-8. 小補充: 關於 collection 為何都是以「＠xxx/ooo」命名?
+=======
+### 2-8. 小補充: 關於 collection 為何都是這樣命名? `@xxx/ooo`
+>>>>>>> parent of a020736... upd 1229
 
 這是 npm 的命名規則，詳情可以參考 npm 官網影片: [Working with npm private modules
 ](https://www.youtube.com/watch?v=O6JoXGnHK_Y)
@@ -222,11 +226,11 @@ https://www.npmjs.com/package/create-nx-workspace
 
     ![](assets/images/2021-12-28-22-35-51.png)
 
-### 4-2. nx generate
+###`nx generate`
 
 當你按下 `Generate` 的按鈕時，就會幫你執行 `nx generate`，並根據 `generator` (`schematic`) 產生預期的結果。
 
-### 4-3. nx generate (常見的 collection)
+### 4-2. nx generate (常見的 collection)
 
 1. `@angular/cdk`
 2. `@angular/material`
@@ -251,7 +255,7 @@ https://www.npmjs.com/package/create-nx-workspace
 
    Angular cli 預設的 collection。
 
-### 4-4. 產生 Library 有三個 schematic 可以用
+### 4-3. 產生 Library 有三個 schematic 可以用
 
 - `@schematics/angular`
 
@@ -277,7 +281,7 @@ https://www.npmjs.com/package/create-nx-workspace
 
   https://github.com/cyrilletuzi/vscode-angular-schematics/blob/main/src/defaults.ts
 
-### 4-5. nx run
+### 4-4. nx run
 
 同時 build 所有 projects 內有 build script 的專案。
 
