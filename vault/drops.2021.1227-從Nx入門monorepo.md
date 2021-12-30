@@ -2,11 +2,7 @@
 id: Ee1iUWT8QmZe4CAuuwQxs
 title: 1227 從Nx入門monorepo
 desc: ""
-<<<<<<< HEAD
-updated: 1640786191942
-=======
-updated: 1640710918734
->>>>>>> parent of a020736... upd 1229
+updated: 1640801782081
 created: 1640615759253
 tags:
   - PROG.Nx
@@ -155,11 +151,7 @@ Nrwl is also the creator of open-source dev tools: Nx for monorepo development, 
 
   It is important to have a clean git working directory before invoking a generator so that you can easily revert changes and re-invoke the generator with different inputs.
 
-<<<<<<< HEAD
-### 2-8. 小補充: 關於 collection 為何都是以「＠xxx/ooo」命名?
-=======
 ### 2-8. 小補充: 關於 collection 為何都是這樣命名? `@xxx/ooo`
->>>>>>> parent of a020736... upd 1229
 
 這是 npm 的命名規則，詳情可以參考 npm 官網影片: [Working with npm private modules
 ](https://www.youtube.com/watch?v=O6JoXGnHK_Y)

@@ -11,8 +11,8 @@
       "links": [],
       "anchors": {},
       "fname": "403",
-      "updated": 1640710942662,
-      "created": 1640710942662,
+      "updated": 1640847612361,
+      "created": 1640847612361,
       "parent": null,
       "children": [],
       "data": {}
@@ -38,12 +38,12 @@
             "start": {
               "line": 8,
               "column": 1,
-              "offset": 258
+              "offset": 265
             },
             "end": {
               "line": 8,
               "column": 66,
-              "offset": 323
+              "offset": 330
             },
             "indent": []
           },
@@ -64,7 +64,7 @@
         "rEbR1FrKkZzyjo6ahAgm3"
       ],
       "data": {},
-      "contentHash": "0721c92921081b11774f7383d4795e9c",
+      "contentHash": "55b0bacfcece3a10698280c76f57173c",
       "custom": {
         "stub": false,
         "nav_order": 0,
@@ -261,12 +261,12 @@
             "start": {
               "line": 118,
               "column": 15,
-              "offset": 3191
+              "offset": 3308
             },
             "end": {
               "line": 118,
               "column": 27,
-              "offset": 3203
+              "offset": 3320
             },
             "indent": []
           },
@@ -288,12 +288,12 @@
             "start": {
               "line": 118,
               "column": 30,
-              "offset": 3206
+              "offset": 3323
             },
             "end": {
               "line": 118,
               "column": 45,
-              "offset": 3221
+              "offset": 3338
             },
             "indent": []
           },
@@ -315,12 +315,12 @@
             "start": {
               "line": 119,
               "column": 6,
-              "offset": 3236
+              "offset": 3354
             },
             "end": {
               "line": 119,
               "column": 21,
-              "offset": 3251
+              "offset": 3369
             },
             "indent": []
           },
@@ -342,12 +342,12 @@
             "start": {
               "line": 150,
               "column": 3,
-              "offset": 4292
+              "offset": 4441
             },
             "end": {
               "line": 150,
               "column": 9,
-              "offset": 4298
+              "offset": 4447
             },
             "indent": []
           },
@@ -438,10 +438,10 @@
           "column": 0,
           "depth": 3
         },
-        "2-8-小補充-關於-collection-為何都是以xxxooo命名": {
+        "2-8-小補充-關於-collection-為何都是這樣命名": {
           "type": "header",
-          "text": "2-8. 小補充: 關於 collection 為何都是以「＠xxx/ooo」命名?",
-          "value": "2-8-小補充-關於-collection-為何都是以xxxooo命名",
+          "text": "2-8. 小補充: 關於 collection 為何都是這樣命名?",
+          "value": "2-8-小補充-關於-collection-為何都是這樣命名",
           "line": 153,
           "column": 0,
           "depth": 3
@@ -560,20 +560,12 @@
         }
       },
       "fname": "drops.2021.1227-從Nx入門monorepo",
-<<<<<<< HEAD
-      "updated": 1640786191942,
-=======
-      "updated": 1640710918734,
->>>>>>> parent of a020736... upd 1229
+      "updated": 1640801782081,
       "created": 1640615759253,
       "parent": "XVdxhzTnAX2SQnuApjkXj",
       "children": [],
       "data": {},
-<<<<<<< HEAD
-      "contentHash": "52e5569d1d8559ecbd47e35471382133",
-=======
-      "contentHash": "80c0af553a1ae0bdc0cd0e4013bc99af",
->>>>>>> parent of a020736... upd 1229
+      "contentHash": "66c437f5ae61bda1368d6a9b7500edfb",
       "custom": {},
       "tags": [
         "PROG.Nx"
@@ -612,12 +604,12 @@
             "start": {
               "line": 8,
               "column": 1,
-              "offset": 258
+              "offset": 265
             },
             "end": {
               "line": 8,
               "column": 66,
-              "offset": 323
+              "offset": 330
             },
             "indent": []
           },
@@ -677,12 +669,12 @@
             "start": {
               "line": 8,
               "column": 1,
-              "offset": 258
+              "offset": 265
             },
             "end": {
               "line": 8,
               "column": 66,
-              "offset": 323
+              "offset": 330
             },
             "indent": []
           },
@@ -703,13 +695,13 @@
         "rEbR1FrKkZzyjo6ahAgm3"
       ],
       "data": {},
-      "contentHash": "0721c92921081b11774f7383d4795e9c",
+      "contentHash": "55b0bacfcece3a10698280c76f57173c",
       "custom": {
         "stub": false,
         "nav_order": 0,
         "permalink": "/"
       },
-      "body": "\nThis is the root for your Dendron vault.\n\nIf you decide to publish your entire vault, it will be your landing page. You are free to customize any part of this page except the frontmatter at the top, between the `---`.\n\nDendron 官網: https://wiki.dendron.so/\n\n![[首次使用 Dendron 紀錄|drops.2021.1226-first-day#首次使用-dendron-紀錄:#*]]\n"
+      "body": "\n\r\nThis is the root for your Dendron vault.\r\n\r\nIf you decide to publish your entire vault, it will be your landing page. You are free to customize any part of this page except the frontmatter at the top, between the `---`.\r\n\r\nDendron 官網: https://wiki.dendron.so/\r\n\r\n![[首次使用 Dendron 紀錄|drops.2021.1226-first-day#首次使用-dendron-紀錄:#*]]\r\n"
     }
   ],
   "noteIndex": {
@@ -733,12 +725,12 @@
           "start": {
             "line": 8,
             "column": 1,
-            "offset": 258
+            "offset": 265
           },
           "end": {
             "line": 8,
             "column": 66,
-            "offset": 323
+            "offset": 330
           },
           "indent": []
         },
@@ -759,13 +751,13 @@
       "rEbR1FrKkZzyjo6ahAgm3"
     ],
     "data": {},
-    "contentHash": "0721c92921081b11774f7383d4795e9c",
+    "contentHash": "55b0bacfcece3a10698280c76f57173c",
     "custom": {
       "stub": false,
       "nav_order": 0,
       "permalink": "/"
     },
-    "body": "\nThis is the root for your Dendron vault.\n\nIf you decide to publish your entire vault, it will be your landing page. You are free to customize any part of this page except the frontmatter at the top, between the `---`.\n\nDendron 官網: https://wiki.dendron.so/\n\n![[首次使用 Dendron 紀錄|drops.2021.1226-first-day#首次使用-dendron-紀錄:#*]]\n"
+    "body": "\n\r\nThis is the root for your Dendron vault.\r\n\r\nIf you decide to publish your entire vault, it will be your landing page. You are free to customize any part of this page except the frontmatter at the top, between the `---`.\r\n\r\nDendron 官網: https://wiki.dendron.so/\r\n\r\n![[首次使用 Dendron 紀錄|drops.2021.1226-first-day#首次使用-dendron-紀錄:#*]]\r\n"
   },
   "vaults": [
     {
