@@ -1,8 +1,8 @@
 ---
 id: Ee1iUWT8QmZe4CAuuwQxs
-title: 1227 從Nx入門monorepo
+title: 1227 從 Nx 入門 monorepo
 desc: ""
-updated: 1640953629659
+updated: 1640962963469
 created: 1640615759253
 tags:
   - PROG.Nx
@@ -145,7 +145,6 @@ Nrwl is also the creator of open-source dev tools: Nx for monorepo development, 
 
   ```cmd
   nx generate [plugin]:[generator-name] [options]
-
   nx generate @nrwl/angular:component mycmp --project=myapp
   ```
 

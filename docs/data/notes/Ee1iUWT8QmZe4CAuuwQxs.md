@@ -137,7 +137,6 @@ Nrwl is also the creator of open-source dev tools: Nx for monorepo development, 
 
   ```cmd
   nx generate [plugin]:[generator-name] [options]
-
   nx generate @nrwl/angular:component mycmp --project=myapp
   ```
 
