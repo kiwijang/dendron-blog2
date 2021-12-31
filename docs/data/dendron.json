@@ -20,7 +20,7 @@
     "description": "Personal knowledge space",
     "siteLastModified": true,
     "gh_edit_repository": "https://github.com/kiwijang/dendron-blog.git",
-    "gh_edit_branch": "gh-pages",
+    "gh_edit_branch": "master",
     "duplicateNoteBehavior": {
       "action": "useVault",
       "payload": [
