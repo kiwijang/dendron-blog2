@@ -140,7 +140,7 @@ Nrwl is also the creator of open-source dev tools: Nx for monorepo development, 
   nx generate @nrwl/angular:component mycmp --project=myapp
   ```
 
-  It is important to have a clean git working directory before invoking a generator so that you can easily revert changes and re-invoke the generator with different inputs.
+It is important to have a clean git working directory before invoking a generator so that you can easily revert changes and re-invoke the generator with different inputs.
 
 ### 2-8. 小補充: 關於 collection 為何都是「＠xxx/ooo」這樣命名?
 

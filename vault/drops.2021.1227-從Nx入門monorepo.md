@@ -2,7 +2,7 @@
 id: Ee1iUWT8QmZe4CAuuwQxs
 title: 1227 從 Nx 入門 monorepo
 desc: ""
-updated: 1640962963469
+updated: 1640963627727
 created: 1640615759253
 tags:
   - PROG.Nx
@@ -148,7 +148,7 @@ Nrwl is also the creator of open-source dev tools: Nx for monorepo development, 
   nx generate @nrwl/angular:component mycmp --project=myapp
   ```
 
-  It is important to have a clean git working directory before invoking a generator so that you can easily revert changes and re-invoke the generator with different inputs.
+It is important to have a clean git working directory before invoking a generator so that you can easily revert changes and re-invoke the generator with different inputs.
 
 ### 2-8. 小補充: 關於 collection 為何都是「＠xxx/ooo」這樣命名?
 
