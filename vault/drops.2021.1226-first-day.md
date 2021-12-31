@@ -2,7 +2,7 @@
 id: DTeYpEuPv3KIHugUyqZPu
 title: 1226 First Day
 desc: ""
-updated: 1640962046607
+updated: 1640963987665
 created: 1640525260857
 tags:
   - PROG.Dendron
@@ -13,10 +13,12 @@ tags:
 ### 建置並預覽筆記
 
 - Preview
+
   http://localhost:3000 在本機查看網站，`CTRL-C` 離開終端機。
   `npx dendron publish dev`
 
 - Publish
+
   以 target github 輸出網站
   `npx dendron publish export --target github`
 
