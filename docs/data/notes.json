@@ -11,8 +11,8 @@
       "links": [],
       "anchors": {},
       "fname": "403",
-      "updated": 1640955299063,
-      "created": 1640955299063,
+      "updated": 1640962052133,
+      "created": 1640962052133,
       "parent": null,
       "children": [],
       "data": {}
@@ -598,10 +598,10 @@
           "column": 0,
           "depth": 2
         },
-        "build-and-preview-your-notes": {
+        "建置並預覽筆記": {
           "type": "header",
-          "text": "Build and preview your notes",
-          "value": "build-and-preview-your-notes",
+          "text": "建置並預覽筆記",
+          "value": "建置並預覽筆記",
           "line": 12,
           "column": 0,
           "depth": 3
@@ -610,7 +610,7 @@
           "type": "header",
           "text": ".next 專案 fork 來源",
           "value": "next-專案-fork-來源",
-          "line": 28,
+          "line": 27,
           "column": 0,
           "depth": 3
         },
@@ -618,34 +618,34 @@
           "type": "header",
           "text": "問題紀錄",
           "value": "問題紀錄",
-          "line": 34,
+          "line": 33,
           "column": 0,
           "depth": 2
         },
         "github-page-build-失敗": {
           "type": "header",
-          "text": "github page build 失敗:",
+          "text": "github page build 失敗",
           "value": "github-page-build-失敗",
-          "line": 36,
+          "line": 35,
           "column": 0,
           "depth": 3
         },
-        "npx-dendron-publish-dev-ctric-以後-port-沒有清掉": {
+        "npx-dendron-publish-dev-ctrlc-以後-port-沒有清掉": {
           "type": "header",
-          "text": "npx dendron publish dev ctri+c 以後 port 沒有清掉",
-          "value": "npx-dendron-publish-dev-ctric-以後-port-沒有清掉",
+          "text": "npx dendron publish dev ctrl+c 以後 port 沒有清掉",
+          "value": "npx-dendron-publish-dev-ctrlc-以後-port-沒有清掉",
           "line": 64,
           "column": 0,
           "depth": 3
         }
       },
       "fname": "drops.2021.1226-first-day",
-      "updated": 1640953295253,
+      "updated": 1640962046607,
       "created": 1640525260857,
       "parent": "XVdxhzTnAX2SQnuApjkXj",
       "children": [],
       "data": {},
-      "contentHash": "783681d43b3baa3e10ff6ee1329c2203",
+      "contentHash": "fb7c649b5ed38e04d3299fbf00d7e2a8",
       "custom": {},
       "tags": [
         "PROG.Dendron"

@@ -1,20 +1,15 @@
 <h1 id="1226-first-day"><a aria-hidden="true" class="anchor-heading" href="#1226-first-day"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>1226 First Day</h1>
 <h2 id="首次使用-dendron-紀錄"><a aria-hidden="true" class="anchor-heading" href="#首次使用-dendron-紀錄"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>首次使用 Dendron 紀錄</h2>
-<h3 id="build-and-preview-your-notes"><a aria-hidden="true" class="anchor-heading" href="#build-and-preview-your-notes"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Build and preview your notes</h3>
+<h3 id="建置並預覽筆記"><a aria-hidden="true" class="anchor-heading" href="#建置並預覽筆記"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>建置並預覽筆記</h3>
 <ul>
 <li>
-<p>Run this command inside the root of your workspace</p>
-</li>
-<li>
-<p>This command launches a development server which previews how your published website will look like. Visit http://localhost:3000 to accesss your site.</p>
-</li>
-<li>
-<p>Enter CTRL-C on the terminal to exit the preview
+<p>Preview
+http://localhost:3000 在本機查看網站，<code>CTRL-C</code> 離開終端機。
 <code>npx dendron publish dev</code></p>
 </li>
 <li>
-<p>Publish your notes
-NOTE: we're running export with the github target
+<p>Publish
+以 target github 輸出網站
 <code>npx dendron publish export --target github</code></p>
 </li>
 </ul>
@@ -25,7 +20,7 @@ NOTE: we're running export with the github target
 <p><a href="https://github.com/dendronhq/nextjs-template">https://github.com/dendronhq/nextjs-template</a></p>
 <hr>
 <h2 id="問題紀錄"><a aria-hidden="true" class="anchor-heading" href="#問題紀錄"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>問題紀錄</h2>
-<h3 id="github-page-build-失敗"><a aria-hidden="true" class="anchor-heading" href="#github-page-build-失敗"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>github page build 失敗:</h3>
+<h3 id="github-page-build-失敗"><a aria-hidden="true" class="anchor-heading" href="#github-page-build-失敗"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>github page build 失敗</h3>
 <pre class="language-bash"><code class="language-bash">  /usr/bin/git submodule <span class="token function">sync</span>
   Error: fatal: No url found <span class="token keyword">for</span> submodule path <span class="token string">'.next'</span> <span class="token keyword">in</span> .gitmodules
 </code></pre>
@@ -34,19 +29,20 @@ NOTE: we're running export with the github target
 <ul>
 <li>問題起因: <code>git submodule update --init</code> 發生 No submodule mapping found in .gitmodules 問題。</li>
 </ul>
-<p>我覺得應該是一開始我 <code>git init</code> 時忘記先將 .next 排除版控 <code>echo .next >> .gitignore</code>。</p>
-<p>造成 .git 版控出了一些問題(.next 自己也有一個 .git 版控)</p>
+<p>覺得應該是一開始我 <code>git init</code> 時，忘記先將 .next 排除版控 <code>echo .next >> .gitignore</code>。</p>
+<p>造成 .git 版控出了一些問題 (.next 自己也有一個 .git 版控)，執行下面的指令後就好了。</p>
 <ul>
 <li>
 <p><code>git rm --cached .next</code></p>
 <p><a href="https://git-scm.com/docs/git-rm">git 官網參數說明</a></p>
 <pre class="language-bash"><code class="language-bash">--cached
-Use this option to unstage and remove paths only from the index. Working tree files, whether modified or not, will be left alone.
+Use this option to unstage and remove paths only from the index.
+Working tree files, whether modified or not, will be left alone.
 </code></pre>
+<p>取消追蹤 .next 資料夾版控後，github page build 就可以順利完成 github page 的 build 了 😄</p>
 </li>
 </ul>
-<p>取消追蹤 .next 資料夾版控後，github page build 就可以順利完成了 😄</p>
-<h3 id="npx-dendron-publish-dev-ctric-以後-port-沒有清掉"><a aria-hidden="true" class="anchor-heading" href="#npx-dendron-publish-dev-ctric-以後-port-沒有清掉"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>npx dendron publish dev ctri+c 以後 port 沒有清掉</h3>
+<h3 id="npx-dendron-publish-dev-ctrlc-以後-port-沒有清掉"><a aria-hidden="true" class="anchor-heading" href="#npx-dendron-publish-dev-ctrlc-以後-port-沒有清掉"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>npx dendron publish dev ctrl+c 以後 port 沒有清掉</h3>
 <p><code>netstat -a</code> 查看使用中連線</p>
 <p><code>npx kill-port 3000</code> 清除 3000 port</p>
 <p>參考網址: <a href="https://stackoverflow.com/questions/39632667/how-do-i-kill-the-process-currently-using-a-port-on-localhost-in-windows">https://stackoverflow.com/questions/39632667/how-do-i-kill-the-process-currently-using-a-port-on-localhost-in-windows</a></p>

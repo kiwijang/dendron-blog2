@@ -2,15 +2,14 @@
 
 ## 首次使用 Dendron 紀錄
 
-### Build and preview your notes
+### 建置並預覽筆記
 
-- Run this command inside the root of your workspace
-- This command launches a development server which previews how your published website will look like. Visit http://localhost:3000 to accesss your site.
-- Enter CTRL-C on the terminal to exit the preview
+- Preview
+  http://localhost:3000 在本機查看網站，`CTRL-C` 離開終端機。
   `npx dendron publish dev`
 
-- Publish your notes
-  NOTE: we're running export with the github target
+- Publish
+  以 target github 輸出網站
   `npx dendron publish export --target github`
 
 參考資料:
@@ -26,7 +25,7 @@ https://github.com/dendronhq/nextjs-template
 
 ## 問題紀錄
 
-### github page build 失敗:
+### github page build 失敗
 
 ```bash
   /usr/bin/git submodule sync
@@ -39,9 +38,9 @@ https://github.com/dendronhq/nextjs-template
 
 - 問題起因: `git submodule update --init` 發生 No submodule mapping found in .gitmodules 問題。
 
-我覺得應該是一開始我 `git init` 時忘記先將 .next 排除版控 `echo .next >> .gitignore`。
+覺得應該是一開始我 `git init` 時，忘記先將 .next 排除版控 `echo .next >> .gitignore`。
 
-造成 .git 版控出了一些問題(.next 自己也有一個 .git 版控)
+造成 .git 版控出了一些問題 (.next 自己也有一個 .git 版控)，執行下面的指令後就好了。
 
 - `git rm --cached .next`
 
@@ -49,12 +48,13 @@ https://github.com/dendronhq/nextjs-template
 
   ```bash
   --cached
-  Use this option to unstage and remove paths only from the index. Working tree files, whether modified or not, will be left alone.
+  Use this option to unstage and remove paths only from the index.
+  Working tree files, whether modified or not, will be left alone.
   ```
 
-取消追蹤 .next 資料夾版控後，github page build 就可以順利完成了 😄
+  取消追蹤 .next 資料夾版控後，github page build 就可以順利完成 github page 的 build 了 😄
 
-### npx dendron publish dev ctri+c 以後 port 沒有清掉
+### npx dendron publish dev ctrl+c 以後 port 沒有清掉
 
 `netstat -a` 查看使用中連線
 
