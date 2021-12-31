@@ -116,11 +116,11 @@ nx generate @nrwl/angular:component mycmp --project=myapp
 <p>It is important to have a clean git working directory before invoking a generator so that you can easily revert changes and re-invoke the generator with different inputs.</p>
 </li>
 </ul>
-<h3 id="2-8-小補充-關於-collection-為何都是這樣命名-xxxooo"><a aria-hidden="true" class="anchor-heading" href="#2-8-小補充-關於-collection-為何都是這樣命名-xxxooo"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>2-8. 小補充: 關於 collection 為何都是這樣命名? <code>@xxx/ooo</code></h3>
+<h3 id="2-8-小補充-關於-collection-為何都是xxxooo這樣命名"><a aria-hidden="true" class="anchor-heading" href="#2-8-小補充-關於-collection-為何都是xxxooo這樣命名"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>2-8. 小補充: 關於 collection 為何都是「＠xxx/ooo」這樣命名?</h3>
 <p>這是 npm 的命名規則，詳情可以參考 npm 官網影片: <a href="https://www.youtube.com/watch?v=O6JoXGnHK_Y">Working with npm private modules
 </a></p>
 <blockquote>
-<p><a title="Private" style="color: brown" href="https://wiki.dendron.so/notes/hfyvYGJZQiUwQaaxQO27q.html" target="_blank">@後的字稱為 (Private)</a> <code>@scope</code>，通常是 npm 的帳號名字(尤其要 publish 到 npm 上的話，就是 <code>@username</code> 的意思。)</p>
+<p>＠後的字稱為 <code>@scope</code>，通常是 npm 的帳號名字(尤其要 publish 到 npm 上的話，就是 <code>@username</code> 的意思。)</p>
 </blockquote>
 <p><img src="/dendron-blog2/assets/images/2021-12-28-21-53-15.png"></p>
 <h2 id="3-感受一下-nx-的-monorepo-專案"><a aria-hidden="true" class="anchor-heading" href="#3-感受一下-nx-的-monorepo-專案"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>3. 感受一下 Nx 的 monorepo 專案</h2>
@@ -193,9 +193,9 @@ nx generate @nrwl/angular:component mycmp --project=myapp
 </ul>
 </li>
 </ul>
-<p>###<code>nx generate</code></p>
-<p>當你按下 <code>Generate</code> 的按鈕時，就會幫你執行 <code>nx generate</code>，並根據 <code>generator</code> (<code>schematic</code>) 產生預期的結果。</p>
 <h3 id="4-2-nx-generate-常見的-collection"><a aria-hidden="true" class="anchor-heading" href="#4-2-nx-generate-常見的-collection"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>4-2. nx generate (常見的 collection)</h3>
+<p>當你按下 <code>Generate</code> 的按鈕時，就會幫你執行 <code>nx generate</code>，並根據 <code>generator</code> (<code>schematic</code>) 產生預期的結果。
+以下列出常見的 collection:</p>
 <ol>
 <li>
 <p><code>@angular/cdk</code></p>

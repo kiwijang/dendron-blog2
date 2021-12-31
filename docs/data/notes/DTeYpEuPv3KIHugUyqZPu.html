@@ -15,11 +15,41 @@
 <li>
 <p>Publish your notes
 NOTE: we're running export with the github target
-<code>dendron publish export --target github</code></p>
+<code>npx dendron publish export --target github</code></p>
 </li>
 </ul>
 <p>參考資料:
 <a href="https://wiki.dendron.so/notes/yg3EL1x9fEe4NMqxUC3jP/">https://wiki.dendron.so/notes/yg3EL1x9fEe4NMqxUC3jP/</a></p>
+<hr>
+<h3 id="next-專案-fork-來源"><a aria-hidden="true" class="anchor-heading" href="#next-專案-fork-來源"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>.next 專案 fork 來源</h3>
+<p><a href="https://github.com/dendronhq/nextjs-template">https://github.com/dendronhq/nextjs-template</a></p>
+<hr>
+<h2 id="問題紀錄"><a aria-hidden="true" class="anchor-heading" href="#問題紀錄"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>問題紀錄</h2>
+<h3 id="github-page-build-失敗"><a aria-hidden="true" class="anchor-heading" href="#github-page-build-失敗"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>github page build 失敗:</h3>
+<pre class="language-bash"><code class="language-bash">  /usr/bin/git submodule <span class="token function">sync</span>
+  Error: fatal: No url found <span class="token keyword">for</span> submodule path <span class="token string">'.next'</span> <span class="token keyword">in</span> .gitmodules
+</code></pre>
+<p><img src="/dendron-blog2/assets/images/2021-12-31-19-23-24.png"></p>
+<p>解答: <a href="https://stackoverflow.com/questions/4185365/no-submodule-mapping-found-in-gitmodule-for-a-path-thats-not-a-submodule">https://stackoverflow.com/questions/4185365/no-submodule-mapping-found-in-gitmodule-for-a-path-thats-not-a-submodule</a></p>
+<ul>
+<li>問題起因: <code>git submodule update --init</code> 發生 No submodule mapping found in .gitmodules 問題。</li>
+</ul>
+<p>我覺得應該是一開始我 <code>git init</code> 時忘記先將 .next 排除版控 <code>echo .next >> .gitignore</code>。</p>
+<p>造成 .git 版控出了一些問題(.next 自己也有一個 .git 版控)</p>
+<ul>
+<li>
+<p><code>git rm --cached .next</code></p>
+<p><a href="https://git-scm.com/docs/git-rm">git 官網參數說明</a></p>
+<pre class="language-bash"><code class="language-bash">--cached
+Use this option to unstage and remove paths only from the index. Working tree files, whether modified or not, will be left alone.
+</code></pre>
+</li>
+</ul>
+<p>取消追蹤 .next 資料夾版控後，github page build 就可以順利完成了 😄</p>
+<h3 id="npx-dendron-publish-dev-ctric-以後-port-沒有清掉"><a aria-hidden="true" class="anchor-heading" href="#npx-dendron-publish-dev-ctric-以後-port-沒有清掉"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>npx dendron publish dev ctri+c 以後 port 沒有清掉</h3>
+<p><code>netstat -a</code> 查看使用中連線</p>
+<p><code>npx kill-port 3000</code> 清除 3000 port</p>
+<p>參考網址: <a href="https://stackoverflow.com/questions/39632667/how-do-i-kill-the-process-currently-using-a-port-on-localhost-in-windows">https://stackoverflow.com/questions/39632667/how-do-i-kill-the-process-currently-using-a-port-on-localhost-in-windows</a></p>
 <hr>
 <h2 id="backlinks"><a aria-hidden="true" class="anchor-heading" href="#backlinks"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Backlinks</h2>
 <ul>

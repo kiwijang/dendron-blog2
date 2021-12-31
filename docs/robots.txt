@@ -1,9 +1,0 @@
-# *
-User-agent: *
-Allow: /
-
-# Host
-Host: https://kiwijang.github.io/dendron-blog
-
-# Sitemaps
-Sitemap: https://kiwijang.github.io/dendron-blog/sitemap.xml
