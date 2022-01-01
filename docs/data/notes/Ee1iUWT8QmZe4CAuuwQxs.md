@@ -45,7 +45,8 @@ Monorepo 架構的主要目的是希望集中管理套件版本。
 
 ![](assets/images/2021-12-27-23-55-50.png)
 
-> 聰明、可擴充的建置框架，Nx 幫助任何規模的架構、測試、建置。(Smart, Extensible Build Framework Nx helps architect, test, build at any scale:)
+> 聰明、可擴充的建置框架，Nx 幫助任何規模的架構、測試、建置。
+> (Smart, Extensible Build Framework Nx helps architect, test, build at any scale:)
 
 - 以現代框架進行整合。(integrations with modern frameworks)
 - 計算快取。(computation caching)
@@ -54,7 +55,7 @@ Monorepo 架構的主要目的是希望集中管理套件版本。
 - 強大的程式碼產生器。(powerful code generators)
 - 支援 VSCode 和 WebStorm 編輯器。(editor support (VSCode, WebStorm))
 - (GitHub apps)
-- (and more.)
+- 還有更多。(and more.)
 
 ### 2-2. Nx 的製作團隊
 
@@ -65,15 +66,18 @@ narwhal 簡寫 Nrwl，是獨角鯨的英文。
 顧問、工程、訓練。
 Consulting. Engineering. Training.
 
-Nrwl 創立於 2016 12 月，以 Angular 團隊成員、多位前 Google 員工、eff Cross、Victor Savkin 所組成。
+Nrwl 創立於 2016 12 月，以 Angular 團隊成員、多位前 Google 員工、Jeff Cross、Victor Savkin 所組成。
+
 如今已有 18 位左右成員 (在美國、加拿大和英國)。
+
 Nrwl 也是開源開發工具們的製作者: 給 monorepo 開發用的 Nx、和 Angular Console。
+
 Nrwl was founded in December 2016 by Angular team members and former Googlers, Jeff Cross and Victor Savkin, and today has around 18 team members in the US, Canada and UK.
 Nrwl is also the creator of open-source dev tools: Nx for monorepo development, and Angular Console.
 
 ### 2-3. Angular monorepo patterns
 
-這本書說明了 nx 是如何實踐 monerepo 概念
+這本書說明了 nx 是如何實踐 monerepo 概念。
 
 ![](assets/images/2021-12-27-23-59-52.png)
 
@@ -120,8 +124,8 @@ Nrwl is also the creator of open-source dev tools: Nx for monorepo development, 
 
 - Generators (產生器)
   產生器提供了一種方法，來自動執行您在開發工作流程中，經常執行的許多任務。
-  在 Nx 中，可以使用 @nrwl/devkit 或 @angular-devkit ，來製作產生器。
-  使用 @angular-devkit 製作的稱為 schematics (原理圖)
+  在 Nx 中，可以使用 `@nrwl/devkit` 或 `@angular-devkit` ，來製作產生器。
+  使用 `@angular-devkit` 製作的稱為 schematics (原理圖)。
 
   下圖為 Nx 官網的 sidebar 的一小部分截圖，可以看見 Generator 有不少篇幅介紹。
 

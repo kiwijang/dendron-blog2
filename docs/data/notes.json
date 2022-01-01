@@ -11,8 +11,8 @@
       "links": [],
       "anchors": {},
       "fname": "403",
-      "updated": 1641041898567,
-      "created": 1641041898567,
+      "updated": 1641042552698,
+      "created": 1641042552698,
       "parent": null,
       "children": [],
       "data": {}
@@ -267,87 +267,6 @@
           "to": {
             "fname": "tags.PROG.Nx"
           }
-        },
-        {
-          "type": "wiki",
-          "from": {
-            "fname": "drops.2021.1227-從Nx入門monorepo",
-            "id": "Ee1iUWT8QmZe4CAuuwQxs",
-            "vaultName": "vault"
-          },
-          "value": "user.nrwl/devkit",
-          "alias": "@nrwl/devkit",
-          "position": {
-            "start": {
-              "line": 122,
-              "column": 15,
-              "offset": 3604
-            },
-            "end": {
-              "line": 122,
-              "column": 27,
-              "offset": 3616
-            },
-            "indent": []
-          },
-          "xvault": false,
-          "to": {
-            "fname": "user.nrwl/devkit"
-          }
-        },
-        {
-          "type": "wiki",
-          "from": {
-            "fname": "drops.2021.1227-從Nx入門monorepo",
-            "id": "Ee1iUWT8QmZe4CAuuwQxs",
-            "vaultName": "vault"
-          },
-          "value": "user.angular-devkit",
-          "alias": "@angular-devkit",
-          "position": {
-            "start": {
-              "line": 122,
-              "column": 30,
-              "offset": 3619
-            },
-            "end": {
-              "line": 122,
-              "column": 45,
-              "offset": 3634
-            },
-            "indent": []
-          },
-          "xvault": false,
-          "to": {
-            "fname": "user.angular-devkit"
-          }
-        },
-        {
-          "type": "wiki",
-          "from": {
-            "fname": "drops.2021.1227-從Nx入門monorepo",
-            "id": "Ee1iUWT8QmZe4CAuuwQxs",
-            "vaultName": "vault"
-          },
-          "value": "user.angular-devkit",
-          "alias": "@angular-devkit",
-          "position": {
-            "start": {
-              "line": 123,
-              "column": 6,
-              "offset": 3650
-            },
-            "end": {
-              "line": 123,
-              "column": 21,
-              "offset": 3665
-            },
-            "indent": []
-          },
-          "xvault": false,
-          "to": {
-            "fname": "user.angular-devkit"
-          }
         }
       ],
       "anchors": {
@@ -387,7 +306,7 @@
           "type": "header",
           "text": "2-2. Nx 的製作團隊",
           "value": "2-2-nx-的製作團隊",
-          "line": 66,
+          "line": 67,
           "column": 0,
           "depth": 3
         },
@@ -395,7 +314,7 @@
           "type": "header",
           "text": "2-3. Angular monorepo patterns",
           "value": "2-3-angular-monorepo-patterns",
-          "line": 81,
+          "line": 85,
           "column": 0,
           "depth": 3
         },
@@ -403,7 +322,7 @@
           "type": "header",
           "text": "2-4. Nx 與 Angular 淵源不淺",
           "value": "2-4-nx-與-angular-淵源不淺",
-          "line": 90,
+          "line": 94,
           "column": 0,
           "depth": 3
         },
@@ -411,7 +330,7 @@
           "type": "header",
           "text": "2-5. Angular 詞彙表",
           "value": "2-5-angular-詞彙表",
-          "line": 98,
+          "line": 102,
           "column": 0,
           "depth": 3
         },
@@ -419,7 +338,7 @@
           "type": "header",
           "text": "2-6. Nx 名詞解釋",
           "value": "2-6-nx-名詞解釋",
-          "line": 126,
+          "line": 130,
           "column": 0,
           "depth": 3
         },
@@ -427,7 +346,7 @@
           "type": "header",
           "text": "2-7. Nx 的 Generators 的使用方式",
           "value": "2-7-nx-的-generators-的使用方式",
-          "line": 137,
+          "line": 141,
           "column": 0,
           "depth": 3
         },
@@ -435,7 +354,7 @@
           "type": "header",
           "text": "2-8. 小補充: 關於 collection 為何都是「＠xxx/ooo」這樣命名?",
           "value": "2-8-小補充-關於-collection-為何都是xxxooo這樣命名",
-          "line": 158,
+          "line": 162,
           "column": 0,
           "depth": 3
         },
@@ -443,7 +362,7 @@
           "type": "header",
           "text": "3. 感受一下 Nx 的 monorepo 專案",
           "value": "3-感受一下-nx-的-monorepo-專案",
-          "line": 167,
+          "line": 171,
           "column": 0,
           "depth": 2
         },
@@ -451,7 +370,7 @@
           "type": "header",
           "text": "3-1. 產生一個 Nx 的 workspace",
           "value": "3-1-產生一個-nx-的-workspace",
-          "line": 177,
+          "line": 181,
           "column": 0,
           "depth": 3
         },
@@ -459,7 +378,7 @@
           "type": "header",
           "text": "3-2. Nx 的 workspace 圖示",
           "value": "3-2-nx-的-workspace-圖示",
-          "line": 183,
+          "line": 187,
           "column": 0,
           "depth": 3
         },
@@ -467,7 +386,7 @@
           "type": "header",
           "text": "4. 快速上手 Nx Console 操作 (Generate、Run)",
           "value": "4-快速上手-nx-console-操作-generaterun",
-          "line": 189,
+          "line": 193,
           "column": 0,
           "depth": 2
         },
@@ -475,7 +394,7 @@
           "type": "header",
           "text": "4-1. Nx Console 簡介",
           "value": "4-1-nx-console-簡介",
-          "line": 191,
+          "line": 195,
           "column": 0,
           "depth": 3
         },
@@ -483,7 +402,7 @@
           "type": "header",
           "text": "4-2. nx generate (常見的 collection)",
           "value": "4-2-nx-generate-常見的-collection",
-          "line": 238,
+          "line": 242,
           "column": 0,
           "depth": 3
         },
@@ -491,7 +410,7 @@
           "type": "header",
           "text": "4-3. 產生 Library 有三個 schematic 可以用",
           "value": "4-3-產生-library-有三個-schematic-可以用",
-          "line": 266,
+          "line": 270,
           "column": 0,
           "depth": 3
         },
@@ -499,7 +418,7 @@
           "type": "header",
           "text": "4-4. nx run",
           "value": "4-4-nx-run",
-          "line": 292,
+          "line": 296,
           "column": 0,
           "depth": 3
         },
@@ -507,7 +426,7 @@
           "type": "header",
           "text": "5. 其他補充",
           "value": "5-其他補充",
-          "line": 303,
+          "line": 307,
           "column": 0,
           "depth": 2
         },
@@ -515,7 +434,7 @@
           "type": "header",
           "text": "5-1. 常見的 Monorepo 架構開發工具",
           "value": "5-1-常見的-monorepo-架構開發工具",
-          "line": 305,
+          "line": 309,
           "column": 0,
           "depth": 3
         },
@@ -523,7 +442,7 @@
           "type": "header",
           "text": "5-2. 誤解: Nx 和 Yarn Workspace/Lerna 只能擇一使用?",
           "value": "5-2-誤解-nx-和-yarn-workspacelerna-只能擇一使用",
-          "line": 311,
+          "line": 315,
           "column": 0,
           "depth": 3
         },
@@ -531,7 +450,7 @@
           "type": "header",
           "text": "5-3. 查看有哪些 Nx plugin 可以使用",
           "value": "5-3-查看有哪些-nx-plugin-可以使用",
-          "line": 326,
+          "line": 330,
           "column": 0,
           "depth": 3
         },
@@ -539,7 +458,7 @@
           "type": "header",
           "text": "5-4. Nx 13",
           "value": "5-4-nx-13",
-          "line": 333,
+          "line": 337,
           "column": 0,
           "depth": 3
         },
@@ -547,18 +466,18 @@
           "type": "header",
           "text": "5-5. Nx 學習資源",
           "value": "5-5-nx-學習資源",
-          "line": 342,
+          "line": 346,
           "column": 0,
           "depth": 3
         }
       },
       "fname": "drops.2021.1227-從Nx入門monorepo",
-      "updated": 1641041893864,
+      "updated": 1641042503441,
       "created": 1640615759253,
       "parent": "XVdxhzTnAX2SQnuApjkXj",
       "children": [],
       "data": {},
-      "contentHash": "b73245ca2216b9d586d3818b9f2caf2b",
+      "contentHash": "b5e1a68cc8ea1de62e8abddbad3cf904",
       "custom": {},
       "tags": [
         "PROG.Nx"
@@ -646,7 +565,7 @@
           "type": "header",
           "text": ".next 專案 fork 來源",
           "value": "next-專案-fork-來源",
-          "line": 72,
+          "line": 74,
           "column": 0,
           "depth": 3
         },
@@ -654,7 +573,7 @@
           "type": "header",
           "text": "問題紀錄",
           "value": "問題紀錄",
-          "line": 78,
+          "line": 80,
           "column": 0,
           "depth": 2
         },
@@ -662,7 +581,7 @@
           "type": "header",
           "text": "github page build 失敗",
           "value": "github-page-build-失敗",
-          "line": 80,
+          "line": 82,
           "column": 0,
           "depth": 3
         },
@@ -670,7 +589,7 @@
           "type": "header",
           "text": "npx dendron publish dev ctrl+c 以後 port 沒有清掉",
           "value": "npx-dendron-publish-dev-ctrlc-以後-port-沒有清掉",
-          "line": 109,
+          "line": 111,
           "column": 0,
           "depth": 3
         },
@@ -678,18 +597,18 @@
           "type": "header",
           "text": "加入 Disqus 留言板",
           "value": "加入-disqus-留言板",
-          "line": 117,
+          "line": 119,
           "column": 0,
           "depth": 3
         }
       },
       "fname": "drops.2021.1226-first-day",
-      "updated": 1641017222124,
+      "updated": 1641042085098,
       "created": 1640525260857,
       "parent": "XVdxhzTnAX2SQnuApjkXj",
       "children": [],
       "data": {},
-      "contentHash": "4fb0eb9a9b7fe1459c74a9fee914fd9c",
+      "contentHash": "6f95fa4653c57d2f8de99b47108edead",
       "custom": {},
       "tags": [
         "PROG.Dendron"

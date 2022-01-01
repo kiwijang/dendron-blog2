@@ -2,7 +2,7 @@
 id: DTeYpEuPv3KIHugUyqZPu
 title: 1226 First Day
 desc: ""
-updated: 1641017222124
+updated: 1641042085098
 created: 1640525260857
 tags:
   - PROG.Dendron
@@ -55,15 +55,17 @@ Dendron 主打方便取出筆記 (get notes back out)。
 
 ### 建置並預覽筆記
 
-- Preview
+- **Preview**
 
-  http://localhost:3000 在本機查看網站，`CTRL-C` 離開終端機。
   `npx dendron publish dev`
 
-- Publish
+  http://localhost:3000 在本機查看網站，`Crtl+C` 離開終端機。
 
-  以 target github 輸出網站
+- **Publish**
+
   `npx dendron publish export --target github`
+
+  以 target github 輸出網站。
 
 參考資料:
 https://wiki.dendron.so/notes/yg3EL1x9fEe4NMqxUC3jP/
@@ -105,13 +107,13 @@ https://github.com/dendronhq/nextjs-template
   Working tree files, whether modified or not, will be left alone.
   ```
 
-  取消追蹤 .next 資料夾版控後，github page build 就可以順利完成 github page 的 build 了 😄
+  取消追蹤 .next 資料夾版控後，github page build 就可以順利完成 github page 的 build 了。 😄
 
 ### npx dendron publish dev ctrl+c 以後 port 沒有清掉
 
-`netstat -a` 查看使用中連線
+`netstat -a` 查看使用中連線。
 
-`npx kill-port 3000` 清除 3000 port
+`npx kill-port 3000` 清除 3000 port。
 
 參考網址: https://stackoverflow.com/questions/39632667/how-do-i-kill-the-process-currently-using-a-port-on-localhost-in-windows
 
