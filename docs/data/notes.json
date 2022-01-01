@@ -11,8 +11,8 @@
       "links": [],
       "anchors": {},
       "fname": "403",
-      "updated": 1641020479805,
-      "created": 1641020479805,
+      "updated": 1641041898567,
+      "created": 1641041898567,
       "parent": null,
       "children": [],
       "data": {}
@@ -212,12 +212,12 @@
       "links": [],
       "anchors": {},
       "fname": "drops.about",
-      "updated": 1641019122617,
+      "updated": 1641029020367,
       "created": 1641017236114,
       "parent": "u4tSbmkJewrKonY3sL544",
       "children": [],
       "data": {},
-      "contentHash": "a06615c62a4a608ff2f45d857dd3a7d7",
+      "contentHash": "0f9a050411676d8b50668cce8d2221b2",
       "custom": {}
     },
     "XVdxhzTnAX2SQnuApjkXj": {
@@ -279,14 +279,14 @@
           "alias": "@nrwl/devkit",
           "position": {
             "start": {
-              "line": 118,
+              "line": 122,
               "column": 15,
-              "offset": 3308
+              "offset": 3604
             },
             "end": {
-              "line": 118,
+              "line": 122,
               "column": 27,
-              "offset": 3320
+              "offset": 3616
             },
             "indent": []
           },
@@ -306,14 +306,14 @@
           "alias": "@angular-devkit",
           "position": {
             "start": {
-              "line": 118,
+              "line": 122,
               "column": 30,
-              "offset": 3323
+              "offset": 3619
             },
             "end": {
-              "line": 118,
+              "line": 122,
               "column": 45,
-              "offset": 3338
+              "offset": 3634
             },
             "indent": []
           },
@@ -333,14 +333,14 @@
           "alias": "@angular-devkit",
           "position": {
             "start": {
-              "line": 119,
+              "line": 123,
               "column": 6,
-              "offset": 3354
+              "offset": 3650
             },
             "end": {
-              "line": 119,
+              "line": 123,
               "column": 21,
-              "offset": 3369
+              "offset": 3665
             },
             "indent": []
           },
@@ -387,7 +387,7 @@
           "type": "header",
           "text": "2-2. Nx 的製作團隊",
           "value": "2-2-nx-的製作團隊",
-          "line": 67,
+          "line": 66,
           "column": 0,
           "depth": 3
         },
@@ -395,7 +395,7 @@
           "type": "header",
           "text": "2-3. Angular monorepo patterns",
           "value": "2-3-angular-monorepo-patterns",
-          "line": 77,
+          "line": 81,
           "column": 0,
           "depth": 3
         },
@@ -403,7 +403,7 @@
           "type": "header",
           "text": "2-4. Nx 與 Angular 淵源不淺",
           "value": "2-4-nx-與-angular-淵源不淺",
-          "line": 86,
+          "line": 90,
           "column": 0,
           "depth": 3
         },
@@ -411,7 +411,7 @@
           "type": "header",
           "text": "2-5. Angular 詞彙表",
           "value": "2-5-angular-詞彙表",
-          "line": 94,
+          "line": 98,
           "column": 0,
           "depth": 3
         },
@@ -419,7 +419,7 @@
           "type": "header",
           "text": "2-6. Nx 名詞解釋",
           "value": "2-6-nx-名詞解釋",
-          "line": 122,
+          "line": 126,
           "column": 0,
           "depth": 3
         },
@@ -427,7 +427,7 @@
           "type": "header",
           "text": "2-7. Nx 的 Generators 的使用方式",
           "value": "2-7-nx-的-generators-的使用方式",
-          "line": 133,
+          "line": 137,
           "column": 0,
           "depth": 3
         },
@@ -435,7 +435,7 @@
           "type": "header",
           "text": "2-8. 小補充: 關於 collection 為何都是「＠xxx/ooo」這樣命名?",
           "value": "2-8-小補充-關於-collection-為何都是xxxooo這樣命名",
-          "line": 152,
+          "line": 158,
           "column": 0,
           "depth": 3
         },
@@ -443,7 +443,7 @@
           "type": "header",
           "text": "3. 感受一下 Nx 的 monorepo 專案",
           "value": "3-感受一下-nx-的-monorepo-專案",
-          "line": 161,
+          "line": 167,
           "column": 0,
           "depth": 2
         },
@@ -451,7 +451,7 @@
           "type": "header",
           "text": "3-1. 產生一個 Nx 的 workspace",
           "value": "3-1-產生一個-nx-的-workspace",
-          "line": 171,
+          "line": 177,
           "column": 0,
           "depth": 3
         },
@@ -459,7 +459,7 @@
           "type": "header",
           "text": "3-2. Nx 的 workspace 圖示",
           "value": "3-2-nx-的-workspace-圖示",
-          "line": 177,
+          "line": 183,
           "column": 0,
           "depth": 3
         },
@@ -467,7 +467,7 @@
           "type": "header",
           "text": "4. 快速上手 Nx Console 操作 (Generate、Run)",
           "value": "4-快速上手-nx-console-操作-generaterun",
-          "line": 183,
+          "line": 189,
           "column": 0,
           "depth": 2
         },
@@ -475,7 +475,7 @@
           "type": "header",
           "text": "4-1. Nx Console 簡介",
           "value": "4-1-nx-console-簡介",
-          "line": 185,
+          "line": 191,
           "column": 0,
           "depth": 3
         },
@@ -483,7 +483,7 @@
           "type": "header",
           "text": "4-2. nx generate (常見的 collection)",
           "value": "4-2-nx-generate-常見的-collection",
-          "line": 232,
+          "line": 238,
           "column": 0,
           "depth": 3
         },
@@ -491,7 +491,7 @@
           "type": "header",
           "text": "4-3. 產生 Library 有三個 schematic 可以用",
           "value": "4-3-產生-library-有三個-schematic-可以用",
-          "line": 260,
+          "line": 266,
           "column": 0,
           "depth": 3
         },
@@ -499,7 +499,7 @@
           "type": "header",
           "text": "4-4. nx run",
           "value": "4-4-nx-run",
-          "line": 286,
+          "line": 292,
           "column": 0,
           "depth": 3
         },
@@ -507,7 +507,7 @@
           "type": "header",
           "text": "5. 其他補充",
           "value": "5-其他補充",
-          "line": 297,
+          "line": 303,
           "column": 0,
           "depth": 2
         },
@@ -515,7 +515,7 @@
           "type": "header",
           "text": "5-1. 常見的 Monorepo 架構開發工具",
           "value": "5-1-常見的-monorepo-架構開發工具",
-          "line": 299,
+          "line": 305,
           "column": 0,
           "depth": 3
         },
@@ -523,7 +523,7 @@
           "type": "header",
           "text": "5-2. 誤解: Nx 和 Yarn Workspace/Lerna 只能擇一使用?",
           "value": "5-2-誤解-nx-和-yarn-workspacelerna-只能擇一使用",
-          "line": 305,
+          "line": 311,
           "column": 0,
           "depth": 3
         },
@@ -531,7 +531,7 @@
           "type": "header",
           "text": "5-3. 查看有哪些 Nx plugin 可以使用",
           "value": "5-3-查看有哪些-nx-plugin-可以使用",
-          "line": 320,
+          "line": 326,
           "column": 0,
           "depth": 3
         },
@@ -539,7 +539,7 @@
           "type": "header",
           "text": "5-4. Nx 13",
           "value": "5-4-nx-13",
-          "line": 327,
+          "line": 333,
           "column": 0,
           "depth": 3
         },
@@ -547,18 +547,18 @@
           "type": "header",
           "text": "5-5. Nx 學習資源",
           "value": "5-5-nx-學習資源",
-          "line": 336,
+          "line": 342,
           "column": 0,
           "depth": 3
         }
       },
       "fname": "drops.2021.1227-從Nx入門monorepo",
-      "updated": 1640963627727,
+      "updated": 1641041893864,
       "created": 1640615759253,
       "parent": "XVdxhzTnAX2SQnuApjkXj",
       "children": [],
       "data": {},
-      "contentHash": "9e3be376e359d4c3762b7b41a278e107",
+      "contentHash": "b73245ca2216b9d586d3818b9f2caf2b",
       "custom": {},
       "tags": [
         "PROG.Nx"

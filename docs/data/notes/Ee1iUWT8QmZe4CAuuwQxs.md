@@ -22,7 +22,7 @@ Monorepo (全名 Monolithic Repository)，符合以下三個條件:
 
 ![MonoRepo](assets/images/2021-12-27-22-50-05.png)
 
-Monorepo 架構的主要目地是希望集中管理套件版本。
+Monorepo 架構的主要目的是希望集中管理套件版本。
 
 透過只管理一個 `package.json`，可以發現好處是套件版本管理方便、而壞處是一個 repo 有多個 projects，檔案容易變非常大，讓 git 版控軟體跑起來較吃力。
 
@@ -35,7 +35,7 @@ Monorepo 架構的主要目地是希望集中管理套件版本。
 
 但 Nx 就像 monorepo 全家桶: 提供一個 Nx workspace 讓你的 monorepo 開發更容易。
 
-接下來，在看看 Nx 之前，先來一些先備知識 😆
+接下來，在看看 Nx 之前，先來一些先備知識。
 
 ## 2. 簡介 Nx 工具與專有名詞解釋
 
@@ -45,17 +45,16 @@ Monorepo 架構的主要目地是希望集中管理套件版本。
 
 ![](assets/images/2021-12-27-23-55-50.png)
 
-> Smart, Extensible Build Framework
-> Nx helps architect, test, build at any scale:
+> 聰明、可擴充的建置框架，Nx 幫助任何規模的架構、測試、建置。(Smart, Extensible Build Framework Nx helps architect, test, build at any scale:)
 
-- integrations with modern frameworks
-- computation caching
-- smart rebuilds of affected projects
-- distributed task execution
-- powerful code generators
-- editor support (VSCode, WebStorm)
-- GitHub apps
-- and more.
+- 以現代框架進行整合。(integrations with modern frameworks)
+- 計算快取。(computation caching)
+- 聰明的重新建置被修改過的專案。(smart rebuilds of affected projects)
+- 分散式任務執行。(distributed task execution)
+- 強大的程式碼產生器。(powerful code generators)
+- 支援 VSCode 和 WebStorm 編輯器。(editor support (VSCode, WebStorm))
+- (GitHub apps)
+- (and more.)
 
 ### 2-2. Nx 的製作團隊
 
@@ -63,7 +62,12 @@ narwhal 簡寫 Nrwl，是獨角鯨的英文。
 
 ![](assets/images/2021-12-27-23-57-12.png)
 
+顧問、工程、訓練。
 Consulting. Engineering. Training.
+
+Nrwl 創立於 2016 12 月，以 Angular 團隊成員、多位前 Google 員工、eff Cross、Victor Savkin 所組成。
+如今已有 18 位左右成員 (在美國、加拿大和英國)。
+Nrwl 也是開源開發工具們的製作者: 給 monorepo 開發用的 Nx、和 Angular Console。
 Nrwl was founded in December 2016 by Angular team members and former Googlers, Jeff Cross and Victor Savkin, and today has around 18 team members in the US, Canada and UK.
 Nrwl is also the creator of open-source dev tools: Nx for monorepo development, and Angular Console.
 
@@ -82,7 +86,7 @@ Nrwl is also the creator of open-source dev tools: Nx for monorepo development, 
 
 上面這兩位 Nx 開發的主導者是 Google 的前員工，且對 Angular 都有相當深入的理解。
 但 Nx 官網上有不少 react 的開發教學，如果有公司想要從 react 轉到 angular(或是 angular 轉 react 為主)，
-感覺透過 Nx 的幫助可以慢慢地移花接木(不然 Nx 也至少可以讓這兩框架和平共處 😆)
+感覺透過 Nx 的幫助可以慢慢地移花接木(不然 Nx 也至少可以讓這兩框架和平共處)。😆
 
 ### 2-5. Angular 詞彙表
 
@@ -131,8 +135,9 @@ Nrwl is also the creator of open-source dev tools: Nx for monorepo development, 
 
 以下是關於如何調用 gnerator 的內容(截自官網):
 
-- [Invoking Plugin Generators](https://nx.dev/l/a/generators/using-schematics#invoking-plugin-generators)
+- 調用插件產生器 [Invoking Plugin Generators](https://nx.dev/l/a/generators/using-schematics#invoking-plugin-generators)
 
+  產生器可以讓你以簡單和可重複的方式新增修改程式碼。可以使用 `nx generate` 指令來調用 (invoked) 產生器。
   Generators allow you to create or modify your codebase in a simple and repeatable way. Generators are invoked using the nx generate command.
 
   ```cmd
@@ -140,7 +145,8 @@ Nrwl is also the creator of open-source dev tools: Nx for monorepo development, 
   nx generate @nrwl/angular:component mycmp --project=myapp
   ```
 
-It is important to have a clean git working directory before invoking a generator so that you can easily revert changes and re-invoke the generator with different inputs.
+  在使用產生器前有一個乾淨的 git 工作路徑很重要，因為這樣你能輕易的還原變動 (revert changes)、並使用不一樣的設定來重新調用產生器。
+  It is important to have a clean git working directory before invoking a generator so that you can easily revert changes and re-invoke the generator with different inputs.
 
 ### 2-8. 小補充: 關於 collection 為何都是「＠xxx/ooo」這樣命名?
 
@@ -155,7 +161,7 @@ It is important to have a clean git working directory before invoking a generato
 
 - Angular workspace 的 libs 通常都會有一個自己的 `package.json`
 
-  ![](assets/images/2021-12-28-00-29-52.png)
+  ![](assets/images/2021-12-28-00-24-21.png)
 
 - Nx workspace 預設共用一個 `package.json`
 
@@ -184,7 +190,7 @@ https://www.npmjs.com/package/create-nx-workspace
 
 - Nx Console 前生今世
 
-  `Nx Console` 前生為 `Angular Console`，想請可以看這篇文章:
+  `Nx Console` 前生為 `Angular Console`，詳情可以看這篇文章:
   https://blog.nrwl.io/re-introducing-nx-console-a21fa9f4f668
 
   `Angular Console` 是一個桌面應用程式 (Desktop App)。
@@ -207,9 +213,9 @@ https://www.npmjs.com/package/create-nx-workspace
 
 - Nx Console 官網主打口號
 
-  - True UI for Nx
-  - Useful for both experts and beginners
-  - Documentation
+  - Nx 專用的純 UI 介面。(True UI for Nx)
+  - 專家和初學皆適用。(Useful for both experts and beginners)
+  - 豐富的文件說明。(Documentation)
 
 - 介面分三個區塊
 

@@ -2,7 +2,7 @@
 id: 03vN8OL5CrZW9GX2NX7oS
 title: About
 desc: ""
-updated: 1641019122617
+updated: 1641029020367
 created: 1641017236114
 ---
 
@@ -11,6 +11,12 @@ created: 1641017236114
 這個部落格是用 Dendron 官方提供的樣板製作而成的。😄
 
 紀錄工作上工作下的程式相關筆記。
+
+關於筆記內容:
+
+如果有時間會盡量翻譯原文，翻譯的地方會附上原文，因為自己不是專業的翻譯員，翻得不妥還有原文在。
+
+基本上會附上參考與引用的出處。
 
 [背景音樂 ✨](https://www.youtube.com/watch?v=azB-_MlmhfI&list=PLgSIM9nRNAK9iVvFTtxdvu_qKk_QnESeE)
 
