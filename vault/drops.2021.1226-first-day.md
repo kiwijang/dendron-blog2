@@ -2,7 +2,7 @@
 id: DTeYpEuPv3KIHugUyqZPu
 title: 1226 First Day
 desc: ""
-updated: 1641016377705
+updated: 1641017222124
 created: 1640525260857
 tags:
   - PROG.Dendron
@@ -41,13 +41,17 @@ Dendron 主打方便取出筆記 (get notes back out)。
 
 > 有這麼多組織(Organizing)的方式...(水好深)。🤤
 
-另外 Dendron 還可以部署到 Github Pages 上 [Dendron to Github Pages](https://wiki.dendron.so/notes/yg3EL1x9fEe4NMqxUC3jP/)
+另外 Dendron 還可以部署到 Github Pages 上，詳情請參閱官網: [Dendron to Github Pages](https://wiki.dendron.so/notes/yg3EL1x9fEe4NMqxUC3jP/)。
 
 下載 `Dendron CLI` 後可以將筆記轉成資料、並套上 `Next.js` 的部落格樣板，`git push` 到 github 上做些設定就可以看到部落格了。🎉
 
 所以 `Next.js` 的使用者有福了!可以用熟悉的網頁框架客製化自己的部落格。
 
 謝謝 Dendron 作者們讓菜雞如我可以接觸 `Next.js`。😆
+
+### 撰寫文章
+
+選擇在欲要新增文章的 parent .md 檔上，`Dendron: Lookup (Ctrl+L / Cmd+L) `，輸入檔名就可以開始寫新筆記了。
 
 ### 建置並預覽筆記
 

@@ -11,8 +11,8 @@
       "links": [],
       "anchors": {},
       "fname": "403",
-      "updated": 1641016435985,
-      "created": 1641016435985,
+      "updated": 1641018455529,
+      "created": 1641018455529,
       "parent": null,
       "children": [],
       "data": {}
@@ -42,21 +42,21 @@
             },
             "end": {
               "line": 4,
-              "column": 66,
-              "offset": 107
+              "column": 64,
+              "offset": 105
             },
             "indent": []
           },
           "xvault": false,
           "to": {
             "fname": "drops.2021.1226-first-day",
-            "anchorHeader": "首次使用-dendron-紀錄:#*"
+            "anchorHeader": "使用-dendron-紀錄:#*"
           }
         }
       ],
       "anchors": {},
       "fname": "root",
-      "updated": 1641013069870,
+      "updated": 1641016830362,
       "created": 1595961348801,
       "parent": null,
       "children": [
@@ -64,7 +64,7 @@
         "rEbR1FrKkZzyjo6ahAgm3"
       ],
       "data": {},
-      "contentHash": "e2d684c81adb724f6f625850b8786b47",
+      "contentHash": "ca4ed6fa39558cee2d28c9aabc5ce74d",
       "custom": {
         "stub": false,
         "nav_order": 0,
@@ -191,7 +191,8 @@
       "created": 1640604306691,
       "parent": "root",
       "children": [
-        "XVdxhzTnAX2SQnuApjkXj"
+        "XVdxhzTnAX2SQnuApjkXj",
+        "03vN8OL5CrZW9GX2NX7oS"
       ],
       "data": {},
       "contentHash": "487d0be8a02b20637f7e8a833d6abbcf",
@@ -199,6 +200,25 @@
       "custom": {
         "stub": true
       }
+    },
+    "03vN8OL5CrZW9GX2NX7oS": {
+      "id": "03vN8OL5CrZW9GX2NX7oS",
+      "title": "About",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "fname": "drops.about",
+      "updated": 1641018450727,
+      "created": 1641017236114,
+      "parent": "u4tSbmkJewrKonY3sL544",
+      "children": [],
+      "data": {},
+      "contentHash": "21324f85d7de8285151be419bc0b42a9",
+      "custom": {}
     },
     "XVdxhzTnAX2SQnuApjkXj": {
       "id": "XVdxhzTnAX2SQnuApjkXj",
@@ -581,8 +601,8 @@
             },
             "end": {
               "line": 4,
-              "column": 66,
-              "offset": 107
+              "column": 64,
+              "offset": 105
             },
             "indent": []
           },
@@ -606,11 +626,19 @@
           "column": 0,
           "depth": 3
         },
+        "撰寫文章": {
+          "type": "header",
+          "text": "撰寫文章",
+          "value": "撰寫文章",
+          "line": 51,
+          "column": 0,
+          "depth": 3
+        },
         "建置並預覽筆記": {
           "type": "header",
           "text": "建置並預覽筆記",
           "value": "建置並預覽筆記",
-          "line": 51,
+          "line": 55,
           "column": 0,
           "depth": 3
         },
@@ -618,7 +646,7 @@
           "type": "header",
           "text": ".next 專案 fork 來源",
           "value": "next-專案-fork-來源",
-          "line": 68,
+          "line": 72,
           "column": 0,
           "depth": 3
         },
@@ -626,7 +654,7 @@
           "type": "header",
           "text": "問題紀錄",
           "value": "問題紀錄",
-          "line": 74,
+          "line": 78,
           "column": 0,
           "depth": 2
         },
@@ -634,7 +662,7 @@
           "type": "header",
           "text": "github page build 失敗",
           "value": "github-page-build-失敗",
-          "line": 76,
+          "line": 80,
           "column": 0,
           "depth": 3
         },
@@ -642,7 +670,7 @@
           "type": "header",
           "text": "npx dendron publish dev ctrl+c 以後 port 沒有清掉",
           "value": "npx-dendron-publish-dev-ctrlc-以後-port-沒有清掉",
-          "line": 105,
+          "line": 109,
           "column": 0,
           "depth": 3
         },
@@ -650,18 +678,18 @@
           "type": "header",
           "text": "加入 Disqus 留言板",
           "value": "加入-disqus-留言板",
-          "line": 113,
+          "line": 117,
           "column": 0,
           "depth": 3
         }
       },
       "fname": "drops.2021.1226-first-day",
-      "updated": 1641016377705,
+      "updated": 1641017222124,
       "created": 1640525260857,
       "parent": "XVdxhzTnAX2SQnuApjkXj",
       "children": [],
       "data": {},
-      "contentHash": "7c69c7e9212c803a0b479de3777c84d4",
+      "contentHash": "4fb0eb9a9b7fe1459c74a9fee914fd9c",
       "custom": {},
       "tags": [
         "PROG.Dendron"
@@ -694,21 +722,21 @@
             },
             "end": {
               "line": 4,
-              "column": 66,
-              "offset": 107
+              "column": 64,
+              "offset": 105
             },
             "indent": []
           },
           "xvault": false,
           "to": {
             "fname": "drops.2021.1226-first-day",
-            "anchorHeader": "首次使用-dendron-紀錄:#*"
+            "anchorHeader": "使用-dendron-紀錄:#*"
           }
         }
       ],
       "anchors": {},
       "fname": "root",
-      "updated": 1641013069870,
+      "updated": 1641016830362,
       "created": 1595961348801,
       "parent": null,
       "children": [
@@ -716,13 +744,13 @@
         "rEbR1FrKkZzyjo6ahAgm3"
       ],
       "data": {},
-      "contentHash": "e2d684c81adb724f6f625850b8786b47",
+      "contentHash": "ca4ed6fa39558cee2d28c9aabc5ce74d",
       "custom": {
         "stub": false,
         "nav_order": 0,
         "permalink": "/"
       },
-      "body": "\n\r\nDendron 官網: https://wiki.dendron.so/\r\n\r\n![[首次使用 Dendron 紀錄|drops.2021.1226-first-day#首次使用-dendron-紀錄:#*]]\r\n"
+      "body": "\n\r\nDendron 官網: https://wiki.dendron.so/\r\n\r\n![[首次使用 Dendron 紀錄|drops.2021.1226-first-day#使用-dendron-紀錄:#*]]\r\n"
     }
   ],
   "noteIndex": {
@@ -750,21 +778,21 @@
           },
           "end": {
             "line": 4,
-            "column": 66,
-            "offset": 107
+            "column": 64,
+            "offset": 105
           },
           "indent": []
         },
         "xvault": false,
         "to": {
           "fname": "drops.2021.1226-first-day",
-          "anchorHeader": "首次使用-dendron-紀錄:#*"
+          "anchorHeader": "使用-dendron-紀錄:#*"
         }
       }
     ],
     "anchors": {},
     "fname": "root",
-    "updated": 1641013069870,
+    "updated": 1641016830362,
     "created": 1595961348801,
     "parent": null,
     "children": [
@@ -772,13 +800,13 @@
       "rEbR1FrKkZzyjo6ahAgm3"
     ],
     "data": {},
-    "contentHash": "e2d684c81adb724f6f625850b8786b47",
+    "contentHash": "ca4ed6fa39558cee2d28c9aabc5ce74d",
     "custom": {
       "stub": false,
       "nav_order": 0,
       "permalink": "/"
     },
-    "body": "\n\r\nDendron 官網: https://wiki.dendron.so/\r\n\r\n![[首次使用 Dendron 紀錄|drops.2021.1226-first-day#首次使用-dendron-紀錄:#*]]\r\n"
+    "body": "\n\r\nDendron 官網: https://wiki.dendron.so/\r\n\r\n![[首次使用 Dendron 紀錄|drops.2021.1226-first-day#使用-dendron-紀錄:#*]]\r\n"
   },
   "vaults": [
     {
