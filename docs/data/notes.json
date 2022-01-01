@@ -11,8 +11,8 @@
       "links": [],
       "anchors": {},
       "fname": "403",
-      "updated": 1641010978357,
-      "created": 1641010978357,
+      "updated": 1641016435985,
+      "created": 1641016435985,
       "parent": null,
       "children": [],
       "data": {}
@@ -36,14 +36,14 @@
           "value": "drops.2021.1226-first-day",
           "position": {
             "start": {
-              "line": 8,
+              "line": 4,
               "column": 1,
-              "offset": 265
+              "offset": 42
             },
             "end": {
-              "line": 8,
+              "line": 4,
               "column": 66,
-              "offset": 330
+              "offset": 107
             },
             "indent": []
           },
@@ -56,7 +56,7 @@
       ],
       "anchors": {},
       "fname": "root",
-      "updated": 1640798189756,
+      "updated": 1641013069870,
       "created": 1595961348801,
       "parent": null,
       "children": [
@@ -64,7 +64,7 @@
         "rEbR1FrKkZzyjo6ahAgm3"
       ],
       "data": {},
-      "contentHash": "55b0bacfcece3a10698280c76f57173c",
+      "contentHash": "e2d684c81adb724f6f625850b8786b47",
       "custom": {
         "stub": false,
         "nav_order": 0,
@@ -575,14 +575,14 @@
           "type": "backlink",
           "position": {
             "start": {
-              "line": 8,
+              "line": 4,
               "column": 1,
-              "offset": 265
+              "offset": 42
             },
             "end": {
-              "line": 8,
+              "line": 4,
               "column": 66,
-              "offset": 330
+              "offset": 107
             },
             "indent": []
           },
@@ -590,19 +590,27 @@
         }
       ],
       "anchors": {
-        "首次使用-dendron-紀錄": {
+        "使用-dendron-紀錄": {
           "type": "header",
-          "text": "首次使用 Dendron 紀錄",
-          "value": "首次使用-dendron-紀錄",
+          "text": "使用 Dendron 紀錄",
+          "value": "使用-dendron-紀錄",
           "line": 10,
           "column": 0,
           "depth": 2
+        },
+        "dendron-簡介": {
+          "type": "header",
+          "text": "Dendron 簡介",
+          "value": "dendron-簡介",
+          "line": 12,
+          "column": 0,
+          "depth": 3
         },
         "建置並預覽筆記": {
           "type": "header",
           "text": "建置並預覽筆記",
           "value": "建置並預覽筆記",
-          "line": 12,
+          "line": 51,
           "column": 0,
           "depth": 3
         },
@@ -610,7 +618,7 @@
           "type": "header",
           "text": ".next 專案 fork 來源",
           "value": "next-專案-fork-來源",
-          "line": 29,
+          "line": 68,
           "column": 0,
           "depth": 3
         },
@@ -618,7 +626,7 @@
           "type": "header",
           "text": "問題紀錄",
           "value": "問題紀錄",
-          "line": 35,
+          "line": 74,
           "column": 0,
           "depth": 2
         },
@@ -626,7 +634,7 @@
           "type": "header",
           "text": "github page build 失敗",
           "value": "github-page-build-失敗",
-          "line": 37,
+          "line": 76,
           "column": 0,
           "depth": 3
         },
@@ -634,18 +642,26 @@
           "type": "header",
           "text": "npx dendron publish dev ctrl+c 以後 port 沒有清掉",
           "value": "npx-dendron-publish-dev-ctrlc-以後-port-沒有清掉",
-          "line": 66,
+          "line": 105,
+          "column": 0,
+          "depth": 3
+        },
+        "加入-disqus-留言板": {
+          "type": "header",
+          "text": "加入 Disqus 留言板",
+          "value": "加入-disqus-留言板",
+          "line": 113,
           "column": 0,
           "depth": 3
         }
       },
       "fname": "drops.2021.1226-first-day",
-      "updated": 1640963987665,
+      "updated": 1641016377705,
       "created": 1640525260857,
       "parent": "XVdxhzTnAX2SQnuApjkXj",
       "children": [],
       "data": {},
-      "contentHash": "f2baa40ea4329f7ec8d7c3d6e7ebd881",
+      "contentHash": "7c69c7e9212c803a0b479de3777c84d4",
       "custom": {},
       "tags": [
         "PROG.Dendron"
@@ -672,14 +688,14 @@
           "value": "drops.2021.1226-first-day",
           "position": {
             "start": {
-              "line": 8,
+              "line": 4,
               "column": 1,
-              "offset": 265
+              "offset": 42
             },
             "end": {
-              "line": 8,
+              "line": 4,
               "column": 66,
-              "offset": 330
+              "offset": 107
             },
             "indent": []
           },
@@ -692,7 +708,7 @@
       ],
       "anchors": {},
       "fname": "root",
-      "updated": 1640798189756,
+      "updated": 1641013069870,
       "created": 1595961348801,
       "parent": null,
       "children": [
@@ -700,13 +716,13 @@
         "rEbR1FrKkZzyjo6ahAgm3"
       ],
       "data": {},
-      "contentHash": "55b0bacfcece3a10698280c76f57173c",
+      "contentHash": "e2d684c81adb724f6f625850b8786b47",
       "custom": {
         "stub": false,
         "nav_order": 0,
         "permalink": "/"
       },
-      "body": "\n\r\nThis is the root for your Dendron vault.\r\n\r\nIf you decide to publish your entire vault, it will be your landing page. You are free to customize any part of this page except the frontmatter at the top, between the `---`.\r\n\r\nDendron 官網: https://wiki.dendron.so/\r\n\r\n![[首次使用 Dendron 紀錄|drops.2021.1226-first-day#首次使用-dendron-紀錄:#*]]\r\n"
+      "body": "\n\r\nDendron 官網: https://wiki.dendron.so/\r\n\r\n![[首次使用 Dendron 紀錄|drops.2021.1226-first-day#首次使用-dendron-紀錄:#*]]\r\n"
     }
   ],
   "noteIndex": {
@@ -728,14 +744,14 @@
         "value": "drops.2021.1226-first-day",
         "position": {
           "start": {
-            "line": 8,
+            "line": 4,
             "column": 1,
-            "offset": 265
+            "offset": 42
           },
           "end": {
-            "line": 8,
+            "line": 4,
             "column": 66,
-            "offset": 330
+            "offset": 107
           },
           "indent": []
         },
@@ -748,7 +764,7 @@
     ],
     "anchors": {},
     "fname": "root",
-    "updated": 1640798189756,
+    "updated": 1641013069870,
     "created": 1595961348801,
     "parent": null,
     "children": [
@@ -756,13 +772,13 @@
       "rEbR1FrKkZzyjo6ahAgm3"
     ],
     "data": {},
-    "contentHash": "55b0bacfcece3a10698280c76f57173c",
+    "contentHash": "e2d684c81adb724f6f625850b8786b47",
     "custom": {
       "stub": false,
       "nav_order": 0,
       "permalink": "/"
     },
-    "body": "\n\r\nThis is the root for your Dendron vault.\r\n\r\nIf you decide to publish your entire vault, it will be your landing page. You are free to customize any part of this page except the frontmatter at the top, between the `---`.\r\n\r\nDendron 官網: https://wiki.dendron.so/\r\n\r\n![[首次使用 Dendron 紀錄|drops.2021.1226-first-day#首次使用-dendron-紀錄:#*]]\r\n"
+    "body": "\n\r\nDendron 官網: https://wiki.dendron.so/\r\n\r\n![[首次使用 Dendron 紀錄|drops.2021.1226-first-day#首次使用-dendron-紀錄:#*]]\r\n"
   },
   "vaults": [
     {

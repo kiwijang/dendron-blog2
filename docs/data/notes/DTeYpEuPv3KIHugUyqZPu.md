@@ -1,6 +1,45 @@
 
 
-## 首次使用 Dendron 紀錄
+## 使用 Dendron 紀錄
+
+### Dendron 簡介
+
+筆記都可以方便被記錄，但是取出筆記又是一門大學問。
+
+Dendron 主打方便取出筆記 (get notes back out)。
+作者 [Kevin](https://www.dendron.so/about) 說道 Dendron 有以下三特點:
+
+- [Note Reference](https://wiki.dendron.so/notes/f1af56bb-db27-47ae-8406-61a98de6c78c/)
+- [Commands](https://wiki.dendron.so/notes/eea2b078-1acc-4071-a14e-18299fc28f47/#refactor-hierarchy)
+- [Lookup](https://wiki.dendron.so/notes/a7c3a810-28c8-4b47-96a6-8156b1524af3/)
+
+總之，寫筆記可以變得像在寫程式，可以加入「參考」，如果「參考」不存在，還可以幫你新增一個對應的空白參考。
+
+檔案分類以資料夾檔名分類，每篇筆記會有一個獨一無二的 id，同時一個 id 會有一個 title (文章標題)。
+
+當使用者想將文章移去其他分類時只要改檔名就好，檔名命名邏輯以「.」分層，第一層.第二層.第三層... 以此類推。
+
+另外還有 Note Graph 的功能 `ctrl+shift+P`、`Dendron: Show Note Graph` 就可以看到整個 vault 的結構 (下圖為我目前的 Note Graph)。
+
+![](assets/images/2022-01-01-13-19-20.png)
+
+[綱要(Schemas)](https://wiki.dendron.so/notes/c5e5adde-5459-409b-b34d-a0d75cbb1052/) 是用 YAML 來為筆記設定基礎樣板。
+
+支援 [mermaid-js](https://mermaid-js.github.io/mermaid/#/)。
+
+另外 Dendron 提供了不少 [組織(Organizing)](https://wiki.dendron.so/notes/BWYKFQ8297OgfWWyV7Bgn/) 筆記的功能 (Tags 就是其中一種)，另外也有給團隊使用的組織方式。
+
+![](assets/images/2022-01-01-13-41-23.png)
+
+> 有這麼多組織(Organizing)的方式...(水好深)。🤤
+
+另外 Dendron 還可以部署到 Github Pages 上 [Dendron to Github Pages](https://wiki.dendron.so/notes/yg3EL1x9fEe4NMqxUC3jP/)
+
+下載 `Dendron CLI` 後可以將筆記轉成資料、並套上 `Next.js` 的部落格樣板，`git push` 到 github 上做些設定就可以看到部落格了。🎉
+
+所以 `Next.js` 的使用者有福了!可以用熟悉的網頁框架客製化自己的部落格。
+
+謝謝 Dendron 作者們讓菜雞如我可以接觸 `Next.js`。😆
 
 ### 建置並預覽筆記
 
@@ -63,3 +102,10 @@ https://github.com/dendronhq/nextjs-template
 `npx kill-port 3000` 清除 3000 port
 
 參考網址: https://stackoverflow.com/questions/39632667/how-do-i-kill-the-process-currently-using-a-port-on-localhost-in-windows
+
+### 加入 Disqus 留言板
+
+參考資料:
+
+- [Integrating Disqus in your Next.js React Application by Imran Sayed](https://imranhsayed.medium.com/disqus-is-a-networked-community-platform-used-by-hundreds-of-thousands-of-sites-all-over-the-web-39b88bafaca5)
+- [如何安裝 Disqus 留言板](https://ithelp.ithome.com.tw/articles/10242269)
