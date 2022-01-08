@@ -1,11 +1,11 @@
-<h1 id="0107-postcss-和-sass"><a aria-hidden="true" class="anchor-heading" href="#0107-postcss-和-sass"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>0107 PostCSS 和 Sass</h1>
-<h2 id="前言"><a aria-hidden="true" class="anchor-heading" href="#前言"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>前言</h2>
+<h1 id="0107-postcss-和-sass未完"><a aria-hidden="true" class="anchor-heading" href="#0107-postcss-和-sass未完"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>0107 PostCSS 和 Sass(未完)</h1>
+<h2 id="1-前言"><a aria-hidden="true" class="anchor-heading" href="#1-前言"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>1. 前言</h2>
 <p>CSS 竟然還有分前後處理?😯</p>
 <p>到底是在哪條時間軸上才能這樣分前後?</p>
 <p>到底為什麼要用 PostCSS 和 Sass?</p>
 <p>理解一個東西前，果然還是要弄清楚自己現在在哪裡。😅</p>
 <p>所以本篇筆記目的在搞清楚 CSS 的定義，然後說明 PostCSS 和 Sass 的用途。</p>
-<h2 id="關於-css"><a aria-hidden="true" class="anchor-heading" href="#關於-css"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>關於 CSS</h2>
+<h2 id="2-關於-css"><a aria-hidden="true" class="anchor-heading" href="#2-關於-css"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>2. 關於 CSS</h2>
 <p>不免俗先來權威機構 <a href="https://zh.wikipedia.org/wiki/%E4%B8%87%E7%BB%B4%E7%BD%91%E8%81%94%E7%9B%9F">W3C</a> 的定義。</p>
 <p><a href="https://www.w3.org/standards/webdesign/htmlcss">https://www.w3.org/standards/webdesign/htmlcss</a></p>
 <blockquote>
@@ -18,7 +18,7 @@ CSS 是一種描述網頁呈現外觀的語言，包括顏色、排版、字體�
 CSS 獨立於 HTML 而且可以搭配任何以 XML 為基礎(XML-based) 的標記語言。在 HTML 中將 CSS 區分出來可以更容易地維護一個網站、跨頁分享樣式表和將頁面適應(tailor)於不同環境。這個涉及呈現外觀(presentation)的分離結構(或: 內容)。</p>
 </blockquote>
 <p>感覺起來 CSS 就是拿來定義頁面的樣式的。那命名是還蠻貼切的: CSS (Cascading Style Sheets)，如瀑布般下落的樣式表單。</p>
-<h3 id="css-版本"><a aria-hidden="true" class="anchor-heading" href="#css-版本"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>CSS 版本</h3>
+<h3 id="21-css-版本"><a aria-hidden="true" class="anchor-heading" href="#21-css-版本"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>2.1. CSS 版本</h3>
 <p><a href="https://zh.wikipedia.org/wiki/%E5%B1%82%E5%8F%A0%E6%A0%B7%E5%BC%8F%E8%A1%A8">https://zh.wikipedia.org/wiki/%E5%B1%82%E5%8F%A0%E6%A0%B7%E5%BC%8F%E8%A1%A8</a></p>
 <ul>
 <li>CSS Level 1</li>
@@ -30,13 +30,13 @@ CSS 獨立於 HTML 而且可以搭配任何以 XML 為基礎(XML-based) 的標�
 <blockquote>
 <p>CSS3 亦支援動畫（animation）及立體（preserved-3d）。 —— Wikipedia</p>
 </blockquote>
-<h3 id="css-syntax-句法"><a aria-hidden="true" class="anchor-heading" href="#css-syntax-句法"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>CSS Syntax (句法)</h3>
+<h3 id="22-css-syntax-句法"><a aria-hidden="true" class="anchor-heading" href="#22-css-syntax-句法"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>2.2. CSS Syntax (句法)</h3>
 <p><a href="https://www.w3schools.com/css/css_syntax.asp">https://www.w3schools.com/css/css_syntax.asp</a></p>
 <p><img src="/dendron-blog2/assets/images/2022-01-07-22-52-32.png"></p>
 <blockquote>
 <p>HTML 和 CSS 是建置網頁的核心技術。透過瀏覽器我們可以看到網頁，所以可以透過 <a href="https://caniuse.com/">Can I use</a> 來確定某個 CSS 的屬性(property)能不能使用。</p>
 </blockquote>
-<h3 id="css-specificity-權重"><a aria-hidden="true" class="anchor-heading" href="#css-specificity-權重"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>CSS Specificity (權重)</h3>
+<h3 id="23-css-specificity-權重"><a aria-hidden="true" class="anchor-heading" href="#23-css-specificity-權重"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>2.3. CSS Specificity (權重)</h3>
 <p>再次不免俗，MDN 權威定義: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity">https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity</a></p>
 <blockquote>
 <p>Specificity is the means by which browsers decide which CSS property values are the most relevant to an element and, therefore, will be applied. Specificity is based on the matching rules which are composed of different sorts of CSS selectors.</p>
@@ -64,7 +64,7 @@ body h3 a:hover→ 0,0,0,1,3
 body h3 a[href^="https"]→ 0,0,0,1,3
 </code></pre>
 <p>這樣看起來我已經好久沒有用過 ID 了，Class/psuedo-class/attribute、 Element 最常用。😳</p>
-<h3 id="css-效能"><a aria-hidden="true" class="anchor-heading" href="#css-效能"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>CSS 效能</h3>
+<h3 id="24-css-效能"><a aria-hidden="true" class="anchor-heading" href="#24-css-效能"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>2.4. CSS 效能</h3>
 <p><a href="https://csswizardry.com/2011/09/writing-efficient-css-selectors/">writing-efficient-css-selectors by Harry</a></p>
 <p>使用哪種選擇器效能比較好?(由上而下月上面的 selector 方式越好):</p>
 <ol>
@@ -103,14 +103,14 @@ body h3 a[href^="https"]→ 0,0,0,1,3
 </li>
 <li>
 <p>Tag Category rules should never contain a child selector</p>
-<p>tag 應該永不包含 child selector。
-也就是說不建議這樣 <code>ul > li</code>。
-有點難懂...應該跟 <code>*</code> 同概念，選越少越好?🙄</p>
+<p>tag 應該永不包含 child selector。</p>
+<p>也就是說不建議這樣 <code>ul > li</code>。</p>
+<p>有點難懂...應該跟 <code>*</code> 同概念，選越少越好?🙄</p>
 </li>
 <li>
 <p>Question all usages of the child selector</p>
-<p>所有的 <code>ul > li</code> 都要抱持懷疑，真的有必要這麼多層嗎?
-感覺是可讀性和效能的取捨耶。</p>
+<p>所有的 <code>ul > li</code> 都要抱持懷疑，真的有必要這麼多層嗎?</p>
+<p>感覺是可讀性和效能的取捨耶。</p>
 </li>
 <li>
 <p>Rely on inheritance</p>
@@ -118,14 +118,14 @@ body h3 a[href^="https"]→ 0,0,0,1,3
 </li>
 <li>
 <p>Use scoped stylesheets</p>
-<p>使用區域樣式表單。
-寫 angular 就是都有使用 scoped stylesheets，每一個 conponent 都幫你切好好的一個 scope。</p>
+<p>使用區域樣式表單。</p>
+<p>寫 angular 就是都有使用 scoped stylesheets，每一個 conponent 都幫你切好好的一個 scope。</p>
 </li>
 </ul>
-<h2 id="sass-和-postcss-跟-css-的關係"><a aria-hidden="true" class="anchor-heading" href="#sass-和-postcss-跟-css-的關係"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Sass 和 PostCSS 跟 CSS 的關係</h2>
+<h2 id="3-sass-和-postcss-跟-css-的關係"><a aria-hidden="true" class="anchor-heading" href="#3-sass-和-postcss-跟-css-的關係"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>3. Sass 和 PostCSS 跟 CSS 的關係</h2>
 <p>根據上面的介紹，感覺 CSS 那麼多功能又深奧，到底為什麼還需要 Sass 和 PostCSS?</p>
 <p>來看一下各自的官網簡介:</p>
-<h3 id="sass"><a aria-hidden="true" class="anchor-heading" href="#sass"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Sass</h3>
+<h3 id="31-sass"><a aria-hidden="true" class="anchor-heading" href="#31-sass"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>3.1. Sass</h3>
 <p><a href="https://sass-lang.com/">https://sass-lang.com/</a></p>
 <blockquote>
 <p>Sass is the most mature, stable, and powerful professional grade CSS extension language in the world.</p>
@@ -133,7 +133,7 @@ body h3 a[href^="https"]→ 0,0,0,1,3
 <blockquote>
 <p>Sass 是世上最成熟、穩定、強大的專家級 CSS 擴充語言。</p>
 </blockquote>
-<h3 id="postcss"><a aria-hidden="true" class="anchor-heading" href="#postcss"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>PostCSS</h3>
+<h3 id="32-postcss"><a aria-hidden="true" class="anchor-heading" href="#32-postcss"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>3.2. PostCSS</h3>
 <p><a href="https://postcss.org/">https://postcss.org/</a></p>
 <blockquote>
 <p>A tool for transforming CSS with JavaScript</p>
@@ -143,8 +143,8 @@ body h3 a[href^="https"]→ 0,0,0,1,3
 </blockquote>
 <p>從字面上看起來它們都是幫助人們撰寫 CSS 的工具。</p>
 <p>接下來要來看它們如何幫助開發與其運作原理。</p>
-<h2 id="sass-1"><a aria-hidden="true" class="anchor-heading" href="#sass-1"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Sass</h2>
-<h3 id="sass-特點"><a aria-hidden="true" class="anchor-heading" href="#sass-特點"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Sass 特點</h3>
+<h2 id="4-sass"><a aria-hidden="true" class="anchor-heading" href="#4-sass"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>4. Sass</h2>
+<h3 id="41-sass-特點"><a aria-hidden="true" class="anchor-heading" href="#41-sass-特點"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>4.1. Sass 特點</h3>
 <ul>
 <li>
 <p>CSS Compatible</p>
@@ -171,15 +171,15 @@ body h3 a[href^="https"]→ 0,0,0,1,3
 <p>There are an endless number of frameworks built with Sass. Compass, Bourbon, and Susy just to name a few.</p>
 </li>
 </ul>
-<h3 id="sass-運作原理如何變成-css"><a aria-hidden="true" class="anchor-heading" href="#sass-運作原理如何變成-css"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Sass 運作原理(如何變成 CSS)</h3>
+<h3 id="42-sass-運作原理如何變成-css"><a aria-hidden="true" class="anchor-heading" href="#42-sass-運作原理如何變成-css"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>4.2. Sass 運作原理(如何變成 CSS)</h3>
 <p><a href="https://www.w3schools.com/sass/sass_intro.php">https://www.w3schools.com/sass/sass_intro.php</a></p>
 <blockquote>
 <p>A browser does not understand Sass code. Therefore, you will need a Sass pre-processor to convert Sass code into standard CSS.</p>
 <p>This process is called transpiling. So, you need to give a transpiler (some kind of program) some Sass code and then get some CSS code back.</p>
 <p>Tip: Transpiling is a term for taking a source code written in one language and transform/translate it into another language.</p>
 </blockquote>
-<h2 id="postcss-1"><a aria-hidden="true" class="anchor-heading" href="#postcss-1"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>PostCSS</h2>
-<h3 id="postcss-特點"><a aria-hidden="true" class="anchor-heading" href="#postcss-特點"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>PostCSS 特點</h3>
+<h2 id="5-postcss"><a aria-hidden="true" class="anchor-heading" href="#5-postcss"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>5. PostCSS</h2>
+<h3 id="51-postcss-特點"><a aria-hidden="true" class="anchor-heading" href="#51-postcss-特點"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>5.1. PostCSS 特點</h3>
 <ul>
 <li>
 <p>Autoprefixer</p>
@@ -223,7 +223,7 @@ body</span> <span class="token punctuation">{</span>
 <span class="token punctuation">}</span>
 
 <span class="token selector">// CSS output
-<span class="token class">.Logo</span>**name**SVK0g</span> <span class="token punctuation">{</span>
+<span class="token class">.Logo__name__SVK0g</span></span> <span class="token punctuation">{</span>
 <span class="token property">color</span><span class="token punctuation">:</span> <span class="token color">gray</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 </code></pre>
@@ -233,27 +233,27 @@ body</span> <span class="token punctuation">{</span>
 <p>Enforce consistent conventions and avoid errors in your stylesheets with stylelint, a modern CSS linter. It supports the latest CSS syntax, as well as CSS-like syntaxes, such as SCSS.</p>
 </li>
 </ul>
-<h3 id="postcss-運作原理如何變成-css"><a aria-hidden="true" class="anchor-heading" href="#postcss-運作原理如何變成-css"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>PostCSS 運作原理(如何變成 CSS)</h3>
+<h3 id="52-postcss-運作原理如何變成-css"><a aria-hidden="true" class="anchor-heading" href="#52-postcss-運作原理如何變成-css"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>5.2. PostCSS 運作原理(如何變成 CSS)</h3>
 <p><a href="https://www.youtube.com/watch?v=WhCXiEwdU1A">https://www.youtube.com/watch?v=WhCXiEwdU1A</a></p>
 <p><a href="https://www.toptal.com/front-end/postcss-sass-new-play-date">https://www.toptal.com/front-end/postcss-sass-new-play-date</a></p>
 <p><a href="https://cythilya.github.io/2018/08/10/postcss/">https://cythilya.github.io/2018/08/10/postcss/</a></p>
-<h2 id="tailwindcss"><a aria-hidden="true" class="anchor-heading" href="#tailwindcss"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>tailwindcss</h2>
+<h2 id="6-tailwindcss"><a aria-hidden="true" class="anchor-heading" href="#6-tailwindcss"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>6. tailwindcss</h2>
 <p><a href="https://tailwindcss.com/">https://tailwindcss.com/</a></p>
 <blockquote>
 <p>Rapidly build modern websites without ever leaving your HTML.</p>
 </blockquote>
 <hr>
-<h2 id="angular-相關"><a aria-hidden="true" class="anchor-heading" href="#angular-相關"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Angular 相關</h2>
+<h2 id="7-angular-相關"><a aria-hidden="true" class="anchor-heading" href="#7-angular-相關"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>7. Angular 相關</h2>
 <p>以下是 Angular 應用 css 套件的相關文章。</p>
 <p><a href="https://angular.tw/guide/component-styles">https://angular.tw/guide/component-styles</a></p>
-<h2 id="purgecss-with-angular"><a aria-hidden="true" class="anchor-heading" href="#purgecss-with-angular"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>PurgeCSS with Angular</h2>
+<h2 id="8-purgecss-with-angular"><a aria-hidden="true" class="anchor-heading" href="#8-purgecss-with-angular"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>8. PurgeCSS with Angular</h2>
 <p><a href="https://dev.to/dylanvdmerwe/reduce-angular-style-size-using-purgecss-to-remove-unused-styles-3b2k">https://dev.to/dylanvdmerwe/reduce-angular-style-size-using-purgecss-to-remove-unused-styles-3b2k</a></p>
-<h2 id="webpack-loaders"><a aria-hidden="true" class="anchor-heading" href="#webpack-loaders"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>webpack Loaders</h2>
+<h2 id="9-webpack-loaders"><a aria-hidden="true" class="anchor-heading" href="#9-webpack-loaders"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>9. webpack Loaders</h2>
 <blockquote>
 <p>sass-loader、postcss-loader</p>
 </blockquote>
 <p><a href="https://stackoverflow.com/questions/59715916/how-to-use-sass-loader-in-angular">https://stackoverflow.com/questions/59715916/how-to-use-sass-loader-in-angular</a></p>
-<h2 id="tailwindcss-with-angular"><a aria-hidden="true" class="anchor-heading" href="#tailwindcss-with-angular"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>tailwindcss with Angular</h2>
+<h2 id="10-tailwindcss-with-angular"><a aria-hidden="true" class="anchor-heading" href="#10-tailwindcss-with-angular"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>10. tailwindcss with Angular</h2>
 <p><a href="https://hsuchihting.github.io/TailwindCSS/20210702/3640682418/">https://hsuchihting.github.io/TailwindCSS/20210702/3640682418/</a></p>
 <p><a href="https://medium.com/@JedChou/%E5%A6%82%E4%BD%95%E5%9C%A8-angular-%E5%B0%88%E6%A1%88%E4%B8%AD%E4%BD%BF%E7%94%A8-tailwind-css-e119b6390803">https://medium.com/@JedChou/%E5%A6%82%E4%BD%95%E5%9C%A8-angular-%E5%B0%88%E6%A1%88%E4%B8%AD%E4%BD%BF%E7%94%A8-tailwind-css-e119b6390803</a></p>
 <hr>

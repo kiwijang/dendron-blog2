@@ -1,5 +1,5 @@
 
-## 前言
+## 1. 前言
 
 CSS 竟然還有分前後處理?😯
 
@@ -11,7 +11,7 @@ CSS 竟然還有分前後處理?😯
 
 所以本篇筆記目的在搞清楚 CSS 的定義，然後說明 PostCSS 和 Sass 的用途。
 
-## 關於 CSS
+## 2. 關於 CSS
 
 不免俗先來權威機構 [W3C](https://zh.wikipedia.org/wiki/%E4%B8%87%E7%BB%B4%E7%BD%91%E8%81%94%E7%9B%9F) 的定義。
 
@@ -26,7 +26,7 @@ https://www.w3.org/standards/webdesign/htmlcss
 
 感覺起來 CSS 就是拿來定義頁面的樣式的。那命名是還蠻貼切的: CSS (Cascading Style Sheets)，如瀑布般下落的樣式表單。
 
-### CSS 版本
+### 2.1. CSS 版本
 
 https://zh.wikipedia.org/wiki/%E5%B1%82%E5%8F%A0%E6%A0%B7%E5%BC%8F%E8%A1%A8
 
@@ -39,7 +39,7 @@ https://zh.wikipedia.org/wiki/%E5%B1%82%E5%8F%A0%E6%A0%B7%E5%BC%8F%E8%A1%A8
 
 > CSS3 亦支援動畫（animation）及立體（preserved-3d）。 —— Wikipedia
 
-### CSS Syntax (句法)
+### 2.2. CSS Syntax (句法)
 
 https://www.w3schools.com/css/css_syntax.asp
 
@@ -47,7 +47,7 @@ https://www.w3schools.com/css/css_syntax.asp
 
 > HTML 和 CSS 是建置網頁的核心技術。透過瀏覽器我們可以看到網頁，所以可以透過 [Can I use](https://caniuse.com/) 來確定某個 CSS 的屬性(property)能不能使用。
 
-### CSS Specificity (權重)
+### 2.3. CSS Specificity (權重)
 
 再次不免俗，MDN 權威定義: https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity
 
@@ -85,7 +85,7 @@ body h3 a[href^="https"]→ 0,0,0,1,3
 
 這樣看起來我已經好久沒有用過 ID 了，Class/psuedo-class/attribute、 Element 最常用。😳
 
-### CSS 效能
+### 2.4. CSS 效能
 
 [writing-efficient-css-selectors by Harry](https://csswizardry.com/2011/09/writing-efficient-css-selectors/)
 
@@ -128,12 +128,15 @@ body h3 a[href^="https"]→ 0,0,0,1,3
 - Tag Category rules should never contain a child selector
 
   tag 應該永不包含 child selector。
+
   也就是說不建議這樣 `ul > li`。
+
   有點難懂...應該跟 `*` 同概念，選越少越好?🙄
 
 - Question all usages of the child selector
 
   所有的 `ul > li` 都要抱持懷疑，真的有必要這麼多層嗎?
+
   感覺是可讀性和效能的取捨耶。
 
 - Rely on inheritance
@@ -143,15 +146,16 @@ body h3 a[href^="https"]→ 0,0,0,1,3
 - Use scoped stylesheets
 
   使用區域樣式表單。
+
   寫 angular 就是都有使用 scoped stylesheets，每一個 conponent 都幫你切好好的一個 scope。
 
-## Sass 和 PostCSS 跟 CSS 的關係
+## 3. Sass 和 PostCSS 跟 CSS 的關係
 
 根據上面的介紹，感覺 CSS 那麼多功能又深奧，到底為什麼還需要 Sass 和 PostCSS?
 
 來看一下各自的官網簡介:
 
-### Sass
+### 3.1. Sass
 
 https://sass-lang.com/
 
@@ -159,7 +163,7 @@ https://sass-lang.com/
 
 > Sass 是世上最成熟、穩定、強大的專家級 CSS 擴充語言。
 
-### PostCSS
+### 3.2. PostCSS
 
 https://postcss.org/
 
@@ -171,9 +175,9 @@ https://postcss.org/
 
 接下來要來看它們如何幫助開發與其運作原理。
 
-## Sass
+## 4. Sass
 
-### Sass 特點
+### 4.1. Sass 特點
 
 - CSS Compatible
 
@@ -199,7 +203,7 @@ https://postcss.org/
 
   There are an endless number of frameworks built with Sass. Compass, Bourbon, and Susy just to name a few.
 
-### Sass 運作原理(如何變成 CSS)
+### 4.2. Sass 運作原理(如何變成 CSS)
 
 https://www.w3schools.com/sass/sass_intro.php
 
@@ -209,9 +213,9 @@ https://www.w3schools.com/sass/sass_intro.php
 >
 > Tip: Transpiling is a term for taking a source code written in one language and transform/translate it into another language.
 
-## PostCSS
+## 5. PostCSS
 
-### PostCSS 特點
+### 5.1. PostCSS 特點
 
 - Autoprefixer
 
@@ -262,7 +266,7 @@ https://www.w3schools.com/sass/sass_intro.php
   }
 
   // CSS output
-  .Logo**name**SVK0g {
+  .Logo__name__SVK0g {
   color: gray;
   }
   ```
@@ -271,7 +275,7 @@ https://www.w3schools.com/sass/sass_intro.php
 
   Enforce consistent conventions and avoid errors in your stylesheets with stylelint, a modern CSS linter. It supports the latest CSS syntax, as well as CSS-like syntaxes, such as SCSS.
 
-### PostCSS 運作原理(如何變成 CSS)
+### 5.2. PostCSS 運作原理(如何變成 CSS)
 
 https://www.youtube.com/watch?v=WhCXiEwdU1A
 
@@ -279,7 +283,7 @@ https://www.toptal.com/front-end/postcss-sass-new-play-date
 
 https://cythilya.github.io/2018/08/10/postcss/
 
-## tailwindcss
+## 6. tailwindcss
 
 https://tailwindcss.com/
 
@@ -287,23 +291,23 @@ https://tailwindcss.com/
 
 ---
 
-## Angular 相關
+## 7. Angular 相關
 
 以下是 Angular 應用 css 套件的相關文章。
 
 https://angular.tw/guide/component-styles
 
-## PurgeCSS with Angular
+## 8. PurgeCSS with Angular
 
 https://dev.to/dylanvdmerwe/reduce-angular-style-size-using-purgecss-to-remove-unused-styles-3b2k
 
-## webpack Loaders
+## 9. webpack Loaders
 
 > sass-loader、postcss-loader
 
 https://stackoverflow.com/questions/59715916/how-to-use-sass-loader-in-angular
 
-## tailwindcss with Angular
+## 10. tailwindcss with Angular
 
 https://hsuchihting.github.io/TailwindCSS/20210702/3640682418/
 

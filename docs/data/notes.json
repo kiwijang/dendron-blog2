@@ -11,8 +11,8 @@
       "links": [],
       "anchors": {},
       "fname": "403",
-      "updated": 1641648578535,
-      "created": 1641648578535,
+      "updated": 1641650517165,
+      "created": 1641650517165,
       "parent": null,
       "children": [],
       "data": {}
@@ -306,7 +306,7 @@
     },
     "SIdMIFLQNg5jfa6ePoqt5": {
       "id": "SIdMIFLQNg5jfa6ePoqt5",
-      "title": "0107 PostCSS 和 Sass",
+      "title": "0107 PostCSS 和 Sass(未完)",
       "vault": {
         "fsPath": "vault"
       },
@@ -329,174 +329,174 @@
         }
       ],
       "anchors": {
-        "前言": {
+        "1-前言": {
           "type": "header",
-          "text": "前言",
-          "value": "前言",
+          "text": "1. 前言",
+          "value": "1-前言",
           "line": 10,
           "column": 0,
           "depth": 2
         },
-        "關於-css": {
+        "2-關於-css": {
           "type": "header",
-          "text": "關於 CSS",
-          "value": "關於-css",
+          "text": "2. 關於 CSS",
+          "value": "2-關於-css",
           "line": 22,
           "column": 0,
           "depth": 2
         },
-        "css-版本": {
+        "21-css-版本": {
           "type": "header",
-          "text": "CSS 版本",
-          "value": "css-版本",
+          "text": "2.1. CSS 版本",
+          "value": "21-css-版本",
           "line": 37,
           "column": 0,
           "depth": 3
         },
-        "css-syntax-句法": {
+        "22-css-syntax-句法": {
           "type": "header",
-          "text": "CSS Syntax (句法)",
-          "value": "css-syntax-句法",
+          "text": "2.2. CSS Syntax (句法)",
+          "value": "22-css-syntax-句法",
           "line": 50,
           "column": 0,
           "depth": 3
         },
-        "css-specificity-權重": {
+        "23-css-specificity-權重": {
           "type": "header",
-          "text": "CSS Specificity (權重)",
-          "value": "css-specificity-權重",
+          "text": "2.3. CSS Specificity (權重)",
+          "value": "23-css-specificity-權重",
           "line": 58,
           "column": 0,
           "depth": 3
         },
-        "css-效能": {
+        "24-css-效能": {
           "type": "header",
-          "text": "CSS 效能",
-          "value": "css-效能",
+          "text": "2.4. CSS 效能",
+          "value": "24-css-效能",
           "line": 96,
           "column": 0,
           "depth": 3
         },
-        "sass-和-postcss-跟-css-的關係": {
+        "3-sass-和-postcss-跟-css-的關係": {
           "type": "header",
-          "text": "Sass 和 PostCSS 跟 CSS 的關係",
-          "value": "sass-和-postcss-跟-css-的關係",
-          "line": 156,
+          "text": "3. Sass 和 PostCSS 跟 CSS 的關係",
+          "value": "3-sass-和-postcss-跟-css-的關係",
+          "line": 160,
           "column": 0,
           "depth": 2
         },
-        "sass": {
+        "31-sass": {
           "type": "header",
-          "text": "Sass",
-          "value": "sass",
-          "line": 162,
+          "text": "3.1. Sass",
+          "value": "31-sass",
+          "line": 166,
           "column": 0,
           "depth": 3
         },
-        "postcss": {
+        "32-postcss": {
           "type": "header",
-          "text": "PostCSS",
-          "value": "postcss",
-          "line": 170,
+          "text": "3.2. PostCSS",
+          "value": "32-postcss",
+          "line": 174,
           "column": 0,
           "depth": 3
         },
-        "sass-1": {
+        "4-sass": {
           "type": "header",
-          "text": "Sass",
-          "value": "sass-1",
-          "line": 182,
+          "text": "4. Sass",
+          "value": "4-sass",
+          "line": 186,
           "column": 0,
           "depth": 2
         },
-        "sass-特點": {
+        "41-sass-特點": {
           "type": "header",
-          "text": "Sass 特點",
-          "value": "sass-特點",
-          "line": 184,
+          "text": "4.1. Sass 特點",
+          "value": "41-sass-特點",
+          "line": 188,
           "column": 0,
           "depth": 3
         },
-        "sass-運作原理如何變成-css": {
+        "42-sass-運作原理如何變成-css": {
           "type": "header",
-          "text": "Sass 運作原理(如何變成 CSS)",
-          "value": "sass-運作原理如何變成-css",
-          "line": 210,
+          "text": "4.2. Sass 運作原理(如何變成 CSS)",
+          "value": "42-sass-運作原理如何變成-css",
+          "line": 214,
           "column": 0,
           "depth": 3
         },
-        "postcss-1": {
+        "5-postcss": {
           "type": "header",
-          "text": "PostCSS",
-          "value": "postcss-1",
-          "line": 220,
+          "text": "5. PostCSS",
+          "value": "5-postcss",
+          "line": 224,
           "column": 0,
           "depth": 2
         },
-        "postcss-特點": {
+        "51-postcss-特點": {
           "type": "header",
-          "text": "PostCSS 特點",
-          "value": "postcss-特點",
-          "line": 222,
+          "text": "5.1. PostCSS 特點",
+          "value": "51-postcss-特點",
+          "line": 226,
           "column": 0,
           "depth": 3
         },
-        "postcss-運作原理如何變成-css": {
+        "52-postcss-運作原理如何變成-css": {
           "type": "header",
-          "text": "PostCSS 運作原理(如何變成 CSS)",
-          "value": "postcss-運作原理如何變成-css",
-          "line": 282,
+          "text": "5.2. PostCSS 運作原理(如何變成 CSS)",
+          "value": "52-postcss-運作原理如何變成-css",
+          "line": 286,
           "column": 0,
           "depth": 3
         },
-        "tailwindcss": {
+        "6-tailwindcss": {
           "type": "header",
-          "text": "tailwindcss",
-          "value": "tailwindcss",
-          "line": 290,
+          "text": "6. tailwindcss",
+          "value": "6-tailwindcss",
+          "line": 294,
           "column": 0,
           "depth": 2
         },
-        "angular-相關": {
+        "7-angular-相關": {
           "type": "header",
-          "text": "Angular 相關",
-          "value": "angular-相關",
-          "line": 298,
+          "text": "7. Angular 相關",
+          "value": "7-angular-相關",
+          "line": 302,
           "column": 0,
           "depth": 2
         },
-        "purgecss-with-angular": {
+        "8-purgecss-with-angular": {
           "type": "header",
-          "text": "PurgeCSS with Angular",
-          "value": "purgecss-with-angular",
-          "line": 304,
-          "column": 0,
-          "depth": 2
-        },
-        "webpack-loaders": {
-          "type": "header",
-          "text": "webpack Loaders",
-          "value": "webpack-loaders",
+          "text": "8. PurgeCSS with Angular",
+          "value": "8-purgecss-with-angular",
           "line": 308,
           "column": 0,
           "depth": 2
         },
-        "tailwindcss-with-angular": {
+        "9-webpack-loaders": {
           "type": "header",
-          "text": "tailwindcss with Angular",
-          "value": "tailwindcss-with-angular",
-          "line": 314,
+          "text": "9. webpack Loaders",
+          "value": "9-webpack-loaders",
+          "line": 312,
+          "column": 0,
+          "depth": 2
+        },
+        "10-tailwindcss-with-angular": {
+          "type": "header",
+          "text": "10. tailwindcss with Angular",
+          "value": "10-tailwindcss-with-angular",
+          "line": 318,
           "column": 0,
           "depth": 2
         }
       },
       "fname": "drops.2022.0107-PostCSS和SASS",
-      "updated": 1641648216171,
+      "updated": 1641650489348,
       "created": 1641561592013,
       "parent": "4MPQXb6WwUg0kGHxTPD7x",
       "children": [],
       "data": {},
-      "contentHash": "990998f00133b462e3f694993a9be84c",
+      "contentHash": "f24339db8efd732bce6ab57a2edc5b0d",
       "custom": {
         "status": "w"
       },
