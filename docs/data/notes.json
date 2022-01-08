@@ -11,8 +11,8 @@
       "links": [],
       "anchors": {},
       "fname": "403",
-      "updated": 1641042552698,
-      "created": 1641042552698,
+      "updated": 1641648578535,
+      "created": 1641648578535,
       "parent": null,
       "children": [],
       "data": {}
@@ -98,27 +98,57 @@
     "4nZxUaZMBAvz7oWuXizXl": {
       "id": "4nZxUaZMBAvz7oWuXizXl",
       "title": "PROG",
-      "vault": {
-        "fsPath": "vault"
-      },
-      "type": "note",
       "desc": "",
-      "links": [],
-      "anchors": {},
-      "fname": "tags.PROG",
-      "updated": 1640615341424,
+      "updated": 1641048648905,
       "created": 1640615341424,
-      "parent": "rEbR1FrKkZzyjo6ahAgm3",
-      "children": [
-        "3cKSNGeq54iDx1eRKcNB0",
-        "Po0jmNACWQVrxnoTRT6kr"
-      ],
-      "data": {},
-      "contentHash": "22c2bb8ca317347b12bbeb39f84b799d",
       "stub": false,
       "custom": {
         "stub": true
-      }
+      },
+      "fname": "tags.PROG",
+      "type": "note",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "contentHash": "581083807235c9a77a8b52c3941bcc8f",
+      "links": [],
+      "anchors": {},
+      "children": [
+        "uFYxvNnYUjt8oxQcHtfSp",
+        "3cKSNGeq54iDx1eRKcNB0",
+        "Po0jmNACWQVrxnoTRT6kr",
+        "yvz3NEjMcVQ7sYJm3trFQ"
+      ],
+      "parent": "rEbR1FrKkZzyjo6ahAgm3",
+      "data": {}
+    },
+    "yvz3NEjMcVQ7sYJm3trFQ": {
+      "id": "yvz3NEjMcVQ7sYJm3trFQ",
+      "title": "Server",
+      "desc": "",
+      "updated": 1641052727045,
+      "created": 1641052727045,
+      "custom": {},
+      "fname": "tags.PROG.Server",
+      "type": "note",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "contentHash": "af30c097c46ec39a7d000f6ec85a3404",
+      "links": [
+        {
+          "from": {
+            "fname": "drops.2022.0101-server建置與管理",
+            "vaultName": "vault"
+          },
+          "type": "backlink",
+          "value": "tags.PROG.Server"
+        }
+      ],
+      "anchors": {},
+      "children": [],
+      "parent": "4nZxUaZMBAvz7oWuXizXl",
+      "data": {}
     },
     "Po0jmNACWQVrxnoTRT6kr": {
       "id": "Po0jmNACWQVrxnoTRT6kr",
@@ -176,6 +206,34 @@
       "parent": "4nZxUaZMBAvz7oWuXizXl",
       "data": {}
     },
+    "uFYxvNnYUjt8oxQcHtfSp": {
+      "id": "uFYxvNnYUjt8oxQcHtfSp",
+      "title": "CSS",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [
+        {
+          "from": {
+            "fname": "drops.2022.0107-PostCSS和SASS",
+            "vaultName": "vault"
+          },
+          "type": "backlink",
+          "value": "tags.PROG.CSS"
+        }
+      ],
+      "anchors": {},
+      "fname": "tags.PROG.CSS",
+      "updated": 1641648157421,
+      "created": 1641648157421,
+      "parent": "4nZxUaZMBAvz7oWuXizXl",
+      "children": [],
+      "data": {},
+      "contentHash": "526e069bfbe645ae25063a56fea76c34",
+      "custom": {}
+    },
     "u4tSbmkJewrKonY3sL544": {
       "id": "u4tSbmkJewrKonY3sL544",
       "title": "Drops",
@@ -192,6 +250,7 @@
       "parent": "root",
       "children": [
         "XVdxhzTnAX2SQnuApjkXj",
+        "4MPQXb6WwUg0kGHxTPD7x",
         "03vN8OL5CrZW9GX2NX7oS"
       ],
       "data": {},
@@ -219,6 +278,355 @@
       "data": {},
       "contentHash": "0f9a050411676d8b50668cce8d2221b2",
       "custom": {}
+    },
+    "4MPQXb6WwUg0kGHxTPD7x": {
+      "id": "4MPQXb6WwUg0kGHxTPD7x",
+      "title": "2022",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "fname": "drops.2022",
+      "updated": 1641648330472,
+      "created": 1641043073656,
+      "parent": "u4tSbmkJewrKonY3sL544",
+      "children": [
+        "1FrZXjCCHfkMyZZeBnoL2",
+        "SIdMIFLQNg5jfa6ePoqt5"
+      ],
+      "data": {},
+      "contentHash": "01c2121b2a0955562e610dc3b066ee75",
+      "stub": false,
+      "custom": {
+        "stub": true
+      }
+    },
+    "SIdMIFLQNg5jfa6ePoqt5": {
+      "id": "SIdMIFLQNg5jfa6ePoqt5",
+      "title": "0107 PostCSS 和 Sass",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [
+        {
+          "type": "frontmatterTag",
+          "from": {
+            "fname": "drops.2022.0107-PostCSS和SASS",
+            "id": "SIdMIFLQNg5jfa6ePoqt5",
+            "vaultName": "vault"
+          },
+          "value": "tags.PROG.CSS",
+          "alias": "PROG.CSS",
+          "xvault": false,
+          "to": {
+            "fname": "tags.PROG.CSS"
+          }
+        }
+      ],
+      "anchors": {
+        "前言": {
+          "type": "header",
+          "text": "前言",
+          "value": "前言",
+          "line": 10,
+          "column": 0,
+          "depth": 2
+        },
+        "關於-css": {
+          "type": "header",
+          "text": "關於 CSS",
+          "value": "關於-css",
+          "line": 22,
+          "column": 0,
+          "depth": 2
+        },
+        "css-版本": {
+          "type": "header",
+          "text": "CSS 版本",
+          "value": "css-版本",
+          "line": 37,
+          "column": 0,
+          "depth": 3
+        },
+        "css-syntax-句法": {
+          "type": "header",
+          "text": "CSS Syntax (句法)",
+          "value": "css-syntax-句法",
+          "line": 50,
+          "column": 0,
+          "depth": 3
+        },
+        "css-specificity-權重": {
+          "type": "header",
+          "text": "CSS Specificity (權重)",
+          "value": "css-specificity-權重",
+          "line": 58,
+          "column": 0,
+          "depth": 3
+        },
+        "css-效能": {
+          "type": "header",
+          "text": "CSS 效能",
+          "value": "css-效能",
+          "line": 96,
+          "column": 0,
+          "depth": 3
+        },
+        "sass-和-postcss-跟-css-的關係": {
+          "type": "header",
+          "text": "Sass 和 PostCSS 跟 CSS 的關係",
+          "value": "sass-和-postcss-跟-css-的關係",
+          "line": 156,
+          "column": 0,
+          "depth": 2
+        },
+        "sass": {
+          "type": "header",
+          "text": "Sass",
+          "value": "sass",
+          "line": 162,
+          "column": 0,
+          "depth": 3
+        },
+        "postcss": {
+          "type": "header",
+          "text": "PostCSS",
+          "value": "postcss",
+          "line": 170,
+          "column": 0,
+          "depth": 3
+        },
+        "sass-1": {
+          "type": "header",
+          "text": "Sass",
+          "value": "sass-1",
+          "line": 182,
+          "column": 0,
+          "depth": 2
+        },
+        "sass-特點": {
+          "type": "header",
+          "text": "Sass 特點",
+          "value": "sass-特點",
+          "line": 184,
+          "column": 0,
+          "depth": 3
+        },
+        "sass-運作原理如何變成-css": {
+          "type": "header",
+          "text": "Sass 運作原理(如何變成 CSS)",
+          "value": "sass-運作原理如何變成-css",
+          "line": 210,
+          "column": 0,
+          "depth": 3
+        },
+        "postcss-1": {
+          "type": "header",
+          "text": "PostCSS",
+          "value": "postcss-1",
+          "line": 220,
+          "column": 0,
+          "depth": 2
+        },
+        "postcss-特點": {
+          "type": "header",
+          "text": "PostCSS 特點",
+          "value": "postcss-特點",
+          "line": 222,
+          "column": 0,
+          "depth": 3
+        },
+        "postcss-運作原理如何變成-css": {
+          "type": "header",
+          "text": "PostCSS 運作原理(如何變成 CSS)",
+          "value": "postcss-運作原理如何變成-css",
+          "line": 282,
+          "column": 0,
+          "depth": 3
+        },
+        "tailwindcss": {
+          "type": "header",
+          "text": "tailwindcss",
+          "value": "tailwindcss",
+          "line": 290,
+          "column": 0,
+          "depth": 2
+        },
+        "angular-相關": {
+          "type": "header",
+          "text": "Angular 相關",
+          "value": "angular-相關",
+          "line": 298,
+          "column": 0,
+          "depth": 2
+        },
+        "purgecss-with-angular": {
+          "type": "header",
+          "text": "PurgeCSS with Angular",
+          "value": "purgecss-with-angular",
+          "line": 304,
+          "column": 0,
+          "depth": 2
+        },
+        "webpack-loaders": {
+          "type": "header",
+          "text": "webpack Loaders",
+          "value": "webpack-loaders",
+          "line": 308,
+          "column": 0,
+          "depth": 2
+        },
+        "tailwindcss-with-angular": {
+          "type": "header",
+          "text": "tailwindcss with Angular",
+          "value": "tailwindcss-with-angular",
+          "line": 314,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "fname": "drops.2022.0107-PostCSS和SASS",
+      "updated": 1641648216171,
+      "created": 1641561592013,
+      "parent": "4MPQXb6WwUg0kGHxTPD7x",
+      "children": [],
+      "data": {},
+      "contentHash": "990998f00133b462e3f694993a9be84c",
+      "custom": {
+        "status": "w"
+      },
+      "tags": "PROG.CSS"
+    },
+    "1FrZXjCCHfkMyZZeBnoL2": {
+      "id": "1FrZXjCCHfkMyZZeBnoL2",
+      "title": "0101 Server 建置與管理(未完)",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [
+        {
+          "type": "frontmatterTag",
+          "from": {
+            "fname": "drops.2022.0101-server建置與管理",
+            "id": "1FrZXjCCHfkMyZZeBnoL2",
+            "vaultName": "vault"
+          },
+          "value": "tags.PROG.Server",
+          "alias": "PROG.Server",
+          "xvault": false,
+          "to": {
+            "fname": "tags.PROG.Server"
+          }
+        }
+      ],
+      "anchors": {
+        "前言": {
+          "type": "header",
+          "text": "前言",
+          "value": "前言",
+          "line": 10,
+          "column": 0,
+          "depth": 2
+        },
+        "書名-mis-一定要懂的伺服器建置與管理知識": {
+          "type": "header",
+          "text": "書名: MIS 一定要懂的伺服器建置與管理知識",
+          "value": "書名-mis-一定要懂的伺服器建置與管理知識",
+          "line": 16,
+          "column": 0,
+          "depth": 2
+        },
+        "ch01-序章": {
+          "type": "header",
+          "text": "Ch01 【序章】",
+          "value": "ch01-序章",
+          "line": 22,
+          "column": 0,
+          "depth": 2
+        },
+        "ch02-伺服器管理者必備的網路基礎知識": {
+          "type": "header",
+          "text": "Ch02 【伺服器管理者必備的網路基礎知識】",
+          "value": "ch02-伺服器管理者必備的網路基礎知識",
+          "line": 29,
+          "column": 0,
+          "depth": 2
+        },
+        "ch03-從七大面向建立架設前置知識": {
+          "type": "header",
+          "text": "Ch03 【從七大面向建立架設前置知識】",
+          "value": "ch03-從七大面向建立架設前置知識",
+          "line": 33,
+          "column": 0,
+          "depth": 2
+        },
+        "ch04-企業內部的伺服器": {
+          "type": "header",
+          "text": "Ch04 【企業內部的伺服器】",
+          "value": "ch04-企業內部的伺服器",
+          "line": 37,
+          "column": 0,
+          "depth": 2
+        },
+        "ch05-對外營運的伺服器": {
+          "type": "header",
+          "text": "Ch05 【對外營運的伺服器】",
+          "value": "ch05-對外營運的伺服器",
+          "line": 41,
+          "column": 0,
+          "depth": 2
+        },
+        "ch06-預防伺服器發生故障": {
+          "type": "header",
+          "text": "Ch06 【預防伺服器發生故障】",
+          "value": "ch06-預防伺服器發生故障",
+          "line": 45,
+          "column": 0,
+          "depth": 2
+        },
+        "ch07-伺服器的資安防護": {
+          "type": "header",
+          "text": "Ch07 【伺服器的資安防護】",
+          "value": "ch07-伺服器的資安防護",
+          "line": 49,
+          "column": 0,
+          "depth": 2
+        },
+        "ch08-伺服器的維運管理": {
+          "type": "header",
+          "text": "Ch08 【伺服器的維運管理】",
+          "value": "ch08-伺服器的維運管理",
+          "line": 53,
+          "column": 0,
+          "depth": 2
+        },
+        "小結": {
+          "type": "header",
+          "text": "小結",
+          "value": "小結",
+          "line": 57,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "fname": "drops.2022.0101-server建置與管理",
+      "updated": 1641648365837,
+      "created": 1641043042173,
+      "parent": "4MPQXb6WwUg0kGHxTPD7x",
+      "children": [],
+      "data": {},
+      "contentHash": "c262c98459662f0c84742fa2797cda88",
+      "custom": {
+        "status": "w"
+      },
+      "tags": "PROG.Server"
     },
     "XVdxhzTnAX2SQnuApjkXj": {
       "id": "XVdxhzTnAX2SQnuApjkXj",
@@ -603,12 +1011,12 @@
         }
       },
       "fname": "drops.2021.1226-first-day",
-      "updated": 1641042085098,
+      "updated": 1641042934463,
       "created": 1640525260857,
       "parent": "XVdxhzTnAX2SQnuApjkXj",
       "children": [],
       "data": {},
-      "contentHash": "6f95fa4653c57d2f8de99b47108edead",
+      "contentHash": "dc1e2ce84d8f137236363c4d106bb2d6",
       "custom": {},
       "tags": [
         "PROG.Dendron"

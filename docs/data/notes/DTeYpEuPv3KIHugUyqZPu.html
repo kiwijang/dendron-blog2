@@ -54,11 +54,11 @@
 <p><img src="/dendron-blog2/assets/images/2021-12-31-19-23-24.png"></p>
 <p>解答: <a href="https://stackoverflow.com/questions/4185365/no-submodule-mapping-found-in-gitmodule-for-a-path-thats-not-a-submodule">https://stackoverflow.com/questions/4185365/no-submodule-mapping-found-in-gitmodule-for-a-path-thats-not-a-submodule</a></p>
 <ul>
-<li>問題起因: <code>git submodule update --init</code> 發生 No submodule mapping found in .gitmodules 問題。</li>
-</ul>
+<li>
+<p>問題起因: <code>git submodule update --init</code> 發生 No submodule mapping found in .gitmodules 問題。</p>
 <p>覺得應該是一開始我 <code>git init</code> 時，忘記先將 .next 排除版控 <code>echo .next >> .gitignore</code>。</p>
 <p>造成 .git 版控出了一些問題 (.next 自己也有一個 .git 版控)，執行下面的指令後就好了。</p>
-<ul>
+</li>
 <li>
 <p><code>git rm --cached .next</code></p>
 <p><a href="https://git-scm.com/docs/git-rm">git 官網參數說明</a></p>

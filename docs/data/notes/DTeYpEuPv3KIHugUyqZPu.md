@@ -85,9 +85,9 @@ https://github.com/dendronhq/nextjs-template
 
 - 問題起因: `git submodule update --init` 發生 No submodule mapping found in .gitmodules 問題。
 
-覺得應該是一開始我 `git init` 時，忘記先將 .next 排除版控 `echo .next >> .gitignore`。
+  覺得應該是一開始我 `git init` 時，忘記先將 .next 排除版控 `echo .next >> .gitignore`。
 
-造成 .git 版控出了一些問題 (.next 自己也有一個 .git 版控)，執行下面的指令後就好了。
+  造成 .git 版控出了一些問題 (.next 自己也有一個 .git 版控)，執行下面的指令後就好了。
 
 - `git rm --cached .next`
 
