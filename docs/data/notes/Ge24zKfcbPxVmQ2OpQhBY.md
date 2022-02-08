@@ -1,7 +1,5 @@
 
-# 1. Live Server 開啟 build 的檔案
-
-## 1.1. 直接資料夾開啟 index.html，會遇到一些問題:
+## 1. 直接資料夾開啟 index.html，會遇到一些問題:
 
 ![](assets/images/2022-02-08-13-49-40.png)
 
@@ -21,13 +19,13 @@
 
 > Origin: null 是 null 的。😭
 
-## 1.2. 下載 Live Server
+## 2. 下載 Live Server
 
 所以這時就可以用 vscode 的 [Live Server 擴充套件](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) 來解決 Origin 的問題。
 
 接著發現可以成功載入首頁，但是其他路由會 404...
 
-## 1.3. 使用 Live Server 但路由出問題:
+## 3. 使用 Live Server 但路由出問題:
 
 原因是瀏覽器把路由當成 http request 了。😭
 
@@ -39,7 +37,7 @@
 providers: [{provide: LocationStrategy, useClass: HashLocationStrategy},
 ```
 
-## 1.4. 關於 Angular HashLocationStrategy
+## 4. 關於 Angular HashLocationStrategy
 
 - Angular 官網
   [HashLocationStrategy](https://angular.tw/api/common/HashLocationStrategy)
@@ -56,6 +54,6 @@ providers: [{provide: LocationStrategy, useClass: HashLocationStrategy},
 
 感覺設定成 HashLocationStrategy 只有好處沒有壞處的感覺(除了不常看到有網址會長這樣以外)。
 
-## 1.5. 小結:設定 HashLocationStrategy + live server
+## 5. 小結:設定 HashLocationStrategy + live server
 
 以後要開啟 build 後的檔案，可以設定 HashLocationStrategy 然後再用 live server 開啟就 Ok 了。🎉
