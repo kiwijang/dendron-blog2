@@ -147,32 +147,41 @@ body h3 a[href^="https"]→ 0,0,0,1,3
 <h3 id="41-sass-特點"><a aria-hidden="true" class="anchor-heading" href="#41-sass-特點"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>4.1. Sass 特點</h3>
 <ul>
 <li>
-<p>CSS Compatible</p>
-<p>Sass is completely compatible with all versions of CSS. We take this compatibility seriously, so that you can seamlessly use any available CSS libraries.</p>
+<p>CSS 兼容性 CSS Compatible</p>
+<p>Sass 可以完全兼容 CSS 的所有版本。Sass 十分看重兼容性，所以可以無縫接軌到任何可用的 CSS library 上。
+Sass is completely compatible with all versions of CSS. We take this compatibility seriously, so that you can seamlessly use any available CSS libraries.</p>
 </li>
 <li>
-<p>Feature Rich</p>
-<p>Sass boasts more features and abilities than any other CSS extension language out there. The Sass Core Team has worked endlessly to not only keep up, but stay ahead.</p>
+<p>功能豐富 Feature Rich</p>
+<p>Sass 自豪擁有比其他 CSS 擴充語言更多的功能和能力。Sass 核心團隊無止境的工作不只是為了維持還包含持續領先。
+Sass boasts more features and abilities than any other CSS extension language out there. The Sass Core Team has worked endlessly to not only keep up, but stay ahead.</p>
 </li>
 <li>
-<p>Mature</p>
-<p>Sass has been actively supported for about 15 years by its loving Core Team.</p>
+<p>成熟的 Mature</p>
+<p>Sass 已經被支援 15 年了。
+Sass has been actively supported for about 15 years by its loving Core Team.</p>
 </li>
 <li>
-<p>Industry Approved</p>
-<p>Over and over again, the industry is choosing Sass as the premier CSS extension language.</p>
+<p>業界認可 Industry Approved
+業界總是首選 Sass 作為 CSS 擴充語言。
+Over and over again, the industry is choosing Sass as the premier CSS extension language.</p>
 </li>
 <li>
-<p>Large Community</p>
-<p>Sass is actively supported and developed by a consortium of several tech companies and hundreds of developers.</p>
+<p>龐大社群 Large Community</p>
+<p>Sass 被聯營企業、科技公司和上百位開發者共同支持與開發著。
+Sass is actively supported and developed by a consortium of several tech companies and hundreds of developers.</p>
 </li>
 <li>
-<p>Frameworks</p>
-<p>There are an endless number of frameworks built with Sass. Compass, Bourbon, and Susy just to name a few.</p>
+<p>框架 Frameworks
+有無數框架使用 Sass 建置而成。如 Compass、Bourbon、Susy...等。
+There are an endless number of frameworks built with Sass. Compass, Bourbon, and Susy just to name a few.</p>
 </li>
 </ul>
 <h3 id="42-sass-運作原理如何變成-css"><a aria-hidden="true" class="anchor-heading" href="#42-sass-運作原理如何變成-css"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>4.2. Sass 運作原理(如何變成 CSS)</h3>
 <p><a href="https://www.w3schools.com/sass/sass_intro.php">https://www.w3schools.com/sass/sass_intro.php</a></p>
+<p>瀏覽器看不懂 Sass 程式碼。因此，你會需要 Sass 預處理器將 Sass 程式碼轉換成標準的 CSS。</p>
+<p>這個過程稱為轉譯。所以你需要給轉譯器(一種程式) Sass 程式碼然後會得到 CSS 程式碼。</p>
+<p>小秘訣: 轉譯是一個取得一個語言的源碼然後將它轉變/轉譯成另一種語言。</p>
 <blockquote>
 <p>A browser does not understand Sass code. Therefore, you will need a Sass pre-processor to convert Sass code into standard CSS.</p>
 <p>This process is called transpiling. So, you need to give a transpiler (some kind of program) some Sass code and then get some CSS code back.</p>
@@ -183,14 +192,17 @@ body h3 a[href^="https"]→ 0,0,0,1,3
 <ul>
 <li>
 <p>Autoprefixer</p>
-<p>Increase code readability
+<p><img src="/dendron-blog2/assets/images/2022-01-17-15-15-09.png"></p>
+<p>增加可讀性
+從 Can I Use 的資料加入廠商前綴詞，<a href="https://github.com/postcss/autoprefixer">Autoprefixer</a> 會使用目前人氣瀏覽器和屬性支持度來幫你加上前綴。
+Increase code readability
 Add vendor prefixes to CSS rules using values from Can I Use. Autoprefixer will use the data based on current browser popularity and property support to apply prefixes for you.</p>
-<pre class="language-css"><code class="language-CSS"><span class="token selector">// CSS input
-<span class="token pseudo-class">:fullscreen</span></span> <span class="token punctuation">{</span>
+<pre class="language-css"><code class="language-CSS"><span class="token comment">/* CSS input */</span>
+<span class="token selector"><span class="token pseudo-class">:fullscreen</span></span> <span class="token punctuation">{</span>
 <span class="token punctuation">}</span>
 
-<span class="token selector">// CSS output
-<span class="token pseudo-class">:-webkit-full-screen</span></span> <span class="token punctuation">{</span>
+<span class="token comment">/* CSS output */</span>
+<span class="token selector"><span class="token pseudo-class">:-webkit-full-screen</span></span> <span class="token punctuation">{</span>
 <span class="token punctuation">}</span>
 <span class="token selector"><span class="token pseudo-class">:-ms-fullscreen</span></span> <span class="token punctuation">{</span>
 <span class="token punctuation">}</span>
@@ -199,63 +211,143 @@ Add vendor prefixes to CSS rules using values from Can I Use. Autoprefixer will 
 </code></pre>
 </li>
 <li>
-<p>Use tomorrow's CSS today!</p>
-<p>PostCSS Preset Env, lets you convert modern CSS into something most browsers can understand, determining the polyfills you need based on your targeted browsers or runtime environments, using cssdb.</p>
-<pre class="language-css"><code class="language-CSS"><span class="token selector">// CSS input
-body</span> <span class="token punctuation">{</span>
-<span class="token property">color</span><span class="token punctuation">:</span> <span class="token function">lch</span><span class="token punctuation">(</span><span class="token number">53</span> <span class="token number">105</span> <span class="token number">40</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<p>使用最新的 CSS 語法! Use tomorrow's CSS today!</p>
+<p><a href="https://github.com/csstools/postcss-preset-env">postcss-preset-env</a> 讓你可以將現代 CSS 用 <a href="https://github.com/csstools/cssdb/blob/main/README.md">cssdb</a> 根據你的目標瀏覽器或 runtime 環境來轉換成大多數瀏覽器可以懂、決定用哪種 polyfills 的 CSS。
+PostCSS Preset Env, lets you convert modern CSS into something most browsers can understand, determining the polyfills you need based on your targeted browsers or runtime environments, using <a href="https://github.com/csstools/cssdb/blob/main/README.md">cssdb</a>.</p>
+<pre class="language-css"><code class="language-CSS"><span class="token comment">/* CSS input */</span>
+<span class="token selector">body</span> <span class="token punctuation">{</span>
+    <span class="token property">color</span><span class="token punctuation">:</span> <span class="token function">lch</span><span class="token punctuation">(</span><span class="token number">53</span> <span class="token number">105</span> <span class="token number">40</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 
-<span class="token selector">// CSS output
-body</span> <span class="token punctuation">{</span>
-<span class="token property">color</span><span class="token punctuation">:</span> <span class="token color"><span class="token function">rgb</span><span class="token punctuation">(</span><span class="token number">250</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">)</span></span><span class="token punctuation">;</span>
+<span class="token comment">/* CSS output */</span>
+<span class="token selector">body</span> <span class="token punctuation">{</span>
+    <span class="token property">color</span><span class="token punctuation">:</span> <span class="token color"><span class="token function">rgb</span><span class="token punctuation">(</span><span class="token number">250</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">)</span></span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 
 </code></pre>
 </li>
 <li>
-<p>CSS Modules</p>
-<p>The end of global CSS</p>
-<p>CSS Modules means you never need to worry about your names being too generic, just use whatever makes the most sense.</p>
-<pre class="language-css"><code class="language-CSS"><span class="token selector">// CSS input
-<span class="token class">.name</span></span> <span class="token punctuation">{</span>
-<span class="token property">color</span><span class="token punctuation">:</span> <span class="token color">gray</span><span class="token punctuation">;</span>
+<p>CSS 模組 CSS Modules</p>
+<p>全域 CSS 的盡頭
+CSS 模組代表你不需要擔心命名太過通用，可以直接使用最具意義的命名。
+The end of global CSS
+CSS Modules means you never need to worry about your names being too generic, just use whatever makes the most sense.</p>
+<pre class="language-css"><code class="language-CSS"><span class="token comment">/* CSS input */</span>
+<span class="token selector"><span class="token class">.name</span></span> <span class="token punctuation">{</span>
+     <span class="token property">color</span><span class="token punctuation">:</span> <span class="token color">gray</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 
-<span class="token selector">// CSS output
-<span class="token class">.Logo__name__SVK0g</span></span> <span class="token punctuation">{</span>
-<span class="token property">color</span><span class="token punctuation">:</span> <span class="token color">gray</span><span class="token punctuation">;</span>
+<span class="token comment">/* CSS output */</span>
+<span class="token selector"><span class="token class">.Logo__name__SVK0g</span></span> <span class="token punctuation">{</span>
+    <span class="token property">color</span><span class="token punctuation">:</span> <span class="token color">gray</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 </code></pre>
 </li>
 <li>
-<p>Avoid errors in your CSS</p>
-<p>Enforce consistent conventions and avoid errors in your stylesheets with stylelint, a modern CSS linter. It supports the latest CSS syntax, as well as CSS-like syntaxes, such as SCSS.</p>
+<p>避免錯誤 Avoid errors in your CSS</p>
+<p>使用 <a href="https://github.com/stylelint/stylelint">stylelint</a> 執行一致的常規並避免樣式表的錯誤。<a href="https://github.com/stylelint/stylelint">stylelint</a> 是一個現代 CSS linter，支援最新的 CSS 語法，也支援如 SCSS 的 CSS-like 語法。
+Enforce consistent conventions and avoid errors in your stylesheets with <a href="https://github.com/stylelint/stylelint">stylelint</a>, a modern CSS linter. It supports the latest CSS syntax, as well as CSS-like syntaxes, such as SCSS.</p>
 </li>
 </ul>
 <h3 id="52-postcss-運作原理如何變成-css"><a aria-hidden="true" class="anchor-heading" href="#52-postcss-運作原理如何變成-css"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>5.2. PostCSS 運作原理(如何變成 CSS)</h3>
 <p><a href="https://www.youtube.com/watch?v=WhCXiEwdU1A">https://www.youtube.com/watch?v=WhCXiEwdU1A</a></p>
+<blockquote>
+<p><img src="/dendron-blog2/assets/images/2022-01-17-16-12-49.png">
+可以和 Sass、less 合用，或是如圖用 postCSS 的 plugin 功能取代 Sass 和 less。</p>
+</blockquote>
 <p><a href="https://www.toptal.com/front-end/postcss-sass-new-play-date">https://www.toptal.com/front-end/postcss-sass-new-play-date</a></p>
+<blockquote>
+<p>PostCSS is all about plugins. PostCSS 就是 plugins。</p>
+</blockquote>
 <p><a href="https://cythilya.github.io/2018/08/10/postcss/">https://cythilya.github.io/2018/08/10/postcss/</a></p>
+<blockquote>
+<p>Summer 大大的文章。</p>
+</blockquote>
 <h2 id="6-tailwindcss"><a aria-hidden="true" class="anchor-heading" href="#6-tailwindcss"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>6. tailwindcss</h2>
 <p><a href="https://tailwindcss.com/">https://tailwindcss.com/</a></p>
 <blockquote>
-<p>Rapidly build modern websites without ever leaving your HTML.</p>
+<p>Rapidly build modern websites without ever leaving your HTML.
+不用離開 HTML 就可以建置現代網頁。</p>
 </blockquote>
 <hr>
 <h2 id="7-angular-相關"><a aria-hidden="true" class="anchor-heading" href="#7-angular-相關"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>7. Angular 相關</h2>
 <p>以下是 Angular 應用 css 套件的相關文章。</p>
 <p><a href="https://angular.tw/guide/component-styles">https://angular.tw/guide/component-styles</a></p>
-<h2 id="8-purgecss-with-angular"><a aria-hidden="true" class="anchor-heading" href="#8-purgecss-with-angular"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>8. PurgeCSS with Angular</h2>
+<h2 id="8-angular-已經有-autoprefixer-了"><a aria-hidden="true" class="anchor-heading" href="#8-angular-已經有-autoprefixer-了"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>8. Angular 已經有 Autoprefixer 了</h2>
+<p><a href="https://angular.tw/guide/build#configuring-browser-compatibility">Autoprefixer</a></p>
+<h2 id="9-purgecss-with-angular"><a aria-hidden="true" class="anchor-heading" href="#9-purgecss-with-angular"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>9. PurgeCSS with Angular</h2>
 <p><a href="https://dev.to/dylanvdmerwe/reduce-angular-style-size-using-purgecss-to-remove-unused-styles-3b2k">https://dev.to/dylanvdmerwe/reduce-angular-style-size-using-purgecss-to-remove-unused-styles-3b2k</a></p>
-<h2 id="9-webpack-loaders"><a aria-hidden="true" class="anchor-heading" href="#9-webpack-loaders"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>9. webpack Loaders</h2>
+<h2 id="10-webpack-loaders"><a aria-hidden="true" class="anchor-heading" href="#10-webpack-loaders"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>10. webpack Loaders</h2>
 <blockquote>
 <p>sass-loader、postcss-loader</p>
 </blockquote>
 <p><a href="https://stackoverflow.com/questions/59715916/how-to-use-sass-loader-in-angular">https://stackoverflow.com/questions/59715916/how-to-use-sass-loader-in-angular</a></p>
-<h2 id="10-tailwindcss-with-angular"><a aria-hidden="true" class="anchor-heading" href="#10-tailwindcss-with-angular"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>10. tailwindcss with Angular</h2>
+<h2 id="11-tailwindcss-with-angular"><a aria-hidden="true" class="anchor-heading" href="#11-tailwindcss-with-angular"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>11. tailwindcss with Angular</h2>
 <p><a href="https://hsuchihting.github.io/TailwindCSS/20210702/3640682418/">https://hsuchihting.github.io/TailwindCSS/20210702/3640682418/</a></p>
 <p><a href="https://medium.com/@JedChou/%E5%A6%82%E4%BD%95%E5%9C%A8-angular-%E5%B0%88%E6%A1%88%E4%B8%AD%E4%BD%BF%E7%94%A8-tailwind-css-e119b6390803">https://medium.com/@JedChou/%E5%A6%82%E4%BD%95%E5%9C%A8-angular-%E5%B0%88%E6%A1%88%E4%B8%AD%E4%BD%BF%E7%94%A8-tailwind-css-e119b6390803</a></p>
+<h2 id="12-nx-for-angular-and-tailwind"><a aria-hidden="true" class="anchor-heading" href="#12-nx-for-angular-and-tailwind"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>12. Nx for Angular and tailwind</h2>
+<p><a href="https://nx.dev/angular/setup-tailwind">https://nx.dev/angular/setup-tailwind</a></p>
+<p>先下載 tailwind</p>
+<pre class="language-bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> tailwindcss@latest postcss@latest autoprefixer@latest
+</code></pre>
+<p>選擇 .scss</p>
+<pre class="language-javascript"><code class="language-javascript">@<span class="token keyword module">import</span> <span class="token string">"tailwindcss/base"</span><span class="token punctuation">;</span>
+@<span class="token keyword module">import</span> <span class="token string">"tailwindcss/components"</span><span class="token punctuation">;</span>
+@<span class="token keyword module">import</span> <span class="token string">"tailwindcss/utilities"</span><span class="token punctuation">;</span>
+</code></pre>
+<p><a href="https://nx.dev/guides/using-tailwind-css-in-react#step-1-install-tailwind-dependencies">https://nx.dev/guides/using-tailwind-css-in-react#step-1-install-tailwind-dependencies</a></p>
+<p>npm install stylelint-config-recommended --save-dev</p>
+<p>13 版後 tailwind.config.js 會放置在 app 裡，預設只會</p>
+<pre class="language-javascript"><code class="language-javascript">module<span class="token punctuation">.</span><span class="token property-access">exports</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+  content<span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token function">join</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span> <span class="token string">'src/**/*.{html,ts}'</span><span class="token punctuation">,</span> <span class="token string">'libs/client-ui/src/**/*.{html,ts}'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    <span class="token spread operator">...</span><span class="token method function property-access">createGlobPatternsForDependencies</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">)</span><span class="token punctuation">,</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token comment">//...</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre>
+<h2 id="13-live-server-開啟-build-的檔案"><a aria-hidden="true" class="anchor-heading" href="#13-live-server-開啟-build-的檔案"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>13. Live Server 開啟 build 的檔案</h2>
+<h3 id="131-直接資料夾開啟-indexhtml會遇到一些問題"><a aria-hidden="true" class="anchor-heading" href="#131-直接資料夾開啟-indexhtml會遇到一些問題"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>13.1. 直接資料夾開啟 index.html，會遇到一些問題:</h3>
+<p><img src="/dendron-blog2/assets/images/2022-02-08-13-49-40.png"></p>
+<p>在 angular 的 index.html 預設是 <code>&#x3C;base href="/"></code></p>
+<p>所以會以檔案資料夾目錄的位置打開(網址列會長這樣: <code>file:///C:/Users/xxx.../dist/apps/client/index.html</code>)</p>
+<p>如果想用 <code>&#x3C;base href="./"></code> 解決問題，若有設定路由會發現網址除了 server 根網址以外還多了路由，然後發生 404 錯誤...</p>
+<p><img src="/dendron-blog2/assets/images/2022-02-08-17-00-24.png"></p>
+<p>另外，在瀏覽器上 es6 module 一定會遵循 CORS (參考文章:<a href="https://www.ithome.com.tw/voice/132470">ES6 模組匯入-林信良</a>)，所以如果直接用 <code>file:///C:/Users/xxx.../dist/apps/client/index.html</code> 開啟會出現這樣的錯誤:</p>
+<p><img src="/dendron-blog2/assets/images/2022-02-08-17-18-04.png"></p>
+<p><img src="/dendron-blog2/assets/images/2022-02-08-17-55-33.png"></p>
+<blockquote>
+<p>Origin: null 是 null 的。😭</p>
+</blockquote>
+<h3 id="132-下載-live-server"><a aria-hidden="true" class="anchor-heading" href="#132-下載-live-server"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>13.2. 下載 Live Server</h3>
+<p>所以這時就可以用 vscode 的 <a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer">Live Server 擴充套件</a> 來解決 Origin 的問題。</p>
+<p>接著發現可以成功載入首頁，但是其他路由會 404...</p>
+<h2 id="14-使用-live-server-但路由出問題"><a aria-hidden="true" class="anchor-heading" href="#14-使用-live-server-但路由出問題"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>14. 使用 Live Server 但路由出問題:</h2>
+<p>原因是瀏覽器把路由當成 http request 了。😭</p>
+<p><img src="/dendron-blog2/assets/images/2022-02-08-18-04-09.png"></p>
+<p>於是為了解決這個問題，可以設定 HashLocationStrategy。</p>
+<pre class="language-typescript"><code class="language-typescript">providers<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>provide<span class="token operator">:</span> <span class="token maybe-class-name">LocationStrategy</span><span class="token punctuation">,</span> useClass<span class="token operator">:</span> <span class="token maybe-class-name">HashLocationStrategy</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+</code></pre>
+<h3 id="141-關於-angular-hashlocationstrategy"><a aria-hidden="true" class="anchor-heading" href="#141-關於-angular-hashlocationstrategy"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>14.1. 關於 Angular HashLocationStrategy</h3>
+<ul>
+<li>Angular 官網
+<a href="https://angular.tw/api/common/HashLocationStrategy">HashLocationStrategy</a></li>
+</ul>
+<blockquote>
+<p>A LocationStrategy used to configure the Location service to represent its state in the <a href="https://en.wikipedia.org/wiki/URL#Syntax">hash fragment</a> of the browser's URL.
+此 LocationStrategy 用來配置 Location 服務，以便在瀏覽器 URL 的 <a href="https://en.wikipedia.org/wiki/URL#Syntax">hash 片段</a>中表示其狀態。</p>
+</blockquote>
+<ul>
+<li>URI fragment wiki 說明
+<a href="https://en.wikipedia.org/wiki/URI_fragment">URI fragment</a></li>
+</ul>
+<blockquote>
+<p>Fragments depend on the document MIME type and are evaluated by the client (web browser). Clients are not supposed to send URI fragments to servers when they retrieve a document, and without help from a local application (see below) fragments do not participate in HTTP redirections.</p>
+</blockquote>
+<p>所以看起來 fragments 可以解決網址被送到 server 的問題！🎉</p>
+<p>感覺設定成 HashLocationStrategy 只有好處沒有壞處的感覺(除了不常看到有網址會長這樣以外)。</p>
+<h3 id="142-小結設定-hashlocationstrategy--live-server"><a aria-hidden="true" class="anchor-heading" href="#142-小結設定-hashlocationstrategy--live-server"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>14.2. 小結:設定 HashLocationStrategy + live server</h3>
+<p>以後要開啟 build 後的檔案，可以設定 HashLocationStrategy 然後再用 live server 開啟就 Ok 了。🎉</p>
 <hr>
 <h2 id="tags"><a aria-hidden="true" class="anchor-heading" href="#tags"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Tags</h2>
 <ol>

@@ -11,8 +11,8 @@
       "links": [],
       "anchors": {},
       "fname": "403",
-      "updated": 1641650517165,
-      "created": 1641650517165,
+      "updated": 1644316430329,
+      "created": 1644316430329,
       "parent": null,
       "children": [],
       "data": {}
@@ -61,7 +61,8 @@
       "parent": null,
       "children": [
         "u4tSbmkJewrKonY3sL544",
-        "rEbR1FrKkZzyjo6ahAgm3"
+        "rEbR1FrKkZzyjo6ahAgm3",
+        "srD5V1RC31nMtxXOXHfLg"
       ],
       "data": {},
       "contentHash": "ca4ed6fa39558cee2d28c9aabc5ce74d",
@@ -70,6 +71,90 @@
         "nav_order": 0,
         "permalink": "/"
       }
+    },
+    "srD5V1RC31nMtxXOXHfLg": {
+      "id": "srD5V1RC31nMtxXOXHfLg",
+      "title": "Dorps",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "fname": "dorps",
+      "updated": 1644316429845,
+      "created": 1644316429845,
+      "parent": "root",
+      "children": [
+        "HZG7MGO1TFgbHQCFAcAz4"
+      ],
+      "data": {},
+      "stub": false
+    },
+    "HZG7MGO1TFgbHQCFAcAz4": {
+      "id": "HZG7MGO1TFgbHQCFAcAz4",
+      "title": "2022",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "fname": "dorps.2022",
+      "updated": 1644316429845,
+      "created": 1644316429845,
+      "parent": "srD5V1RC31nMtxXOXHfLg",
+      "children": [
+        "05PiGJUq8nazfBg8ndqHM"
+      ],
+      "data": {},
+      "stub": false
+    },
+    "05PiGJUq8nazfBg8ndqHM": {
+      "id": "05PiGJUq8nazfBg8ndqHM",
+      "title": "0109-TypeScript(未完)",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [
+        {
+          "type": "frontmatterTag",
+          "from": {
+            "fname": "dorps.2022.0109-TypeScript",
+            "id": "05PiGJUq8nazfBg8ndqHM",
+            "vaultName": "vault"
+          },
+          "value": "tags.PROG.TypeScript",
+          "alias": "PROG.TypeScript",
+          "xvault": false,
+          "to": {
+            "fname": "tags.PROG.TypeScript"
+          }
+        }
+      ],
+      "anchors": {
+        "編譯器": {
+          "type": "header",
+          "text": "編譯器",
+          "value": "編譯器",
+          "line": 9,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "fname": "dorps.2022.0109-TypeScript",
+      "updated": 1644316357706,
+      "created": 1641697334942,
+      "parent": "HZG7MGO1TFgbHQCFAcAz4",
+      "children": [],
+      "data": {},
+      "contentHash": "862c926da46499f26cb3370bf8e5f284",
+      "custom": {},
+      "tags": "PROG.TypeScript"
     },
     "rEbR1FrKkZzyjo6ahAgm3": {
       "id": "rEbR1FrKkZzyjo6ahAgm3",
@@ -117,9 +202,38 @@
         "uFYxvNnYUjt8oxQcHtfSp",
         "3cKSNGeq54iDx1eRKcNB0",
         "Po0jmNACWQVrxnoTRT6kr",
-        "yvz3NEjMcVQ7sYJm3trFQ"
+        "yvz3NEjMcVQ7sYJm3trFQ",
+        "5fvFLLh8nAp2yZZwxk9ku"
       ],
       "parent": "rEbR1FrKkZzyjo6ahAgm3",
+      "data": {}
+    },
+    "5fvFLLh8nAp2yZZwxk9ku": {
+      "id": "5fvFLLh8nAp2yZZwxk9ku",
+      "title": "TypeScript",
+      "desc": "",
+      "updated": 1641697381549,
+      "created": 1641697381549,
+      "custom": {},
+      "fname": "tags.PROG.TypeScript",
+      "type": "note",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "contentHash": "80b103314c05291fc1df394e2e74d157",
+      "links": [
+        {
+          "from": {
+            "fname": "dorps.2022.0109-TypeScript",
+            "vaultName": "vault"
+          },
+          "type": "backlink",
+          "value": "tags.PROG.TypeScript"
+        }
+      ],
+      "anchors": {},
+      "children": [],
+      "parent": "4nZxUaZMBAvz7oWuXizXl",
       "data": {}
     },
     "yvz3NEjMcVQ7sYJm3trFQ": {
@@ -421,7 +535,7 @@
           "type": "header",
           "text": "4.2. Sass 運作原理(如何變成 CSS)",
           "value": "42-sass-運作原理如何變成-css",
-          "line": 214,
+          "line": 218,
           "column": 0,
           "depth": 3
         },
@@ -429,7 +543,7 @@
           "type": "header",
           "text": "5. PostCSS",
           "value": "5-postcss",
-          "line": 224,
+          "line": 234,
           "column": 0,
           "depth": 2
         },
@@ -437,7 +551,7 @@
           "type": "header",
           "text": "5.1. PostCSS 特點",
           "value": "51-postcss-特點",
-          "line": 226,
+          "line": 236,
           "column": 0,
           "depth": 3
         },
@@ -445,7 +559,7 @@
           "type": "header",
           "text": "5.2. PostCSS 運作原理(如何變成 CSS)",
           "value": "52-postcss-運作原理如何變成-css",
-          "line": 286,
+          "line": 303,
           "column": 0,
           "depth": 3
         },
@@ -453,7 +567,7 @@
           "type": "header",
           "text": "6. tailwindcss",
           "value": "6-tailwindcss",
-          "line": 294,
+          "line": 318,
           "column": 0,
           "depth": 2
         },
@@ -461,42 +575,106 @@
           "type": "header",
           "text": "7. Angular 相關",
           "value": "7-angular-相關",
-          "line": 302,
+          "line": 327,
           "column": 0,
           "depth": 2
         },
-        "8-purgecss-with-angular": {
+        "8-angular-已經有-autoprefixer-了": {
           "type": "header",
-          "text": "8. PurgeCSS with Angular",
-          "value": "8-purgecss-with-angular",
-          "line": 308,
+          "text": "8. Angular 已經有 Autoprefixer 了",
+          "value": "8-angular-已經有-autoprefixer-了",
+          "line": 333,
           "column": 0,
           "depth": 2
         },
-        "9-webpack-loaders": {
+        "9-purgecss-with-angular": {
           "type": "header",
-          "text": "9. webpack Loaders",
-          "value": "9-webpack-loaders",
-          "line": 312,
+          "text": "9. PurgeCSS with Angular",
+          "value": "9-purgecss-with-angular",
+          "line": 337,
           "column": 0,
           "depth": 2
         },
-        "10-tailwindcss-with-angular": {
+        "10-webpack-loaders": {
           "type": "header",
-          "text": "10. tailwindcss with Angular",
-          "value": "10-tailwindcss-with-angular",
-          "line": 318,
+          "text": "10. webpack Loaders",
+          "value": "10-webpack-loaders",
+          "line": 341,
           "column": 0,
           "depth": 2
+        },
+        "11-tailwindcss-with-angular": {
+          "type": "header",
+          "text": "11. tailwindcss with Angular",
+          "value": "11-tailwindcss-with-angular",
+          "line": 347,
+          "column": 0,
+          "depth": 2
+        },
+        "12-nx-for-angular-and-tailwind": {
+          "type": "header",
+          "text": "12. Nx for Angular and tailwind",
+          "value": "12-nx-for-angular-and-tailwind",
+          "line": 353,
+          "column": 0,
+          "depth": 2
+        },
+        "13-live-server-開啟-build-的檔案": {
+          "type": "header",
+          "text": "13. Live Server 開啟 build 的檔案",
+          "value": "13-live-server-開啟-build-的檔案",
+          "line": 387,
+          "column": 0,
+          "depth": 2
+        },
+        "131-直接資料夾開啟-indexhtml會遇到一些問題": {
+          "type": "header",
+          "text": "13.1. 直接資料夾開啟 index.html，會遇到一些問題:",
+          "value": "131-直接資料夾開啟-indexhtml會遇到一些問題",
+          "line": 389,
+          "column": 0,
+          "depth": 3
+        },
+        "132-下載-live-server": {
+          "type": "header",
+          "text": "13.2. 下載 Live Server",
+          "value": "132-下載-live-server",
+          "line": 409,
+          "column": 0,
+          "depth": 3
+        },
+        "14-使用-live-server-但路由出問題": {
+          "type": "header",
+          "text": "14. 使用 Live Server 但路由出問題:",
+          "value": "14-使用-live-server-但路由出問題",
+          "line": 415,
+          "column": 0,
+          "depth": 2
+        },
+        "141-關於-angular-hashlocationstrategy": {
+          "type": "header",
+          "text": "14.1. 關於 Angular HashLocationStrategy",
+          "value": "141-關於-angular-hashlocationstrategy",
+          "line": 427,
+          "column": 0,
+          "depth": 3
+        },
+        "142-小結設定-hashlocationstrategy--live-server": {
+          "type": "header",
+          "text": "14.2. 小結:設定 HashLocationStrategy + live server",
+          "value": "142-小結設定-hashlocationstrategy--live-server",
+          "line": 444,
+          "column": 0,
+          "depth": 3
         }
       },
       "fname": "drops.2022.0107-PostCSS和SASS",
-      "updated": 1641650489348,
+      "updated": 1644316144170,
       "created": 1641561592013,
       "parent": "4MPQXb6WwUg0kGHxTPD7x",
       "children": [],
       "data": {},
-      "contentHash": "f24339db8efd732bce6ab57a2edc5b0d",
+      "contentHash": "99e22b0e58026f49b8405c7e741be7cf",
       "custom": {
         "status": "w"
       },
@@ -1008,15 +1186,23 @@
           "line": 119,
           "column": 0,
           "depth": 3
+        },
+        "為標題編號": {
+          "type": "header",
+          "text": "為標題編號",
+          "value": "為標題編號",
+          "line": 126,
+          "column": 0,
+          "depth": 3
         }
       },
       "fname": "drops.2021.1226-first-day",
-      "updated": 1641042934463,
+      "updated": 1644316342432,
       "created": 1640525260857,
       "parent": "XVdxhzTnAX2SQnuApjkXj",
       "children": [],
       "data": {},
-      "contentHash": "dc1e2ce84d8f137236363c4d106bb2d6",
+      "contentHash": "96adfd2ab21246c1f75054776574f35f",
       "custom": {},
       "tags": [
         "PROG.Dendron"
@@ -1068,7 +1254,8 @@
       "parent": null,
       "children": [
         "u4tSbmkJewrKonY3sL544",
-        "rEbR1FrKkZzyjo6ahAgm3"
+        "rEbR1FrKkZzyjo6ahAgm3",
+        "srD5V1RC31nMtxXOXHfLg"
       ],
       "data": {},
       "contentHash": "ca4ed6fa39558cee2d28c9aabc5ce74d",
@@ -1124,7 +1311,8 @@
     "parent": null,
     "children": [
       "u4tSbmkJewrKonY3sL544",
-      "rEbR1FrKkZzyjo6ahAgm3"
+      "rEbR1FrKkZzyjo6ahAgm3",
+      "srD5V1RC31nMtxXOXHfLg"
     ],
     "data": {},
     "contentHash": "ca4ed6fa39558cee2d28c9aabc5ce74d",

@@ -179,33 +179,43 @@ https://postcss.org/
 
 ### 4.1. Sass 特點
 
-- CSS Compatible
+- CSS 兼容性 CSS Compatible
 
+  Sass 可以完全兼容 CSS 的所有版本。Sass 十分看重兼容性，所以可以無縫接軌到任何可用的 CSS library 上。
   Sass is completely compatible with all versions of CSS. We take this compatibility seriously, so that you can seamlessly use any available CSS libraries.
 
-- Feature Rich
+- 功能豐富 Feature Rich
 
+  Sass 自豪擁有比其他 CSS 擴充語言更多的功能和能力。Sass 核心團隊無止境的工作不只是為了維持還包含持續領先。
   Sass boasts more features and abilities than any other CSS extension language out there. The Sass Core Team has worked endlessly to not only keep up, but stay ahead.
 
-- Mature
+- 成熟的 Mature
 
+  Sass 已經被支援 15 年了。
   Sass has been actively supported for about 15 years by its loving Core Team.
 
-- Industry Approved
-
+- 業界認可 Industry Approved
+  業界總是首選 Sass 作為 CSS 擴充語言。
   Over and over again, the industry is choosing Sass as the premier CSS extension language.
 
-- Large Community
+- 龐大社群 Large Community
 
+  Sass 被聯營企業、科技公司和上百位開發者共同支持與開發著。
   Sass is actively supported and developed by a consortium of several tech companies and hundreds of developers.
 
-- Frameworks
-
+- 框架 Frameworks
+  有無數框架使用 Sass 建置而成。如 Compass、Bourbon、Susy...等。
   There are an endless number of frameworks built with Sass. Compass, Bourbon, and Susy just to name a few.
 
 ### 4.2. Sass 運作原理(如何變成 CSS)
 
 https://www.w3schools.com/sass/sass_intro.php
+
+瀏覽器看不懂 Sass 程式碼。因此，你會需要 Sass 預處理器將 Sass 程式碼轉換成標準的 CSS。
+
+這個過程稱為轉譯。所以你需要給轉譯器(一種程式) Sass 程式碼然後會得到 CSS 程式碼。
+
+小秘訣: 轉譯是一個取得一個語言的源碼然後將它轉變/轉譯成另一種語言。
 
 > A browser does not understand Sass code. Therefore, you will need a Sass pre-processor to convert Sass code into standard CSS.
 >
@@ -219,15 +229,19 @@ https://www.w3schools.com/sass/sass_intro.php
 
 - Autoprefixer
 
+  ![](assets/images/2022-01-17-15-15-09.png)
+
+  增加可讀性
+  從 Can I Use 的資料加入廠商前綴詞，[Autoprefixer](https://github.com/postcss/autoprefixer) 會使用目前人氣瀏覽器和屬性支持度來幫你加上前綴。
   Increase code readability
   Add vendor prefixes to CSS rules using values from Can I Use. Autoprefixer will use the data based on current browser popularity and property support to apply prefixes for you.
 
   ```CSS
-  // CSS input
+  /* CSS input */
   :fullscreen {
   }
 
-  // CSS output
+  /* CSS output */
   :-webkit-full-screen {
   }
   :-ms-fullscreen {
@@ -236,58 +250,69 @@ https://www.w3schools.com/sass/sass_intro.php
   }
   ```
 
-- Use tomorrow's CSS today!
+- 使用最新的 CSS 語法! Use tomorrow's CSS today!
 
-  PostCSS Preset Env, lets you convert modern CSS into something most browsers can understand, determining the polyfills you need based on your targeted browsers or runtime environments, using cssdb.
+  [postcss-preset-env](https://github.com/csstools/postcss-preset-env) 讓你可以將現代 CSS 用 [cssdb](https://github.com/csstools/cssdb/blob/main/README.md) 根據你的目標瀏覽器或 runtime 環境來轉換成大多數瀏覽器可以懂、決定用哪種 polyfills 的 CSS。
+  PostCSS Preset Env, lets you convert modern CSS into something most browsers can understand, determining the polyfills you need based on your targeted browsers or runtime environments, using [cssdb](https://github.com/csstools/cssdb/blob/main/README.md).
 
   ```CSS
-  // CSS input
+  /* CSS input */
   body {
-  color: lch(53 105 40);
+      color: lch(53 105 40);
   }
 
-  // CSS output
+  /* CSS output */
   body {
-  color: rgb(250, 0, 4);
+      color: rgb(250, 0, 4);
   }
 
   ```
 
-- CSS Modules
+- CSS 模組 CSS Modules
 
+  全域 CSS 的盡頭
+  CSS 模組代表你不需要擔心命名太過通用，可以直接使用最具意義的命名。
   The end of global CSS
-
   CSS Modules means you never need to worry about your names being too generic, just use whatever makes the most sense.
 
   ```CSS
-  // CSS input
+  /* CSS input */
   .name {
-  color: gray;
+       color: gray;
   }
 
-  // CSS output
+  /* CSS output */
   .Logo__name__SVK0g {
-  color: gray;
+      color: gray;
   }
   ```
 
-- Avoid errors in your CSS
+- 避免錯誤 Avoid errors in your CSS
 
-  Enforce consistent conventions and avoid errors in your stylesheets with stylelint, a modern CSS linter. It supports the latest CSS syntax, as well as CSS-like syntaxes, such as SCSS.
+  使用 [stylelint](https://github.com/stylelint/stylelint) 執行一致的常規並避免樣式表的錯誤。[stylelint](https://github.com/stylelint/stylelint) 是一個現代 CSS linter，支援最新的 CSS 語法，也支援如 SCSS 的 CSS-like 語法。
+  Enforce consistent conventions and avoid errors in your stylesheets with [stylelint](https://github.com/stylelint/stylelint), a modern CSS linter. It supports the latest CSS syntax, as well as CSS-like syntaxes, such as SCSS.
 
 ### 5.2. PostCSS 運作原理(如何變成 CSS)
 
 https://www.youtube.com/watch?v=WhCXiEwdU1A
 
+> ![](assets/images/2022-01-17-16-12-49.png)
+> 可以和 Sass、less 合用，或是如圖用 postCSS 的 plugin 功能取代 Sass 和 less。
+
 https://www.toptal.com/front-end/postcss-sass-new-play-date
 
+> PostCSS is all about plugins. PostCSS 就是 plugins。
+
 https://cythilya.github.io/2018/08/10/postcss/
+
+> Summer 大大的文章。
 
 ## 6. tailwindcss
 
 https://tailwindcss.com/
 
 > Rapidly build modern websites without ever leaving your HTML.
+> 不用離開 HTML 就可以建置現代網頁。
 
 ---
 
@@ -297,18 +322,117 @@ https://tailwindcss.com/
 
 https://angular.tw/guide/component-styles
 
-## 8. PurgeCSS with Angular
+## 8. Angular 已經有 Autoprefixer 了
+
+[Autoprefixer](https://angular.tw/guide/build#configuring-browser-compatibility)
+
+## 9. PurgeCSS with Angular
 
 https://dev.to/dylanvdmerwe/reduce-angular-style-size-using-purgecss-to-remove-unused-styles-3b2k
 
-## 9. webpack Loaders
+## 10. webpack Loaders
 
 > sass-loader、postcss-loader
 
 https://stackoverflow.com/questions/59715916/how-to-use-sass-loader-in-angular
 
-## 10. tailwindcss with Angular
+## 11. tailwindcss with Angular
 
 https://hsuchihting.github.io/TailwindCSS/20210702/3640682418/
 
 https://medium.com/@JedChou/%E5%A6%82%E4%BD%95%E5%9C%A8-angular-%E5%B0%88%E6%A1%88%E4%B8%AD%E4%BD%BF%E7%94%A8-tailwind-css-e119b6390803
+
+## 12. Nx for Angular and tailwind
+
+https://nx.dev/angular/setup-tailwind
+
+先下載 tailwind
+
+```bash
+npm install tailwindcss@latest postcss@latest autoprefixer@latest
+```
+
+選擇 .scss
+
+```javascript
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+```
+
+https://nx.dev/guides/using-tailwind-css-in-react#step-1-install-tailwind-dependencies
+
+npm install stylelint-config-recommended --save-dev
+
+13 版後 tailwind.config.js 會放置在 app 裡，預設只會
+
+```javascript
+module.exports = {
+  content: [
+    join(__dirname, 'src/**/*.{html,ts}', 'libs/client-ui/src/**/*.{html,ts}'),
+    ...createGlobPatternsForDependencies(__dirname),
+  ],
+  //...
+};
+```
+
+## 13. Live Server 開啟 build 的檔案
+
+### 13.1. 直接資料夾開啟 index.html，會遇到一些問題:
+
+![](assets/images/2022-02-08-13-49-40.png)
+
+在 angular 的 index.html 預設是 `<base href="/">`
+
+所以會以檔案資料夾目錄的位置打開(網址列會長這樣: `file:///C:/Users/xxx.../dist/apps/client/index.html`)
+
+如果想用 `<base href="./">` 解決問題，若有設定路由會發現網址除了 server 根網址以外還多了路由，然後發生 404 錯誤...
+
+![](assets/images/2022-02-08-17-00-24.png)
+
+另外，在瀏覽器上 es6 module 一定會遵循 CORS (參考文章:[ES6 模組匯入-林信良](https://www.ithome.com.tw/voice/132470))，所以如果直接用 `file:///C:/Users/xxx.../dist/apps/client/index.html` 開啟會出現這樣的錯誤:
+
+![](assets/images/2022-02-08-17-18-04.png)
+
+![](assets/images/2022-02-08-17-55-33.png)
+
+> Origin: null 是 null 的。😭
+
+### 13.2. 下載 Live Server
+
+所以這時就可以用 vscode 的 [Live Server 擴充套件](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) 來解決 Origin 的問題。
+
+接著發現可以成功載入首頁，但是其他路由會 404...
+
+## 14. 使用 Live Server 但路由出問題:
+
+原因是瀏覽器把路由當成 http request 了。😭
+
+![](assets/images/2022-02-08-18-04-09.png)
+
+於是為了解決這個問題，可以設定 HashLocationStrategy。
+
+```typescript
+providers: [{provide: LocationStrategy, useClass: HashLocationStrategy},
+```
+
+### 14.1. 關於 Angular HashLocationStrategy
+
+- Angular 官網
+  [HashLocationStrategy](https://angular.tw/api/common/HashLocationStrategy)
+
+> A LocationStrategy used to configure the Location service to represent its state in the [hash fragment](https://en.wikipedia.org/wiki/URL#Syntax) of the browser's URL.
+> 此 LocationStrategy 用來配置 Location 服務，以便在瀏覽器 URL 的 [hash 片段](https://en.wikipedia.org/wiki/URL#Syntax)中表示其狀態。
+
+- URI fragment wiki 說明
+  [URI fragment](https://en.wikipedia.org/wiki/URI_fragment)
+
+> Fragments depend on the document MIME type and are evaluated by the client (web browser). Clients are not supposed to send URI fragments to servers when they retrieve a document, and without help from a local application (see below) fragments do not participate in HTTP redirections.
+
+所以看起來 fragments 可以解決網址被送到 server 的問題！🎉
+
+感覺設定成 HashLocationStrategy 只有好處沒有壞處的感覺(除了不常看到有網址會長這樣以外)。
+
+### 14.2. 小結:設定 HashLocationStrategy + live server
+
+以後要開啟 build 後的檔案，可以設定 HashLocationStrategy 然後再用 live server 開啟就 Ok 了。🎉

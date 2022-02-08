@@ -1,8 +1,8 @@
 ---
 id: DTeYpEuPv3KIHugUyqZPu
 title: 1226 First Day
-desc: ""
-updated: 1641042934463
+desc: ''
+updated: 1644316342432
 created: 1640525260857
 tags:
   - PROG.Dendron
@@ -123,3 +123,11 @@ https://github.com/dendronhq/nextjs-template
 
 - [Integrating Disqus in your Next.js React Application by Imran Sayed](https://imranhsayed.medium.com/disqus-is-a-networked-community-platform-used-by-hundreds-of-thousands-of-sites-all-over-the-web-39b88bafaca5)
 - [如何安裝 Disqus 留言板](https://ithelp.ithome.com.tw/articles/10242269)
+
+### 為標題編號
+
+下載 vscode 套件 [markdown all in one](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
+
+`shift + ctrl + P` 輸入 number 然後選這個，就會自動編號了。
+
+![](assets/images/2022-02-08-18-31-50.png)
