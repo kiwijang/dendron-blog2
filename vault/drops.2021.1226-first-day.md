@@ -1,8 +1,8 @@
 ---
 id: DTeYpEuPv3KIHugUyqZPu
-title: 1226 First Day
+title: 1226 使用 Dendron 紀錄
 desc: ''
-updated: 1644316342432
+updated: 1644411066133
 created: 1640525260857
 tags:
   - PROG.Dendron

@@ -11,8 +11,8 @@
       "links": [],
       "anchors": {},
       "fname": "403",
-      "updated": 1644397898681,
-      "created": 1644397898681,
+      "updated": 1644420357889,
+      "created": 1644420357889,
       "parent": null,
       "children": [],
       "data": {}
@@ -373,7 +373,7 @@
     },
     "Ge24zKfcbPxVmQ2OpQhBY": {
       "id": "Ge24zKfcbPxVmQ2OpQhBY",
-      "title": "0208-Live Server 開啟 build 檔案",
+      "title": "0208 Live Server 開啟 build 檔案",
       "vault": {
         "fsPath": "vault"
       },
@@ -452,12 +452,12 @@
         }
       },
       "fname": "drops.2022.0208-Live Server 開啟 build 檔案",
-      "updated": 1644317986012,
+      "updated": 1644411066151,
       "created": 1644317231901,
       "parent": "4MPQXb6WwUg0kGHxTPD7x",
       "children": [],
       "data": {},
-      "contentHash": "a7e30b3ca36ce069ef453a756d92843a",
+      "contentHash": "cfdfd9b2ffb3245ebfdc7676c9105c00",
       "custom": {},
       "tags": [
         "PROG.Angular",
@@ -667,12 +667,12 @@
         }
       },
       "fname": "drops.2022.0107-PostCSS和SASS",
-      "updated": 1644317554494,
+      "updated": 1644411064359,
       "created": 1641561592013,
       "parent": "4MPQXb6WwUg0kGHxTPD7x",
       "children": [],
       "data": {},
-      "contentHash": "90bed80c471e01a4bc206468b234361f",
+      "contentHash": "9f485f1dac2903305dbca884faaa457b",
       "custom": {},
       "tags": "PROG.CSS"
     },
@@ -928,12 +928,12 @@
         }
       },
       "fname": "drops.2021.1227-從Nx入門monorepo",
-      "updated": 1641042503441,
+      "updated": 1644411066115,
       "created": 1640615759253,
       "parent": "XVdxhzTnAX2SQnuApjkXj",
       "children": [],
       "data": {},
-      "contentHash": "5ce619c5761324e5bcf1cc3528101474",
+      "contentHash": "d0fed08dedc2646c0fa8cde54cfbbf74",
       "custom": {},
       "tags": [
         "PROG.Nx"
@@ -941,7 +941,7 @@
     },
     "DTeYpEuPv3KIHugUyqZPu": {
       "id": "DTeYpEuPv3KIHugUyqZPu",
-      "title": "1226 First Day",
+      "title": "1226 使用 Dendron 紀錄",
       "vault": {
         "fsPath": "vault"
       },
@@ -1067,12 +1067,12 @@
         }
       },
       "fname": "drops.2021.1226-first-day",
-      "updated": 1644316342432,
+      "updated": 1644411066133,
       "created": 1640525260857,
       "parent": "XVdxhzTnAX2SQnuApjkXj",
       "children": [],
       "data": {},
-      "contentHash": "2f8ac0d371d066856e8558faf0a60443",
+      "contentHash": "57d564c5ac9ddcdf1380c5a78404177d",
       "custom": {},
       "tags": [
         "PROG.Dendron"

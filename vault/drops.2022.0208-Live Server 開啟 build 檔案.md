@@ -1,8 +1,8 @@
 ---
 id: Ge24zKfcbPxVmQ2OpQhBY
-title: 0208-Live Server 開啟 build 檔案
+title: 0208 Live Server 開啟 build 檔案
 desc: ''
-updated: 1644317986012
+updated: 1644411066151
 created: 1644317231901
 tags:
   - PROG.Angular
