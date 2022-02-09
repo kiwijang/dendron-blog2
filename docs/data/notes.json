@@ -11,8 +11,8 @@
       "links": [],
       "anchors": {},
       "fname": "403",
-      "updated": 1644420357889,
-      "created": 1644420357889,
+      "updated": 1644422472500,
+      "created": 1644422472500,
       "parent": null,
       "children": [],
       "data": {}
@@ -1156,19 +1156,21 @@
           "type": "header",
           "text": "編譯器",
           "value": "編譯器",
-          "line": 9,
+          "line": 10,
           "column": 0,
           "depth": 2
         }
       },
       "fname": "0drops.2022.0109-TypeScript",
-      "updated": 1644323331573,
+      "updated": 1644422458278,
       "created": 1641697334942,
       "parent": "0YMTMineOCu8QrkzCD9rn",
       "children": [],
       "data": {},
-      "contentHash": "707045bd931193043c3e790a5577f0dd",
-      "custom": {},
+      "contentHash": "ea57b2e9273fb5b1f9435236ae857384",
+      "custom": {
+        "status": "w"
+      },
       "tags": "PROG.TypeScript"
     },
     "1FrZXjCCHfkMyZZeBnoL2": {
