@@ -51,7 +51,7 @@ https://zh.wikipedia.org/wiki/%E5%B1%82%E5%8F%A0%E6%A0%B7%E5%BC%8F%E8%A1%A8
 
 https://www.w3schools.com/css/css_syntax.asp
 
-![](assets/images/2022-01-07-22-52-32.png)
+![](/assets/images/2022-01-07-22-52-32.png)
 
 > HTML 和 CSS 是建置網頁的核心技術。透過瀏覽器我們可以看到網頁，所以可以透過 [Can I use](https://caniuse.com/) 來確定某個 CSS 的屬性(property)能不能使用。
 
@@ -76,7 +76,7 @@ https://www.w3schools.com/css/css_syntax.asp
 
 所以計算權重指的是 HTML 結構中同一層元素，以該元素的 CSS 選擇器(Selector) 來計算權重。
 
-![](assets/images/2022-01-07-23-16-39.png)
+![](/assets/images/2022-01-07-23-16-39.png)
 
 > 位數概念: 如圖，最上層位數最大。
 
@@ -237,7 +237,7 @@ https://www.w3schools.com/sass/sass_intro.php
 
 - Autoprefixer
 
-  ![](assets/images/2022-01-17-15-15-09.png)
+  ![](/assets/images/2022-01-17-15-15-09.png)
 
   增加可讀性
   從 Can I Use 的資料加入廠商前綴詞，[Autoprefixer](https://github.com/postcss/autoprefixer) 會使用目前人氣瀏覽器和屬性支持度來幫你加上前綴。
@@ -304,7 +304,7 @@ https://www.w3schools.com/sass/sass_intro.php
 
 https://www.youtube.com/watch?v=WhCXiEwdU1A
 
-> ![](assets/images/2022-01-17-16-12-49.png)
+> ![](/assets/images/2022-01-17-16-12-49.png)
 > 可以和 Sass、less 合用，或是如圖用 postCSS 的 plugin 功能取代 Sass 和 less。
 
 https://www.toptal.com/front-end/postcss-sass-new-play-date

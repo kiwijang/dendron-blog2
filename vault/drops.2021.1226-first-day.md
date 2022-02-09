@@ -29,7 +29,7 @@ Dendron 主打方便取出筆記 (get notes back out)。
 
 另外還有 Note Graph 的功能 `ctrl+shift+P`、`Dendron: Show Note Graph` 就可以看到整個 vault 的結構 (下圖為我目前的 Note Graph)。
 
-![](assets/images/2022-01-01-13-19-20.png)
+![](/assets/images/2022-01-01-13-19-20.png)
 
 [綱要(Schemas)](https://wiki.dendron.so/notes/c5e5adde-5459-409b-b34d-a0d75cbb1052/) 是用 YAML 來為筆記設定基礎樣板。
 
@@ -37,7 +37,7 @@ Dendron 主打方便取出筆記 (get notes back out)。
 
 另外 Dendron 提供了不少 [組織(Organizing)](https://wiki.dendron.so/notes/BWYKFQ8297OgfWWyV7Bgn/) 筆記的功能 (Tags 就是其中一種)，另外也有給團隊使用的組織方式。
 
-![](assets/images/2022-01-01-13-41-23.png)
+![](/assets/images/2022-01-01-13-41-23.png)
 
 > 有這麼多組織(Organizing)的方式...(水好深)。🤤
 
@@ -130,4 +130,4 @@ https://github.com/dendronhq/nextjs-template
 
 `shift + ctrl + P` 輸入 number 然後選這個，就會自動編號了。
 
-![](assets/images/2022-02-08-18-31-50.png)
+![](/assets/images/2022-02-08-18-31-50.png)

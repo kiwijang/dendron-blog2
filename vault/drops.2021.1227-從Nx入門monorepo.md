@@ -1,7 +1,7 @@
 ---
 id: Ee1iUWT8QmZe4CAuuwQxs
 title: 1227 從 Nx 入門 monorepo
-desc: ""
+desc: ''
 updated: 1641042503441
 created: 1640615759253
 tags:
@@ -28,7 +28,7 @@ Monorepo (全名 Monolithic Repository)，符合以下三個條件:
 2. **多個 projects** (三個 app 加上兩個 libs)
 3. **共用 libs**
 
-![MonoRepo](assets/images/2021-12-27-22-50-05.png)
+![MonoRepo](/assets/images/2021-12-27-22-50-05.png)
 
 Monorepo 架構的主要目的是希望集中管理套件版本。
 
@@ -51,7 +51,7 @@ Monorepo 架構的主要目的是希望集中管理套件版本。
 
 官網: https://nx.dev/
 
-![](assets/images/2021-12-27-23-55-50.png)
+![](/assets/images/2021-12-27-23-55-50.png)
 
 > 聰明、可擴充的建置框架，Nx 幫助任何規模的架構、測試、建置。
 > (Smart, Extensible Build Framework Nx helps architect, test, build at any scale:)
@@ -69,7 +69,7 @@ Monorepo 架構的主要目的是希望集中管理套件版本。
 
 narwhal 簡寫 Nrwl，是獨角鯨的英文。
 
-![](assets/images/2021-12-27-23-57-12.png)
+![](/assets/images/2021-12-27-23-57-12.png)
 
 顧問、工程、訓練。
 Consulting. Engineering. Training.
@@ -87,14 +87,14 @@ Nrwl is also the creator of open-source dev tools: Nx for monorepo development, 
 
 這本書說明了 nx 是如何實踐 monerepo 概念。
 
-![](assets/images/2021-12-27-23-59-52.png)
+![](/assets/images/2021-12-27-23-59-52.png)
 
 - https://connect.nrwl.io/app/books
 - https://nrwl.io/products
 
 ### 2-4. Nx 與 Angular 淵源不淺
 
-![](assets/images/2021-12-28-00-06-48.png)
+![](/assets/images/2021-12-28-00-06-48.png)
 
 上面這兩位 Nx 開發的主導者是 Google 的前員工，且對 Angular 都有相當深入的理解。
 但 Nx 官網上有不少 react 的開發教學，如果有公司想要從 react 轉到 angular(或是 angular 轉 react 為主)，
@@ -126,7 +126,7 @@ Nrwl is also the creator of open-source dev tools: Nx for monorepo development, 
 
   在 Angular 中，是指收錄在同一個 [npm 套件](https://angular.tw/guide/glossary#npm-package) 中的一組原理圖（schematics）。
 
-  ![](assets/images/2021-12-28-00-23-52.png)
+  ![](/assets/images/2021-12-28-00-23-52.png)
 
 ### 2-6. Nx 名詞解釋
 
@@ -137,7 +137,7 @@ Nrwl is also the creator of open-source dev tools: Nx for monorepo development, 
 
   下圖為 Nx 官網的 sidebar 的一小部分截圖，可以看見 Generator 有不少篇幅介紹。
 
-  ![](assets/images/2021-12-28-21-51-09.png)
+  ![](/assets/images/2021-12-28-21-51-09.png)
 
 ### 2-7. Nx 的 Generators 的使用方式
 
@@ -167,29 +167,29 @@ Nrwl is also the creator of open-source dev tools: Nx for monorepo development, 
 
 > ＠後的字稱為 `@scope`，通常是 npm 的帳號名字(尤其要 publish 到 npm 上的話，就是 `@username` 的意思。)
 
-![](assets/images/2021-12-28-21-53-15.png)
+![](/assets/images/2021-12-28-21-53-15.png)
 
 ## 3. 感受一下 Nx 的 monorepo 專案
 
 - Angular workspace 的 libs 通常都會有一個自己的 `package.json`
 
-  ![](assets/images/2021-12-28-00-24-21.png)
+  ![](/assets/images/2021-12-28-00-24-21.png)
 
 - Nx workspace 預設共用一個 `package.json`
 
-  ![](assets/images/2021-12-28-00-28-00.png)
+  ![](/assets/images/2021-12-28-00-28-00.png)
 
 ### 3-1. 產生一個 Nx 的 workspace
 
 https://www.npmjs.com/package/create-nx-workspace
 
-![](assets/images/2021-12-28-21-48-43.png)
+![](/assets/images/2021-12-28-21-48-43.png)
 
 ### 3-2. Nx 的 workspace 圖示
 
 除了圖示裡的這些，Nx workspace 也可以用來整合開發其他框架(最後面會補充)。
 
-![](assets/images/2021-12-28-22-18-03.png)
+![](/assets/images/2021-12-28-22-18-03.png)
 
 ## 4. 快速上手 Nx Console 操作 (Generate、Run)
 
@@ -215,7 +215,7 @@ https://www.npmjs.com/package/create-nx-workspace
 
   `Nx Console` 包括 `Angular Console` 和 `Nx` 的功能，最後連 `Nx` 和 `Angular Console` 的製作團隊也整併再一起了。
 
-  ![](assets/images/2021-12-28-22-21-50.png)
+  ![](/assets/images/2021-12-28-22-21-50.png)
 
 - Nx 套件教學
 
@@ -238,7 +238,7 @@ https://www.npmjs.com/package/create-nx-workspace
   - Projects
     這裡就是圖示化 `angular.json` 的 `projects` 區塊，可以直接按按鈕執行 script。
 
-    ![](assets/images/2021-12-28-22-35-51.png)
+    ![](/assets/images/2021-12-28-22-35-51.png)
 
 ### 4-2. nx generate (常見的 collection)
 
@@ -250,7 +250,7 @@ https://www.npmjs.com/package/create-nx-workspace
 
    以上兩個都是 Angular Material 相關 collection。
 
-   ![](assets/images/2021-12-28-22-53-23.png)
+   ![](/assets/images/2021-12-28-22-53-23.png)
 
 3. `@nrwl/storybook`
 
@@ -272,19 +272,19 @@ https://www.npmjs.com/package/create-nx-workspace
 
 - `@schematics/angular`
 
-  ![](assets/images/2021-12-28-22-58-21.png)
+  ![](/assets/images/2021-12-28-22-58-21.png)
 
 - `@nrwl/angular`
 
-  ![](assets/images/2021-12-28-22-59-05.png)
+  ![](/assets/images/2021-12-28-22-59-05.png)
 
-  ![](assets/images/2021-12-28-23-00-04.png)
+  ![](/assets/images/2021-12-28-23-00-04.png)
 
-  ![](assets/images/2021-12-28-23-00-23.png)
+  ![](/assets/images/2021-12-28-23-00-23.png)
 
 - `@nrwl/workspace`
 
-  ![](assets/images/2021-12-28-22-59-20.png)
+  ![](/assets/images/2021-12-28-22-59-20.png)
 
 * collection 偵測方式 (node_module/ 全部偵測):
 
@@ -300,7 +300,7 @@ https://www.npmjs.com/package/create-nx-workspace
 
 `nx run-many --target=build --all --parallel`
 
-![](assets/images/2021-12-28-23-01-03.png)
+![](/assets/images/2021-12-28-23-01-03.png)
 
 - https://angular.tw/cli/run
 - https://nx.dev/l/a/cli/run-many
@@ -309,7 +309,7 @@ https://www.npmjs.com/package/create-nx-workspace
 
 ### 5-1. 常見的 Monorepo 架構開發工具
 
-![](assets/images/2021-12-28-23-03-34.png)
+![](/assets/images/2021-12-28-23-03-34.png)
 
 還有更多工具: https://github.com/korfuri/awesome-monorepo
 
@@ -317,11 +317,11 @@ https://www.npmjs.com/package/create-nx-workspace
 
 https://nx.dev/l/n/guides/lerna-and-nx#clarifying-misconceptions
 
-![](assets/images/2021-12-28-23-05-05.png)
+![](/assets/images/2021-12-28-23-05-05.png)
 
 功能沒有重疊，Nx 不是 package manager 也不是 JS-only 的工具。可一起用。
 
-![](assets/images/2021-12-28-23-05-31.png)
+![](/assets/images/2021-12-28-23-05-31.png)
 
 Nx 官方 youtube 頻道相關影片
 
@@ -337,7 +337,7 @@ https://nx.dev/community#community-plugin-list
 
 ### 5-4. Nx 13
 
-![](assets/images/2021-12-28-23-07-16.png)
+![](/assets/images/2021-12-28-23-07-16.png)
 
 Webpack 5 Module Federation Plugin
 

@@ -1,13 +1,13 @@
 <h1 id="0208-live-server-開啟-build-檔案"><a aria-hidden="true" class="anchor-heading" href="#0208-live-server-開啟-build-檔案"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>0208-Live Server 開啟 build 檔案</h1>
 <h2 id="1-直接資料夾開啟-indexhtml會遇到一些問題"><a aria-hidden="true" class="anchor-heading" href="#1-直接資料夾開啟-indexhtml會遇到一些問題"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>1. 直接資料夾開啟 index.html，會遇到一些問題:</h2>
-<p><img src="assets/images/2022-02-08-13-49-40.png"></p>
+<p><img src="/assets/images/2022-02-08-13-49-40.png"></p>
 <p>在 angular 的 index.html 預設是 <code>&#x3C;base href="/"></code></p>
 <p>所以會以檔案資料夾目錄的位置打開(網址列會長這樣: <code>file:///C:/Users/xxx.../dist/apps/client/index.html</code>)</p>
 <p>如果想用 <code>&#x3C;base href="./"></code> 解決問題，若有設定路由會發現網址除了 server 根網址以外還多了路由，然後發生 404 錯誤...</p>
-<p><img src="assets/images/2022-02-08-17-00-24.png"></p>
+<p><img src="/assets/images/2022-02-08-17-00-24.png"></p>
 <p>另外，在瀏覽器上 es6 module 一定會遵循 CORS (參考文章:<a href="https://www.ithome.com.tw/voice/132470">ES6 模組匯入-林信良</a>)，所以如果直接用 <code>file:///C:/Users/xxx.../dist/apps/client/index.html</code> 開啟會出現這樣的錯誤:</p>
-<p><img src="assets/images/2022-02-08-17-18-04.png"></p>
-<p><img src="assets/images/2022-02-08-17-55-33.png"></p>
+<p><img src="/assets/images/2022-02-08-17-18-04.png"></p>
+<p><img src="/assets/images/2022-02-08-17-55-33.png"></p>
 <blockquote>
 <p>Origin: null 是 null 的。😭</p>
 </blockquote>
@@ -16,7 +16,7 @@
 <p>接著發現可以成功載入首頁，但是其他路由會 404...</p>
 <h2 id="3-使用-live-server-但路由出問題"><a aria-hidden="true" class="anchor-heading" href="#3-使用-live-server-但路由出問題"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>3. 使用 Live Server 但路由出問題:</h2>
 <p>原因是瀏覽器把路由當成 http request 了。😭</p>
-<p><img src="assets/images/2022-02-08-18-04-09.png"></p>
+<p><img src="/assets/images/2022-02-08-18-04-09.png"></p>
 <p>於是為了解決這個問題，可以設定 HashLocationStrategy。</p>
 <pre class="language-typescript"><code class="language-typescript">providers<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>provide<span class="token operator">:</span> <span class="token maybe-class-name">LocationStrategy</span><span class="token punctuation">,</span> useClass<span class="token operator">:</span> <span class="token maybe-class-name">HashLocationStrategy</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
 </code></pre>
