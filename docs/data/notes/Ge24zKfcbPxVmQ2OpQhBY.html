@@ -1,6 +1,5 @@
 <h1 id="0208-live-server-開啟-build-檔案"><a aria-hidden="true" class="anchor-heading" href="#0208-live-server-開啟-build-檔案"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>0208 Live Server 開啟 build 檔案</h1>
 <h2 id="1-直接資料夾開啟-indexhtml會遇到一些問題"><a aria-hidden="true" class="anchor-heading" href="#1-直接資料夾開啟-indexhtml會遇到一些問題"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>1. 直接資料夾開啟 index.html，會遇到一些問題:</h2>
-<p><img src="/assets/images/2022-02-08-13-49-40.png"></p>
 <p>在 angular 的 index.html 預設是 <code>&#x3C;base href="/"></code></p>
 <p>所以會以檔案資料夾目錄的位置打開(網址列會長這樣: <code>file:///C:/Users/xxx.../dist/apps/client/index.html</code>)</p>
 <p>如果想用 <code>&#x3C;base href="./"></code> 解決問題，若有設定路由會發現網址除了 server 根網址以外還多了路由，然後發生 404 錯誤...</p>
@@ -12,6 +11,7 @@
 <p>Origin: null 是 null 的。😭</p>
 </blockquote>
 <h2 id="2-下載-live-server"><a aria-hidden="true" class="anchor-heading" href="#2-下載-live-server"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>2. 下載 Live Server</h2>
+<p><img src="/assets/images/2022-02-08-13-49-40.png"></p>
 <p>所以這時就可以用 vscode 的 <a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer">Live Server 擴充套件</a> 來解決 Origin 的問題。</p>
 <p>接著發現可以成功載入首頁，但是其他路由會 404...</p>
 <h2 id="3-使用-live-server-但路由出問題"><a aria-hidden="true" class="anchor-heading" href="#3-使用-live-server-但路由出問題"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>3. 使用 Live Server 但路由出問題:</h2>

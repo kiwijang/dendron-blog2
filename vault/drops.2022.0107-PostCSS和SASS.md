@@ -2,7 +2,7 @@
 id: SIdMIFLQNg5jfa6ePoqt5
 title: 0107 PostCSS 和 Sass
 desc: ''
-updated: 1644411064359
+updated: 1644456685225
 created: 1641561592013
 tags: PROG.CSS
 ---
@@ -377,7 +377,7 @@ npm install stylelint-config-recommended --save-dev
 ```javascript
 module.exports = {
   content: [
-    join(__dirname, 'src/**/*.{html,ts}', 'libs/client-ui/src/**/*.{html,ts}'),
+    join(__dirname, 'src/**/*.{html,ts}'),
     ...createGlobPatternsForDependencies(__dirname),
   ],
   //...

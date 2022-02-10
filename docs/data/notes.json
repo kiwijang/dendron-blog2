@@ -11,8 +11,8 @@
       "links": [],
       "anchors": {},
       "fname": "403",
-      "updated": 1644455804902,
-      "created": 1644455804902,
+      "updated": 1644456771029,
+      "created": 1644456771029,
       "parent": null,
       "children": [],
       "data": {}
@@ -422,7 +422,7 @@
           "type": "header",
           "text": "2. 下載 Live Server",
           "value": "2-下載-live-server",
-          "line": 31,
+          "line": 29,
           "column": 0,
           "depth": 2
         },
@@ -452,12 +452,12 @@
         }
       },
       "fname": "drops.2022.0208-Live Server 開啟 build 檔案",
-      "updated": 1644411066151,
+      "updated": 1644456757297,
       "created": 1644317231901,
       "parent": "4MPQXb6WwUg0kGHxTPD7x",
       "children": [],
       "data": {},
-      "contentHash": "cfdfd9b2ffb3245ebfdc7676c9105c00",
+      "contentHash": "7b8b1de8f4fc2801654acec1cd60d812",
       "custom": {},
       "tags": [
         "PROG.Angular",
@@ -467,11 +467,17 @@
     "SIdMIFLQNg5jfa6ePoqt5": {
       "id": "SIdMIFLQNg5jfa6ePoqt5",
       "title": "0107 PostCSS 和 Sass",
+      "desc": "",
+      "updated": 1644456685225,
+      "created": 1641561592013,
+      "tags": "PROG.CSS",
+      "custom": {},
+      "fname": "drops.2022.0107-PostCSS和SASS",
+      "type": "note",
       "vault": {
         "fsPath": "vault"
       },
-      "type": "note",
-      "desc": "",
+      "contentHash": "3fe335d768a5cf1783133a29138cb6d4",
       "links": [
         {
           "type": "frontmatterTag",
@@ -666,15 +672,9 @@
           "depth": 2
         }
       },
-      "fname": "drops.2022.0107-PostCSS和SASS",
-      "updated": 1644411064359,
-      "created": 1641561592013,
-      "parent": "4MPQXb6WwUg0kGHxTPD7x",
       "children": [],
-      "data": {},
-      "contentHash": "9f485f1dac2903305dbca884faaa457b",
-      "custom": {},
-      "tags": "PROG.CSS"
+      "parent": "4MPQXb6WwUg0kGHxTPD7x",
+      "data": {}
     },
     "XVdxhzTnAX2SQnuApjkXj": {
       "id": "XVdxhzTnAX2SQnuApjkXj",

@@ -369,7 +369,7 @@ npm install stylelint-config-recommended --save-dev
 ```javascript
 module.exports = {
   content: [
-    join(__dirname, 'src/**/*.{html,ts}', 'libs/client-ui/src/**/*.{html,ts}'),
+    join(__dirname, 'src/**/*.{html,ts}'),
     ...createGlobPatternsForDependencies(__dirname),
   ],
   //...

@@ -2,7 +2,7 @@
 id: Ge24zKfcbPxVmQ2OpQhBY
 title: 0208 Live Server 開啟 build 檔案
 desc: ''
-updated: 1644411066151
+updated: 1644456757297
 created: 1644317231901
 tags:
   - PROG.Angular
@@ -10,8 +10,6 @@ tags:
 ---
 
 ## 1. 直接資料夾開啟 index.html，會遇到一些問題:
-
-![](/assets/images/2022-02-08-13-49-40.png)
 
 在 angular 的 index.html 預設是 `<base href="/">`
 
@@ -30,6 +28,8 @@ tags:
 > Origin: null 是 null 的。😭
 
 ## 2. 下載 Live Server
+
+![](/assets/images/2022-02-08-13-49-40.png)
 
 所以這時就可以用 vscode 的 [Live Server 擴充套件](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) 來解決 Origin 的問題。
 
