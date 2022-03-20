@@ -2,22 +2,16 @@
 id: SIdMIFLQNg5jfa6ePoqt5
 title: 0107 PostCSS 和 Sass
 desc: ''
-updated: 1644456685225
+updated: 1647711602708
 created: 1641561592013
 tags: PROG.CSS
 ---
 
 ## 1. 前言
 
-CSS 竟然還有分前後處理?😯
-
-到底是在哪條時間軸上才能這樣分前後?
-
 到底為什麼要用 PostCSS 和 Sass?
 
-理解一個東西前，果然還是要弄清楚自己現在在哪裡。😅
-
-所以本篇筆記目的在搞清楚 CSS 的定義，然後說明 PostCSS 和 Sass 的用途。
+本篇筆記目的在搞清楚 CSS 的定義，然後說明 PostCSS 和 Sass 的用途。
 
 ## 2. 關於 CSS
 
@@ -314,6 +308,12 @@ https://www.toptal.com/front-end/postcss-sass-new-play-date
 https://cythilya.github.io/2018/08/10/postcss/
 
 > Summer 大大的文章。
+
+## 小結
+
+我還是搞不懂 postCSS 和 Sass 的差別xD
+但是知道 postCSS 是需要什麼功能時才透過加入 plugin 來使用功能，
+而 Sass 是一開始整包就幫你準備好了，照用就好了。
 
 ## 6. tailwindcss
 

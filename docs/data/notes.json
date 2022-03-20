@@ -11,8 +11,8 @@
       "links": [],
       "anchors": {},
       "fname": "403",
-      "updated": 1647710444622,
-      "created": 1647710444622,
+      "updated": 1647791563969,
+      "created": 1647791563969,
       "parent": null,
       "children": [],
       "data": {}
@@ -358,7 +358,8 @@
       "parent": "u4tSbmkJewrKonY3sL544",
       "children": [
         "SIdMIFLQNg5jfa6ePoqt5",
-        "Ge24zKfcbPxVmQ2OpQhBY"
+        "Ge24zKfcbPxVmQ2OpQhBY",
+        "o8n23ae0i8b5o5go3ipx4os"
       ],
       "data": {},
       "contentHash": "01c2121b2a0955562e610dc3b066ee75",
@@ -366,6 +367,58 @@
       "custom": {
         "stub": true
       }
+    },
+    "o8n23ae0i8b5o5go3ipx4os": {
+      "id": "o8n23ae0i8b5o5go3ipx4os",
+      "title": "0320 JS小知識(一)",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "遞增運算子與遞減運算子--": {
+          "type": "header",
+          "text": "遞增運算子(++)與遞減運算子(--)",
+          "value": "遞增運算子與遞減運算子--",
+          "line": 8,
+          "column": 0,
+          "depth": 2
+        },
+        "前置運算pre-increment": {
+          "type": "header",
+          "text": "前置運算(Pre Increment)",
+          "value": "前置運算pre-increment",
+          "line": 13,
+          "column": 0,
+          "depth": 2
+        },
+        "後至運算post-increment": {
+          "type": "header",
+          "text": "後至運算(Post Increment)",
+          "value": "後至運算post-increment",
+          "line": 25,
+          "column": 0,
+          "depth": 2
+        },
+        "差別": {
+          "type": "header",
+          "text": "差別",
+          "value": "差別",
+          "line": 39,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "fname": "drops.2022.0320-js小知識(一)",
+      "updated": 1647791513220,
+      "created": 1647774542471,
+      "parent": "4MPQXb6WwUg0kGHxTPD7x",
+      "children": [],
+      "data": {},
+      "contentHash": "dcd49f6043db87c6419f18f36d54a97f",
+      "custom": {}
     },
     "Ge24zKfcbPxVmQ2OpQhBY": {
       "id": "Ge24zKfcbPxVmQ2OpQhBY",
@@ -463,17 +516,11 @@
     "SIdMIFLQNg5jfa6ePoqt5": {
       "id": "SIdMIFLQNg5jfa6ePoqt5",
       "title": "0107 PostCSS 和 Sass",
-      "desc": "",
-      "updated": 1644456685225,
-      "created": 1641561592013,
-      "tags": "PROG.CSS",
-      "custom": {},
-      "fname": "drops.2022.0107-PostCSS和SASS",
-      "type": "note",
       "vault": {
         "fsPath": "vault"
       },
-      "contentHash": "3fe335d768a5cf1783133a29138cb6d4",
+      "type": "note",
+      "desc": "",
       "links": [
         {
           "type": "frontmatterTag",
@@ -503,7 +550,7 @@
           "type": "header",
           "text": "2. 關於 CSS",
           "value": "2-關於-css",
-          "line": 21,
+          "line": 15,
           "column": 0,
           "depth": 2
         },
@@ -511,7 +558,7 @@
           "type": "header",
           "text": "2.1. CSS 版本",
           "value": "21-css-版本",
-          "line": 36,
+          "line": 30,
           "column": 0,
           "depth": 3
         },
@@ -519,7 +566,7 @@
           "type": "header",
           "text": "2.2. CSS Syntax (句法)",
           "value": "22-css-syntax-句法",
-          "line": 49,
+          "line": 43,
           "column": 0,
           "depth": 3
         },
@@ -527,7 +574,7 @@
           "type": "header",
           "text": "2.3. CSS Specificity (權重)",
           "value": "23-css-specificity-權重",
-          "line": 57,
+          "line": 51,
           "column": 0,
           "depth": 3
         },
@@ -535,7 +582,7 @@
           "type": "header",
           "text": "2.4. CSS 效能",
           "value": "24-css-效能",
-          "line": 95,
+          "line": 89,
           "column": 0,
           "depth": 3
         },
@@ -543,7 +590,7 @@
           "type": "header",
           "text": "3. Sass 和 PostCSS 跟 CSS 的關係",
           "value": "3-sass-和-postcss-跟-css-的關係",
-          "line": 159,
+          "line": 153,
           "column": 0,
           "depth": 2
         },
@@ -551,7 +598,7 @@
           "type": "header",
           "text": "3.1. Sass",
           "value": "31-sass",
-          "line": 165,
+          "line": 159,
           "column": 0,
           "depth": 3
         },
@@ -559,7 +606,7 @@
           "type": "header",
           "text": "3.2. PostCSS",
           "value": "32-postcss",
-          "line": 173,
+          "line": 167,
           "column": 0,
           "depth": 3
         },
@@ -567,7 +614,7 @@
           "type": "header",
           "text": "4. Sass",
           "value": "4-sass",
-          "line": 185,
+          "line": 179,
           "column": 0,
           "depth": 2
         },
@@ -575,7 +622,7 @@
           "type": "header",
           "text": "4.1. Sass 特點",
           "value": "41-sass-特點",
-          "line": 187,
+          "line": 181,
           "column": 0,
           "depth": 3
         },
@@ -583,7 +630,7 @@
           "type": "header",
           "text": "4.2. Sass 運作原理(如何變成 CSS)",
           "value": "42-sass-運作原理如何變成-css",
-          "line": 217,
+          "line": 211,
           "column": 0,
           "depth": 3
         },
@@ -591,7 +638,7 @@
           "type": "header",
           "text": "5. PostCSS",
           "value": "5-postcss",
-          "line": 233,
+          "line": 227,
           "column": 0,
           "depth": 2
         },
@@ -599,7 +646,7 @@
           "type": "header",
           "text": "5.1. PostCSS 特點",
           "value": "51-postcss-特點",
-          "line": 235,
+          "line": 229,
           "column": 0,
           "depth": 3
         },
@@ -607,9 +654,17 @@
           "type": "header",
           "text": "5.2. PostCSS 運作原理(如何變成 CSS)",
           "value": "52-postcss-運作原理如何變成-css",
-          "line": 302,
+          "line": 296,
           "column": 0,
           "depth": 3
+        },
+        "小結": {
+          "type": "header",
+          "text": "小結",
+          "value": "小結",
+          "line": 311,
+          "column": 0,
+          "depth": 2
         },
         "6-tailwindcss": {
           "type": "header",
@@ -668,9 +723,15 @@
           "depth": 2
         }
       },
-      "children": [],
+      "fname": "drops.2022.0107-PostCSS和SASS",
+      "updated": 1647711602708,
+      "created": 1641561592013,
       "parent": "4MPQXb6WwUg0kGHxTPD7x",
-      "data": {}
+      "children": [],
+      "data": {},
+      "contentHash": "3daa88684b35d4f763d37be57c326838",
+      "custom": {},
+      "tags": "PROG.CSS"
     },
     "XVdxhzTnAX2SQnuApjkXj": {
       "id": "XVdxhzTnAX2SQnuApjkXj",
@@ -1042,12 +1103,12 @@
         }
       },
       "fname": "drops.2021.1226-first-day",
-      "updated": 1644411066133,
+      "updated": 1647711639804,
       "created": 1640525260857,
       "parent": "XVdxhzTnAX2SQnuApjkXj",
       "children": [],
       "data": {},
-      "contentHash": "57d564c5ac9ddcdf1380c5a78404177d",
+      "contentHash": "884069d9df55da4ca1f14c072bad324f",
       "custom": {},
       "tags": [
         "PROG.Dendron"

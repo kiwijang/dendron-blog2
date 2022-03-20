@@ -4,7 +4,7 @@
 
 ### Dendron 簡介
 
-筆記都可以方便被記錄，但是取出筆記又是一門大學問。
+筆記都可以方便被記錄，但取出筆記又是一大學問。
 
 Dendron 主打方便取出筆記 (get notes back out)。
 作者 [Kevin](https://www.dendron.so/about) 說道 Dendron 有以下三特點:
