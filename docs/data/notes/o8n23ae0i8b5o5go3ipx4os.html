@@ -1,4 +1,4 @@
-<h1 id="0320-js小知識一"><a aria-hidden="true" class="anchor-heading" href="#0320-js小知識一"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>0320 JS小知識(一)</h1>
+<h1 id="0320-js-小知識一"><a aria-hidden="true" class="anchor-heading" href="#0320-js-小知識一"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>0320 JS 小知識(一)</h1>
 <h2 id="遞增運算子與遞減運算子--"><a aria-hidden="true" class="anchor-heading" href="#遞增運算子與遞減運算子--"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>遞增運算子(++)與遞減運算子(--)</h2>
 <pre class="language-javascript"><code class="language-javascript">x<span class="token operator">++</span> <span class="token operator">&#x3C;</span><span class="token arrow operator">=></span> x <span class="token operator">=</span> x <span class="token operator">+</span> <span class="token number">1</span>
 x<span class="token operator">--</span> <span class="token operator">&#x3C;</span><span class="token arrow operator">=></span> x <span class="token operator">=</span> x <span class="token operator">-</span> <span class="token number">1</span>
@@ -7,18 +7,18 @@ x<span class="token operator">--</span> <span class="token operator">&#x3C;</spa
 <pre class="language-javascript"><code class="language-javascript">┌──── x加一後代入y
 │        ↑
 ↓     ┌──────┐
-y  <span class="token operator">=</span>  │ <span class="token operator">++</span>x<span class="token punctuation">;</span> │<span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">-</span>→ x 代入 x<span class="token operator">+</span><span class="token number">1</span> 的結果
+y  <span class="token operator">=</span>  │ <span class="token operator">++</span>x<span class="token punctuation">;</span> │──────→ x 代入 x<span class="token operator">+</span><span class="token number">1</span> 的結果
       └──────┘
 </code></pre>
 <p>前置運算(Pre Increment): 先計算後再給值，y 和 x 的值一致都是計算後的結果(x+1 的值)。</p>
 <h2 id="後至運算post-increment"><a aria-hidden="true" class="anchor-heading" href="#後至運算post-increment"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>後至運算(Post Increment)</h2>
 <pre class="language-javascript"><code class="language-javascript">┌──── y代入x的值
 │        ↑
-│    ┌<span class="token operator">--</span><span class="token operator">-</span>│<span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span>┐
+│    ┌── │ ─────┐
 ↓    │ ┌───┐    │
 y  <span class="token operator">=</span> │ │ x │<span class="token operator">++</span><span class="token punctuation">;</span> │
-     │ └───┘    │<span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">-</span>→ x 後代入 x<span class="token operator">+</span><span class="token number">1</span> 的結果
-     └<span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span><span class="token operator">--</span>┘
+     │ └───┘    │──────→ x 後代入 x<span class="token operator">+</span><span class="token number">1</span> 的結果
+     └──────────┘
 </code></pre>
 <p>後至運算(Post Increment): 先給值後再計算，y 可以保留 x+1 之前的值，x 保留 x+1 的值。</p>
 <h2 id="差別"><a aria-hidden="true" class="anchor-heading" href="#差別"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>差別</h2>
@@ -39,3 +39,8 @@ y  <span class="token operator">=</span> │ │ x │<span class="token operato
 <p>總之，</p>
 <p>++x 運算符號在前(Pre)，就先進行運算!</p>
 <p>x++ 運算符號在後(Post)，先附值到使用運算子的對象上(x)，再運算。</p>
+<hr>
+<h2 id="tags"><a aria-hidden="true" class="anchor-heading" href="#tags"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Tags</h2>
+<ol>
+<li><a class="color-tag" style="--tag-color: #bb3f3f;" href="/notes/1z3qa2rt5zymm05yroq0d7c">PROG.JavaScript</a></li>
+</ol>
