@@ -19827,20 +19827,20 @@ span.ant-transfer-list-search-action {
   width: 12px;
   height: 12px;
   margin-top: -6px;
-  color: rgba(0, 0, 0, 0.25);
+  color: #aaa;
+  background-color: transparent;
   font-size: 12px;
   font-style: normal;
   line-height: 1;
   text-align: center;
   text-transform: none;
-  background: #fff;
   cursor: pointer;
   opacity: 0;
   transition: color 0.3s ease, opacity 0.15s ease;
   text-rendering: auto;
 }
 .ant-select-clear:hover {
-  color: rgba(0, 0, 0, 0.45);
+  color: #9a6e3a;
 }
 .ant-select:hover .ant-select-clear {
   opacity: 1;
@@ -19865,6 +19865,7 @@ span.ant-transfer-list-search-action {
   outline: 0;
   box-shadow: 0 3px 6px -4px rgba(0, 0, 0, 0.12),
     0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 9px 28px 8px rgba(0, 0, 0, 0.05);
+  min-width: 500px !important;
   width: 100% !important;
 }
 .ant-select-dropdown.ant-slide-up-appear.ant-slide-up-appear-active.ant-select-dropdown-placement-bottomLeft,
