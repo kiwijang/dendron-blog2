@@ -5,17 +5,17 @@
 
 結果是因為字型沒有提供對應的符號:
 
-![](assets/images/2022-03-27-23-11-59.png)
+![](/assets/images/2022-03-27-23-11-59.png)
 
 > 用 Google Fonts 搜尋 `↑↓←→↖↗↙↘` 只有 [Nanum Gothic Coding](https://fonts.google.com/specimen/Nanum+Gothic+Coding?category=Monospace&preview.text=%E2%86%91%E2%86%93%E2%86%90%E2%86%92%E2%86%96%E2%86%97%E2%86%99%E2%86%98&preview.text_type=custom) 顯示所有箭頭符號...
 
 最後，為了讓寫 `.md` 檔看起來跟網頁一樣，下載了該字體。
 
-![](assets/images/2022-03-28-00-00-32.png)
+![](/assets/images/2022-03-28-00-00-32.png)
 
 接著設定 vscode 字體。
 
-![](assets/images/2022-03-27-23-18-44.png)
+![](/assets/images/2022-03-27-23-18-44.png)
 
 因為自己比較喜歡寬扁的字體，這款是細長型的，還在適應中。
 
@@ -55,4 +55,4 @@
 
 > 註2: 在 Can I use 網站上 `Android Browser` 是一個項目 (本以為會同桌機版 Chrome，實則為不同瀏覽器項目)
 
-![](assets/images/2022-03-27-23-28-23.png)
+![](/assets/images/2022-03-27-23-28-23.png)
