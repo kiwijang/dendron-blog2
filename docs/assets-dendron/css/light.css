@@ -1391,8 +1391,7 @@ kbd,
 pre,
 samp {
   font-size: 1em;
-  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier,
-    monospace;
+  font-family: 'Source Code Pro', monospace;
 }
 pre {
   margin-top: 0;
@@ -25478,7 +25477,7 @@ div.ant-typography-edit-content {
   padding: 0.4em 0.6em;
   white-space: pre-wrap;
   word-wrap: break-word;
-  font-family: monospace;
+  font-family: 'Source Code Pro', monospace;
   background: rgba(150, 150, 150, 0.1);
   border: 1px solid rgba(100, 100, 100, 0.2);
   border-radius: 3px;
@@ -25488,7 +25487,7 @@ div.ant-typography-edit-content {
   margin: 0;
   padding: 0;
   font-size: inherit;
-  font-family: monospace;
+  font-family: 'Source Code Pro', monospace;
   background: 0 0;
   border: 0;
 }
