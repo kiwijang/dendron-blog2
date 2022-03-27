@@ -11,8 +11,8 @@ tags:
 ## 遞增運算子(++)與遞減運算子(--)
 
 ```javascript
-x++ <=> x = x + 1
-x-- <=> x = x - 1
+x++ ←→ x = x + 1
+x-- ←→ x = x - 1
 ```
 
 ## 前置運算(Pre Increment)
