@@ -19,13 +19,13 @@ tags:
 
 > 用 Google Fonts 搜尋 `↑↓←→↖↗↙↘` 只有 [Nanum Gothic Coding](https://fonts.google.com/specimen/Nanum+Gothic+Coding?category=Monospace&preview.text=%E2%86%91%E2%86%93%E2%86%90%E2%86%92%E2%86%96%E2%86%97%E2%86%99%E2%86%98&preview.text_type=custom) 顯示所有箭頭符號...
 
-最後，為了讓寫 `.md` 檔看起來跟網頁一樣，下載了該字體。
+最後，為了讓寫 `.md` 檔看起來跟網頁一樣，從 Google Fonts 下載了該字體的 `.ttf`。
 
-![](/assets/images/2022-03-28-00-00-32.png)
+![](/assets/images/2022-03-27-23-17-32.png)
 
 接著設定 vscode 字體。
 
-![](/assets/images/2022-03-27-23-18-44.png)
+![](/assets/images/2022-03-28-00-00-32.png)
 
 因為自己比較喜歡寬扁的字體，這款是細長型的，還在適應中。
 
