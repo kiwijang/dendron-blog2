@@ -11,8 +11,8 @@
       "links": [],
       "anchors": {},
       "fname": "403",
-      "updated": 1648391610538,
-      "created": 1648391610538,
+      "updated": 1648397312993,
+      "created": 1648397312993,
       "parent": null,
       "children": [],
       "data": {}
@@ -88,6 +88,7 @@
       "links": [],
       "anchors": {},
       "children": [
+        "gj0sitvrk6ynbtxpixc4ih4",
         "zavPiB0ApTq1sGZOGq9xJ",
         "uFYxvNnYUjt8oxQcHtfSp",
         "3cKSNGeq54iDx1eRKcNB0",
@@ -271,6 +272,14 @@
           },
           "type": "backlink",
           "value": "tags.PROG.CSS"
+        },
+        {
+          "from": {
+            "fname": "drops.2022.0327-關於 monospace 字體",
+            "vaultName": "vault"
+          },
+          "type": "backlink",
+          "value": "tags.PROG.CSS"
         }
       ],
       "anchors": {},
@@ -309,6 +318,34 @@
       "children": [],
       "data": {},
       "contentHash": "40fdf219b2d7d952d549f75fa24522e5",
+      "custom": {}
+    },
+    "gj0sitvrk6ynbtxpixc4ih4": {
+      "id": "gj0sitvrk6ynbtxpixc4ih4",
+      "title": "Android",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [
+        {
+          "from": {
+            "fname": "drops.2022.0327-關於 monospace 字體",
+            "vaultName": "vault"
+          },
+          "type": "backlink",
+          "value": "tags.PROG.Android"
+        }
+      ],
+      "anchors": {},
+      "fname": "tags.PROG.Android",
+      "updated": 1648397261924,
+      "created": 1648397261924,
+      "parent": "4nZxUaZMBAvz7oWuXizXl",
+      "children": [],
+      "data": {},
+      "contentHash": "6074138df5c20f529b079a9439ac7221",
       "custom": {}
     },
     "WAKWMq3SeVmlAmZRqCbpB": {
@@ -396,7 +433,8 @@
       "children": [
         "SIdMIFLQNg5jfa6ePoqt5",
         "Ge24zKfcbPxVmQ2OpQhBY",
-        "o8n23ae0i8b5o5go3ipx4os"
+        "o8n23ae0i8b5o5go3ipx4os",
+        "6wmc3n6c6adplh04u9vsu95"
       ],
       "data": {},
       "contentHash": "01c2121b2a0955562e610dc3b066ee75",
@@ -404,6 +442,75 @@
       "custom": {
         "stub": true
       }
+    },
+    "6wmc3n6c6adplh04u9vsu95": {
+      "id": "6wmc3n6c6adplh04u9vsu95",
+      "title": "0327 關於 Monospace 字型在不同裝置顯示",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [
+        {
+          "type": "frontmatterTag",
+          "from": {
+            "fname": "drops.2022.0327-關於 monospace 字體",
+            "id": "6wmc3n6c6adplh04u9vsu95",
+            "vaultName": "vault"
+          },
+          "value": "tags.PROG.CSS",
+          "alias": "PROG.CSS",
+          "xvault": false,
+          "to": {
+            "fname": "tags.PROG.CSS"
+          }
+        },
+        {
+          "type": "frontmatterTag",
+          "from": {
+            "fname": "drops.2022.0327-關於 monospace 字體",
+            "id": "6wmc3n6c6adplh04u9vsu95",
+            "vaultName": "vault"
+          },
+          "value": "tags.PROG.Android",
+          "alias": "PROG.Android",
+          "xvault": false,
+          "to": {
+            "fname": "tags.PROG.Android"
+          }
+        }
+      ],
+      "anchors": {
+        "一致化-vscode-和網站的-font-family": {
+          "type": "header",
+          "text": "一致化 vscode 和網站的 font-family",
+          "value": "一致化-vscode-和網站的-font-family",
+          "line": 11,
+          "column": 0,
+          "depth": 2
+        },
+        "使用-chrome-devtool-debug-android-裝置": {
+          "type": "header",
+          "text": "使用 chrome devtool debug Android 裝置",
+          "value": "使用-chrome-devtool-debug-android-裝置",
+          "line": 41,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "fname": "drops.2022.0327-關於 monospace 字體",
+      "updated": 1648393503809,
+      "created": 1648393503809,
+      "parent": "4MPQXb6WwUg0kGHxTPD7x",
+      "children": [],
+      "data": {},
+      "contentHash": "b1139f9cb25fb2bb9ecf390ac8d106ef",
+      "custom": {},
+      "tags": [
+        "PROG.CSS",
+        "PROG.Android"
+      ]
     },
     "o8n23ae0i8b5o5go3ipx4os": {
       "id": "o8n23ae0i8b5o5go3ipx4os",

@@ -1,0 +1,56 @@
+<h1 id="0327-關於-monospace-字型在不同裝置顯示"><a aria-hidden="true" class="anchor-heading" href="#0327-關於-monospace-字型在不同裝置顯示"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>0327 關於 Monospace 字型在不同裝置顯示</h1>
+<h2 id="一致化-vscode-和網站的-font-family"><a aria-hidden="true" class="anchor-heading" href="#一致化-vscode-和網站的-font-family"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>一致化 vscode 和網站的 font-family</h2>
+<p>上一篇文章用 <code>&#x3C;pre></code> 畫圖，結果發現手機的 <code>monospace</code> 顯示跟筆電的顯示結果不一樣(手機跑版了...)</p>
+<p>結果是因為字型沒有提供對應的符號:</p>
+<p><img src="assets/images/2022-03-27-23-11-59.png"></p>
+<blockquote>
+<p>用 Google Fonts 搜尋 <code>↑↓←→↖↗↙↘</code> 只有 <a href="https://fonts.google.com/specimen/Nanum+Gothic+Coding?category=Monospace&#x26;preview.text=%E2%86%91%E2%86%93%E2%86%90%E2%86%92%E2%86%96%E2%86%97%E2%86%99%E2%86%98&#x26;preview.text_type=custom">Nanum Gothic Coding</a> 顯示所有箭頭符號...</p>
+</blockquote>
+<p>最後，為了讓寫 <code>.md</code> 檔看起來跟網頁一樣，下載了該字體。</p>
+<p><img src="assets/images/2022-03-28-00-00-32.png"></p>
+<p>接著設定 vscode 字體。</p>
+<p><img src="assets/images/2022-03-27-23-18-44.png"></p>
+<p>因為自己比較喜歡寬扁的字體，這款是細長型的，還在適應中。</p>
+<p>這個字體的大於小於 <code>&#x3C; ></code> 也是細長的，蠻特別的。</p>
+<p>字體作者為 <code>Sandoll</code>，是一間韓國的字體公司。</p>
+<p><a href="https://medium.com/koom/profile-003-981476689afc">那個幫忙製作思源字體的公司——韓國字型公司 Sandoll by ⦿ 曼努 manzoo</a></p>
+<p>如果想知道 Google Fonts 怎麼用，可以參考這篇:</p>
+<p><a href="https://www.oxxostudio.tw/articles/201406/css-web-font.html">Web Font 的使用 by oxxo</a></p>
+<h2 id="使用-chrome-devtool-debug-android-裝置"><a aria-hidden="true" class="anchor-heading" href="#使用-chrome-devtool-debug-android-裝置"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>使用 chrome devtool debug Android 裝置</h2>
+<p>為了確保 <code>Android Browser</code>[註2] 可以正常顯示，用了 chrome 提供的功能。</p>
+<p>操作步驟:</p>
+<ul>
+<li>
+<p>手機連接電腦後，手機選擇 <code>設定</code> > <code>進階人員選項</code> > 開啟 <code>USB 偵錯</code>。[註1]</p>
+</li>
+<li>
+<p>電腦 Chrome 網址輸入 <code>chrome://inspect/#devices</code></p>
+</li>
+<li>
+<p>inspect 要 debug 的網頁，就可以開始 debug 了。</p>
+</li>
+</ul>
+<hr>
+<p>更多詳情可參閱:</p>
+<ul>
+<li>
+<p><a href="https://developer.chrome.com/docs/devtools/remote-debugging/">Remote debug Android devices by Kayce Basques</a></p>
+</li>
+<li>
+<p><a href="https://developer.android.com/studio/debug/dev-options">Configure on-device developer options</a></p>
+</li>
+</ul>
+<hr>
+<blockquote>
+<p>註1: xa2 sony 手機會自動開啟開發人員,如果你的手機沒自動開啟，可到 <code>設定</code> > <code>系統</code> > <code>關於手機</code> > <code>版本號碼</code> 點七下。這個技巧是在 <a href="https://www.youtube.com/watch?v=8WuLsAFnOuc&#x26;list=PLhxdaTcUMi3lKmlyVVcWdeMsoyRPcyRLI">王紫楓</a> 我忘記哪支影片看到的，那時覺得他講話很像 godJJ 就把教學影片看完、還記到現在 xD</p>
+</blockquote>
+<blockquote>
+<p>註2: 在 Can I use 網站上 <code>Android Browser</code> 是一個項目 (本以為會同桌機版 Chrome，實則為不同瀏覽器項目)</p>
+</blockquote>
+<p><img src="assets/images/2022-03-27-23-28-23.png"></p>
+<hr>
+<h2 id="tags"><a aria-hidden="true" class="anchor-heading" href="#tags"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Tags</h2>
+<ol>
+<li><a class="color-tag" style="--tag-color: #fe7b7c;" href="/notes/uFYxvNnYUjt8oxQcHtfSp">PROG.CSS</a></li>
+<li><a class="color-tag" style="--tag-color: #fdee73;" href="/notes/gj0sitvrk6ynbtxpixc4ih4">PROG.Android</a></li>
+</ol>
