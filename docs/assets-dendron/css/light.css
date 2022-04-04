@@ -15288,6 +15288,7 @@ _:-ms-fullscreen
   min-height: 0;
   background-color: transparent;
   background-image: url('/assets/images/andrew-coelho-aL7SA1ASVdQ-unsplash.jpg');
+  background-attachment: fixed;
 }
 .ant-layout,
 .ant-layout * {
