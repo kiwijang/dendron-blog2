@@ -1,3 +1,12 @@
+---
+id: 0c40o7nje4ye5vu97b7iwaj
+title: 0322 RWD 排版固定或流動
+desc: ''
+updated: 1649072749829
+created: 1647931558726
+tags:
+  - PROG.CSS
+---
 
 因為設計稿給了三種尺寸 pc/pad/phone，
 

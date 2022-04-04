@@ -11,8 +11,8 @@
       "links": [],
       "anchors": {},
       "fname": "403",
-      "updated": 1649039172480,
-      "created": 1649039172480,
+      "updated": 1649074859957,
+      "created": 1649074859957,
       "parent": null,
       "children": [],
       "data": {}
@@ -259,7 +259,7 @@
       "links": [
         {
           "from": {
-            "fname": "0drops.2022.0322-RWD排版固定或流動",
+            "fname": "drops.2022.0107-PostCSS和SASS",
             "vaultName": "vault"
           },
           "type": "backlink",
@@ -267,7 +267,7 @@
         },
         {
           "from": {
-            "fname": "drops.2022.0107-PostCSS和SASS",
+            "fname": "drops.2022.0322-RWD排版固定或流動",
             "vaultName": "vault"
           },
           "type": "backlink",
@@ -434,6 +434,7 @@
         "SIdMIFLQNg5jfa6ePoqt5",
         "Ge24zKfcbPxVmQ2OpQhBY",
         "o8n23ae0i8b5o5go3ipx4os",
+        "0c40o7nje4ye5vu97b7iwaj",
         "6wmc3n6c6adplh04u9vsu95"
       ],
       "data": {},
@@ -510,6 +511,116 @@
       "tags": [
         "PROG.CSS",
         "PROG.Android"
+      ]
+    },
+    "0c40o7nje4ye5vu97b7iwaj": {
+      "id": "0c40o7nje4ye5vu97b7iwaj",
+      "title": "0322 RWD 排版固定或流動",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [
+        {
+          "type": "frontmatterTag",
+          "from": {
+            "fname": "drops.2022.0322-RWD排版固定或流動",
+            "id": "0c40o7nje4ye5vu97b7iwaj",
+            "vaultName": "vault"
+          },
+          "value": "tags.PROG.CSS",
+          "alias": "PROG.CSS",
+          "xvault": false,
+          "to": {
+            "fname": "tags.PROG.CSS"
+          }
+        }
+      ],
+      "anchors": {
+        "fixed-design-固定設計": {
+          "type": "header",
+          "text": "Fixed Design 固定設計",
+          "value": "fixed-design-固定設計",
+          "line": 33,
+          "column": 0,
+          "depth": 2
+        },
+        "優點": {
+          "type": "header",
+          "text": "優點",
+          "value": "優點",
+          "line": 35,
+          "column": 0,
+          "depth": 3
+        },
+        "缺點": {
+          "type": "header",
+          "text": "缺點",
+          "value": "缺點",
+          "line": 44,
+          "column": 0,
+          "depth": 3
+        },
+        "流動設計-liquid-designs": {
+          "type": "header",
+          "text": "流動設計 Liquid Designs",
+          "value": "流動設計-liquid-designs",
+          "line": 55,
+          "column": 0,
+          "depth": 2
+        },
+        "優點-1": {
+          "type": "header",
+          "text": "優點",
+          "value": "優點-1",
+          "line": 57,
+          "column": 0,
+          "depth": 3
+        },
+        "缺點-1": {
+          "type": "header",
+          "text": "缺點",
+          "value": "缺點-1",
+          "line": 63,
+          "column": 0,
+          "depth": 3
+        },
+        "半流動混合式-semi-liquid-a-hybrid-approach": {
+          "type": "header",
+          "text": "半流動:混合式 Semi-Liquid: A Hybrid Approach",
+          "value": "半流動混合式-semi-liquid-a-hybrid-approach",
+          "line": 74,
+          "column": 0,
+          "depth": 2
+        },
+        "作者建議": {
+          "type": "header",
+          "text": "作者建議",
+          "value": "作者建議",
+          "line": 92,
+          "column": 0,
+          "depth": 2
+        },
+        "小結": {
+          "type": "header",
+          "text": "小結",
+          "value": "小結",
+          "line": 107,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "fname": "drops.2022.0322-RWD排版固定或流動",
+      "updated": 1649072749829,
+      "created": 1647931558726,
+      "parent": "4MPQXb6WwUg0kGHxTPD7x",
+      "children": [],
+      "data": {},
+      "contentHash": "a9a7534ffc6a99bff8da75d1adf5c91e",
+      "custom": {},
+      "tags": [
+        "PROG.CSS"
       ]
     },
     "o8n23ae0i8b5o5go3ipx4os": {
@@ -1316,8 +1427,7 @@
       "parent": "Cybv0wy1d2NbWoMaJ9Xst",
       "children": [
         "1FrZXjCCHfkMyZZeBnoL2",
-        "05PiGJUq8nazfBg8ndqHM",
-        "0c40o7nje4ye5vu97b7iwaj"
+        "05PiGJUq8nazfBg8ndqHM"
       ],
       "data": {},
       "contentHash": "eb1e80f5d7391475c668ed3e4bf4570c",
@@ -1325,45 +1435,6 @@
       "custom": {
         "stub": true
       }
-    },
-    "0c40o7nje4ye5vu97b7iwaj": {
-      "id": "0c40o7nje4ye5vu97b7iwaj",
-      "title": "0322-RWD排版固定或流動",
-      "vault": {
-        "fsPath": "vault"
-      },
-      "type": "note",
-      "desc": "",
-      "links": [
-        {
-          "type": "frontmatterTag",
-          "from": {
-            "fname": "0drops.2022.0322-RWD排版固定或流動",
-            "id": "0c40o7nje4ye5vu97b7iwaj",
-            "vaultName": "vault"
-          },
-          "value": "tags.PROG.CSS",
-          "alias": "PROG.CSS",
-          "xvault": false,
-          "to": {
-            "fname": "tags.PROG.CSS"
-          }
-        }
-      ],
-      "anchors": {},
-      "fname": "0drops.2022.0322-RWD排版固定或流動",
-      "updated": 1647934944106,
-      "created": 1647931558726,
-      "parent": "0YMTMineOCu8QrkzCD9rn",
-      "children": [],
-      "data": {},
-      "contentHash": "88433efdf0c283441823c9d98e47e361",
-      "custom": {
-        "status": "w"
-      },
-      "tags": [
-        "PROG.CSS"
-      ]
     },
     "05PiGJUq8nazfBg8ndqHM": {
       "id": "05PiGJUq8nazfBg8ndqHM",
