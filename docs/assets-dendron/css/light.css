@@ -15286,7 +15286,7 @@ _:-ms-fullscreen
   flex: auto;
   flex-direction: column;
   min-height: 0;
-  background: #fff;
+  background: transparent;
 }
 .ant-layout,
 .ant-layout * {
