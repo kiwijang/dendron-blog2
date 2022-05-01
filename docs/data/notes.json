@@ -11,8 +11,8 @@
       "links": [],
       "anchors": {},
       "fname": "403",
-      "updated": 1649348772482,
-      "created": 1649348772482,
+      "updated": 1651428072711,
+      "created": 1651428072711,
       "parent": null,
       "children": [],
       "data": {}
@@ -20,30 +20,31 @@
     "root": {
       "id": "root",
       "title": "( Φ w Φ )",
+      "desc": "",
+      "updated": 1650381339323,
+      "created": 1595961348801,
+      "stub": false,
+      "custom": {
+        "stub": false,
+        "nav_order": 0,
+        "permalink": "/"
+      },
+      "fname": "root",
+      "type": "note",
       "vault": {
         "fsPath": "vault"
       },
-      "type": "note",
-      "desc": "",
+      "contentHash": "acc933de5170843ff0ca0380d9ab6de4",
       "links": [],
       "anchors": {},
-      "fname": "root",
-      "updated": 1647333117884,
-      "created": 1595961348801,
-      "parent": null,
       "children": [
         "Cybv0wy1d2NbWoMaJ9Xst",
         "u4tSbmkJewrKonY3sL544",
         "WAKWMq3SeVmlAmZRqCbpB",
         "rEbR1FrKkZzyjo6ahAgm3"
       ],
-      "data": {},
-      "contentHash": "6b7c53c1ca1b64ad19cd7fc99b97b1cf",
-      "custom": {
-        "stub": false,
-        "nav_order": 0,
-        "permalink": "/"
-      }
+      "parent": null,
+      "data": {}
     },
     "rEbR1FrKkZzyjo6ahAgm3": {
       "id": "rEbR1FrKkZzyjo6ahAgm3",
@@ -60,6 +61,7 @@
       "created": 1640615341422,
       "parent": "root",
       "children": [
+        "hikt5akgz6251z6wjkkmc99",
         "4nZxUaZMBAvz7oWuXizXl"
       ],
       "data": {},
@@ -348,6 +350,42 @@
       "contentHash": "6074138df5c20f529b079a9439ac7221",
       "custom": {}
     },
+    "hikt5akgz6251z6wjkkmc99": {
+      "id": "hikt5akgz6251z6wjkkmc99",
+      "title": "OS",
+      "desc": "",
+      "updated": 1650380320047,
+      "created": 1650380320047,
+      "custom": {},
+      "fname": "tags.OS",
+      "type": "note",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "contentHash": "2c00180370abeea653eb93bc9ee5aeb6",
+      "links": [
+        {
+          "from": {
+            "fname": "drops.2022.0419-[Ch1]作業系統簡介與常見系統類型(二)",
+            "vaultName": "vault"
+          },
+          "type": "backlink",
+          "value": "tags.OS"
+        },
+        {
+          "from": {
+            "fname": "drops.2022.0419-[系列文目錄] OS (一)",
+            "vaultName": "vault"
+          },
+          "type": "backlink",
+          "value": "tags.OS"
+        }
+      ],
+      "anchors": {},
+      "children": [],
+      "parent": "rEbR1FrKkZzyjo6ahAgm3",
+      "data": {}
+    },
     "WAKWMq3SeVmlAmZRqCbpB": {
       "id": "WAKWMq3SeVmlAmZRqCbpB",
       "title": "Other",
@@ -383,12 +421,12 @@
       "links": [],
       "anchors": {},
       "fname": "other.about",
-      "updated": 1641029020367,
+      "updated": 1651427516419,
       "created": 1641017236114,
       "parent": "WAKWMq3SeVmlAmZRqCbpB",
       "children": [],
       "data": {},
-      "contentHash": "8603a63a0155fe9aed7e1f0d5e8c4172",
+      "contentHash": "fa1987459f87a14ab90bcc70b4b57ac4",
       "custom": {}
     },
     "u4tSbmkJewrKonY3sL544": {
@@ -435,7 +473,9 @@
         "Ge24zKfcbPxVmQ2OpQhBY",
         "o8n23ae0i8b5o5go3ipx4os",
         "0c40o7nje4ye5vu97b7iwaj",
-        "6wmc3n6c6adplh04u9vsu95"
+        "6wmc3n6c6adplh04u9vsu95",
+        "tjo1srktkmfjj2wz4e5bn7c",
+        "e7gwr2vcb0hk4n2yxqn0ha6"
       ],
       "data": {},
       "contentHash": "01c2121b2a0955562e610dc3b066ee75",
@@ -443,6 +483,148 @@
       "custom": {
         "stub": true
       }
+    },
+    "e7gwr2vcb0hk4n2yxqn0ha6": {
+      "id": "e7gwr2vcb0hk4n2yxqn0ha6",
+      "title": "0419 [系列文目錄] OS (一)",
+      "desc": "",
+      "updated": 1650382023561,
+      "created": 1650380285555,
+      "tags": [
+        "OS"
+      ],
+      "custom": {},
+      "fname": "drops.2022.0419-[系列文目錄] OS (一)",
+      "type": "note",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "contentHash": "f39a3f9886e1d27c3d0c547d035aeed4",
+      "links": [
+        {
+          "type": "frontmatterTag",
+          "from": {
+            "fname": "drops.2022.0419-[系列文目錄] OS (一)",
+            "id": "e7gwr2vcb0hk4n2yxqn0ha6",
+            "vaultName": "vault"
+          },
+          "value": "tags.OS",
+          "alias": "OS",
+          "xvault": false,
+          "to": {
+            "fname": "tags.OS"
+          }
+        },
+        {
+          "type": "ref",
+          "from": {
+            "fname": "drops.2022.0419-[系列文目錄] OS (一)",
+            "id": "e7gwr2vcb0hk4n2yxqn0ha6",
+            "vaultName": "vault"
+          },
+          "value": "drops.2022.0419-[Ch1",
+          "position": {
+            "start": {
+              "line": 10,
+              "column": 1,
+              "offset": 171
+            },
+            "end": {
+              "line": 10,
+              "column": 62,
+              "offset": 232
+            },
+            "indent": []
+          },
+          "xvault": false,
+          "to": {
+            "fname": "drops.2022.0419-[Ch1"
+          }
+        }
+      ],
+      "anchors": {
+        "前言": {
+          "type": "header",
+          "text": "前言",
+          "value": "前言",
+          "line": 10,
+          "column": 0,
+          "depth": 2
+        },
+        "參考資料": {
+          "type": "header",
+          "text": "參考資料",
+          "value": "參考資料",
+          "line": 20,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "children": [],
+      "parent": "4MPQXb6WwUg0kGHxTPD7x",
+      "data": {}
+    },
+    "tjo1srktkmfjj2wz4e5bn7c": {
+      "id": "tjo1srktkmfjj2wz4e5bn7c",
+      "title": "0419 [Ch1]作業系統簡介與常見系統類型(二)",
+      "desc": "",
+      "updated": 1650651019541,
+      "created": 1650381132068,
+      "tags": [
+        "OS"
+      ],
+      "custom": {},
+      "fname": "drops.2022.0419-[Ch1]作業系統簡介與常見系統類型(二)",
+      "type": "note",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "contentHash": "56ebd345785564352767b4e28c0e21b1",
+      "links": [
+        {
+          "type": "frontmatterTag",
+          "from": {
+            "fname": "drops.2022.0419-[Ch1]作業系統簡介與常見系統類型(二)",
+            "id": "tjo1srktkmfjj2wz4e5bn7c",
+            "vaultName": "vault"
+          },
+          "value": "tags.OS",
+          "alias": "OS",
+          "xvault": false,
+          "to": {
+            "fname": "tags.OS"
+          }
+        }
+      ],
+      "anchors": {
+        "電腦系統概論-computer-system-structure": {
+          "type": "header",
+          "text": "電腦系統概論 computer system structure",
+          "value": "電腦系統概論-computer-system-structure",
+          "line": 10,
+          "column": 0,
+          "depth": 2
+        },
+        "4-components": {
+          "type": "header",
+          "text": "4 components:",
+          "value": "4-components",
+          "line": 12,
+          "column": 0,
+          "depth": 3
+        },
+        "作業系統概述-os-structure": {
+          "type": "header",
+          "text": "作業系統概述 os structure",
+          "value": "作業系統概述-os-structure",
+          "line": 26,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "children": [],
+      "parent": "4MPQXb6WwUg0kGHxTPD7x",
+      "data": {}
     },
     "6wmc3n6c6adplh04u9vsu95": {
       "id": "6wmc3n6c6adplh04u9vsu95",
@@ -1613,61 +1795,63 @@
     {
       "id": "root",
       "title": "( Φ w Φ )",
+      "desc": "",
+      "updated": 1650381339323,
+      "created": 1595961348801,
+      "stub": false,
+      "custom": {
+        "stub": false,
+        "nav_order": 0,
+        "permalink": "/"
+      },
+      "fname": "root",
+      "type": "note",
       "vault": {
         "fsPath": "vault"
       },
-      "type": "note",
-      "desc": "",
+      "contentHash": "acc933de5170843ff0ca0380d9ab6de4",
       "links": [],
       "anchors": {},
-      "fname": "root",
-      "updated": 1647333117884,
-      "created": 1595961348801,
-      "parent": null,
       "children": [
         "Cybv0wy1d2NbWoMaJ9Xst",
         "u4tSbmkJewrKonY3sL544",
         "WAKWMq3SeVmlAmZRqCbpB",
         "rEbR1FrKkZzyjo6ahAgm3"
       ],
+      "parent": null,
       "data": {},
-      "contentHash": "6b7c53c1ca1b64ad19cd7fc99b97b1cf",
-      "custom": {
-        "stub": false,
-        "nav_order": 0,
-        "permalink": "/"
-      },
-      "body": "\n\r\nDendron 官網: https://wiki.dendron.so/\r\n\r\n<!-- ![[首次使用 Dendron 紀錄|drops.2021.1226-first-day#使用-dendron-紀錄:#*]] -->\r\n<div class=\"portal-container\">\r\n<div class=\"portal-head\">\r\n<div class=\"portal-backlink\">\r\n<div class=\"portal-title\">From <span class=\"portal-text-title\">1226 使用 Dendron 紀錄</span></div>\r\n<a href=\"/notes/DTeYpEuPv3KIHugUyqZPu\" class=\"portal-arrow\">Go to text <span class=\"right-arrow\">→</span></a>\r\n</div>\r\n</div>\r\n<div id=\"portal-parent-anchor\" class=\"portal-parent\" markdown=\"1\">\r\n<div class=\"portal-parent-fader-top\"></div>\r\n<div class=\"portal-parent-fader-bottom\"></div><h2 id=\"使用-dendron-紀錄\"><a aria-hidden=\"true\" class=\"anchor-heading\" href=\"#使用-dendron-紀錄\"><svg aria-hidden=\"true\" viewBox=\"0 0 16 16\"><use xlink:href=\"#svg-link\"></use></svg></a>使用 Dendron 紀錄</h2>\r\n</div></div>\r\n"
+      "body": "\n\r\nDendron 官網: https://wiki.dendron.so/\r\n\r\n<!-- ![[首次使用 Dendron 紀錄|drops.2021.1226-first-day#使用-dendron-紀錄:#*]] -->\r\n<!-- <div class=\"portal-container\">\r\n<div class=\"portal-head\">\r\n<div class=\"portal-backlink\">\r\n<div class=\"portal-title\">From <span class=\"portal-text-title\">1226 使用 Dendron 紀錄</span></div>\r\n<a href=\"/notes/DTeYpEuPv3KIHugUyqZPu\" class=\"portal-arrow\">Go to text <span class=\"right-arrow\">→</span></a>\r\n</div>\r\n</div>\r\n<div id=\"portal-parent-anchor\" class=\"portal-parent\" markdown=\"1\">\r\n<div class=\"portal-parent-fader-top\"></div>\r\n<div class=\"portal-parent-fader-bottom\"></div><h2 id=\"使用-dendron-紀錄\"><a aria-hidden=\"true\" class=\"anchor-heading\" href=\"#使用-dendron-紀錄\"><svg aria-hidden=\"true\" viewBox=\"0 0 16 16\"><use xlink:href=\"#svg-link\"></use></svg></a>使用 Dendron 紀錄</h2>\r\n</div></div> -->\r\n"
     }
   ],
   "noteIndex": {
     "id": "root",
     "title": "( Φ w Φ )",
+    "desc": "",
+    "updated": 1650381339323,
+    "created": 1595961348801,
+    "stub": false,
+    "custom": {
+      "stub": false,
+      "nav_order": 0,
+      "permalink": "/"
+    },
+    "fname": "root",
+    "type": "note",
     "vault": {
       "fsPath": "vault"
     },
-    "type": "note",
-    "desc": "",
+    "contentHash": "acc933de5170843ff0ca0380d9ab6de4",
     "links": [],
     "anchors": {},
-    "fname": "root",
-    "updated": 1647333117884,
-    "created": 1595961348801,
-    "parent": null,
     "children": [
       "Cybv0wy1d2NbWoMaJ9Xst",
       "u4tSbmkJewrKonY3sL544",
       "WAKWMq3SeVmlAmZRqCbpB",
       "rEbR1FrKkZzyjo6ahAgm3"
     ],
+    "parent": null,
     "data": {},
-    "contentHash": "6b7c53c1ca1b64ad19cd7fc99b97b1cf",
-    "custom": {
-      "stub": false,
-      "nav_order": 0,
-      "permalink": "/"
-    },
-    "body": "\n\r\nDendron 官網: https://wiki.dendron.so/\r\n\r\n<!-- ![[首次使用 Dendron 紀錄|drops.2021.1226-first-day#使用-dendron-紀錄:#*]] -->\r\n<div class=\"portal-container\">\r\n<div class=\"portal-head\">\r\n<div class=\"portal-backlink\">\r\n<div class=\"portal-title\">From <span class=\"portal-text-title\">1226 使用 Dendron 紀錄</span></div>\r\n<a href=\"/notes/DTeYpEuPv3KIHugUyqZPu\" class=\"portal-arrow\">Go to text <span class=\"right-arrow\">→</span></a>\r\n</div>\r\n</div>\r\n<div id=\"portal-parent-anchor\" class=\"portal-parent\" markdown=\"1\">\r\n<div class=\"portal-parent-fader-top\"></div>\r\n<div class=\"portal-parent-fader-bottom\"></div><h2 id=\"使用-dendron-紀錄\"><a aria-hidden=\"true\" class=\"anchor-heading\" href=\"#使用-dendron-紀錄\"><svg aria-hidden=\"true\" viewBox=\"0 0 16 16\"><use xlink:href=\"#svg-link\"></use></svg></a>使用 Dendron 紀錄</h2>\r\n</div></div>\r\n"
+    "body": "\n\r\nDendron 官網: https://wiki.dendron.so/\r\n\r\n<!-- ![[首次使用 Dendron 紀錄|drops.2021.1226-first-day#使用-dendron-紀錄:#*]] -->\r\n<!-- <div class=\"portal-container\">\r\n<div class=\"portal-head\">\r\n<div class=\"portal-backlink\">\r\n<div class=\"portal-title\">From <span class=\"portal-text-title\">1226 使用 Dendron 紀錄</span></div>\r\n<a href=\"/notes/DTeYpEuPv3KIHugUyqZPu\" class=\"portal-arrow\">Go to text <span class=\"right-arrow\">→</span></a>\r\n</div>\r\n</div>\r\n<div id=\"portal-parent-anchor\" class=\"portal-parent\" markdown=\"1\">\r\n<div class=\"portal-parent-fader-top\"></div>\r\n<div class=\"portal-parent-fader-bottom\"></div><h2 id=\"使用-dendron-紀錄\"><a aria-hidden=\"true\" class=\"anchor-heading\" href=\"#使用-dendron-紀錄\"><svg aria-hidden=\"true\" viewBox=\"0 0 16 16\"><use xlink:href=\"#svg-link\"></use></svg></a>使用 Dendron 紀錄</h2>\r\n</div></div> -->\r\n"
   },
   "vaults": [
     {

@@ -1,40 +1,7 @@
 {
-  "version": 4,
-  "useFMTitle": true,
-  "useNoteTitleForLink": true,
-  "mermaid": true,
-  "useKatex": true,
+  "version": 5,
   "dev": {
     "enablePreviewV2": true
-  },
-  "site": {
-    "copyAssets": true,
-    "siteHierarchies": [
-      "root"
-    ],
-    "siteRootDir": "docs",
-    "siteUrl": "https://kiwijang.github.io",
-    "usePrettyRefs": true,
-    "title": "/ᐠ ._. ᐟ\\✧",
-    "description": "Personal knowledge space",
-    "siteLastModified": true,
-    "gh_edit_repository": "https://github.com/kiwijang/kiwijang.github.io.git",
-    "gh_edit_branch": "master",
-    "duplicateNoteBehavior": {
-      "action": "useVault",
-      "payload": [
-        "vault"
-      ]
-    },
-    "gh_edit_link": "false",
-    "usePrettyLinks": true,
-    "siteNotesDir": "notes",
-    "siteFaviconPath": "favicon.ico",
-    "gh_edit_link_text": "Edit this page on GitHub",
-    "gh_root": "docs/",
-    "gh_edit_view_mode": "edit",
-    "writeStubs": true,
-    "siteIndex": "root"
   },
   "commands": {
     "lookup": {
@@ -57,7 +24,8 @@
     },
     "insertNoteIndex": {
       "enableMarker": false
-    }
+    },
+    "copyNoteLink": {}
   },
   "workspace": {
     "vaults": [
@@ -111,7 +79,9 @@
     "enableAutoFoldFrontmatter": false,
     "enableEditorDecorations": true,
     "maxPreviewsCached": 10,
-    "maxNoteLength": 204800
+    "maxNoteLength": 204800,
+    "enableFullHierarchyNoteTitle": false,
+    "dendronVersion": "0.92.1"
   },
   "preview": {
     "enableFMTitle": true,
@@ -119,6 +89,70 @@
     "enableMermaid": true,
     "enablePrettyRefs": true,
     "enableKatex": true,
-    "automaticallyShowPreview": false
+    "automaticallyShowPreview": false,
+    "enableFrontmatterTags": true,
+    "enableHashesForFMTags": false
+  },
+  "publishing": {
+    "enableFMTitle": true,
+    "enableNoteTitleForLink": true,
+    "enableMermaid": true,
+    "enablePrettyRefs": true,
+    "enableKatex": true,
+    "copyAssets": true,
+    "siteHierarchies": [
+      "root"
+    ],
+    "enableSiteLastModified": true,
+    "siteRootDir": "docs",
+    "siteUrl": "https://kiwijang.github.io",
+    "enableFrontmatterTags": true,
+    "enableHashesForFMTags": false,
+    "enableRandomlyColoredTags": true,
+    "duplicateNoteBehavior": {
+      "action": "useVault",
+      "payload": [
+        "vault"
+      ]
+    },
+    "writeStubs": false,
+    "seo": {
+      "title": "/ᐠ ._. ᐟ\\✧",
+      "description": "Personal knowledge space"
+    },
+    "github": {
+      "enableEditLink": false,
+      "editLinkText": "Edit this page on GitHub",
+      "editBranch": "master",
+      "editViewMode": "tree",
+      "editRepository": "https://github.com/kiwijang/kiwijang.github.io.git"
+    },
+    "enablePrettyLinks": true
+  },
+  "useFMTitle": true,
+  "useNoteTitleForLink": true,
+  "mermaid": true,
+  "useKatex": true,
+  "site": {
+    "copyAssets": true,
+    "siteHierarchies": [
+      "root"
+    ],
+    "siteRootDir": "docs",
+    "usePrettyRefs": true,
+    "title": "Dendron",
+    "description": "Personal knowledge space",
+    "siteLastModified": true,
+    "gh_edit_branch": "main",
+    "siteUrl": "localhost:3000",
+    "usePrettyLinks": true,
+    "siteNotesDir": "notes",
+    "siteFaviconPath": "favicon.ico",
+    "gh_edit_link": true,
+    "gh_edit_link_text": "Edit this page on GitHub",
+    "gh_root": "docs/",
+    "gh_edit_view_mode": "edit",
+    "writeStubs": true,
+    "siteIndex": "root"
   }
 }
