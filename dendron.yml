@@ -97,7 +97,7 @@ publishing:
     writeStubs: false
     seo:
         title: /ᐠ ._. ᐟ\✧
-        description: Personal knowledge space
+        description: 網頁開發技術筆記
     github:
         enableEditLink: false
         editLinkText: Edit this page on GitHub
@@ -105,3 +105,9 @@ publishing:
         editViewMode: tree
         editRepository: https://github.com/kiwijang/kiwijang.github.io.git
     enablePrettyLinks: true
+site:
+    siteHierarchies:
+    - root
+    siteRootDir: docs
+    siteUrl: https://kiwijang.github.io
+    title: /ᐠ ._. ᐟ\✧

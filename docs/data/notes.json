@@ -11,8 +11,8 @@
       "links": [],
       "anchors": {},
       "fname": "403",
-      "updated": 1651428072711,
-      "created": 1651428072711,
+      "updated": 1651487868768,
+      "created": 1651487868768,
       "parent": null,
       "children": [],
       "data": {}
@@ -61,7 +61,6 @@
       "created": 1640615341422,
       "parent": "root",
       "children": [
-        "hikt5akgz6251z6wjkkmc99",
         "4nZxUaZMBAvz7oWuXizXl"
       ],
       "data": {},
@@ -96,6 +95,7 @@
         "3cKSNGeq54iDx1eRKcNB0",
         "1z3qa2rt5zymm05yroq0d7c",
         "Po0jmNACWQVrxnoTRT6kr",
+        "hikt5akgz6251z6wjkkmc99",
         "yvz3NEjMcVQ7sYJm3trFQ",
         "5fvFLLh8nAp2yZZwxk9ku"
       ],
@@ -165,6 +165,25 @@
       "children": [],
       "parent": "4nZxUaZMBAvz7oWuXizXl",
       "data": {}
+    },
+    "hikt5akgz6251z6wjkkmc99": {
+      "id": "hikt5akgz6251z6wjkkmc99",
+      "title": "OS",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "fname": "tags.PROG.OS",
+      "updated": 1650380320047,
+      "created": 1650380320047,
+      "parent": "4nZxUaZMBAvz7oWuXizXl",
+      "children": [],
+      "data": {},
+      "contentHash": "2c00180370abeea653eb93bc9ee5aeb6",
+      "custom": {}
     },
     "Po0jmNACWQVrxnoTRT6kr": {
       "id": "Po0jmNACWQVrxnoTRT6kr",
@@ -349,42 +368,6 @@
       "data": {},
       "contentHash": "6074138df5c20f529b079a9439ac7221",
       "custom": {}
-    },
-    "hikt5akgz6251z6wjkkmc99": {
-      "id": "hikt5akgz6251z6wjkkmc99",
-      "title": "OS",
-      "desc": "",
-      "updated": 1650380320047,
-      "created": 1650380320047,
-      "custom": {},
-      "fname": "tags.OS",
-      "type": "note",
-      "vault": {
-        "fsPath": "vault"
-      },
-      "contentHash": "2c00180370abeea653eb93bc9ee5aeb6",
-      "links": [
-        {
-          "from": {
-            "fname": "drops.2022.0419-[Ch1]作業系統簡介與常見系統類型(二)",
-            "vaultName": "vault"
-          },
-          "type": "backlink",
-          "value": "tags.OS"
-        },
-        {
-          "from": {
-            "fname": "drops.2022.0419-[系列文目錄] OS (一)",
-            "vaultName": "vault"
-          },
-          "type": "backlink",
-          "value": "tags.OS"
-        }
-      ],
-      "anchors": {},
-      "children": [],
-      "parent": "rEbR1FrKkZzyjo6ahAgm3",
-      "data": {}
     },
     "WAKWMq3SeVmlAmZRqCbpB": {
       "id": "WAKWMq3SeVmlAmZRqCbpB",
