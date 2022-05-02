@@ -11,8 +11,8 @@
       "links": [],
       "anchors": {},
       "fname": "403",
-      "updated": 1651487868768,
-      "created": 1651487868768,
+      "updated": 1651490046074,
+      "created": 1651490046074,
       "parent": null,
       "children": [],
       "data": {}
@@ -174,7 +174,24 @@
       },
       "type": "note",
       "desc": "",
-      "links": [],
+      "links": [
+        {
+          "from": {
+            "fname": "drops.2022.0419-[Ch1]作業系統簡介與常見系統類型(二)",
+            "vaultName": "vault"
+          },
+          "type": "backlink",
+          "value": "tags.PROG.OS"
+        },
+        {
+          "from": {
+            "fname": "drops.2022.0419-[系列文目錄] OS (一)",
+            "vaultName": "vault"
+          },
+          "type": "backlink",
+          "value": "tags.PROG.OS"
+        }
+      ],
       "anchors": {},
       "fname": "tags.PROG.OS",
       "updated": 1650380320047,
@@ -470,19 +487,11 @@
     "e7gwr2vcb0hk4n2yxqn0ha6": {
       "id": "e7gwr2vcb0hk4n2yxqn0ha6",
       "title": "0419 [系列文目錄] OS (一)",
-      "desc": "",
-      "updated": 1650382023561,
-      "created": 1650380285555,
-      "tags": [
-        "OS"
-      ],
-      "custom": {},
-      "fname": "drops.2022.0419-[系列文目錄] OS (一)",
-      "type": "note",
       "vault": {
         "fsPath": "vault"
       },
-      "contentHash": "f39a3f9886e1d27c3d0c547d035aeed4",
+      "type": "note",
+      "desc": "",
       "links": [
         {
           "type": "frontmatterTag",
@@ -491,11 +500,11 @@
             "id": "e7gwr2vcb0hk4n2yxqn0ha6",
             "vaultName": "vault"
           },
-          "value": "tags.OS",
-          "alias": "OS",
+          "value": "tags.PROG.OS",
+          "alias": "PROG.OS",
           "xvault": false,
           "to": {
-            "fname": "tags.OS"
+            "fname": "tags.PROG.OS"
           }
         },
         {
@@ -543,26 +552,26 @@
           "depth": 2
         }
       },
-      "children": [],
+      "fname": "drops.2022.0419-[系列文目錄] OS (一)",
+      "updated": 1650382023561,
+      "created": 1650380285555,
       "parent": "4MPQXb6WwUg0kGHxTPD7x",
-      "data": {}
+      "children": [],
+      "data": {},
+      "contentHash": "6f93b7e08517ab2fa97e5af2ed509efc",
+      "custom": {},
+      "tags": [
+        "PROG.OS"
+      ]
     },
     "tjo1srktkmfjj2wz4e5bn7c": {
       "id": "tjo1srktkmfjj2wz4e5bn7c",
       "title": "0419 [Ch1]作業系統簡介與常見系統類型(二)",
-      "desc": "",
-      "updated": 1650651019541,
-      "created": 1650381132068,
-      "tags": [
-        "OS"
-      ],
-      "custom": {},
-      "fname": "drops.2022.0419-[Ch1]作業系統簡介與常見系統類型(二)",
-      "type": "note",
       "vault": {
         "fsPath": "vault"
       },
-      "contentHash": "56ebd345785564352767b4e28c0e21b1",
+      "type": "note",
+      "desc": "",
       "links": [
         {
           "type": "frontmatterTag",
@@ -571,11 +580,11 @@
             "id": "tjo1srktkmfjj2wz4e5bn7c",
             "vaultName": "vault"
           },
-          "value": "tags.OS",
-          "alias": "OS",
+          "value": "tags.PROG.OS",
+          "alias": "PROG.OS",
           "xvault": false,
           "to": {
-            "fname": "tags.OS"
+            "fname": "tags.PROG.OS"
           }
         }
       ],
@@ -605,9 +614,17 @@
           "depth": 2
         }
       },
-      "children": [],
+      "fname": "drops.2022.0419-[Ch1]作業系統簡介與常見系統類型(二)",
+      "updated": 1650651019541,
+      "created": 1650381132068,
       "parent": "4MPQXb6WwUg0kGHxTPD7x",
-      "data": {}
+      "children": [],
+      "data": {},
+      "contentHash": "a36df1463eb5b7bc749af8f90c097a02",
+      "custom": {},
+      "tags": [
+        "PROG.OS"
+      ]
     },
     "6wmc3n6c6adplh04u9vsu95": {
       "id": "6wmc3n6c6adplh04u9vsu95",
