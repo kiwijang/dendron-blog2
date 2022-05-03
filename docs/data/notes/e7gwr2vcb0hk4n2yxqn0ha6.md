@@ -9,7 +9,6 @@
 
 ![[drops.2022.0419-drops.2022.0419-[Ch1]作業系統簡介與常見系統類型(二)]]
 
-
 ## 參考資料
 
 - [Operating System Concepts, 10/e (GE-Paperback) by Abraham Silberschatz , Peter Raer Galvin , Greg Gagne](https://www.tenlong.com.tw/products/9781119454083)

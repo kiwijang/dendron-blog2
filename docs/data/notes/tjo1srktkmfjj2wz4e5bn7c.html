@@ -1,6 +1,23 @@
 <h1 id="0419-ch1作業系統簡介與常見系統類型二"><a aria-hidden="true" class="anchor-heading" href="#0419-ch1作業系統簡介與常見系統類型二"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>0419 [Ch1]作業系統簡介與常見系統類型(二)</h1>
 <h2 id="電腦系統概論-computer-system-structure"><a aria-hidden="true" class="anchor-heading" href="#電腦系統概論-computer-system-structure"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>電腦系統概論 computer system structure</h2>
-<h3 id="4-components"><a aria-hidden="true" class="anchor-heading" href="#4-components"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>4 components:</h3>
+<h3 id="組成電腦的五大單元"><a aria-hidden="true" class="anchor-heading" href="#組成電腦的五大單元"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>組成電腦的五大單元</h3>
+<p><img src="/assets/images/2022-05-02-22-40-17.png"></p>
+<blockquote>
+<p>圖源: <a href="https://linux.vbird.org/linux_basic/centos7/0105computers.php#ps4">第零章、計算機概論 - 鳥哥</a></p>
+</blockquote>
+<p><img src="/assets/images/2022-05-02-22-46-40.png"></p>
+<blockquote>
+<p>圖源: <a href="https://zh-yue.wikipedia.org/wiki/%E9%A6%AE%E7%B4%90%E6%9B%BC%E6%9E%B6%E6%A7%8B">馮紐曼架構 Von Neumann architecture</a>/<a href="https://en.wikibooks.org/wiki/IB/Group_4/Computer_Science/Computer_Organisation">Computer Organisation</a></p>
+</blockquote>
+<ol>
+<li>輸入單元 input device</li>
+<li>輸出單元 output device</li>
+<li>CPU 內部的控制單元 control unit</li>
+<li>CPU 內部的算數邏輯單元 arithmetic/logic unit (ALU)</li>
+<li>主記憶體 memory unit</li>
+</ol>
+<h3 id="電腦系統粗分為四元件"><a aria-hidden="true" class="anchor-heading" href="#電腦系統粗分為四元件"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>電腦系統粗分為四元件</h3>
+<p><img src="/assets/images/2022-05-02-23-43-42.png"></p>
 <ol>
 <li>
 <p>硬體 hardware</p>
@@ -10,14 +27,119 @@
 <p>作業系統 operating system</p>
 </li>
 <li>
-<p>應用程式與系統程式 app programs and sys programs</p>
+<p>應用程式與系統程式 application programs and sys programs</p>
 </li>
 <li>
 <p>使用者 users</p>
 <p>例如: 人、其他機器、其他系統...</p>
 </li>
 </ol>
-<h2 id="作業系統概述-os-structure"><a aria-hidden="true" class="anchor-heading" href="#作業系統概述-os-structure"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>作業系統概述 os structure</h2>
+<h2 id="作業系統概述-os-structure"><a aria-hidden="true" class="anchor-heading" href="#作業系統概述-os-structure"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>作業系統概述 OS Structure</h2>
+<h3 id="os-的目的"><a aria-hidden="true" class="anchor-heading" href="#os-的目的"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>OS 的目的</h3>
+<h3 id="電腦系統架構"><a aria-hidden="true" class="anchor-heading" href="#電腦系統架構"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>電腦系統架構</h3>
+<ol>
+<li>
+<p>多處理器系統 Multiprocessor System / Parallel System / Tightly Coupled System</p>
+<ol>
+<li>
+<p>最常見為 SMP(Symmetric Multi-Processing)</p>
+<p>對稱式多處理器記憶體資源是共享的又稱 UMA(Uniform Memory Access)，所以會有資源競爭的問題。可用 CPU 排程和同步工具來解決遇到的問題(CH5、CH6)。</p>
+<p>雙核(dual-core)設計的處理器將多個 CPU 放置同一晶片(chips)上，會比個放在不同晶片上更有效率且更省電(省電對筆電和手機來說很重要)。</p>
+<p>快取級數越小代表體積越小、速度越快。</p>
+<p>這種共用資源的 CPU 架構讓 OS 設計及程式設計變得很重要(CH4 執行緒與並行)。</p>
+<p><img src="/assets/images/2022-05-03-22-41-34.png"></p>
+<blockquote>
+<p>圖源: <a href="https://www.youtube.com/watch?v=IU9cB5g4eZU&#x26;ab_channel=ITSimplifiedinHINDI">Cache Memory | L1, L2 and L3 Caches in Computers | L1 L2 L3 Cache Explained in Hindi</a></p>
+</blockquote>
+<p>當 CPU 變多，處理器和記憶體間的匯流排將會成為資料存取的瓶頸，會嚴重地影響到系統效能。[註 1]</p>
+<p>為了解決多 CPU 的資源競爭問題，NUMA (Non-Uniform Memory Access) 的設計簡化了匯流排的複雜程度，NUMA 將處理器切成不同節點，每個處理器都有各自的連結，當要用到別的節點的記憶體時速度會變慢，但只用到自己的記憶體時不只速度快、也不會有資源競爭的問題(因為自己用自己的，去用別人的也只會有一條路)。</p>
+<ol>
+<li>
+<p><img src="/assets/images/2022-05-03-23-52-25.png"></p>
+</li>
+<li>
+<blockquote>
+<p>圖源: <a href="https://www.researchgate.net/figure/A-NUMA-architecture-with-4-nodes_fig2_273393420">A NUMA architecture with 4 nodes - uploaded by Li Wang</a></p>
+</blockquote>
+</li>
+</ol>
+</li>
+<li>
+<p>ASMP(Asymmetric MultiProcessors) 非對稱式多處理器:通常採主從式架構。比 SMP 效能還差，主 CPU 易有效能瓶頸，且可靠度也差(主 CPU 壞了就全不能用)。</p>
+</li>
+<li>
+<p>叢集式系統 clustered system</p>
+<ol>
+<li>也是一種多處理器系統(Multiprocessor System)</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>
+<p>分散式系統 Distributed System / Loosely Coupled system</p>
+<p>多部機器彼此以網路相互串聯。機器間硬體資源不共享、各 CPU 時脈(clock)控制不一定相同、各 CPU 上的 OS 也不一定相同、處理器之間的溝通大都採 Message Passing 方式 (CH6)。</p>
+<p>增加吞吐量(throughput)和可靠性(reliability)、減少資源共享、可滿足遠端通訊的需求。</p>
+<p>可分成主從式架構與 P2P 架構。(就像 ASMP 和 NUMA 概念的差別，不是主從就是平權欸...)</p>
+</li>
+</ol>
+<h3 id="作業系統執行"><a aria-hidden="true" class="anchor-heading" href="#作業系統執行"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>作業系統執行</h3>
+<ol start="2">
+<li>
+<p>多元程式設計系統 Multiprogramming</p>
+<ol>
+<li>分時系統 Time-Sharing / Multitasking</li>
+</ol>
+</li>
+<li>
+<p>Dual-Mode and Multimode Operation</p>
+</li>
+<li>
+<p>Timer</p>
+</li>
+<li>
+<p>批次系統 Batch System</p>
+</li>
+</ol>
+<hr>
+<ol start="6">
+<li>
+<p>即時系統 Real-Time System</p>
+<ol>
+<li>Hard</li>
+<li>Soft</li>
+</ol>
+</li>
+<li>
+<p>手持系統 handheld system</p>
+</li>
+</ol>
+<h2 id="參考資料"><a aria-hidden="true" class="anchor-heading" href="#參考資料"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>參考資料</h2>
+<ul>
+<li>註一 <a href="https://www.cc.ntu.edu.tw/chinese/epaper/0015/20101220_1508.htm">多核心計算環境—NUMA 與 CPUSET 簡介 by 周秉誼</a></li>
+</ul>
+<h4 id="名詞解釋"><a aria-hidden="true" class="anchor-heading" href="#名詞解釋"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>名詞解釋</h4>
+<ul>
+<li>
+<p>CPU</p>
+<p>執行指令(instructions)的硬體。</p>
+</li>
+<li>
+<p>處理器 Processor</p>
+<p>包含一或多個 CPU 的物理晶片(chip)。</p>
+</li>
+<li>
+<p>核心 Core</p>
+<p>CPU 的基本數量單位。</p>
+</li>
+<li>
+<p>多核心 Multicore</p>
+<p>同 CPU 上包含多個運算核心。</p>
+</li>
+<li>
+<p>Multiprocessor</p>
+<p>包含多個處理器。</p>
+</li>
+</ul>
 <hr>
 <h2 id="tags"><a aria-hidden="true" class="anchor-heading" href="#tags"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Tags</h2>
 <ol>

@@ -1,22 +1,22 @@
 ---
 id: tjo1srktkmfjj2wz4e5bn7c
-title: '0419 [Ch1]作業系統簡介與常見系統類型(二)'
+title: 0419 [Ch1]作業系統簡介與常見系統類型(二)
 desc: ''
 updated: 1650651019541
 created: 1650381132068
 tags:
-* PROG. OS
+  - PROG.OS
 ---
 
 ## 電腦系統概論 computer system structure
 
 ### 組成電腦的五大單元
 
-![](assets/images/2022-05-02-22-40-17.png)
+![](/assets/images/2022-05-02-22-40-17.png)
 
 > 圖源: [第零章、計算機概論 - 鳥哥](https://linux.vbird.org/linux_basic/centos7/0105computers.php#ps4)
 
-![](assets/images/2022-05-02-22-46-40.png)
+![](/assets/images/2022-05-02-22-46-40.png)
 
 > 圖源: [馮紐曼架構 Von Neumann architecture](https://zh-yue.wikipedia.org/wiki/%E9%A6%AE%E7%B4%90%E6%9B%BC%E6%9E%B6%E6%A7%8B)/[Computer Organisation](https://en.wikibooks.org/wiki/IB/Group_4/Computer_Science/Computer_Organisation)
 
@@ -28,7 +28,7 @@ tags:
 
 ### 電腦系統粗分為四元件
 
-![](assets/images/2022-05-02-23-43-42.png)
+![](/assets/images/2022-05-02-23-43-42.png)
 
 1. 硬體 hardware
 
@@ -60,7 +60,7 @@ tags:
 
       這種共用資源的 CPU 架構讓 OS 設計及程式設計變得很重要(CH4 執行緒與並行)。
 
-      ![](assets/images/2022-05-03-22-41-34.png)
+      ![](/assets/images/2022-05-03-22-41-34.png)
 
       > 圖源: [Cache Memory | L1, L2 and L3 Caches in Computers | L1 L2 L3 Cache Explained in Hindi](https://www.youtube.com/watch?v=IU9cB5g4eZU&ab_channel=ITSimplifiedinHINDI)
 
@@ -68,7 +68,7 @@ tags:
 
       為了解決多 CPU 的資源競爭問題，NUMA (Non-Uniform Memory Access) 的設計簡化了匯流排的複雜程度，NUMA 將處理器切成不同節點，每個處理器都有各自的連結，當要用到別的節點的記憶體時速度會變慢，但只用到自己的記憶體時不只速度快、也不會有資源競爭的問題(因為自己用自己的，去用別人的也只會有一條路)。
 
-      1. ![](assets/images/2022-05-03-23-52-25.png)
+      1. ![](/assets/images/2022-05-03-23-52-25.png)
 
       2. > 圖源: [A NUMA architecture with 4 nodes - uploaded by Li Wang](https://www.researchgate.net/figure/A-NUMA-architecture-with-4-nodes_fig2_273393420)
 

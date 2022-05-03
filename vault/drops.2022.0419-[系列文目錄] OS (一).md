@@ -1,11 +1,11 @@
 ---
 id: e7gwr2vcb0hk4n2yxqn0ha6
-title: '0419 [系列文目錄] OS (一)'
+title: 0419 [系列文目錄] OS (一)
 desc: ''
 updated: 1650382023561
 created: 1650380285555
 tags:
-- PROG.OS
+  - PROG.OS
 ---
 
 ## 前言
@@ -17,7 +17,6 @@ tags:
 正好可以一起配著整理一份筆記。
 
 ![[drops.2022.0419-drops.2022.0419-[Ch1]作業系統簡介與常見系統類型(二)]]
-
 
 ## 參考資料
 
