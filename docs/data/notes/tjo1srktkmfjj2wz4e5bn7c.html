@@ -53,16 +53,10 @@
 </blockquote>
 <p>當 CPU 變多，處理器和記憶體間的匯流排將會成為資料存取的瓶頸，會嚴重地影響到系統效能。[註 1]</p>
 <p>為了解決多 CPU 的資源競爭問題，NUMA (Non-Uniform Memory Access) 的設計簡化了匯流排的複雜程度，NUMA 將處理器切成不同節點，每個處理器都有各自的連結，當要用到別的節點的記憶體時速度會變慢，但只用到自己的記憶體時不只速度快、也不會有資源競爭的問題(因為自己用自己的，去用別人的也只會有一條路)。</p>
-<ol>
-<li>
 <p><img src="/assets/images/2022-05-03-23-52-25.png"></p>
-</li>
-<li>
 <blockquote>
 <p>圖源: <a href="https://www.researchgate.net/figure/A-NUMA-architecture-with-4-nodes_fig2_273393420">A NUMA architecture with 4 nodes - uploaded by Li Wang</a></p>
 </blockquote>
-</li>
-</ol>
 </li>
 <li>
 <p>ASMP(Asymmetric MultiProcessors) 非對稱式多處理器:通常採主從式架構。比 SMP 效能還差，主 CPU 易有效能瓶頸，且可靠度也差(主 CPU 壞了就全不能用)。</p>

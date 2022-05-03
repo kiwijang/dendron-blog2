@@ -59,13 +59,13 @@
 
       為了解決多 CPU 的資源競爭問題，NUMA (Non-Uniform Memory Access) 的設計簡化了匯流排的複雜程度，NUMA 將處理器切成不同節點，每個處理器都有各自的連結，當要用到別的節點的記憶體時速度會變慢，但只用到自己的記憶體時不只速度快、也不會有資源競爭的問題(因為自己用自己的，去用別人的也只會有一條路)。
 
-      1. ![](/assets/images/2022-05-03-23-52-25.png)
+      ![](/assets/images/2022-05-03-23-52-25.png)
 
-      2. > 圖源: [A NUMA architecture with 4 nodes - uploaded by Li Wang](https://www.researchgate.net/figure/A-NUMA-architecture-with-4-nodes_fig2_273393420)
+      > 圖源: [A NUMA architecture with 4 nodes - uploaded by Li Wang](https://www.researchgate.net/figure/A-NUMA-architecture-with-4-nodes_fig2_273393420)
 
-   1. ASMP(Asymmetric MultiProcessors) 非對稱式多處理器:通常採主從式架構。比 SMP 效能還差，主 CPU 易有效能瓶頸，且可靠度也差(主 CPU 壞了就全不能用)。
+   2. ASMP(Asymmetric MultiProcessors) 非對稱式多處理器:通常採主從式架構。比 SMP 效能還差，主 CPU 易有效能瓶頸，且可靠度也差(主 CPU 壞了就全不能用)。
 
-   1. 叢集式系統 clustered system
+   3. 叢集式系統 clustered system
 
       1. 也是一種多處理器系統(Multiprocessor System)
 
