@@ -6,8 +6,10 @@ updated: 1651427516419
 created: 1641017236114
 ---
 
-嗨，我是 naomi。 這個部落格是用 Dendron 官方提供的樣板製作而成的。😄
+嗨，我是 naomi。 這個部落格是用 Dendron 官方提供的樣板製作而成的。
+
 紀錄工作上工作下的程式相關筆記。 關於筆記內容:
+
 如果有時間會盡量翻譯原文，翻譯的地方會附上原文，因為自己不是專業的翻譯員，翻得不妥還有原文在。
 基本上會附上參考與引用的出處。 
 
@@ -104,7 +106,6 @@ for clay pottery and basket weaving. My name is Moses." ——《The French
 Dispatch》
 
 <script>
-   console.clear();
   // 2. This code loads the IFrame Player API code asynchronously.
   const tag = document.createElement('script');
 
@@ -153,6 +154,7 @@ Dispatch》
     currentTime = player.getCurrentTime(); document.getElementById('bar').style.width = `${currentTime/duration*100}%`;
     } ,1000)
   }
+  
   function stopVideo() {
     player.stopVideo();
   }
