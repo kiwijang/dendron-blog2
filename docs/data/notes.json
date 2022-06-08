@@ -11,8 +11,8 @@
       "links": [],
       "anchors": {},
       "fname": "403",
-      "updated": 1651600258488,
-      "created": 1651600258488,
+      "updated": 1654714886387,
+      "created": 1654714886387,
       "parent": null,
       "children": [],
       "data": {}
@@ -39,7 +39,9 @@
       "anchors": {},
       "children": [
         "Cybv0wy1d2NbWoMaJ9Xst",
+        "ZScAA6XClp53RR8YkDBcB",
         "u4tSbmkJewrKonY3sL544",
+        "IvMZDCglbpT7cTSE9P4Es",
         "WAKWMq3SeVmlAmZRqCbpB",
         "rEbR1FrKkZzyjo6ahAgm3"
       ],
@@ -429,6 +431,213 @@
       "contentHash": "8b7e13f27125aa7539f6ffb94da05725",
       "custom": {}
     },
+    "IvMZDCglbpT7cTSE9P4Es": {
+      "id": "IvMZDCglbpT7cTSE9P4Es",
+      "title": "Meet",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "fname": "meet",
+      "updated": 1654712756205,
+      "created": 1654712756205,
+      "parent": "root",
+      "children": [
+        "y7W5RqIjseKX17Z8QizTX"
+      ],
+      "data": {},
+      "contentHash": "016e5521a37c5d7d317fddc4edb3c962",
+      "stub": false,
+      "custom": {
+        "stub": true
+      },
+      "schema": {
+        "schemaId": "meet",
+        "moduleId": "meet"
+      }
+    },
+    "y7W5RqIjseKX17Z8QizTX": {
+      "id": "y7W5RqIjseKX17Z8QizTX",
+      "title": "2022",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "fname": "meet.2022",
+      "updated": 1654712756205,
+      "created": 1654712756205,
+      "parent": "IvMZDCglbpT7cTSE9P4Es",
+      "children": [
+        "ILvObtO0QhrcXUWrddDLQ"
+      ],
+      "data": {},
+      "contentHash": "345152093d1feac6f6e85e078769535a",
+      "stub": false,
+      "custom": {
+        "stub": true
+      },
+      "schema": {
+        "schemaId": "e3spBWqz7FngtdJ8c2PE5",
+        "moduleId": "meet"
+      }
+    },
+    "ILvObtO0QhrcXUWrddDLQ": {
+      "id": "ILvObtO0QhrcXUWrddDLQ",
+      "title": "06",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "fname": "meet.2022.06",
+      "updated": 1654712756205,
+      "created": 1654712756205,
+      "parent": "y7W5RqIjseKX17Z8QizTX",
+      "children": [
+        "1svudav5xgn1g2j271s72fn"
+      ],
+      "data": {},
+      "contentHash": "455d3ea126e88f93c7549e87a0e5a301",
+      "stub": false,
+      "custom": {
+        "stub": true
+      },
+      "schema": {
+        "schemaId": "PQmRgs1Ab2BjIBvv25MHr",
+        "moduleId": "meet"
+      }
+    },
+    "1svudav5xgn1g2j271s72fn": {
+      "id": "1svudav5xgn1g2j271s72fn",
+      "title": "8",
+      "desc": "",
+      "updated": 1654695532093,
+      "created": 1654695532093,
+      "traitIds": [
+        "meetingNote"
+      ],
+      "custom": {},
+      "fname": "meet.2022.06.08",
+      "type": "note",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "contentHash": "0dd5b31ac3f6d3ae919002f960c996ef",
+      "links": [
+        {
+          "type": "wiki",
+          "from": {
+            "fname": "meet.2022.06.08",
+            "id": "1svudav5xgn1g2j271s72fn",
+            "vaultName": "vault"
+          },
+          "value": "dendron.templates.meet",
+          "alias": "dendron.templates.meet",
+          "position": {
+            "start": {
+              "line": 1,
+              "column": 11,
+              "offset": 10
+            },
+            "end": {
+              "line": 1,
+              "column": 37,
+              "offset": 36
+            },
+            "indent": []
+          },
+          "xvault": false,
+          "sameFile": false,
+          "to": {
+            "fname": "dendron.templates.meet"
+          }
+        },
+        {
+          "type": "wiki",
+          "from": {
+            "fname": "meet.2022.06.08",
+            "id": "1svudav5xgn1g2j271s72fn",
+            "vaultName": "vault"
+          },
+          "value": "user.JohnDoe",
+          "alias": "@JohnDoe",
+          "position": {
+            "start": {
+              "line": 6,
+              "column": 3,
+              "offset": 255
+            },
+            "end": {
+              "line": 6,
+              "column": 11,
+              "offset": 263
+            },
+            "indent": []
+          },
+          "xvault": false,
+          "to": {
+            "fname": "user.JohnDoe"
+          }
+        }
+      ],
+      "anchors": {
+        "attendees": {
+          "type": "header",
+          "text": "Attendees",
+          "value": "attendees",
+          "line": 11,
+          "column": 0,
+          "depth": 2
+        },
+        "goals": {
+          "type": "header",
+          "text": "Goals",
+          "value": "goals",
+          "line": 16,
+          "column": 0,
+          "depth": 2
+        },
+        "agenda": {
+          "type": "header",
+          "text": "Agenda",
+          "value": "agenda",
+          "line": 19,
+          "column": 0,
+          "depth": 2
+        },
+        "minutes": {
+          "type": "header",
+          "text": "Minutes",
+          "value": "minutes",
+          "line": 22,
+          "column": 0,
+          "depth": 2
+        },
+        "action-items": {
+          "type": "header",
+          "text": "Action Items",
+          "value": "action-items",
+          "line": 25,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "children": [],
+      "parent": "ILvObtO0QhrcXUWrddDLQ",
+      "data": {},
+      "schema": {
+        "schemaId": "OX5LghBtkyVW6E1qipUh0",
+        "moduleId": "meet"
+      }
+    },
     "u4tSbmkJewrKonY3sL544": {
       "id": "u4tSbmkJewrKonY3sL544",
       "title": "Drops",
@@ -475,7 +684,8 @@
         "0c40o7nje4ye5vu97b7iwaj",
         "6wmc3n6c6adplh04u9vsu95",
         "tjo1srktkmfjj2wz4e5bn7c",
-        "e7gwr2vcb0hk4n2yxqn0ha6"
+        "e7gwr2vcb0hk4n2yxqn0ha6",
+        "381o3my27s1t8xm06oamjq0"
       ],
       "data": {},
       "contentHash": "01c2121b2a0955562e610dc3b066ee75",
@@ -483,6 +693,82 @@
       "custom": {
         "stub": true
       }
+    },
+    "381o3my27s1t8xm06oamjq0": {
+      "id": "381o3my27s1t8xm06oamjq0",
+      "title": "0608 組了一台桌電!",
+      "desc": "",
+      "updated": 1654714568578,
+      "created": 1654694411104,
+      "custom": {},
+      "fname": "drops.2022.0608-組了一台桌電!",
+      "type": "note",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "contentHash": "3d6c5cda4ee24269eae1fbaaa6f2354a",
+      "links": [],
+      "anchors": {
+        "組了一台桌電": {
+          "type": "header",
+          "text": "組了一台桌電!",
+          "value": "組了一台桌電",
+          "line": 8,
+          "column": 0,
+          "depth": 2
+        },
+        "主機板塔散機殼與風扇": {
+          "type": "header",
+          "text": "主機板、塔散、機殼與風扇",
+          "value": "主機板塔散機殼與風扇",
+          "line": 30,
+          "column": 0,
+          "depth": 3
+        },
+        "電供器與-hdd": {
+          "type": "header",
+          "text": "電供器與 HDD",
+          "value": "電供器與-hdd",
+          "line": 99,
+          "column": 0,
+          "depth": 3
+        },
+        "曬曬電腦": {
+          "type": "header",
+          "text": "曬曬電腦",
+          "value": "曬曬電腦",
+          "line": 133,
+          "column": 0,
+          "depth": 3
+        },
+        "os-與驅動程式": {
+          "type": "header",
+          "text": "os 與驅動程式",
+          "value": "os-與驅動程式",
+          "line": 145,
+          "column": 0,
+          "depth": 3
+        },
+        "小結": {
+          "type": "header",
+          "text": "小結",
+          "value": "小結",
+          "line": 179,
+          "column": 0,
+          "depth": 2
+        },
+        "相關資料": {
+          "type": "header",
+          "text": "相關資料",
+          "value": "相關資料",
+          "line": 199,
+          "column": 0,
+          "depth": 3
+        }
+      },
+      "children": [],
+      "parent": "4MPQXb6WwUg0kGHxTPD7x",
+      "data": {}
     },
     "e7gwr2vcb0hk4n2yxqn0ha6": {
       "id": "e7gwr2vcb0hk4n2yxqn0ha6",
@@ -567,11 +853,19 @@
     "tjo1srktkmfjj2wz4e5bn7c": {
       "id": "tjo1srktkmfjj2wz4e5bn7c",
       "title": "0419 [Ch1]作業系統簡介與常見系統類型(二)",
+      "desc": "",
+      "updated": 1650651019541,
+      "created": 1650381132068,
+      "tags": [
+        "PROG.OS"
+      ],
+      "custom": {},
+      "fname": "drops.2022.0419-[Ch1]作業系統簡介與常見系統類型(二)",
+      "type": "note",
       "vault": {
         "fsPath": "vault"
       },
-      "type": "note",
-      "desc": "",
+      "contentHash": "f0705c7afaf86c02805bc0a89d35fa01",
       "links": [
         {
           "type": "frontmatterTag",
@@ -633,7 +927,7 @@
           "type": "header",
           "text": "電腦系統架構",
           "value": "電腦系統架構",
-          "line": 48,
+          "line": 56,
           "column": 0,
           "depth": 3
         },
@@ -641,7 +935,7 @@
           "type": "header",
           "text": "作業系統執行",
           "value": "作業系統執行",
-          "line": 88,
+          "line": 96,
           "column": 0,
           "depth": 3
         },
@@ -649,7 +943,7 @@
           "type": "header",
           "text": "參考資料",
           "value": "參考資料",
-          "line": 109,
+          "line": 117,
           "column": 0,
           "depth": 2
         },
@@ -657,22 +951,14 @@
           "type": "header",
           "text": "名詞解釋",
           "value": "名詞解釋",
-          "line": 113,
+          "line": 121,
           "column": 0,
           "depth": 4
         }
       },
-      "fname": "drops.2022.0419-[Ch1]作業系統簡介與常見系統類型(二)",
-      "updated": 1650651019541,
-      "created": 1650381132068,
-      "parent": "4MPQXb6WwUg0kGHxTPD7x",
       "children": [],
-      "data": {},
-      "contentHash": "bb974e0f9d973ce14f222881c63ff4f9",
-      "custom": {},
-      "tags": [
-        "PROG.OS"
-      ]
+      "parent": "4MPQXb6WwUg0kGHxTPD7x",
+      "data": {}
     },
     "6wmc3n6c6adplh04u9vsu95": {
       "id": "6wmc3n6c6adplh04u9vsu95",
@@ -1617,6 +1903,212 @@
         "PROG.Dendron"
       ]
     },
+    "ZScAA6XClp53RR8YkDBcB": {
+      "id": "ZScAA6XClp53RR8YkDBcB",
+      "title": "Dendron",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "fname": "dendron",
+      "updated": 1654712756195,
+      "created": 1654712756195,
+      "parent": "root",
+      "children": [
+        "vtmmJ2VAB2OT4JLA8puMr"
+      ],
+      "data": {},
+      "contentHash": "37145dd828a68f100d24487f53ba6f4f",
+      "stub": false,
+      "custom": {
+        "stub": true
+      }
+    },
+    "vtmmJ2VAB2OT4JLA8puMr": {
+      "id": "vtmmJ2VAB2OT4JLA8puMr",
+      "title": "Templates",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "fname": "dendron.templates",
+      "updated": 1654712756196,
+      "created": 1654712756196,
+      "parent": "ZScAA6XClp53RR8YkDBcB",
+      "children": [
+        "gqhali2reoefn8fx3q7etkp"
+      ],
+      "data": {},
+      "contentHash": "54f1f55fb1e9dbdbd975f5624060c934",
+      "stub": false,
+      "custom": {
+        "stub": true
+      }
+    },
+    "gqhali2reoefn8fx3q7etkp": {
+      "id": "gqhali2reoefn8fx3q7etkp",
+      "title": "Meeting Notes Template",
+      "desc": "",
+      "updated": 1654695532019,
+      "created": 1654695532019,
+      "custom": {},
+      "fname": "dendron.templates.meet",
+      "type": "note",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "contentHash": "663f1a94afd1974f3469a52c7c5db95b",
+      "links": [
+        {
+          "type": "wiki",
+          "from": {
+            "fname": "dendron.templates.meet",
+            "id": "gqhali2reoefn8fx3q7etkp",
+            "vaultName": "vault"
+          },
+          "value": "dendron.templates.meet",
+          "alias": "dendron.templates.meet",
+          "position": {
+            "start": {
+              "line": 1,
+              "column": 11,
+              "offset": 10
+            },
+            "end": {
+              "line": 1,
+              "column": 37,
+              "offset": 36
+            },
+            "indent": []
+          },
+          "xvault": false,
+          "sameFile": false,
+          "to": {
+            "fname": "dendron.templates.meet"
+          }
+        },
+        {
+          "type": "wiki",
+          "from": {
+            "fname": "dendron.templates.meet",
+            "id": "gqhali2reoefn8fx3q7etkp",
+            "vaultName": "vault"
+          },
+          "value": "user.JohnDoe",
+          "alias": "@JohnDoe",
+          "position": {
+            "start": {
+              "line": 6,
+              "column": 3,
+              "offset": 255
+            },
+            "end": {
+              "line": 6,
+              "column": 11,
+              "offset": 263
+            },
+            "indent": []
+          },
+          "xvault": false,
+          "to": {
+            "fname": "user.JohnDoe"
+          }
+        },
+        {
+          "from": {
+            "fname": "dendron.templates.meet",
+            "vaultName": "vault"
+          },
+          "type": "backlink",
+          "position": {
+            "start": {
+              "line": 1,
+              "column": 11,
+              "offset": 10
+            },
+            "end": {
+              "line": 1,
+              "column": 37,
+              "offset": 36
+            },
+            "indent": []
+          },
+          "value": "dendron.templates.meet"
+        },
+        {
+          "from": {
+            "fname": "meet.2022.06.08",
+            "vaultName": "vault"
+          },
+          "type": "backlink",
+          "position": {
+            "start": {
+              "line": 1,
+              "column": 11,
+              "offset": 10
+            },
+            "end": {
+              "line": 1,
+              "column": 37,
+              "offset": 36
+            },
+            "indent": []
+          },
+          "value": "dendron.templates.meet"
+        }
+      ],
+      "anchors": {
+        "attendees": {
+          "type": "header",
+          "text": "Attendees",
+          "value": "attendees",
+          "line": 9,
+          "column": 0,
+          "depth": 2
+        },
+        "goals": {
+          "type": "header",
+          "text": "Goals",
+          "value": "goals",
+          "line": 14,
+          "column": 0,
+          "depth": 2
+        },
+        "agenda": {
+          "type": "header",
+          "text": "Agenda",
+          "value": "agenda",
+          "line": 17,
+          "column": 0,
+          "depth": 2
+        },
+        "minutes": {
+          "type": "header",
+          "text": "Minutes",
+          "value": "minutes",
+          "line": 20,
+          "column": 0,
+          "depth": 2
+        },
+        "action-items": {
+          "type": "header",
+          "text": "Action Items",
+          "value": "action-items",
+          "line": 23,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "children": [],
+      "parent": "vtmmJ2VAB2OT4JLA8puMr",
+      "data": {}
+    },
     "Cybv0wy1d2NbWoMaJ9Xst": {
       "id": "Cybv0wy1d2NbWoMaJ9Xst",
       "title": "pending notes",
@@ -1862,7 +2354,9 @@
       "anchors": {},
       "children": [
         "Cybv0wy1d2NbWoMaJ9Xst",
+        "ZScAA6XClp53RR8YkDBcB",
         "u4tSbmkJewrKonY3sL544",
+        "IvMZDCglbpT7cTSE9P4Es",
         "WAKWMq3SeVmlAmZRqCbpB",
         "rEbR1FrKkZzyjo6ahAgm3"
       ],
@@ -1893,7 +2387,9 @@
     "anchors": {},
     "children": [
       "Cybv0wy1d2NbWoMaJ9Xst",
+      "ZScAA6XClp53RR8YkDBcB",
       "u4tSbmkJewrKonY3sL544",
+      "IvMZDCglbpT7cTSE9P4Es",
       "WAKWMq3SeVmlAmZRqCbpB",
       "rEbR1FrKkZzyjo6ahAgm3"
     ],

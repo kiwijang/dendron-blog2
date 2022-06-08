@@ -37,6 +37,14 @@
 
 ### OS 的目的
 
+1. user 與硬體之介面(方便使用者易於操作電腦)
+2. 提供一個讓 app 易於執行之環境，即很多底層硬體控制不需 app 來直接運作 => 委託 os 來執行
+3. 資源有限 => 作為資源調派者(resource allocator) (eg cpu, memory, I/O Device etc)
+
+   => 希望有效運用資源，甚至公平使用。
+
+4. 監督應用程式執行之角色，防止他們有意或無意之操作
+
 ### 電腦系統架構
 
 1. 多處理器系統 Multiprocessor System / Parallel System / Tightly Coupled System
