@@ -1,8 +1,8 @@
 ---
 id: o7mp336qqwyjf1d0jefmg53
-title: WSL2 + KVM 在 win11 上測試 macos 的 safari 與使用 xcode 測 IOS
+title: 0830 WSL2 + KVM 在 win11 上測試 macos 的 safari 與使用 xcode 測 IOS
 desc: ""
-updated: 1662565272428
+updated: 1662567592813
 created: 1662562033027
 tags:
   - PROG.OS

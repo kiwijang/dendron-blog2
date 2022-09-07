@@ -1,8 +1,8 @@
 ---
 id: sy14xjjozy0n9ustvre7tbo
-title: "[C#] 從 List 到 IEnumerable 和 IQueryable"
+title: "0907 [C#] 從 List 到 IEnumerable 和 IQueryable"
 desc: ""
-updated: 1662565270332
+updated: 1662567583552
 created: 1662559527764
 tags:
   - PROG.C#
