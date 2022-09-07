@@ -1,0 +1,23 @@
+<h1 id="wsl2--kvm-在-win11-上測試-macos-的-safari-與使用-xcode-測-ios"><a aria-hidden="true" class="anchor-heading" href="#wsl2--kvm-在-win11-上測試-macos-的-safari-與使用-xcode-測-ios"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>WSL2 + KVM 在 win11 上測試 macos 的 safari 與使用 xcode 測 IOS</h1>
+<h2 id="測試環境搭建"><a aria-hidden="true" class="anchor-heading" href="#測試環境搭建"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>測試環境搭建</h2>
+<p>這個筆記記錄了使用 IIS、VirtualBox、和 android 的 remote debbuging 來測網站。</p>
+<blockquote>
+<p><a href="https://hackmd.io/vy1TyPnNRESPMTwMqNuPlA">https://hackmd.io/vy1TyPnNRESPMTwMqNuPlA</a></p>
+</blockquote>
+<p>但我最想用用看最潮的 Linux GUI。</p>
+<blockquote>
+<p><a href="https://docs.microsoft.com/zh-cn/windows/wsl/tutorials/gui-apps">https://docs.microsoft.com/zh-cn/windows/wsl/tutorials/gui-apps</a></p>
+</blockquote>
+<p>所以要用 Win11 的電腦才可以使用，我的電腦是 win11 pro。</p>
+<p>以下是參考: <a href="https://blog.hal.wang/7afa8fc1/">在 Windows 上流畅使用 MacOS 虚拟机</a> 的實作過程。</p>
+<h2 id="簡述過程"><a aria-hidden="true" class="anchor-heading" href="#簡述過程"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>簡述過程</h2>
+<p>使用 WSL2 -> 灌 Ubuntu -> 在裡面灌 qemu -> 透過 OSX-KVM 灌好 macos -> 用 qemu 開啟 macos 的虛擬機</p>
+<p>最後設定網路與防火牆，讓此 WSL2 內的虛擬機可以連上我 win11 的 localhost。</p>
+<h2 id="下載-ubuntu"><a aria-hidden="true" class="anchor-heading" href="#下載-ubuntu"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>下載 Ubuntu</h2>
+<h2 id="安裝要用到的套件"><a aria-hidden="true" class="anchor-heading" href="#安裝要用到的套件"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>安裝要用到的套件</h2>
+<h2 id="設定網路與-host-防火牆"><a aria-hidden="true" class="anchor-heading" href="#設定網路與-host-防火牆"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>設定網路與 host 防火牆</h2>
+<hr>
+<h2 id="tags"><a aria-hidden="true" class="anchor-heading" href="#tags"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Tags</h2>
+<ol>
+<li><a class="color-tag" style="--tag-color: #de7e5d;" href="/notes/hikt5akgz6251z6wjkkmc99">PROG.OS</a></li>
+</ol>

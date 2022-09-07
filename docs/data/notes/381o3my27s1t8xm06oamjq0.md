@@ -128,7 +128,7 @@
 
 ![](/assets/images/pc.jpg)
 
-> 最後把 i7、fury、msi 貼紙貼到機殼旁邊 xD
+> 最後把 i7、fury、msi 貼紙貼到機殼旁邊(機殼保護膜沒撕掉) xD
 
 ![](/assets/images/pc2.jpg)
 

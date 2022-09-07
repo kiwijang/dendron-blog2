@@ -11,8 +11,8 @@
       "links": [],
       "anchors": {},
       "fname": "403",
-      "updated": 1654715392159,
-      "created": 1654715392159,
+      "updated": 1662567122197,
+      "created": 1662567122197,
       "parent": null,
       "children": [],
       "data": {}
@@ -39,9 +39,7 @@
       "anchors": {},
       "children": [
         "Cybv0wy1d2NbWoMaJ9Xst",
-        "ZScAA6XClp53RR8YkDBcB",
         "u4tSbmkJewrKonY3sL544",
-        "IvMZDCglbpT7cTSE9P4Es",
         "WAKWMq3SeVmlAmZRqCbpB",
         "rEbR1FrKkZzyjo6ahAgm3"
       ],
@@ -93,6 +91,7 @@
       "children": [
         "gj0sitvrk6ynbtxpixc4ih4",
         "zavPiB0ApTq1sGZOGq9xJ",
+        "8butragqifg44gfphdug6ys",
         "uFYxvNnYUjt8oxQcHtfSp",
         "3cKSNGeq54iDx1eRKcNB0",
         "1z3qa2rt5zymm05yroq0d7c",
@@ -188,6 +187,14 @@
         {
           "from": {
             "fname": "drops.2022.0419-[系列文目錄] OS (一)",
+            "vaultName": "vault"
+          },
+          "type": "backlink",
+          "value": "tags.PROG.OS"
+        },
+        {
+          "from": {
+            "fname": "drops.2022.0830-WSL2+KVM在win11上測試macos的safari與使用xcode測IOS",
             "vaultName": "vault"
           },
           "type": "backlink",
@@ -332,6 +339,34 @@
       "contentHash": "526e069bfbe645ae25063a56fea76c34",
       "custom": {}
     },
+    "8butragqifg44gfphdug6ys": {
+      "id": "8butragqifg44gfphdug6ys",
+      "title": "C#",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [
+        {
+          "from": {
+            "fname": "drops.2022.0907-[C#]從List到IEnumerable和IQueryable",
+            "vaultName": "vault"
+          },
+          "type": "backlink",
+          "value": "tags.PROG.C#"
+        }
+      ],
+      "anchors": {},
+      "fname": "tags.PROG.C#",
+      "updated": 1662562076271,
+      "created": 1662562076271,
+      "parent": "4nZxUaZMBAvz7oWuXizXl",
+      "children": [],
+      "data": {},
+      "contentHash": "c6704ace3a142baeb428380accf04ee2",
+      "custom": {}
+    },
     "zavPiB0ApTq1sGZOGq9xJ": {
       "id": "zavPiB0ApTq1sGZOGq9xJ",
       "title": "Angular",
@@ -431,213 +466,6 @@
       "contentHash": "8b7e13f27125aa7539f6ffb94da05725",
       "custom": {}
     },
-    "IvMZDCglbpT7cTSE9P4Es": {
-      "id": "IvMZDCglbpT7cTSE9P4Es",
-      "title": "Meet",
-      "vault": {
-        "fsPath": "vault"
-      },
-      "type": "note",
-      "desc": "",
-      "links": [],
-      "anchors": {},
-      "fname": "meet",
-      "updated": 1654712756205,
-      "created": 1654712756205,
-      "parent": "root",
-      "children": [
-        "y7W5RqIjseKX17Z8QizTX"
-      ],
-      "data": {},
-      "contentHash": "016e5521a37c5d7d317fddc4edb3c962",
-      "stub": false,
-      "custom": {
-        "stub": true
-      },
-      "schema": {
-        "schemaId": "meet",
-        "moduleId": "meet"
-      }
-    },
-    "y7W5RqIjseKX17Z8QizTX": {
-      "id": "y7W5RqIjseKX17Z8QizTX",
-      "title": "2022",
-      "vault": {
-        "fsPath": "vault"
-      },
-      "type": "note",
-      "desc": "",
-      "links": [],
-      "anchors": {},
-      "fname": "meet.2022",
-      "updated": 1654712756205,
-      "created": 1654712756205,
-      "parent": "IvMZDCglbpT7cTSE9P4Es",
-      "children": [
-        "ILvObtO0QhrcXUWrddDLQ"
-      ],
-      "data": {},
-      "contentHash": "345152093d1feac6f6e85e078769535a",
-      "stub": false,
-      "custom": {
-        "stub": true
-      },
-      "schema": {
-        "schemaId": "Kuu09JPGmgnidypGABjEx",
-        "moduleId": "meet"
-      }
-    },
-    "ILvObtO0QhrcXUWrddDLQ": {
-      "id": "ILvObtO0QhrcXUWrddDLQ",
-      "title": "06",
-      "vault": {
-        "fsPath": "vault"
-      },
-      "type": "note",
-      "desc": "",
-      "links": [],
-      "anchors": {},
-      "fname": "meet.2022.06",
-      "updated": 1654712756205,
-      "created": 1654712756205,
-      "parent": "y7W5RqIjseKX17Z8QizTX",
-      "children": [
-        "1svudav5xgn1g2j271s72fn"
-      ],
-      "data": {},
-      "contentHash": "455d3ea126e88f93c7549e87a0e5a301",
-      "stub": false,
-      "custom": {
-        "stub": true
-      },
-      "schema": {
-        "schemaId": "x1l9w4Ww9dHqoqanC8515",
-        "moduleId": "meet"
-      }
-    },
-    "1svudav5xgn1g2j271s72fn": {
-      "id": "1svudav5xgn1g2j271s72fn",
-      "title": "8",
-      "desc": "",
-      "updated": 1654695532093,
-      "created": 1654695532093,
-      "traitIds": [
-        "meetingNote"
-      ],
-      "custom": {},
-      "fname": "meet.2022.06.08",
-      "type": "note",
-      "vault": {
-        "fsPath": "vault"
-      },
-      "contentHash": "0dd5b31ac3f6d3ae919002f960c996ef",
-      "links": [
-        {
-          "type": "wiki",
-          "from": {
-            "fname": "meet.2022.06.08",
-            "id": "1svudav5xgn1g2j271s72fn",
-            "vaultName": "vault"
-          },
-          "value": "dendron.templates.meet",
-          "alias": "dendron.templates.meet",
-          "position": {
-            "start": {
-              "line": 1,
-              "column": 11,
-              "offset": 10
-            },
-            "end": {
-              "line": 1,
-              "column": 37,
-              "offset": 36
-            },
-            "indent": []
-          },
-          "xvault": false,
-          "sameFile": false,
-          "to": {
-            "fname": "dendron.templates.meet"
-          }
-        },
-        {
-          "type": "wiki",
-          "from": {
-            "fname": "meet.2022.06.08",
-            "id": "1svudav5xgn1g2j271s72fn",
-            "vaultName": "vault"
-          },
-          "value": "user.JohnDoe",
-          "alias": "@JohnDoe",
-          "position": {
-            "start": {
-              "line": 6,
-              "column": 3,
-              "offset": 255
-            },
-            "end": {
-              "line": 6,
-              "column": 11,
-              "offset": 263
-            },
-            "indent": []
-          },
-          "xvault": false,
-          "to": {
-            "fname": "user.JohnDoe"
-          }
-        }
-      ],
-      "anchors": {
-        "attendees": {
-          "type": "header",
-          "text": "Attendees",
-          "value": "attendees",
-          "line": 11,
-          "column": 0,
-          "depth": 2
-        },
-        "goals": {
-          "type": "header",
-          "text": "Goals",
-          "value": "goals",
-          "line": 16,
-          "column": 0,
-          "depth": 2
-        },
-        "agenda": {
-          "type": "header",
-          "text": "Agenda",
-          "value": "agenda",
-          "line": 19,
-          "column": 0,
-          "depth": 2
-        },
-        "minutes": {
-          "type": "header",
-          "text": "Minutes",
-          "value": "minutes",
-          "line": 22,
-          "column": 0,
-          "depth": 2
-        },
-        "action-items": {
-          "type": "header",
-          "text": "Action Items",
-          "value": "action-items",
-          "line": 25,
-          "column": 0,
-          "depth": 2
-        }
-      },
-      "children": [],
-      "parent": "ILvObtO0QhrcXUWrddDLQ",
-      "data": {},
-      "schema": {
-        "schemaId": "CLV8UZ9EYD5QKctkcvn3k",
-        "moduleId": "meet"
-      }
-    },
     "u4tSbmkJewrKonY3sL544": {
       "id": "u4tSbmkJewrKonY3sL544",
       "title": "Drops",
@@ -685,7 +513,9 @@
         "6wmc3n6c6adplh04u9vsu95",
         "tjo1srktkmfjj2wz4e5bn7c",
         "e7gwr2vcb0hk4n2yxqn0ha6",
-        "381o3my27s1t8xm06oamjq0"
+        "381o3my27s1t8xm06oamjq0",
+        "o7mp336qqwyjf1d0jefmg53",
+        "sy14xjjozy0n9ustvre7tbo"
       ],
       "data": {},
       "contentHash": "01c2121b2a0955562e610dc3b066ee75",
@@ -694,19 +524,196 @@
         "stub": true
       }
     },
-    "381o3my27s1t8xm06oamjq0": {
-      "id": "381o3my27s1t8xm06oamjq0",
-      "title": "0608 組了一台桌電!",
-      "desc": "",
-      "updated": 1654714568578,
-      "created": 1654694411104,
-      "custom": {},
-      "fname": "drops.2022.0608-組了一台桌電!",
-      "type": "note",
+    "sy14xjjozy0n9ustvre7tbo": {
+      "id": "sy14xjjozy0n9ustvre7tbo",
+      "title": "[C#] 從 List 到 IEnumerable 和 IQueryable",
       "vault": {
         "fsPath": "vault"
       },
-      "contentHash": "3d6c5cda4ee24269eae1fbaaa6f2354a",
+      "type": "note",
+      "desc": "",
+      "links": [
+        {
+          "type": "frontmatterTag",
+          "from": {
+            "fname": "drops.2022.0907-[C#]從List到IEnumerable和IQueryable",
+            "id": "sy14xjjozy0n9ustvre7tbo",
+            "vaultName": "vault"
+          },
+          "value": "tags.PROG.C#",
+          "alias": "PROG.C#",
+          "xvault": false,
+          "to": {
+            "fname": "tags.PROG.C#"
+          }
+        }
+      ],
+      "anchors": {
+        "ienumerable-vs-list---如何使用-他們是如何運作的": {
+          "type": "header",
+          "text": "IEnumerable vs List - 如何使用? 他們是如何運作的?",
+          "value": "ienumerable-vs-list---如何使用-他們是如何運作的",
+          "line": 10,
+          "column": 0,
+          "depth": 2
+        },
+        "linq-不會產生-sql-去查詢query資料庫直到你列舉enumerate他": {
+          "type": "header",
+          "text": "LINQ 不會產生 Sql 去查詢(query)資料庫，直到你列舉(enumerate)他",
+          "value": "linq-不會產生-sql-去查詢query資料庫直到你列舉enumerate他",
+          "line": 33,
+          "column": 0,
+          "depth": 2
+        },
+        "小結": {
+          "type": "header",
+          "text": "小結",
+          "value": "小結",
+          "line": 41,
+          "column": 0,
+          "depth": 1
+        },
+        "ienumberable-的大缺點": {
+          "type": "header",
+          "text": "IEnumberable 的大缺點",
+          "value": "ienumberable-的大缺點",
+          "line": 48,
+          "column": 0,
+          "depth": 2
+        },
+        "vs": {
+          "type": "header",
+          "text": "vs",
+          "value": "vs",
+          "line": 54,
+          "column": 0,
+          "depth": 2
+        },
+        "小結-1": {
+          "type": "header",
+          "text": "小結",
+          "value": "小結-1",
+          "line": 62,
+          "column": 0,
+          "depth": 2
+        },
+        "可以看這兩篇範例會更清楚": {
+          "type": "header",
+          "text": "可以看這兩篇範例，會更清楚",
+          "value": "可以看這兩篇範例會更清楚",
+          "line": 81,
+          "column": 0,
+          "depth": 3
+        },
+        "參考資料": {
+          "type": "header",
+          "text": "參考資料",
+          "value": "參考資料",
+          "line": 88,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "fname": "drops.2022.0907-[C#]從List到IEnumerable和IQueryable",
+      "updated": 1662565270332,
+      "created": 1662559527764,
+      "parent": "4MPQXb6WwUg0kGHxTPD7x",
+      "children": [],
+      "data": {},
+      "contentHash": "c44a20df71503e23ea7da51e7ce2be44",
+      "custom": {},
+      "tags": [
+        "PROG.C#"
+      ]
+    },
+    "o7mp336qqwyjf1d0jefmg53": {
+      "id": "o7mp336qqwyjf1d0jefmg53",
+      "title": "WSL2 + KVM 在 win11 上測試 macos 的 safari 與使用 xcode 測 IOS",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [
+        {
+          "type": "frontmatterTag",
+          "from": {
+            "fname": "drops.2022.0830-WSL2+KVM在win11上測試macos的safari與使用xcode測IOS",
+            "id": "o7mp336qqwyjf1d0jefmg53",
+            "vaultName": "vault"
+          },
+          "value": "tags.PROG.OS",
+          "alias": "PROG.OS",
+          "xvault": false,
+          "to": {
+            "fname": "tags.PROG.OS"
+          }
+        }
+      ],
+      "anchors": {
+        "測試環境搭建": {
+          "type": "header",
+          "text": "測試環境搭建",
+          "value": "測試環境搭建",
+          "line": 11,
+          "column": 0,
+          "depth": 2
+        },
+        "簡述過程": {
+          "type": "header",
+          "text": "簡述過程",
+          "value": "簡述過程",
+          "line": 25,
+          "column": 0,
+          "depth": 2
+        },
+        "下載-ubuntu": {
+          "type": "header",
+          "text": "下載 Ubuntu",
+          "value": "下載-ubuntu",
+          "line": 31,
+          "column": 0,
+          "depth": 2
+        },
+        "安裝要用到的套件": {
+          "type": "header",
+          "text": "安裝要用到的套件",
+          "value": "安裝要用到的套件",
+          "line": 33,
+          "column": 0,
+          "depth": 2
+        },
+        "設定網路與-host-防火牆": {
+          "type": "header",
+          "text": "設定網路與 host 防火牆",
+          "value": "設定網路與-host-防火牆",
+          "line": 35,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "fname": "drops.2022.0830-WSL2+KVM在win11上測試macos的safari與使用xcode測IOS",
+      "updated": 1662565272428,
+      "created": 1662562033027,
+      "parent": "4MPQXb6WwUg0kGHxTPD7x",
+      "children": [],
+      "data": {},
+      "contentHash": "d67cf1e53848aa41303c9cf664c28464",
+      "custom": {
+        "status": "w"
+      },
+      "tags": [
+        "PROG.OS"
+      ]
+    },
+    "381o3my27s1t8xm06oamjq0": {
+      "id": "381o3my27s1t8xm06oamjq0",
+      "title": "0608 組了一台桌電!",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
       "links": [],
       "anchors": {
         "組了一台桌電": {
@@ -766,9 +773,14 @@
           "depth": 3
         }
       },
-      "children": [],
+      "fname": "drops.2022.0608-組了一台桌電!",
+      "updated": 1662559708019,
+      "created": 1654694411104,
       "parent": "4MPQXb6WwUg0kGHxTPD7x",
-      "data": {}
+      "children": [],
+      "data": {},
+      "contentHash": "b08ac3ba0b35c6d3971899cddddccb7d",
+      "custom": {}
     },
     "e7gwr2vcb0hk4n2yxqn0ha6": {
       "id": "e7gwr2vcb0hk4n2yxqn0ha6",
@@ -1903,212 +1915,6 @@
         "PROG.Dendron"
       ]
     },
-    "ZScAA6XClp53RR8YkDBcB": {
-      "id": "ZScAA6XClp53RR8YkDBcB",
-      "title": "Dendron",
-      "vault": {
-        "fsPath": "vault"
-      },
-      "type": "note",
-      "desc": "",
-      "links": [],
-      "anchors": {},
-      "fname": "dendron",
-      "updated": 1654712756195,
-      "created": 1654712756195,
-      "parent": "root",
-      "children": [
-        "vtmmJ2VAB2OT4JLA8puMr"
-      ],
-      "data": {},
-      "contentHash": "37145dd828a68f100d24487f53ba6f4f",
-      "stub": false,
-      "custom": {
-        "stub": true
-      }
-    },
-    "vtmmJ2VAB2OT4JLA8puMr": {
-      "id": "vtmmJ2VAB2OT4JLA8puMr",
-      "title": "Templates",
-      "vault": {
-        "fsPath": "vault"
-      },
-      "type": "note",
-      "desc": "",
-      "links": [],
-      "anchors": {},
-      "fname": "dendron.templates",
-      "updated": 1654712756196,
-      "created": 1654712756196,
-      "parent": "ZScAA6XClp53RR8YkDBcB",
-      "children": [
-        "gqhali2reoefn8fx3q7etkp"
-      ],
-      "data": {},
-      "contentHash": "54f1f55fb1e9dbdbd975f5624060c934",
-      "stub": false,
-      "custom": {
-        "stub": true
-      }
-    },
-    "gqhali2reoefn8fx3q7etkp": {
-      "id": "gqhali2reoefn8fx3q7etkp",
-      "title": "Meeting Notes Template",
-      "desc": "",
-      "updated": 1654695532019,
-      "created": 1654695532019,
-      "custom": {},
-      "fname": "dendron.templates.meet",
-      "type": "note",
-      "vault": {
-        "fsPath": "vault"
-      },
-      "contentHash": "663f1a94afd1974f3469a52c7c5db95b",
-      "links": [
-        {
-          "type": "wiki",
-          "from": {
-            "fname": "dendron.templates.meet",
-            "id": "gqhali2reoefn8fx3q7etkp",
-            "vaultName": "vault"
-          },
-          "value": "dendron.templates.meet",
-          "alias": "dendron.templates.meet",
-          "position": {
-            "start": {
-              "line": 1,
-              "column": 11,
-              "offset": 10
-            },
-            "end": {
-              "line": 1,
-              "column": 37,
-              "offset": 36
-            },
-            "indent": []
-          },
-          "xvault": false,
-          "sameFile": false,
-          "to": {
-            "fname": "dendron.templates.meet"
-          }
-        },
-        {
-          "type": "wiki",
-          "from": {
-            "fname": "dendron.templates.meet",
-            "id": "gqhali2reoefn8fx3q7etkp",
-            "vaultName": "vault"
-          },
-          "value": "user.JohnDoe",
-          "alias": "@JohnDoe",
-          "position": {
-            "start": {
-              "line": 6,
-              "column": 3,
-              "offset": 255
-            },
-            "end": {
-              "line": 6,
-              "column": 11,
-              "offset": 263
-            },
-            "indent": []
-          },
-          "xvault": false,
-          "to": {
-            "fname": "user.JohnDoe"
-          }
-        },
-        {
-          "from": {
-            "fname": "dendron.templates.meet",
-            "vaultName": "vault"
-          },
-          "type": "backlink",
-          "position": {
-            "start": {
-              "line": 1,
-              "column": 11,
-              "offset": 10
-            },
-            "end": {
-              "line": 1,
-              "column": 37,
-              "offset": 36
-            },
-            "indent": []
-          },
-          "value": "dendron.templates.meet"
-        },
-        {
-          "from": {
-            "fname": "meet.2022.06.08",
-            "vaultName": "vault"
-          },
-          "type": "backlink",
-          "position": {
-            "start": {
-              "line": 1,
-              "column": 11,
-              "offset": 10
-            },
-            "end": {
-              "line": 1,
-              "column": 37,
-              "offset": 36
-            },
-            "indent": []
-          },
-          "value": "dendron.templates.meet"
-        }
-      ],
-      "anchors": {
-        "attendees": {
-          "type": "header",
-          "text": "Attendees",
-          "value": "attendees",
-          "line": 9,
-          "column": 0,
-          "depth": 2
-        },
-        "goals": {
-          "type": "header",
-          "text": "Goals",
-          "value": "goals",
-          "line": 14,
-          "column": 0,
-          "depth": 2
-        },
-        "agenda": {
-          "type": "header",
-          "text": "Agenda",
-          "value": "agenda",
-          "line": 17,
-          "column": 0,
-          "depth": 2
-        },
-        "minutes": {
-          "type": "header",
-          "text": "Minutes",
-          "value": "minutes",
-          "line": 20,
-          "column": 0,
-          "depth": 2
-        },
-        "action-items": {
-          "type": "header",
-          "text": "Action Items",
-          "value": "action-items",
-          "line": 23,
-          "column": 0,
-          "depth": 2
-        }
-      },
-      "children": [],
-      "parent": "vtmmJ2VAB2OT4JLA8puMr",
-      "data": {}
-    },
     "Cybv0wy1d2NbWoMaJ9Xst": {
       "id": "Cybv0wy1d2NbWoMaJ9Xst",
       "title": "pending notes",
@@ -2354,9 +2160,7 @@
       "anchors": {},
       "children": [
         "Cybv0wy1d2NbWoMaJ9Xst",
-        "ZScAA6XClp53RR8YkDBcB",
         "u4tSbmkJewrKonY3sL544",
-        "IvMZDCglbpT7cTSE9P4Es",
         "WAKWMq3SeVmlAmZRqCbpB",
         "rEbR1FrKkZzyjo6ahAgm3"
       ],
@@ -2387,9 +2191,7 @@
     "anchors": {},
     "children": [
       "Cybv0wy1d2NbWoMaJ9Xst",
-      "ZScAA6XClp53RR8YkDBcB",
       "u4tSbmkJewrKonY3sL544",
-      "IvMZDCglbpT7cTSE9P4Es",
       "WAKWMq3SeVmlAmZRqCbpB",
       "rEbR1FrKkZzyjo6ahAgm3"
     ],
