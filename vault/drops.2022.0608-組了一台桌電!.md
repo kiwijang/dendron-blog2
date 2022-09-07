@@ -2,7 +2,7 @@
 id: 381o3my27s1t8xm06oamjq0
 title: 0608 組了一台桌電!
 desc: ""
-updated: 1654714568578
+updated: 1662559708019
 created: 1654694411104
 ---
 
@@ -135,7 +135,7 @@ created: 1654694411104
 
 ![](/assets/images/pc.jpg)
 
-> 最後把 i7、fury、msi 貼紙貼到機殼旁邊 xD
+> 最後把 i7、fury、msi 貼紙貼到機殼旁邊(機殼保護膜沒撕掉) xD
 
 ![](/assets/images/pc2.jpg)
 
