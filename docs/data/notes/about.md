@@ -99,7 +99,6 @@
 > Dispatch》
 
 <script>
-  document.addEventListener('DOMContentLoaded', () => {
   // 2. This code loads the IFrame Player API code asynchronously.
     const tag = document.createElement('script');
 
@@ -206,6 +205,4 @@
       currentTime = player.getCurrentTime(); document.getElementById('bar').style.width = `${currentTime/duration*100}%`;
       } ,1000)
     })
-
-  });
 </script>

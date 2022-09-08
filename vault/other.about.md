@@ -2,7 +2,7 @@
 id: about
 title: About
 desc: ""
-updated: 1662616634477
+updated: 1662621889675
 created: 1641017236114
 ---
 
@@ -106,7 +106,6 @@ created: 1641017236114
 > Dispatch》
 
 <script>
-  document.addEventListener('DOMContentLoaded', () => {
   // 2. This code loads the IFrame Player API code asynchronously.
     const tag = document.createElement('script');
 
@@ -213,6 +212,4 @@ created: 1641017236114
       currentTime = player.getCurrentTime(); document.getElementById('bar').style.width = `${currentTime/duration*100}%`;
       } ,1000)
     })
-
-  });
 </script>
