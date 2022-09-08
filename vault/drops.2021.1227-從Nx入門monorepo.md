@@ -2,7 +2,7 @@
 id: Ee1iUWT8QmZe4CAuuwQxs
 title: 1227 從 Nx 入門 monorepo
 desc: ""
-updated: 1662619141793
+updated: 1662620120470
 created: 1640615759253
 tags:
   - PROG.Nx
@@ -28,20 +28,20 @@ Monorepo (全名 Monolithic Repository)，符合以下三個條件:
 
 ![MonoRepo](/assets/images/2021-12-27-22-50-05.png)
 
-Monorepo 架構的主要目的是希望集中管理套件版本。
+Monorepo 架構的主要目的是希望**集中管理套件版本**。
 
-透過只管理一個 `package.json`，可以發現好處是套件版本管理方便、而壞處是一個 repo 有多個 projects，檔案容易變非常大，讓 git 版控軟體跑起來較吃力。
+只管理**一個** `package.json`，好處是套件版本管理方便、壞處是一個 repo 有多個 projects，檔案容易變非常大，讓 git 版控軟體跑起來較吃力。
 
 另外 Monorepo 讓 apps 之間共用 libs 變得方便簡單，所以可以降低重複程式碼的機率。
 也可以讓 Lerna、yarn 等套件管理工具更方便的減少重複的套件安裝。
 
-而以 Nx 來說，更酷的特色是可以在同一個 repo 裡同時使用 react 和 angular 共同開發一個 app。
+以 Nx 來說，還有個酷酷的特色:可以在同一個 repo 裡同時使用 react 和 angular 共同開發一個 app。
 
 雖然也可以使用 rollupjs 來達到不同前端框架共同開發一個 app 的效果。
 
 但 Nx 就像 monorepo 全家桶: 提供一個 Nx workspace 讓你的 monorepo 開發更容易。
 
-接下來，在看看 Nx 之前，先來一些先備知識。
+接下來，在看 Nx 怎麼使用之前，先來一些先備知識。
 
 ## 2. 簡介 Nx 工具與專有名詞解釋
 
@@ -63,7 +63,7 @@ Monorepo 架構的主要目的是希望集中管理套件版本。
 - (GitHub apps)
 - 還有更多。(and more.)
 
-**簡單來說就是可以用 Nx 提供的架構去整合程式碼。**
+**簡單來說就是: 可以用 Nx 提供的架構去整合程式碼。**
 
 ### 2-2. Nx 的製作團隊
 
@@ -106,7 +106,7 @@ Nrwl is also the creator of open-source dev tools: Nx for monorepo development, 
 
 ### 2-5. Angular 詞彙表
 
-基本上只要知道 Angular 的詞彙就看得懂 Nx 在幹麻了，以下詞彙取自 Angular 官網:
+基本上只要知道 Angular 的詞彙就看得懂 Nx 在幹麻了，以下詞彙是在 Nx 也會看到的(取自 Angular 官網):
 
 - [Workspace](https://angular.tw/guide/glossary#workspace) (工作區)
 
@@ -136,7 +136,9 @@ Nrwl is also the creator of open-source dev tools: Nx for monorepo development, 
 
 ### 2-6. Nx 名詞解釋
 
-Nx 的 `[plugin]:[generator-name]` 就是 Angular 的 `[collections]:[schematic]` 以下紀錄這個在 Nx 的說明與使用方式:
+Nx 的 `[plugin]:[generator-name]` 就是 Angular 的 `[collections]:[schematic]`
+
+以下紀錄這個在 Nx 的說明與使用方式:
 
 - Generators (產生器)
   產生器提供了一種方法，來自動執行您在開發工作流程中，經常執行的許多任務。
@@ -153,7 +155,7 @@ Nx 的 `[plugin]:[generator-name]` 就是 Angular 的 `[collections]:[schematic]
 
 所以有用 angular 寫過 schematic 的人有福了，可以更快上手 Nx 的 generator。🎉
 
-以下是關於如何調用 gnerator 的內容(截自官網):
+以下是關於如何調用 gnerator 的內容(截自 Nx 官網):
 
 - 調用插件產生器 [Invoking Plugin Generators](https://nx.dev/l/a/generators/using-schematics#invoking-plugin-generators)
 
@@ -213,7 +215,7 @@ https://www.npmjs.com/package/create-nx-workspace
 
 ### 4-1. Nx Console 簡介
 
-Nx 有提供一個介面讓人可以用點按方式去執行指令，就不用硬背一堆指令了，
+Nx 有提供一個介面讓人**可以用點按方式去執行指令**，就不用硬背一堆指令了，
 
 以下是關於這個套件的一些知識，
 

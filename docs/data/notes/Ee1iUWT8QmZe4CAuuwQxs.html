@@ -14,14 +14,14 @@
 </ol>
 <p>如下圖，這就是一個 Monorepo:</p>
 <p><img src="/assets/images/2021-12-27-22-50-05.png" alt="MonoRepo"></p>
-<p>Monorepo 架構的主要目的是希望集中管理套件版本。</p>
-<p>透過只管理一個 <code>package.json</code>，可以發現好處是套件版本管理方便、而壞處是一個 repo 有多個 projects，檔案容易變非常大，讓 git 版控軟體跑起來較吃力。</p>
+<p>Monorepo 架構的主要目的是希望<strong>集中管理套件版本</strong>。</p>
+<p>只管理<strong>一個</strong> <code>package.json</code>，好處是套件版本管理方便、壞處是一個 repo 有多個 projects，檔案容易變非常大，讓 git 版控軟體跑起來較吃力。</p>
 <p>另外 Monorepo 讓 apps 之間共用 libs 變得方便簡單，所以可以降低重複程式碼的機率。
 也可以讓 Lerna、yarn 等套件管理工具更方便的減少重複的套件安裝。</p>
-<p>而以 Nx 來說，更酷的特色是可以在同一個 repo 裡同時使用 react 和 angular 共同開發一個 app。</p>
+<p>以 Nx 來說，還有個酷酷的特色:可以在同一個 repo 裡同時使用 react 和 angular 共同開發一個 app。</p>
 <p>雖然也可以使用 rollupjs 來達到不同前端框架共同開發一個 app 的效果。</p>
 <p>但 Nx 就像 monorepo 全家桶: 提供一個 Nx workspace 讓你的 monorepo 開發更容易。</p>
-<p>接下來，在看看 Nx 之前，先來一些先備知識。</p>
+<p>接下來，在看 Nx 怎麼使用之前，先來一些先備知識。</p>
 <h2 id="2-簡介-nx-工具與專有名詞解釋"><a aria-hidden="true" class="anchor-heading" href="#2-簡介-nx-工具與專有名詞解釋"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>2. 簡介 Nx 工具與專有名詞解釋</h2>
 <h3 id="2-1-什麼是-nx-"><a aria-hidden="true" class="anchor-heading" href="#2-1-什麼是-nx-"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>2-1. 什麼是 Nx ?</h3>
 <p>官網: <a href="https://nx.dev/">https://nx.dev/</a></p>
@@ -40,7 +40,7 @@
 <li>(GitHub apps)</li>
 <li>還有更多。(and more.)</li>
 </ul>
-<p><strong>簡單來說就是可以用 Nx 提供的架構去整合程式碼。</strong></p>
+<p><strong>簡單來說就是: 可以用 Nx 提供的架構去整合程式碼。</strong></p>
 <h3 id="2-2-nx-的製作團隊"><a aria-hidden="true" class="anchor-heading" href="#2-2-nx-的製作團隊"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>2-2. Nx 的製作團隊</h3>
 <p>narwhal 簡寫 Nrwl，是獨角鯨的英文。</p>
 <p><img src="/assets/images/2021-12-27-23-57-12.png"></p>
@@ -68,7 +68,7 @@ Nrwl is also the creator of open-source dev tools: Nx for monorepo development, 
 但 Nx 官網上有不少 react 的開發教學，如果有公司想要從 react 轉到 angular(或是 angular 轉 react 為主)，
 感覺透過 Nx 的幫助可以慢慢地移花接木(不然 Nx 也至少可以讓這兩框架和平共處)。😆</p>
 <h3 id="2-5-angular-詞彙表"><a aria-hidden="true" class="anchor-heading" href="#2-5-angular-詞彙表"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>2-5. Angular 詞彙表</h3>
-<p>基本上只要知道 Angular 的詞彙就看得懂 Nx 在幹麻了，以下詞彙取自 Angular 官網:</p>
+<p>基本上只要知道 Angular 的詞彙就看得懂 Nx 在幹麻了，以下詞彙是在 Nx 也會看到的(取自 Angular 官網):</p>
 <ul>
 <li>
 <p><a href="https://angular.tw/guide/glossary#workspace">Workspace</a> (工作區)</p>
@@ -97,7 +97,8 @@ Nrwl is also the creator of open-source dev tools: Nx for monorepo development, 
 </li>
 </ul>
 <h3 id="2-6-nx-名詞解釋"><a aria-hidden="true" class="anchor-heading" href="#2-6-nx-名詞解釋"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>2-6. Nx 名詞解釋</h3>
-<p>Nx 的 <code>[plugin]:[generator-name]</code> 就是 Angular 的 <code>[collections]:[schematic]</code> 以下紀錄這個在 Nx 的說明與使用方式:</p>
+<p>Nx 的 <code>[plugin]:[generator-name]</code> 就是 Angular 的 <code>[collections]:[schematic]</code></p>
+<p>以下紀錄這個在 Nx 的說明與使用方式:</p>
 <ul>
 <li>
 <p>Generators (產生器)
@@ -111,7 +112,7 @@ Nrwl is also the creator of open-source dev tools: Nx for monorepo development, 
 <h3 id="2-7-nx-的-generators-的使用方式"><a aria-hidden="true" class="anchor-heading" href="#2-7-nx-的-generators-的使用方式"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>2-7. Nx 的 Generators 的使用方式</h3>
 <p><strong>Nx 的 <code>[plugin]:[generator-name]</code> 就是 Angular 的 <code>[collections]:[schematic]</code>。</strong></p>
 <p>所以有用 angular 寫過 schematic 的人有福了，可以更快上手 Nx 的 generator。🎉</p>
-<p>以下是關於如何調用 gnerator 的內容(截自官網):</p>
+<p>以下是關於如何調用 gnerator 的內容(截自 Nx 官網):</p>
 <ul>
 <li>
 <p>調用插件產生器 <a href="https://nx.dev/l/a/generators/using-schematics#invoking-plugin-generators">Invoking Plugin Generators</a></p>
@@ -159,7 +160,7 @@ It is important to have a clean git working directory before invoking a generato
 </blockquote>
 <h2 id="4-快速上手-nx-console-操作-generaterun"><a aria-hidden="true" class="anchor-heading" href="#4-快速上手-nx-console-操作-generaterun"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>4. 快速上手 Nx Console 操作 (Generate、Run)</h2>
 <h3 id="4-1-nx-console-簡介"><a aria-hidden="true" class="anchor-heading" href="#4-1-nx-console-簡介"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>4-1. Nx Console 簡介</h3>
-<p>Nx 有提供一個介面讓人可以用點按方式去執行指令，就不用硬背一堆指令了，</p>
+<p>Nx 有提供一個介面讓人<strong>可以用點按方式去執行指令</strong>，就不用硬背一堆指令了，</p>
 <p>以下是關於這個套件的一些知識，</p>
 <p>因為這個介面有幫指令做分類，</p>
 <p>這邊特別有在 4-2 ~ 4-4 的地方對 nx generate 和 nx run 這兩個介面分類做了更深入的說明，</p>

@@ -11,8 +11,8 @@
       "links": [],
       "anchors": {},
       "fname": "403",
-      "updated": 1662619186910,
-      "created": 1662619186910,
+      "updated": 1662620877937,
+      "created": 1662620877937,
       "parent": null,
       "children": [],
       "data": {}
@@ -1660,7 +1660,7 @@
           "type": "header",
           "text": "2-7. Nx 的 Generators 的使用方式",
           "value": "2-7-nx-的-generators-的使用方式",
-          "line": 149,
+          "line": 151,
           "column": 0,
           "depth": 3
         },
@@ -1668,7 +1668,7 @@
           "type": "header",
           "text": "2-8. 小補充: 關於 collection 為何都是「＠xxx/ooo」這樣命名?",
           "value": "2-8-小補充-關於-collection-為何都是xxxooo這樣命名",
-          "line": 170,
+          "line": 172,
           "column": 0,
           "depth": 3
         },
@@ -1676,7 +1676,7 @@
           "type": "header",
           "text": "3. 感受一下 Nx 的 monorepo 專案",
           "value": "3-感受一下-nx-的-monorepo-專案",
-          "line": 179,
+          "line": 181,
           "column": 0,
           "depth": 2
         },
@@ -1684,7 +1684,7 @@
           "type": "header",
           "text": "3-1. 產生一個 Nx 的 workspace",
           "value": "3-1-產生一個-nx-的-workspace",
-          "line": 189,
+          "line": 191,
           "column": 0,
           "depth": 3
         },
@@ -1692,7 +1692,7 @@
           "type": "header",
           "text": "3-2. Nx 的 workspace 圖示",
           "value": "3-2-nx-的-workspace-圖示",
-          "line": 203,
+          "line": 205,
           "column": 0,
           "depth": 3
         },
@@ -1700,7 +1700,7 @@
           "type": "header",
           "text": "4. 快速上手 Nx Console 操作 (Generate、Run)",
           "value": "4-快速上手-nx-console-操作-generaterun",
-          "line": 211,
+          "line": 213,
           "column": 0,
           "depth": 2
         },
@@ -1708,7 +1708,7 @@
           "type": "header",
           "text": "4-1. Nx Console 簡介",
           "value": "4-1-nx-console-簡介",
-          "line": 213,
+          "line": 215,
           "column": 0,
           "depth": 3
         },
@@ -1716,7 +1716,7 @@
           "type": "header",
           "text": "4-2. nx generate (常見的 collection)",
           "value": "4-2-nx-generate-常見的-collection",
-          "line": 270,
+          "line": 272,
           "column": 0,
           "depth": 3
         },
@@ -1724,7 +1724,7 @@
           "type": "header",
           "text": "4-3. 產生 Library 有三個 schematic 可以用",
           "value": "4-3-產生-library-有三個-schematic-可以用",
-          "line": 300,
+          "line": 302,
           "column": 0,
           "depth": 3
         },
@@ -1732,7 +1732,7 @@
           "type": "header",
           "text": "4-4. nx run",
           "value": "4-4-nx-run",
-          "line": 326,
+          "line": 328,
           "column": 0,
           "depth": 3
         },
@@ -1740,7 +1740,7 @@
           "type": "header",
           "text": "5. 其他補充",
           "value": "5-其他補充",
-          "line": 337,
+          "line": 339,
           "column": 0,
           "depth": 2
         },
@@ -1748,7 +1748,7 @@
           "type": "header",
           "text": "5-1. 常見的 Monorepo 架構開發工具",
           "value": "5-1-常見的-monorepo-架構開發工具",
-          "line": 339,
+          "line": 341,
           "column": 0,
           "depth": 3
         },
@@ -1756,7 +1756,7 @@
           "type": "header",
           "text": "5-2. 誤解: Nx 和 Yarn Workspace/Lerna 只能擇一使用?",
           "value": "5-2-誤解-nx-和-yarn-workspacelerna-只能擇一使用",
-          "line": 345,
+          "line": 347,
           "column": 0,
           "depth": 3
         },
@@ -1764,7 +1764,7 @@
           "type": "header",
           "text": "5-3. 查看有哪些 Nx plugin 可以使用",
           "value": "5-3-查看有哪些-nx-plugin-可以使用",
-          "line": 360,
+          "line": 362,
           "column": 0,
           "depth": 3
         },
@@ -1772,7 +1772,7 @@
           "type": "header",
           "text": "5-4. Nx 13",
           "value": "5-4-nx-13",
-          "line": 367,
+          "line": 369,
           "column": 0,
           "depth": 3
         },
@@ -1780,18 +1780,18 @@
           "type": "header",
           "text": "5-5. Nx 學習資源",
           "value": "5-5-nx-學習資源",
-          "line": 376,
+          "line": 378,
           "column": 0,
           "depth": 3
         }
       },
       "fname": "drops.2021.1227-從Nx入門monorepo",
-      "updated": 1662619141793,
+      "updated": 1662620120470,
       "created": 1640615759253,
       "parent": "XVdxhzTnAX2SQnuApjkXj",
       "children": [],
       "data": {},
-      "contentHash": "f92dd21d1c34b6edd7e5a7e1db1c208c",
+      "contentHash": "47c710730e8369eca3102432d7f4aeff",
       "custom": {},
       "tags": [
         "PROG.Nx"
