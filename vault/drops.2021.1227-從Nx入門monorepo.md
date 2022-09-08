@@ -1,8 +1,8 @@
 ---
 id: Ee1iUWT8QmZe4CAuuwQxs
 title: 1227 從 Nx 入門 monorepo
-desc: ''
-updated: 1644411066115
+desc: ""
+updated: 1662619141793
 created: 1640615759253
 tags:
   - PROG.Nx
@@ -10,7 +10,9 @@ tags:
 
 ## 前言
 
-> 深入淺出 Monorepo 架構 — 使用 Nx Console 實現一個 Monorepo 架構的專案
+> 注意: 此篇文章撰寫時間 Nx 版本為 12，跟目前版本可能有些不一。 (Nx 版號會跟 Angular 版號一樣)
+
+使用 Nx Console 實現一個 Monorepo 架構的專案。
 
 導讀影片: [Monorepos - How the Pros Scale Huge Software Projects // Turborepo vs Nx](https://www.youtube.com/watch?v=9iU_IE6vnJ8)
 
@@ -18,15 +20,11 @@ tags:
 
 Monorepo (全名 Monolithic Repository)，符合以下三個條件:
 
-1. One Repository
-2. Multiple projects
-3. Shared Libraries
+1. **一個 repo** One Repository
+2. **多個 projects** Multiple projects (三個 app 加上兩個 libs 共 5 個專案)
+3. **共用 libs** Shared Libraries
 
-如下圖，可以看到:
-
-1. **一個 repo**
-2. **多個 projects** (三個 app 加上兩個 libs)
-3. **共用 libs**
+如下圖，這就是一個 Monorepo:
 
 ![MonoRepo](/assets/images/2021-12-27-22-50-05.png)
 
@@ -65,6 +63,8 @@ Monorepo 架構的主要目的是希望集中管理套件版本。
 - (GitHub apps)
 - 還有更多。(and more.)
 
+**簡單來說就是可以用 Nx 提供的架構去整合程式碼。**
+
 ### 2-2. Nx 的製作團隊
 
 narwhal 簡寫 Nrwl，是獨角鯨的英文。
@@ -83,6 +83,8 @@ Nrwl 也是開源開發工具們的製作者: 給 monorepo 開發用的 Nx、和
 Nrwl was founded in December 2016 by Angular team members and former Googlers, Jeff Cross and Victor Savkin, and today has around 18 team members in the US, Canada and UK.
 Nrwl is also the creator of open-source dev tools: Nx for monorepo development, and Angular Console.
 
+**簡單來說 Nrwl 就是一間科技公司 (Narwhal Technologies Inc.)**
+
 ### 2-3. Angular monorepo patterns
 
 這本書說明了 nx 是如何實踐 monerepo 概念。
@@ -96,11 +98,15 @@ Nrwl is also the creator of open-source dev tools: Nx for monorepo development, 
 
 ![](/assets/images/2021-12-28-00-06-48.png)
 
+> 截圖自 [Monorepos - How the Pros Scale Huge Software Projects // Turborepo vs Nx](https://www.youtube.com/watch?v=9iU_IE6vnJ8)
+
 上面這兩位 Nx 開發的主導者是 Google 的前員工，且對 Angular 都有相當深入的理解。
 但 Nx 官網上有不少 react 的開發教學，如果有公司想要從 react 轉到 angular(或是 angular 轉 react 為主)，
 感覺透過 Nx 的幫助可以慢慢地移花接木(不然 Nx 也至少可以讓這兩框架和平共處)。😆
 
 ### 2-5. Angular 詞彙表
+
+基本上只要知道 Angular 的詞彙就看得懂 Nx 在幹麻了，以下詞彙取自 Angular 官網:
 
 - [Workspace](https://angular.tw/guide/glossary#workspace) (工作區)
 
@@ -130,6 +136,8 @@ Nrwl is also the creator of open-source dev tools: Nx for monorepo development, 
 
 ### 2-6. Nx 名詞解釋
 
+Nx 的 `[plugin]:[generator-name]` 就是 Angular 的 `[collections]:[schematic]` 以下紀錄這個在 Nx 的說明與使用方式:
+
 - Generators (產生器)
   產生器提供了一種方法，來自動執行您在開發工作流程中，經常執行的許多任務。
   在 Nx 中，可以使用 `@nrwl/devkit` 或 `@angular-devkit` ，來製作產生器。
@@ -141,9 +149,9 @@ Nrwl is also the creator of open-source dev tools: Nx for monorepo development, 
 
 ### 2-7. Nx 的 Generators 的使用方式
 
-可以發現 Nx 的 `[plugin]:[generator-name]` 就是 Angular 的 `[collections]:[schematic]`。
+**Nx 的 `[plugin]:[generator-name]` 就是 Angular 的 `[collections]:[schematic]`。**
 
-有用 angular 寫過 schematic 的人有福了，可以更快上手 Nx 的 generator。🎉
+所以有用 angular 寫過 schematic 的人有福了，可以更快上手 Nx 的 generator。🎉
 
 以下是關於如何調用 gnerator 的內容(截自官網):
 
@@ -181,9 +189,17 @@ Nrwl is also the creator of open-source dev tools: Nx for monorepo development, 
 
 ### 3-1. 產生一個 Nx 的 workspace
 
+可以直接參考 npm 的說明:
+
 https://www.npmjs.com/package/create-nx-workspace
 
 ![](/assets/images/2021-12-28-21-48-43.png)
+
+> Nx 12 提供的樣板。
+
+或是看官方 youtube 教學:
+
+[Nx in 100 seconds: Setup a new Nx workspace using its presets](https://youtu.be/XVJIXcC-7Kc)
 
 ### 3-2. Nx 的 workspace 圖示
 
@@ -191,9 +207,21 @@ https://www.npmjs.com/package/create-nx-workspace
 
 ![](/assets/images/2021-12-28-22-18-03.png)
 
+> 從靜態網頁框架、後端 nodejs 框架、前端框架到網站建置工具和最基礎的 js、html、css 都可以用 Nx 架構來整合
+
 ## 4. 快速上手 Nx Console 操作 (Generate、Run)
 
 ### 4-1. Nx Console 簡介
+
+Nx 有提供一個介面讓人可以用點按方式去執行指令，就不用硬背一堆指令了，
+
+以下是關於這個套件的一些知識，
+
+因為這個介面有幫指令做分類，
+
+這邊特別有在 4-2 ~ 4-4 的地方對 nx generate 和 nx run 這兩個介面分類做了更深入的說明，
+
+首先，會先說明 Nx Console 是什麼? 並看看介面有什麼?:
 
 - Nx Console 套件安裝
 
@@ -241,6 +269,8 @@ https://www.npmjs.com/package/create-nx-workspace
     ![](/assets/images/2021-12-28-22-35-51.png)
 
 ### 4-2. nx generate (常見的 collection)
+
+> 這裡是 2-6、2-7 定義的應用，如果看不懂可以往回看。
 
 當你按下 `Generate` 的按鈕時，就會幫你執行 `nx generate`，並根據 `generator` (`schematic`) 產生預期的結果。
 以下列出常見的 collection:
