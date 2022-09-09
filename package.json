@@ -6,8 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "init": "npx dendron publish init",
-    "serve-dev": "npx dendron publish dev",
-    "deploy": "npx dendron publish export --target github",
+    "serve-dev": "npx kill-port 3000 && npx dendron publish dev",
+    "deploy": "npx kill-port 3000 && npx dendron publish export --target github",
     "kill-port3000": "npx kill-port 3000"
   },
   "keywords": [],
