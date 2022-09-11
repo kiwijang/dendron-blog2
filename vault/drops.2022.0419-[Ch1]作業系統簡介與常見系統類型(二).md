@@ -1,8 +1,8 @@
 ---
 id: tjo1srktkmfjj2wz4e5bn7c
 title: 0419 [Ch1]作業系統簡介與常見系統類型(二)
-desc: ''
-updated: 1650651019541
+desc: ""
+updated: 1662891716182
 created: 1650381132068
 tags:
   - PROG.OS
@@ -96,9 +96,36 @@ tags:
 
 ### 作業系統執行
 
-2. 多元程式設計系統 Multiprogramming
+1. 多元程式設計系統 Multiprogramming
+
+   允許多個程序 (processes/jobs) 在記憶體裡同時執行。
+
+   - 主要目的: 提高 CPU 利用度 (utilization)。
+
+   - Mulitiprogramming degree 代表系統內執行的程序 (processes) 數目。
+
+     一般而言，若值愈高，CPU 利用度 (utilzation) 愈高。
+
+   - 多個工作 (processes/jobs) 同時執行的方法有兩種:
+
+     - 並行 Concurrent execution
+       通常發生在單核(一顆 CPU 時)
+
+     - 平行 Parallel execution
+       多顆 CPUs 或 MultiCores
 
    1. 分時系統 Time-Sharing / Multitasking
+      又叫 multitasking，是一種多元程式的邏輯擴充 (logical extension)。
+      - 強調
+        - 回應時間要短。
+        - 對每個使用者工作要公平對待。
+        - 讓每個使用者覺得有自己專屬的電腦的感覺。
+      - 技術
+        - CPU 排班採用 RR 排班。[CH4]
+        - 有 Swapping 技術，即虛擬記憶體技術。[CH8]
+        - 有 SPOOLing 技術，讓每個使用者有自己的 I/O 設備的感覺，同時也有 Buffering 技術(使用記憶體)一併使用。
+
+2. 多處理器系統 MultiProcessors system
 
 3. Dual-Mode and Multimode Operation
 

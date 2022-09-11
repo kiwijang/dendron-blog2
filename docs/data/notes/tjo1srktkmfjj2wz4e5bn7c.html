@@ -92,13 +92,58 @@
 </li>
 </ol>
 <h3 id="作業系統執行"><a aria-hidden="true" class="anchor-heading" href="#作業系統執行"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>作業系統執行</h3>
-<ol start="2">
+<ol>
 <li>
 <p>多元程式設計系統 Multiprogramming</p>
+<p>允許多個程序 (processes/jobs) 在記憶體裡同時執行。</p>
+<ul>
+<li>
+<p>主要目的: 提高 CPU 利用度 (utilization)。</p>
+</li>
+<li>
+<p>Mulitiprogramming degree 代表系統內執行的程序 (processes) 數目。</p>
+<p>一般而言，若值愈高，CPU 利用度 (utilzation) 愈高。</p>
+</li>
+<li>
+<p>多個工作 (processes/jobs) 同時執行的方法有兩種:</p>
+<ul>
+<li>
+<p>並行 Concurrent execution
+通常發生在單核(一顆 CPU 時)</p>
+</li>
+<li>
+<p>平行 Parallel execution
+多顆 CPUs 或 MultiCores</p>
+</li>
+</ul>
+</li>
+</ul>
 <ol>
-<li>分時系統 Time-Sharing / Multitasking</li>
+<li>分時系統 Time-Sharing / Multitasking
+又叫 multitasking，是一種多元程式的邏輯擴充 (logical extension)。
+<ul>
+<li>強調
+<ul>
+<li>回應時間要短。</li>
+<li>對每個使用者工作要公平對待。</li>
+<li>讓每個使用者覺得有自己專屬的電腦的感覺。</li>
+</ul>
+</li>
+<li>技術
+<ul>
+<li>CPU 排班採用 RR 排班。[CH4]</li>
+<li>有 Swapping 技術，即虛擬記憶體技術。[CH8]</li>
+<li>有 SPOOLing 技術，讓每個使用者有自己的 I/O 設備的感覺，同時也有 Buffering 技術(使用記憶體)一併使用。</li>
+</ul>
+</li>
+</ul>
+</li>
 </ol>
 </li>
+<li>
+<p>多處理器系統 MultiProcessors system</p>
+</li>
+<li></li>
 <li>
 <p>Dual-Mode and Multimode Operation</p>
 </li>
