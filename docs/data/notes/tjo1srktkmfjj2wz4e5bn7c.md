@@ -117,13 +117,12 @@
         - 有 SPOOLing 技術，讓每個使用者有自己的 I/O 設備的感覺，同時也有 Buffering 技術(使用記憶體)一併使用。
 
 2. 多處理器系統 MultiProcessors system
-3.
 
-4. Dual-Mode and Multimode Operation
+3. Dual-Mode and Multimode Operation
 
-5. Timer
+4. Timer
 
-6. 批次系統 Batch System
+5. 批次系統 Batch System
 
 ---
 
