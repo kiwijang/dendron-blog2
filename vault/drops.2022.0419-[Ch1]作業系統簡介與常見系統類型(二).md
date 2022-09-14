@@ -2,7 +2,7 @@
 id: tjo1srktkmfjj2wz4e5bn7c
 title: 0419 [Ch1]作業系統簡介與常見系統類型(二)
 desc: ""
-updated: 1662891716182
+updated: 1663163996456
 created: 1650381132068
 tags:
   - PROG.OS
@@ -126,6 +126,9 @@ tags:
         - 有 SPOOLing 技術，讓每個使用者有自己的 I/O 設備的感覺，同時也有 Buffering 技術(使用記憶體)一併使用。
 
 2. 多處理器系統 MultiProcessors system
+   又叫 Multiprocessing 或 paraller 或 tightly-coupled system。
+   主要 features 如下:
+   一部機器(或主機板)內置多顆處理器
 
 3. Dual-Mode and Multimode Operation
 
