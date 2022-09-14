@@ -11,8 +11,8 @@
       "links": [],
       "anchors": {},
       "fname": "403",
-      "updated": 1663163699718,
-      "created": 1663163699718,
+      "updated": 1663168675567,
+      "created": 1663168675567,
       "parent": null,
       "children": [],
       "data": {}
@@ -865,19 +865,11 @@
     "tjo1srktkmfjj2wz4e5bn7c": {
       "id": "tjo1srktkmfjj2wz4e5bn7c",
       "title": "0419 [Ch1]作業系統簡介與常見系統類型(二)",
-      "desc": "",
-      "updated": 1662891716182,
-      "created": 1650381132068,
-      "tags": [
-        "PROG.OS"
-      ],
-      "custom": {},
-      "fname": "drops.2022.0419-[Ch1]作業系統簡介與常見系統類型(二)",
-      "type": "note",
       "vault": {
         "fsPath": "vault"
       },
-      "contentHash": "6130f702bc272d5d333801d0e8ba344d",
+      "type": "note",
+      "desc": "",
       "links": [
         {
           "type": "frontmatterTag",
@@ -947,7 +939,7 @@
           "type": "header",
           "text": "作業系統執行",
           "value": "作業系統執行",
-          "line": 96,
+          "line": 120,
           "column": 0,
           "depth": 3
         },
@@ -955,7 +947,7 @@
           "type": "header",
           "text": "參考資料",
           "value": "參考資料",
-          "line": 144,
+          "line": 166,
           "column": 0,
           "depth": 2
         },
@@ -963,14 +955,22 @@
           "type": "header",
           "text": "名詞解釋",
           "value": "名詞解釋",
-          "line": 148,
+          "line": 170,
           "column": 0,
           "depth": 4
         }
       },
-      "children": [],
+      "fname": "drops.2022.0419-[Ch1]作業系統簡介與常見系統類型(二)",
+      "updated": 1663165644718,
+      "created": 1650381132068,
       "parent": "4MPQXb6WwUg0kGHxTPD7x",
-      "data": {}
+      "children": [],
+      "data": {},
+      "contentHash": "5a4d921657834b94888b00d9b82302b6",
+      "custom": {},
+      "tags": [
+        "PROG.OS"
+      ]
     },
     "6wmc3n6c6adplh04u9vsu95": {
       "id": "6wmc3n6c6adplh04u9vsu95",

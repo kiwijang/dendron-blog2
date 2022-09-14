@@ -47,7 +47,31 @@
 
 ### 電腦系統架構
 
-1. 多處理器系統 Multiprocessor System / Parallel System / Tightly Coupled System
+1. 多處理器系統 Multiprocessor System / Parallel System / Tightly Coupled System- 又叫 Multiprocessing 或 paraller 或 tightly-coupled system。
+
+   - 主要 features 如下:
+     - 一部機器(或主機板)內置多顆處理器，均共享此一機器的 memory、bus、I/O devices, power-supply etc。
+     - 通常所有 CPUs 均受同一個 clock 之時脈控制。
+     - 通常由同一個 OS 管控所有 CPU。
+     - 這些處理器之間的溝通大都採共享記憶體方式。 [CH6]
+   - 優點
+     - 增加產能(Increased Throughput)
+     - 增加可靠性 (Increased Reliability)
+     - 規模經濟 (Economy of scale)
+   - 分述如下:
+     - 產能增加: 所以支持 parallel computing，同一時內可有多個工作在不同 CPUs 上平行執行。
+       - N 顆 CPUs 之產能絕對小於: 1 顆 CPU 產能\* N 倍。
+       - 理由: 因為 (1) Resource Condition(資源競爭)。 (2) 處理器之間的溝通導致不見得工作可以平行執行
+         所以效能會被抵減。
+     - 提升可靠度: 萬一某 CPU 壞了，其他 CPU 仍可執行工作。
+       - 所以統不至於因而停頓。
+       - 名詞:
+         - graceful degradation 漸進式毀滅
+           系統不會因某些元件(e.g.硬體或軟體)的故障而停頓，仍保有持續運作的能力。
+         - Fault Tolerant system (容錯系統)
+           具有 graceful degradation 能力之系統。
+     - 運算能力之規模擴充比較具有經濟效益
+       - 這些多顆 CPUs 是共享此機器之記憶體、匯流排等其他資源，所以會比較省錢。
 
    1. 最常見為 SMP(Symmetric Multi-Processing)
 
@@ -116,13 +140,11 @@
         - 有 Swapping 技術，即虛擬記憶體技術。[CH8]
         - 有 SPOOLing 技術，讓每個使用者有自己的 I/O 設備的感覺，同時也有 Buffering 技術(使用記憶體)一併使用。
 
-2. 多處理器系統 MultiProcessors system
+2. Dual-Mode and Multimode Operation
 
-3. Dual-Mode and Multimode Operation
+3. Timer
 
-4. Timer
-
-5. 批次系統 Batch System
+4. 批次系統 Batch System
 
 ---
 
