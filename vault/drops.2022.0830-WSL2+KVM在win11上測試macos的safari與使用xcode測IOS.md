@@ -2,7 +2,7 @@
 id: o7mp336qqwyjf1d0jefmg53
 title: 0830 WSL2 + KVM 在 win11 上測試 macos 的 safari 與使用 xcode 測 IOS
 desc: ""
-updated: 1662567592813
+updated: 1663219119443
 created: 1662562033027
 tags:
   - PROG.OS
@@ -27,10 +27,10 @@ status: w
 
 使用 WSL2 -> 灌 Ubuntu -> 在裡面灌 qemu -> 透過 OSX-KVM 灌好 macos -> 用 qemu 開啟 macos 的虛擬機
 
-最後設定網路與防火牆，讓此 WSL2 內的虛擬機可以連上我 win11 的 localhost。
+最後設定一些東西，讓此 WSL2 內的虛擬機可以連上我 win11 的 localhost。(還有設定螢幕大小和硬體配置)
 
 ## 下載 Ubuntu
 
 ## 安裝要用到的套件
 
-## 設定網路與 host 防火牆
+## 相關設定
