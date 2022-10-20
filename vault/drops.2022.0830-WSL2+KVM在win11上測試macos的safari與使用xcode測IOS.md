@@ -2,7 +2,7 @@
 id: o7mp336qqwyjf1d0jefmg53
 title: 0830 WSL2 + KVM 在 win11 上測試 macos 的 safari 與使用 xcode 測 IOS
 desc: ''
-updated: 1666279214952
+updated: 1666281078365
 created: 1662562033027
 tags:
   - PROG.OS
@@ -101,7 +101,7 @@ wsl --shutdown
 
 ![](/assets/images/2022-10-20-15-18-37.png)
 
-> 但下去後會開啟終端機
+> 按下去後會開啟終端機
 
 ![](/assets/images/2022-10-20-15-21-01.png)
 
