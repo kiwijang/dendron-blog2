@@ -1,8 +1,8 @@
 <h1 id="0830-wsl2--kvm-在-win11-上測試-macos-的-safari-與使用-xcode-測-ios"><a aria-hidden="true" class="anchor-heading" href="#0830-wsl2--kvm-在-win11-上測試-macos-的-safari-與使用-xcode-測-ios"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>0830 WSL2 + KVM 在 win11 上測試 macos 的 safari 與使用 xcode 測 IOS</h1>
 <h2 id="1-簡述過程"><a aria-hidden="true" class="anchor-heading" href="#1-簡述過程"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>1. 簡述過程</h2>
 <p>目的是在 Windows 上開發的 Agular 網站可以同時在 MacOS 中的 safari 和虛擬機做測試。</p>
-<p>使用 WSL2 -> 安裝 Ubuntu -> 在 Ubuntu 裡面安裝 QEMU -> 透過 OSX-KVM 安裝 MacOS -> 透過 OSX-KVM 用 QEMU 開啟 MacOS 的虛擬機</p>
-<p>最後設定一些東西，讓此 WSL2 內的虛擬機可以連上電腦本機的 localhost。(還有設定螢幕大小和硬體配置)</p>
+<p>使用 WSL2 -> 安裝 Ubuntu -> 在 Ubuntu 裡面安裝 QEMU -> 透過 OSX-KVM 安裝 MacOS -> 透過 OSX-KVM 用 QEMU 開啟 MacOS 的虛擬機。</p>
+<p>最後設定一些東西，讓此 WSL2 內的虛擬機可以連上電腦本機的 localhost (還有設定螢幕大小和硬體配置)。</p>
 <h2 id="2-軟硬體需求"><a aria-hidden="true" class="anchor-heading" href="#2-軟硬體需求"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>2. 軟硬體需求</h2>
 <h3 id="21-wsl2"><a aria-hidden="true" class="anchor-heading" href="#21-wsl2"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>2.1. WSL2</h3>
 <p>您必須執行 Windows 10 2004 版和更新版本， (組建 19041 和更新版本) 或 Windows 11。</p>
@@ -31,6 +31,7 @@
 <blockquote>
 <p>根據此網站以 i7-12700 為例以上硬體需求都有支援: <a href="https://openbenchmarking.org/s/Intel+Core+i7-12700">https://openbenchmarking.org/s/Intel+Core+i7-12700</a></p>
 </blockquote>
+<p>以上需求來自: <a href="https://github.com/kholia/OSX-KVM#requirements">OSX-KVM#requirements</a></p>
 <h2 id="3-ubuntu"><a aria-hidden="true" class="anchor-heading" href="#3-ubuntu"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>3. Ubuntu</h2>
 <p><img src="/assets/images/2022-09-23-23-42-01.png"></p>
 <blockquote>
@@ -52,47 +53,47 @@
 <h3 id="41-所以要先安裝-wsl2"><a aria-hidden="true" class="anchor-heading" href="#41-所以要先安裝-wsl2"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>4.1. 所以要先安裝 WSL2:</h3>
 <h4 id="411-之前沒有安裝過-wsl-的話"><a aria-hidden="true" class="anchor-heading" href="#411-之前沒有安裝過-wsl-的話"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>4.1.1. 之前沒有安裝過 WSL 的話</h4>
 <p>(1) 以系統管理員身分執行 cmd 或 powershell:</p>
-<pre><code>wsl --install
+<pre class="language-cmd"><code class="language-cmd">wsl --install
 </code></pre>
 <p>(2) 電腦要重開機。</p>
-<h3 id="42-如果現在已經有安裝-wsl-了"><a aria-hidden="true" class="anchor-heading" href="#42-如果現在已經有安裝-wsl-了"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>4.2. 如果現在已經有安裝 WSL 了</h3>
+<h4 id="412-如果現在已經有安裝-wsl-了"><a aria-hidden="true" class="anchor-heading" href="#412-如果現在已經有安裝-wsl-了"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>4.1.2. 如果現在已經有安裝 WSL 了</h4>
 <p>(1) 以系統管理員身分執行 cmd 或 powershell:</p>
-<pre><code>wsl --update
+<pre class="language-cmd"><code class="language-cmd">wsl --update
 </code></pre>
 <p>(2) 用這指令重開 WSL:</p>
-<pre><code>wsl --shutdown
+<pre class="language-cmd"><code class="language-cmd">wsl --shutdown
 </code></pre>
-<h3 id="43-用-ubuntu-打開-linux-gui"><a aria-hidden="true" class="anchor-heading" href="#43-用-ubuntu-打開-linux-gui"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>4.3. 用 Ubuntu 打開 Linux GUI:</h3>
-<h4 id="431-打開步驟-3-下載好的-ubuntu"><a aria-hidden="true" class="anchor-heading" href="#431-打開步驟-3-下載好的-ubuntu"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>4.3.1. 打開步驟 3. 下載好的 Ubuntu</h4>
+<h3 id="42-用-ubuntu-打開-linux-gui"><a aria-hidden="true" class="anchor-heading" href="#42-用-ubuntu-打開-linux-gui"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>4.2. 用 Ubuntu 打開 Linux GUI:</h3>
+<h4 id="421-打開步驟-3-下載好的-ubuntu"><a aria-hidden="true" class="anchor-heading" href="#421-打開步驟-3-下載好的-ubuntu"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>4.2.1. 打開步驟 3. 下載好的 Ubuntu</h4>
 <p><img src="/assets/images/2022-10-20-15-16-01.png"></p>
 <p><img src="/assets/images/2022-10-20-15-18-37.png"></p>
 <blockquote>
-<p>會開啟終端機，如果想用 windows terminal 開啟可以</p>
+<p>但下去後會開啟終端機</p>
 </blockquote>
 <p><img src="/assets/images/2022-10-20-15-21-01.png"></p>
 <blockquote>
-<p>如果想用 windows terminal 開啟可以在這邊設定</p>
+<p>如果想用 windows terminal 開啟可以到 windows terminal 的這邊設定</p>
 </blockquote>
 <p>(1) 更新 ubuntu 套件</p>
-<pre><code>sudo apt update
+<pre class="language-bash"><code class="language-bash"><span class="token function">sudo</span> <span class="token function">apt</span> update
 </code></pre>
 <p>(2) 試灌一個套件</p>
-<pre><code>sudo apt install nautilus -y
+<pre class="language-bash"><code class="language-bash"><span class="token function">sudo</span> <span class="token function">apt</span> <span class="token function">install</span> nautilus -y
 </code></pre>
 <p>灌好以後輸入:</p>
-<pre><code>nautilus
+<pre class="language-bash"><code class="language-bash">nautilus
 </code></pre>
 <p><img src="/assets/images/2022-10-20-15-26-25.png"></p>
 <blockquote>
 <p>彈出視窗就代表在 windows 上成功運行 nautilus 這個 Linux GUI 了。</p>
 </blockquote>
-<h3 id="44-在-ubuntu-安裝-qemu-前"><a aria-hidden="true" class="anchor-heading" href="#44-在-ubuntu-安裝-qemu-前"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>4.4. 在 Ubuntu 安裝 QEMU 前</h3>
-<h4 id="441-設定套嵌化"><a aria-hidden="true" class="anchor-heading" href="#441-設定套嵌化"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>4.4.1. 設定套嵌化</h4>
-<p>WSL2 沒有預設套嵌化要自己設定 <code>nestedVirtualization=true</code>。</p>
+<h3 id="43-在-ubuntu-安裝-qemu-前"><a aria-hidden="true" class="anchor-heading" href="#43-在-ubuntu-安裝-qemu-前"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>4.3. 在 Ubuntu 安裝 QEMU 前</h3>
+<h4 id="431-設定套嵌化"><a aria-hidden="true" class="anchor-heading" href="#431-設定套嵌化"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>4.3.1. 設定套嵌化</h4>
+<p>WSL2 沒有預設套嵌化，要自己設定 <code>nestedVirtualization=true</code>。</p>
 <p>設定方式:</p>
 <p>(1) 在 Windows 中，在用戶文件夾下新建一個 <code>.wslconfig</code> 檔案 C:\Users\%User%.wslconfig。（User 是你的 Windows 系统用户名）</p>
 <p>檔案內:</p>
-<pre><code>[wsl2]
+<pre class="language-xml"><code class="language-xml">[wsl2]
 networkingMode=bridged
 vmSwitch=ex
 memory=32G
@@ -125,10 +126,10 @@ kernelCommandLine=intel_iommu=on iommu=pt kvm.ignore_msrs=1 kvm-intel.nested=1 k
 <a href="https://openbenchmarking.org/s/Intel+Core+i7-12700">https://openbenchmarking.org/s/Intel+Core+i7-12700</a></p>
 </blockquote>
 <p>(2) 設定並儲存完後，用這指令重開 WSL:</p>
-<pre><code>wsl --shutdown
+<pre class="language-cmd"><code class="language-cmd">wsl --shutdown
 </code></pre>
-<h3 id="45-在-ubuntu-安裝-qemu-並安裝-macos"><a aria-hidden="true" class="anchor-heading" href="#45-在-ubuntu-安裝-qemu-並安裝-macos"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>4.5. 在 Ubuntu 安裝 QEMU 並安裝 MacOS</h3>
-<h4 id="451-安裝-osx-kvm-與準備安裝-macos"><a aria-hidden="true" class="anchor-heading" href="#451-安裝-osx-kvm-與準備安裝-macos"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>4.5.1. 安裝 OSX-KVM 與準備安裝 MacOS</h4>
+<h3 id="44-在-ubuntu-安裝-qemu-並安裝-macos"><a aria-hidden="true" class="anchor-heading" href="#44-在-ubuntu-安裝-qemu-並安裝-macos"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>4.4. 在 Ubuntu 安裝 QEMU 並安裝 MacOS</h3>
+<h4 id="441-安裝-osx-kvm-與準備安裝-macos"><a aria-hidden="true" class="anchor-heading" href="#441-安裝-osx-kvm-與準備安裝-macos"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>4.4.1. 安裝 OSX-KVM 與準備安裝 MacOS</h4>
 <p>使用 OSX-KVM 安装 MacOS VM。</p>
 <ul>
 <li>
@@ -140,16 +141,16 @@ kernelCommandLine=intel_iommu=on iommu=pt kvm.ignore_msrs=1 kvm-intel.nested=1 k
 </li>
 </ul>
 <p>(1) 安裝 QEMU 和相關套件</p>
-<pre><code>sudo apt-get install qemu uml-utilities virt-manager git wget libguestfs-tools p7zip-full make -y
+<pre class="language-bash"><code class="language-bash"><span class="token function">sudo</span> <span class="token function">apt-get</span> <span class="token function">install</span> qemu uml-utilities virt-manager <span class="token function">git</span> <span class="token function">wget</span> libguestfs-tools p7zip-full <span class="token function">make</span> -y
 </code></pre>
 <p>(2) 設定參數</p>
 <p>根據 <a href="https://www.ptt.cc/bbs/Linux/M.1622355127.A.128.html">這篇</a> Windows 10 會有因 KVM 的 msrs 糾錯導致 BSOD 的問題，因此也將忽略 msrs 的選項也加入</p>
-<pre><code>echo 1 > /sys/module/kvm/parameters/ignore_msrs
+<pre class="language-bash"><code class="language-bash"><span class="token builtin class-name">echo</span> <span class="token number">1</span> <span class="token operator">></span> /sys/module/kvm/parameters/ignore_msrs
 </code></pre>
 <p>(3) 設定權限</p>
-<pre><code>sudo usermod -aG kvm $(whoami)
-sudo usermod -aG libvirt $(whoami)
-sudo usermod -aG input $(whoami)
+<pre class="language-bash"><code class="language-bash"><span class="token function">sudo</span> <span class="token function">usermod</span> -aG kvm <span class="token variable"><span class="token variable">$(</span><span class="token function">whoami</span><span class="token variable">)</span></span>
+<span class="token function">sudo</span> <span class="token function">usermod</span> -aG libvirt <span class="token variable"><span class="token variable">$(</span><span class="token function">whoami</span><span class="token variable">)</span></span>
+<span class="token function">sudo</span> <span class="token function">usermod</span> -aG input <span class="token variable"><span class="token variable">$(</span><span class="token function">whoami</span><span class="token variable">)</span></span>
 </code></pre>
 <p><img src="/assets/images/2022-10-20-17-37-50.png"></p>
 <blockquote>
@@ -168,39 +169,39 @@ sudo usermod -aG input $(whoami)
 </li>
 </ul>
 <p>(4) clone OSX-KVM repo</p>
-<pre><code>git clone https://github.com/kholia/OSX-KVM.git
+<pre class="language-bash"><code class="language-bash"><span class="token function">git</span> clone https://github.com/kholia/OSX-KVM.git
 
-cd OSX-KVM
+<span class="token builtin class-name">cd</span> OSX-KVM
 </code></pre>
 <p>(5) 取得 macOS 安裝檔</p>
-<pre><code>./fetch-macOS-v2.py
+<pre class="language-bash"><code class="language-bash">./fetch-macOS-v2.py
 </code></pre>
 <p>執行後畫面如下，可以選取你要的 macOS 版本</p>
-<pre><code>$ ./fetch-macOS-v2.py
-1. High Sierra (10.13)
-2. Mojave (10.14)
-3. Catalina (10.15)
-4. Big Sur (11.6) - RECOMMENDED
-5. Monterey (latest)
+<pre class="language-bash"><code class="language-bash">$ ./fetch-macOS-v2.py
+<span class="token number">1</span>. High Sierra <span class="token punctuation">(</span><span class="token number">10.13</span><span class="token punctuation">)</span>
+<span class="token number">2</span>. Mojave <span class="token punctuation">(</span><span class="token number">10.14</span><span class="token punctuation">)</span>
+<span class="token number">3</span>. Catalina <span class="token punctuation">(</span><span class="token number">10.15</span><span class="token punctuation">)</span>
+<span class="token number">4</span>. Big Sur <span class="token punctuation">(</span><span class="token number">11.6</span><span class="token punctuation">)</span> - RECOMMENDED
+<span class="token number">5</span>. Monterey <span class="token punctuation">(</span>latest<span class="token punctuation">)</span>
 
-Choose a product to download (1-5): 4
+Choose a product to download <span class="token punctuation">(</span><span class="token number">1</span>-5<span class="token punctuation">)</span>: <span class="token number">4</span>
 </code></pre>
 <blockquote>
 <p>我是選 5 Monterey</p>
 </blockquote>
 <p>(6) 將下載完的檔案轉檔</p>
-<pre><code>dmg2img BaseSystem.dmg BaseSystem.img
+<pre class="language-bash"><code class="language-bash">dmg2img BaseSystem.dmg BaseSystem.img
 </code></pre>
 <p>(7) 新增一個虛擬 HDD image 將拿來灌 macOS</p>
-<pre><code>qemu-img create -f qcow2 mac_hdd_ng.img 256G
+<pre class="language-bash"><code class="language-bash">qemu-img create -f qcow2 mac_hdd_ng.img 256G
 </code></pre>
 <blockquote>
 <p>mac_hdd_ng.img 是文件名，可以任意修改</p>
 </blockquote>
-<h4 id="452-安裝-macos"><a aria-hidden="true" class="anchor-heading" href="#452-安裝-macos"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>4.5.2. 安裝 MacOS</h4>
+<h4 id="442-安裝-macos"><a aria-hidden="true" class="anchor-heading" href="#442-安裝-macos"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>4.4.2. 安裝 MacOS</h4>
 <p>(1) 修改腳本</p>
 <p>先修改 <code>OpenCore-Boot.sh</code> 文件</p>
-<pre><code>vim ./OpenCore-Boot.sh
+<pre class="language-bash"><code class="language-bash"><span class="token function">vim</span> ./OpenCore-Boot.sh
 </code></pre>
 <ul>
 <li><code>ALLOCATED_RAM</code> 記憶體，建議至少 8GB</li>
@@ -213,20 +214,20 @@ Choose a product to download (1-5): 4
 <p>這是我目前的設置</p>
 </blockquote>
 <p>(2) 執行腳本</p>
-<pre><code>./OpenCore-Boot.sh
+<pre class="language-bash"><code class="language-bash">./OpenCore-Boot.sh
 </code></pre>
 <p>(3) macOS 安裝畫面</p>
 <p>接下來跟安裝 macOS 一樣 ，可以參考這篇的 STEP 14 ~ STEP 28
 <a href="https://adersaytech.com/practical-software/install-macos-on-virtualbox.html">10 分鐘學會如何在 VirtualBox 安裝 macOS Monterey！</a></p>
-<h3 id="46-打開-macos並安裝-xcode"><a aria-hidden="true" class="anchor-heading" href="#46-打開-macos並安裝-xcode"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>4.6. 打開 macOS，並安裝 xcode</h3>
-<pre><code>cd OSX-KVM
+<h3 id="45-打開-macos並安裝-xcode"><a aria-hidden="true" class="anchor-heading" href="#45-打開-macos並安裝-xcode"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>4.5. 打開 macOS，並安裝 xcode</h3>
+<pre class="language-bash"><code class="language-bash"><span class="token builtin class-name">cd</span> OSX-KVM
 ./OpenCore-Boot.sh
 </code></pre>
 <p>選擇你的系統碟
 <img src="/assets/images/2022-10-20-18-31-39.png"></p>
 <p>接下來會跑一下一堆白字然後出現 apple icon loading 畫面</p>
 <p>最後會看到登入頁面，輸入密碼就會進到系統裡了。</p>
-<h3 id="47-在-macos-裡下載-xcode"><a aria-hidden="true" class="anchor-heading" href="#47-在-macos-裡下載-xcode"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>4.7. 在 macOS 裡下載 xcode</h3>
+<h3 id="46-在-macos-裡下載-xcode"><a aria-hidden="true" class="anchor-heading" href="#46-在-macos-裡下載-xcode"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>4.6. 在 macOS 裡下載 xcode</h3>
 <p>用 macOS 裡的 safari 到這個網頁 <a href="https://developer.apple.com/download/all/">https://developer.apple.com/download/all/</a></p>
 <p>登入開發者帳號後就可以下載所需的版本。</p>
 <ul>
@@ -252,7 +253,7 @@ Choose a product to download (1-5): 4
 <blockquote>
 <p>以此圖為例 vm 裡的要測試的 angular 網站網址就是: <a href="https://192.168.64.1:4200">https://192.168.64.1:4200</a></p>
 </blockquote>
-<h3 id="畫面大小"><a aria-hidden="true" class="anchor-heading" href="#畫面大小"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>畫面大小</h3>
+<h3 id="52-畫面大小"><a aria-hidden="true" class="anchor-heading" href="#52-畫面大小"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>5.2. 畫面大小</h3>
 <p>選 About This Mac 後選擇 Display
 <img src="/assets/images/2022-10-20-22-33-47.png"></p>
 <p>選擇 Displays Preferences
@@ -260,28 +261,31 @@ Choose a product to download (1-5): 4
 <p>勾選 Show all resources 後就可以選擇自己想要的尺寸了
 <img src="/assets/images/2022-10-20-22-36-13.png"></p>
 <p>我是選 1600 x 900。</p>
-<p>因為我的螢幕是 27 吋 FHD，此視窗預設 1920 x 1080 會超出我的螢幕範圍(螢幕對這視窗來說太小了)，1600 x 900大小就很合適。</p>
+<p>因為我的螢幕是 27 吋 FHD，此視窗預設 1920 x 1080 會超出我的螢幕範圍(螢幕對這視窗來說太小了)，1600 x 900 大小就很合適。</p>
 <p>另外 QEMU 可以從 View > 打勾 Zoom to fit，這樣就可以調整自己想要的視窗大小，內容會等比縮放，所以你的螢幕解析度比較高的話，可以設定較大尺寸，再用這個來調整視窗大小，就不用為了讓視窗變小而讓解析度變低(設定小尺寸)。另外，解析度跟 RAM 有關，要確保自己的 RAM 有足夠空間再開高，不然會容易閃退。
 <img src="/assets/images/2022-10-20-22-40-49.png"></p>
-<h2 id="6-關於-hyper-v-和-wsl"><a aria-hidden="true" class="anchor-heading" href="#6-關於-hyper-v-和-wsl"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>6. 關於 Hyper-V 和 wsl</h2>
+<h2 id="6-關於-hyper-v-和-wsl"><a aria-hidden="true" class="anchor-heading" href="#6-關於-hyper-v-和-wsl"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>6. 關於 Hyper-V 和 WSL</h2>
 <p>Hyper-V 是 Microsoft 的本機虛擬機器管理程式，它可以在執行 x86-64 位元的 Windows 上建立虛擬機器。(註: <a href="https://zh.wikipedia.org/zh-tw/Hyper-V">Hyper-V - wiki</a>)</p>
 <p>Hyper-V 虛擬機器不支援 Hyper-V 以外的虛擬化應用程式。所以在安裝 ubuntu 的 Hyper-V 安裝 QEMU 會閃退。
-<a href="https://learn.microsoft.com/zh-tw/virtualization/hyper-v-on-windows/user-guide/nested-virtualization#3rd-party-virtualization-apps">第三方虛擬化 App - microsoft</a></p>
+(註: <a href="https://learn.microsoft.com/zh-tw/virtualization/hyper-v-on-windows/user-guide/nested-virtualization#3rd-party-virtualization-apps">第三方虛擬化 App - microsoft</a>)</p>
 <p>WSL 是一個能夠執行原生 Linux 二進位可執行檔（ELF 格式）的相容層。可能就是因為如此才能不用透過 Hyper-V 就能調用硬體資源讓 QEMU 跑起來。 (註: <a href="https://zh.wikipedia.org/wiki/%E9%80%82%E7%94%A8%E4%BA%8ELinux%E7%9A%84Windows%E5%AD%90%E7%B3%BB%E7%BB%9F">適用於 Linux 的 Windows 子系統 - wiki</a>)</p>
 <p>另外有聽到 jeserv 說 WSL 還沒有完成，這樣的話不知道完成後會不會要收費(?)</p>
 <h2 id="7-這篇筆記的起源"><a aria-hidden="true" class="anchor-heading" href="#7-這篇筆記的起源"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>7. 這篇筆記的起源</h2>
-<p>為了測試 Apple 裝置上的 safari 和 IOS 上的 safari 但手邊沒有相關裝置，用了保哥提過的 <a href="https://www.browserstack.com/?utm_source=google&#x26;utm_medium=cpc&#x26;utm_campaign=Search-Brand-Tier2-APAC&#x26;utm_adgroup=BrowserStack-Alpha&#x26;utm_keyword=browserstack&#x26;utm_matchtype=e&#x26;gclid=Cj0KCQjw48OaBhDWARIsAMd966DtkC0HouaetqSwwkXJ_BVh1-_-tZO4AZUvrqvR8_jZpaEBuK3yhAwaAm-IEALw_wcB">BrowserStack</a> 但因為 API 有網域限制所以沒辦法使用這個做測試。</p>
+<p>為了測試 Apple 裝置上的 safari 和 IOS 上的 safari 但手邊沒有相關裝置，</p>
+<p>用了保哥提過的 <a href="https://www.browserstack.com/?utm_source=google&#x26;utm_medium=cpc&#x26;utm_campaign=Search-Brand-Tier2-APAC&#x26;utm_adgroup=BrowserStack-Alpha&#x26;utm_keyword=browserstack&#x26;utm_matchtype=e&#x26;gclid=Cj0KCQjw48OaBhDWARIsAMd966DtkC0HouaetqSwwkXJ_BVh1-_-tZO4AZUvrqvR8_jZpaEBuK3yhAwaAm-IEALw_wcB">BrowserStack</a> 但因為 API 有網域限制所以沒辦法使用這個做測試。</p>
 <p>所以一開始使用過 VirtualBox、後來有時間才換成使用 OSX-KVM + WSL2。</p>
 <p>使用感想是模擬器都會有畫面延遲的感覺，但 OSX-KVM + WSL2 的模擬器畫面延遲相較 virtualBox 還小一點。</p>
-<p>另外因為有閃退問題所以從原本 RAM 32GB 擴充到 64GB，這樣邊用 vscode 和這個開發的時候大概會占掉 40GB 的記憶體，感覺是剛好夠用的。
-另外 CPU 會在 60~90% 跑來跑去，也是剛好蠻夠用的。
-後來買了顯示卡(本來是用內顯)，感覺動畫有比較平順，在模擬器內滑動頁面或切換頁面的時候 GPU 會在 15%~20% 跑，沒顯卡前用內顯只會用 0%~4% 在跑，所以顯示卡會有一點點幫助。</p>
+<p>另外因為有閃退問題所以硬體從原本 RAM 32GB 擴充到 64GB，這樣邊用 vscode 和這個開發的時候大概會占掉 40GB 的記憶體，感覺是剛好夠用的。</p>
+<p>另外 CPU 會在 60~90% 跑來跑去，也是剛好蠻夠用的。</p>
+<p>後來買了顯示卡(本來是用內顯)，感覺動畫有比較平順，在模擬器內滑動頁面或切換頁面的時候 GPU 會在 15%~20% 跑，沒顯卡前用內顯只會用 0%~4% 在跑，所以顯示卡會有一點點幫助。</p>
 <p>但整體來說，如果要爽用的話 CPU 好一點會更順 xD</p>
 <p>另外，下面這個筆記記錄了使用 IIS、VirtualBox、和 android 的 remote debbuging 來測網站。</p>
 <blockquote>
 <p><a href="https://hackmd.io/vy1TyPnNRESPMTwMqNuPlA">這篇筆記不公開</a></p>
 </blockquote>
-<p>這整篇筆記主要是參考這篇文章，要是沒有看到這篇文章我也沒機會用用看 OSX-KVM + WSL2，因為找不到作者的名字所以就只附上網址，感謝這個作者和免費好用的 WSL 還有我的新電腦 M( _ _)M。</p>
+<p>這整篇筆記主要是參考這篇文章，</p>
+<p>要是沒有看到這篇文章我也沒機會用用看 OSX-KVM + WSL2，</p>
+<p>因為找不到作者的名字所以就只附上網址，感謝這個作者和免費好用的 WSL 還有我的新電腦 M( _ _)M。</p>
 <ul>
 <li>以下是參考: <a href="https://blog.hal.wang/7afa8fc1/">在 Windows 上流畅使用 MacOS 虚拟机</a> 的實作過程。</li>
 </ul>

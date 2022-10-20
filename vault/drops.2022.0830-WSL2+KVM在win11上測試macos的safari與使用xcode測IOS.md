@@ -2,20 +2,19 @@
 id: o7mp336qqwyjf1d0jefmg53
 title: 0830 WSL2 + KVM 在 win11 上測試 macos 的 safari 與使用 xcode 測 IOS
 desc: ''
-updated: 1666277138340
+updated: 1666279214952
 created: 1662562033027
 tags:
   - PROG.OS
-status: w
 ---
 
 ## 1. 簡述過程
 
 目的是在 Windows 上開發的 Agular 網站可以同時在 MacOS 中的 safari 和虛擬機做測試。
 
-使用 WSL2 -> 安裝 Ubuntu -> 在 Ubuntu 裡面安裝 QEMU -> 透過 OSX-KVM 安裝 MacOS -> 透過 OSX-KVM 用 QEMU 開啟 MacOS 的虛擬機
+使用 WSL2 -> 安裝 Ubuntu -> 在 Ubuntu 裡面安裝 QEMU -> 透過 OSX-KVM 安裝 MacOS -> 透過 OSX-KVM 用 QEMU 開啟 MacOS 的虛擬機。
 
-最後設定一些東西，讓此 WSL2 內的虛擬機可以連上電腦本機的 localhost。(還有設定螢幕大小和硬體配置)
+最後設定一些東西，讓此 WSL2 內的虛擬機可以連上電腦本機的 localhost (還有設定螢幕大小和硬體配置)。
 
 ## 2. 軟硬體需求
 
@@ -45,6 +44,8 @@ Note: Older AMD CPU(s) are known to be problematic. AMD FX-8350 works but Phenom
 
 > 根據此網站以 i7-12700 為例以上硬體需求都有支援: https://openbenchmarking.org/s/Intel+Core+i7-12700
 
+以上需求來自: [OSX-KVM#requirements](https://github.com/kholia/OSX-KVM#requirements)
+
 ## 3. Ubuntu
 
 ![](/assets/images/2022-09-23-23-42-01.png)
@@ -72,55 +73,55 @@ Note: Older AMD CPU(s) are known to be problematic. AMD FX-8350 works but Phenom
 
 (1) 以系統管理員身分執行 cmd 或 powershell:
 
-```
+```cmd
 wsl --install
 ```
 
 (2) 電腦要重開機。
 
-### 4.2. 如果現在已經有安裝 WSL 了
+#### 4.1.2. 如果現在已經有安裝 WSL 了
 
 (1) 以系統管理員身分執行 cmd 或 powershell:
 
-```
+```cmd
 wsl --update
 ```
 
 (2) 用這指令重開 WSL:
 
-```
+```cmd
 wsl --shutdown
 ```
 
-### 4.3. 用 Ubuntu 打開 Linux GUI:
+### 4.2. 用 Ubuntu 打開 Linux GUI:
 
-#### 4.3.1. 打開步驟 3. 下載好的 Ubuntu
+#### 4.2.1. 打開步驟 3. 下載好的 Ubuntu
 
 ![](/assets/images/2022-10-20-15-16-01.png)
 
 ![](/assets/images/2022-10-20-15-18-37.png)
 
-> 會開啟終端機，如果想用 windows terminal 開啟可以
+> 但下去後會開啟終端機
 
 ![](/assets/images/2022-10-20-15-21-01.png)
 
-> 如果想用 windows terminal 開啟可以在這邊設定
+> 如果想用 windows terminal 開啟可以到 windows terminal 的這邊設定
 
 (1) 更新 ubuntu 套件
 
-```
+```bash
 sudo apt update
 ```
 
 (2) 試灌一個套件
 
-```
+```bash
 sudo apt install nautilus -y
 ```
 
 灌好以後輸入:
 
-```
+```bash
 nautilus
 ```
 
@@ -128,11 +129,11 @@ nautilus
 
 > 彈出視窗就代表在 windows 上成功運行 nautilus 這個 Linux GUI 了。
 
-### 4.4. 在 Ubuntu 安裝 QEMU 前
+### 4.3. 在 Ubuntu 安裝 QEMU 前
 
-#### 4.4.1. 設定套嵌化
+#### 4.3.1. 設定套嵌化
 
-WSL2 沒有預設套嵌化要自己設定 `nestedVirtualization=true`。
+WSL2 沒有預設套嵌化，要自己設定 `nestedVirtualization=true`。
 
 設定方式:
 
@@ -140,7 +141,7 @@ WSL2 沒有預設套嵌化要自己設定 `nestedVirtualization=true`。
 
 檔案內:
 
-```
+```xml
 [wsl2]
 networkingMode=bridged
 vmSwitch=ex
@@ -171,13 +172,13 @@ https://learn.microsoft.com/zh-cn/windows/wsl/wsl-config#configuration-setting-f
 
 (2) 設定並儲存完後，用這指令重開 WSL:
 
-```
+```cmd
 wsl --shutdown
 ```
 
-### 4.5. 在 Ubuntu 安裝 QEMU 並安裝 MacOS
+### 4.4. 在 Ubuntu 安裝 QEMU 並安裝 MacOS
 
-#### 4.5.1. 安裝 OSX-KVM 與準備安裝 MacOS
+#### 4.4.1. 安裝 OSX-KVM 與準備安裝 MacOS
 
 使用 OSX-KVM 安装 MacOS VM。
 
@@ -188,7 +189,7 @@ wsl --shutdown
 
 (1) 安裝 QEMU 和相關套件
 
-```
+```bash
 sudo apt-get install qemu uml-utilities virt-manager git wget libguestfs-tools p7zip-full make -y
 ```
 
@@ -196,13 +197,13 @@ sudo apt-get install qemu uml-utilities virt-manager git wget libguestfs-tools p
 
 根據 [這篇](https://www.ptt.cc/bbs/Linux/M.1622355127.A.128.html) Windows 10 會有因 KVM 的 msrs 糾錯導致 BSOD 的問題，因此也將忽略 msrs 的選項也加入
 
-```
+```bash
 echo 1 > /sys/module/kvm/parameters/ignore_msrs
 ```
 
 (3) 設定權限
 
-```
+```bash
 sudo usermod -aG kvm $(whoami)
 sudo usermod -aG libvirt $(whoami)
 sudo usermod -aG input $(whoami)
@@ -222,7 +223,7 @@ sudo usermod -aG input $(whoami)
 
 (4) clone OSX-KVM repo
 
-```
+```bash
 git clone https://github.com/kholia/OSX-KVM.git
 
 cd OSX-KVM
@@ -230,13 +231,13 @@ cd OSX-KVM
 
 (5) 取得 macOS 安裝檔
 
-```
+```bash
 ./fetch-macOS-v2.py
 ```
 
 執行後畫面如下，可以選取你要的 macOS 版本
 
-```
+```bash
 $ ./fetch-macOS-v2.py
 1. High Sierra (10.13)
 2. Mojave (10.14)
@@ -251,25 +252,25 @@ Choose a product to download (1-5): 4
 
 (6) 將下載完的檔案轉檔
 
-```
+```bash
 dmg2img BaseSystem.dmg BaseSystem.img
 ```
 
 (7) 新增一個虛擬 HDD image 將拿來灌 macOS
 
-```
+```bash
 qemu-img create -f qcow2 mac_hdd_ng.img 256G
 ```
 
 > mac_hdd_ng.img 是文件名，可以任意修改
 
-#### 4.5.2. 安裝 MacOS
+#### 4.4.2. 安裝 MacOS
 
 (1) 修改腳本
 
 先修改 `OpenCore-Boot.sh` 文件
 
-```
+```bash
 vim ./OpenCore-Boot.sh
 ```
 
@@ -284,7 +285,7 @@ vim ./OpenCore-Boot.sh
 
 (2) 執行腳本
 
-```
+```bash
 ./OpenCore-Boot.sh
 ```
 
@@ -293,9 +294,9 @@ vim ./OpenCore-Boot.sh
 接下來跟安裝 macOS 一樣 ，可以參考這篇的 STEP 14 ~ STEP 28
 [10 分鐘學會如何在 VirtualBox 安裝 macOS Monterey！](https://adersaytech.com/practical-software/install-macos-on-virtualbox.html)
 
-### 4.6. 打開 macOS，並安裝 xcode
+### 4.5. 打開 macOS，並安裝 xcode
 
-```
+```bash
 cd OSX-KVM
 ./OpenCore-Boot.sh
 ```
@@ -307,7 +308,7 @@ cd OSX-KVM
 
 最後會看到登入頁面，輸入密碼就會進到系統裡了。
 
-### 4.7. 在 macOS 裡下載 xcode
+### 4.6. 在 macOS 裡下載 xcode
 
 用 macOS 裡的 safari 到這個網頁 https://developer.apple.com/download/all/
 
@@ -342,7 +343,7 @@ wsl 的 IP 每次重啟都會變，所以要在輸入網址時要先在本機 cm
 
 > 以此圖為例 vm 裡的要測試的 angular 網站網址就是: https://192.168.64.1:4200
 
-### 畫面大小
+### 5.2. 畫面大小
 
 選 About This Mac 後選擇 Display
 ![](/assets/images/2022-10-20-22-33-47.png)
@@ -355,17 +356,17 @@ wsl 的 IP 每次重啟都會變，所以要在輸入網址時要先在本機 cm
 
 我是選 1600 x 900。
 
-因為我的螢幕是 27 吋 FHD，此視窗預設 1920 x 1080 會超出我的螢幕範圍(螢幕對這視窗來說太小了)，1600 x 900大小就很合適。
+因為我的螢幕是 27 吋 FHD，此視窗預設 1920 x 1080 會超出我的螢幕範圍(螢幕對這視窗來說太小了)，1600 x 900 大小就很合適。
 
 另外 QEMU 可以從 View > 打勾 Zoom to fit，這樣就可以調整自己想要的視窗大小，內容會等比縮放，所以你的螢幕解析度比較高的話，可以設定較大尺寸，再用這個來調整視窗大小，就不用為了讓視窗變小而讓解析度變低(設定小尺寸)。另外，解析度跟 RAM 有關，要確保自己的 RAM 有足夠空間再開高，不然會容易閃退。
 ![](/assets/images/2022-10-20-22-40-49.png)
 
-## 6. 關於 Hyper-V 和 wsl
+## 6. 關於 Hyper-V 和 WSL
 
 Hyper-V 是 Microsoft 的本機虛擬機器管理程式，它可以在執行 x86-64 位元的 Windows 上建立虛擬機器。(註: [Hyper-V - wiki](https://zh.wikipedia.org/zh-tw/Hyper-V))
 
 Hyper-V 虛擬機器不支援 Hyper-V 以外的虛擬化應用程式。所以在安裝 ubuntu 的 Hyper-V 安裝 QEMU 會閃退。
-[第三方虛擬化 App - microsoft](https://learn.microsoft.com/zh-tw/virtualization/hyper-v-on-windows/user-guide/nested-virtualization#3rd-party-virtualization-apps)
+(註: [第三方虛擬化 App - microsoft](https://learn.microsoft.com/zh-tw/virtualization/hyper-v-on-windows/user-guide/nested-virtualization#3rd-party-virtualization-apps))
 
 WSL 是一個能夠執行原生 Linux 二進位可執行檔（ELF 格式）的相容層。可能就是因為如此才能不用透過 Hyper-V 就能調用硬體資源讓 QEMU 跑起來。 (註: [適用於 Linux 的 Windows 子系統 - wiki](https://zh.wikipedia.org/wiki/%E9%80%82%E7%94%A8%E4%BA%8ELinux%E7%9A%84Windows%E5%AD%90%E7%B3%BB%E7%BB%9F))
 
@@ -373,14 +374,18 @@ WSL 是一個能夠執行原生 Linux 二進位可執行檔（ELF 格式）的�
 
 ## 7. 這篇筆記的起源
 
-為了測試 Apple 裝置上的 safari 和 IOS 上的 safari 但手邊沒有相關裝置，用了保哥提過的 [BrowserStack](https://www.browserstack.com/?utm_source=google&utm_medium=cpc&utm_campaign=Search-Brand-Tier2-APAC&utm_adgroup=BrowserStack-Alpha&utm_keyword=browserstack&utm_matchtype=e&gclid=Cj0KCQjw48OaBhDWARIsAMd966DtkC0HouaetqSwwkXJ_BVh1-_-tZO4AZUvrqvR8_jZpaEBuK3yhAwaAm-IEALw_wcB) 但因為 API 有網域限制所以沒辦法使用這個做測試。
+為了測試 Apple 裝置上的 safari 和 IOS 上的 safari 但手邊沒有相關裝置，
+
+用了保哥提過的 [BrowserStack](https://www.browserstack.com/?utm_source=google&utm_medium=cpc&utm_campaign=Search-Brand-Tier2-APAC&utm_adgroup=BrowserStack-Alpha&utm_keyword=browserstack&utm_matchtype=e&gclid=Cj0KCQjw48OaBhDWARIsAMd966DtkC0HouaetqSwwkXJ_BVh1-_-tZO4AZUvrqvR8_jZpaEBuK3yhAwaAm-IEALw_wcB) 但因為 API 有網域限制所以沒辦法使用這個做測試。
 
 所以一開始使用過 VirtualBox、後來有時間才換成使用 OSX-KVM + WSL2。
 
 使用感想是模擬器都會有畫面延遲的感覺，但 OSX-KVM + WSL2 的模擬器畫面延遲相較 virtualBox 還小一點。
 
-另外因為有閃退問題所以從原本 RAM 32GB 擴充到 64GB，這樣邊用 vscode 和這個開發的時候大概會占掉 40GB 的記憶體，感覺是剛好夠用的。
+另外因為有閃退問題所以硬體從原本 RAM 32GB 擴充到 64GB，這樣邊用 vscode 和這個開發的時候大概會占掉 40GB 的記憶體，感覺是剛好夠用的。
+
 另外 CPU 會在 60~90% 跑來跑去，也是剛好蠻夠用的。
+
 後來買了顯示卡(本來是用內顯)，感覺動畫有比較平順，在模擬器內滑動頁面或切換頁面的時候 GPU 會在 15%~20% 跑，沒顯卡前用內顯只會用 0%~4% 在跑，所以顯示卡會有一點點幫助。
 
 但整體來說，如果要爽用的話 CPU 好一點會更順 xD
@@ -389,6 +394,10 @@ WSL 是一個能夠執行原生 Linux 二進位可執行檔（ELF 格式）的�
 
 > [這篇筆記不公開](https://hackmd.io/vy1TyPnNRESPMTwMqNuPlA)
 
-這整篇筆記主要是參考這篇文章，要是沒有看到這篇文章我也沒機會用用看 OSX-KVM + WSL2，因為找不到作者的名字所以就只附上網址，感謝這個作者和免費好用的 WSL 還有我的新電腦 M( _ _)M。
+這整篇筆記主要是參考這篇文章，
+
+要是沒有看到這篇文章我也沒機會用用看 OSX-KVM + WSL2，
+
+因為找不到作者的名字所以就只附上網址，感謝這個作者和免費好用的 WSL 還有我的新電腦 M( \_ \_)M。
 
 - 以下是參考: [在 Windows 上流畅使用 MacOS 虚拟机](https://blog.hal.wang/7afa8fc1/) 的實作過程。
