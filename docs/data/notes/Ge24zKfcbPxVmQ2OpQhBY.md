@@ -1,4 +1,5 @@
 
+
 ## 1. 直接資料夾開啟 index.html，會遇到一些問題:
 
 在 angular 的 index.html 預設是 `<base href="/">`
