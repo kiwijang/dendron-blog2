@@ -1,6 +1,6 @@
-<h1 id="0830-wsl2--kvm-在-win11-上測試-macos-的-safari-與使用-xcode-測-ios"><a aria-hidden="true" class="anchor-heading" href="#0830-wsl2--kvm-在-win11-上測試-macos-的-safari-與使用-xcode-測-ios"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>0830 WSL2 + KVM 在 win11 上測試 macos 的 safari 與使用 xcode 測 IOS</h1>
+<h1 id="0830-在-windows-上測試跑在-macos-和-ios-的-angular-專案使用-wsl2--osx-kvm-和-xcode"><a aria-hidden="true" class="anchor-heading" href="#0830-在-windows-上測試跑在-macos-和-ios-的-angular-專案使用-wsl2--osx-kvm-和-xcode"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>0830 在 Windows 上測試跑在 MacOS 和 IOS 的 Angular 專案(使用 WSL2 + OSX-KVM 和 Xcode)</h1>
 <h2 id="1-簡述過程"><a aria-hidden="true" class="anchor-heading" href="#1-簡述過程"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>1. 簡述過程</h2>
-<p>目的是在 Windows 上開發的 Agular 網站可以同時在 MacOS 中的 safari 和虛擬機做測試。</p>
+<p>目的是在 Windows 上開發的 Agular 網站可以同時在 MacOS 中的 safari 和 IOS 虛擬機做測試。</p>
 <p>使用 WSL2 -> 安裝 Ubuntu -> 在 Ubuntu 裡面安裝 QEMU -> 透過 OSX-KVM 安裝 MacOS -> 透過 OSX-KVM 用 QEMU 開啟 MacOS 的虛擬機。</p>
 <p>最後設定一些東西，讓此 WSL2 內的虛擬機可以連上電腦本機的 localhost (還有設定螢幕大小和硬體配置)。</p>
 <h2 id="2-軟硬體需求"><a aria-hidden="true" class="anchor-heading" href="#2-軟硬體需求"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>2. 軟硬體需求</h2>
@@ -269,7 +269,7 @@ Choose a product to download <span class="token punctuation">(</span><span class
 <p>Hyper-V 虛擬機器不支援 Hyper-V 以外的虛擬化應用程式。所以在安裝 ubuntu 的 Hyper-V 安裝 QEMU 會閃退。
 (註: <a href="https://learn.microsoft.com/zh-tw/virtualization/hyper-v-on-windows/user-guide/nested-virtualization#3rd-party-virtualization-apps">第三方虛擬化 App - microsoft</a>)</p>
 <p>WSL 是一個能夠執行原生 Linux 二進位可執行檔（ELF 格式）的相容層。可能就是因為如此才能不用透過 Hyper-V 就能調用硬體資源讓 QEMU 跑起來。 (註: <a href="https://zh.wikipedia.org/wiki/%E9%80%82%E7%94%A8%E4%BA%8ELinux%E7%9A%84Windows%E5%AD%90%E7%B3%BB%E7%BB%9F">適用於 Linux 的 Windows 子系統 - wiki</a>)</p>
-<p>另外有聽到 jeserv 說 WSL 還沒有完成，這樣的話不知道完成後會不會要收費(?)</p>
+<p>另外有聽到 jserv 說 WSL 還沒有完成，這樣的話不知道完成後會不會要收費(?)</p>
 <h2 id="7-這篇筆記的起源"><a aria-hidden="true" class="anchor-heading" href="#7-這篇筆記的起源"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>7. 這篇筆記的起源</h2>
 <p>為了測試 Apple 裝置上的 safari 和 IOS 上的 safari 但手邊沒有相關裝置，</p>
 <p>用了保哥提過的 <a href="https://www.browserstack.com/?utm_source=google&#x26;utm_medium=cpc&#x26;utm_campaign=Search-Brand-Tier2-APAC&#x26;utm_adgroup=BrowserStack-Alpha&#x26;utm_keyword=browserstack&#x26;utm_matchtype=e&#x26;gclid=Cj0KCQjw48OaBhDWARIsAMd966DtkC0HouaetqSwwkXJ_BVh1-_-tZO4AZUvrqvR8_jZpaEBuK3yhAwaAm-IEALw_wcB">BrowserStack</a> 但因為 API 有網域限制所以沒辦法使用這個做測試。</p>

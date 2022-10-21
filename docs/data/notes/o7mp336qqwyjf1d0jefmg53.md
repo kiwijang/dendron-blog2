@@ -2,7 +2,7 @@
 
 ## 1. 簡述過程
 
-目的是在 Windows 上開發的 Agular 網站可以同時在 MacOS 中的 safari 和虛擬機做測試。
+目的是在 Windows 上開發的 Agular 網站可以同時在 MacOS 中的 safari 和 IOS 虛擬機做測試。
 
 使用 WSL2 -> 安裝 Ubuntu -> 在 Ubuntu 裡面安裝 QEMU -> 透過 OSX-KVM 安裝 MacOS -> 透過 OSX-KVM 用 QEMU 開啟 MacOS 的虛擬機。
 
@@ -362,7 +362,7 @@ Hyper-V 虛擬機器不支援 Hyper-V 以外的虛擬化應用程式。所以在
 
 WSL 是一個能夠執行原生 Linux 二進位可執行檔（ELF 格式）的相容層。可能就是因為如此才能不用透過 Hyper-V 就能調用硬體資源讓 QEMU 跑起來。 (註: [適用於 Linux 的 Windows 子系統 - wiki](https://zh.wikipedia.org/wiki/%E9%80%82%E7%94%A8%E4%BA%8ELinux%E7%9A%84Windows%E5%AD%90%E7%B3%BB%E7%BB%9F))
 
-另外有聽到 jeserv 說 WSL 還沒有完成，這樣的話不知道完成後會不會要收費(?)
+另外有聽到 jserv 說 WSL 還沒有完成，這樣的話不知道完成後會不會要收費(?)
 
 ## 7. 這篇筆記的起源
 
@@ -390,6 +390,6 @@ WSL 是一個能夠執行原生 Linux 二進位可執行檔（ELF 格式）的�
 
 要是沒有看到這篇文章我也沒機會用用看 OSX-KVM + WSL2，
 
-因為找不到作者的名字所以就只附上網址，感謝這個作者和免費好用的 WSL 還有我的新電腦 M( \_ \_)M。
+因為找不到作者的名字所以就只附上網址，感謝這個作者和免費好用的 WSL 還有我的新電腦 M( _ _)M。
 
 - 主要參考自: [在 Windows 上流畅使用 MacOS 虚拟机](https://blog.hal.wang/7afa8fc1/)

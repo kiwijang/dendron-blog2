@@ -11,8 +11,8 @@
       "links": [],
       "anchors": {},
       "fname": "403",
-      "updated": 1666281608195,
-      "created": 1666281608195,
+      "updated": 1666317765007,
+      "created": 1666317765007,
       "parent": null,
       "children": [],
       "data": {}
@@ -827,7 +827,7 @@
     },
     "o7mp336qqwyjf1d0jefmg53": {
       "id": "o7mp336qqwyjf1d0jefmg53",
-      "title": "0830 WSL2 + KVM 在 win11 上測試 macos 的 safari 與使用 xcode 測 IOS",
+      "title": "0830 在 Windows 上測試跑在 MacOS 和 IOS 的 Angular 專案(使用 WSL2 + OSX-KVM 和 Xcode)",
       "vault": {
         "fsPath": "vault"
       },
@@ -861,12 +861,12 @@
             "start": {
               "line": 38,
               "column": 17,
-              "offset": 1019
+              "offset": 1024
             },
             "end": {
               "line": 38,
               "column": 30,
-              "offset": 1032
+              "offset": 1037
             },
             "indent": []
           },
@@ -1071,12 +1071,12 @@
         }
       },
       "fname": "drops.2022.0830-WSL2+KVM在win11上測試macos的safari與使用xcode測IOS",
-      "updated": 1666281598693,
+      "updated": 1666317755692,
       "created": 1662562033027,
       "parent": "4MPQXb6WwUg0kGHxTPD7x",
       "children": [],
       "data": {},
-      "contentHash": "d8db963b47f62b62f7525fd2a5264e49",
+      "contentHash": "a6cad221bd20a7f0d3240bf25493b6cb",
       "custom": {},
       "tags": [
         "PROG.OS"
