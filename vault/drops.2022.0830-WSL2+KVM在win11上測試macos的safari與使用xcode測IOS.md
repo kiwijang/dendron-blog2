@@ -2,7 +2,7 @@
 id: o7mp336qqwyjf1d0jefmg53
 title: 0830 在 Windows 上測試跑在 MacOS 和 IOS 的 Angular 專案(使用 WSL2 + OSX-KVM 和 Xcode) 
 desc: ''
-updated: 1666320015651
+updated: 1666322007452
 created: 1662562033027
 tags:
   - PROG.OS
@@ -341,7 +341,7 @@ wsl 的 IP 每次重啟都會變，所以要在輸入網址時要先在本機 cm
 
 ![](/assets/images/2022-10-20-21-32-08.png)
 
-> 以此圖為例 vm 裡的要測試的 angular 網站網址就是: https://192.168.64.1:4200
+> 以此圖為例 vm 裡的要測試的 angular 網站網址就是: 192.168.64.1:4200
 
 ### 5.2. 畫面大小
 
