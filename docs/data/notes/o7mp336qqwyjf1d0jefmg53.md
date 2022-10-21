@@ -6,7 +6,7 @@
 
 本篇筆記主要目的是要將在 Windows 上開發中的 Angular 網站在開發時的 BrowserSync，可以同時在 MacOS 虛擬機中的 safari、IOS 虛擬機中的 safari 中顯示。
 
-使用 WSL2 -> 安裝 Ubuntu -> 在 Ubuntu 裡面安裝 QEMU -> 透過 OSX-KVM 安裝 MacOS -> 透過 OSX-KVM 用 QEMU 開啟 MacOS 的虛擬機。
+使用 WSL2 -> 安裝 Ubuntu -> 在 Ubuntu 裡面安裝 QEMU -> 透過 OSX-KVM 安裝 MacOS -> 透過 OSX-KVM 用 QEMU 開啟 MacOS 的虛擬機 -> 在 MacOS 虛擬機中安裝 Xcode 並使用 IOS 模擬器。
 
 最後設定一些東西，讓此 WSL2 內的虛擬機可以連上電腦本機的 localhost (還有設定螢幕大小和硬體配置)。
 
