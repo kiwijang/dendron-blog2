@@ -2,7 +2,9 @@
 
 ## 1. 簡述過程
 
-目的是在 Windows 上開發的 Agular 網站可以同時在 MacOS 中的 safari 和 IOS 虛擬機做測試。
+主要是想在 Windows 上使用 safari 來檢查網頁畫面是否跑版。
+
+本篇筆記主要目的是要將在 Windows 上開發中的 Angular 網站在開發時的 BrowserSync，可以同時在 MacOS 虛擬機中的 safari、IOS 虛擬機中的 safari 中顯示。
 
 使用 WSL2 -> 安裝 Ubuntu -> 在 Ubuntu 裡面安裝 QEMU -> 透過 OSX-KVM 安裝 MacOS -> 透過 OSX-KVM 用 QEMU 開啟 MacOS 的虛擬機。
 
