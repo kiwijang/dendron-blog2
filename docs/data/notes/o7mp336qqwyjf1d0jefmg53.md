@@ -384,7 +384,7 @@ WSL 是一個能夠執行原生 Linux 二進位可執行檔（ELF 格式）的�
 
 另外，下面這個筆記記錄了使用 IIS、VirtualBox、和 android 的 remote debbuging 來測網站。
 
-> [這篇筆記不公開](https://hackmd.io/vy1TyPnNRESPMTwMqNuPlA)
+> [(這篇筆記不公開)IIS、VirtualBox、和 android 的 remote debbuging](https://hackmd.io/vy1TyPnNRESPMTwMqNuPlA)
 
 這整篇筆記主要是參考這篇文章，
 

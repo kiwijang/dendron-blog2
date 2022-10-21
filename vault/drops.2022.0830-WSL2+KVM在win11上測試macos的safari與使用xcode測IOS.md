@@ -2,7 +2,7 @@
 id: o7mp336qqwyjf1d0jefmg53
 title: 0830 在 Windows 上測試跑在 MacOS 和 IOS 的 Angular 專案(使用 WSL2 + OSX-KVM 和 Xcode) 
 desc: ''
-updated: 1666317755692
+updated: 1666320015651
 created: 1662562033027
 tags:
   - PROG.OS
@@ -392,7 +392,7 @@ WSL 是一個能夠執行原生 Linux 二進位可執行檔（ELF 格式）的�
 
 另外，下面這個筆記記錄了使用 IIS、VirtualBox、和 android 的 remote debbuging 來測網站。
 
-> [這篇筆記不公開](https://hackmd.io/vy1TyPnNRESPMTwMqNuPlA)
+> [(這篇筆記不公開)IIS、VirtualBox、和 android 的 remote debbuging](https://hackmd.io/vy1TyPnNRESPMTwMqNuPlA)
 
 這整篇筆記主要是參考這篇文章，
 
