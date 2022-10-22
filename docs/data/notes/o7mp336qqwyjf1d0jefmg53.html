@@ -207,7 +207,7 @@ Choose a product to download <span class="token punctuation">(</span><span class
 </blockquote>
 <h4 id="442-安裝-macos"><a aria-hidden="true" class="anchor-heading" href="#442-安裝-macos"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>4.4.2. 安裝 MacOS</h4>
 <p>(1) 修改腳本</p>
-<p>先修改 <code>OpenCore-Boot.sh</code> 文件</p>
+<p>先修改 <code>OpenCore-Boot.sh</code> 文件，設定 MacOS 的虛擬硬體規格。</p>
 <pre class="language-bash"><code class="language-bash"><span class="token function">vim</span> ./OpenCore-Boot.sh
 </code></pre>
 <ul>
@@ -223,6 +223,7 @@ Choose a product to download <span class="token punctuation">(</span><span class
 <p>(2) 執行腳本</p>
 <pre class="language-bash"><code class="language-bash">./OpenCore-Boot.sh
 </code></pre>
+<p>會以設定的規格打開虛擬機。</p>
 <p>(3) macOS 安裝畫面</p>
 <p>接下來跟安裝 macOS 一樣 ，可以參考這篇的 STEP 14 ~ STEP 28
 <a href="https://adersaytech.com/practical-software/install-macos-on-virtualbox.html">10 分鐘學會如何在 VirtualBox 安裝 macOS Monterey！</a></p>
@@ -253,7 +254,7 @@ Choose a product to download <span class="token punctuation">(</span><span class
 </blockquote>
 <p><img src="/assets/images/wsl.gif"></p>
 <blockquote>
-<p>每次都這樣打開就可以使用了。</p>
+<p>每次都這樣打開就可以使用了。如果要用另一種方法開啟請參考 4.4.1.(1)。</p>
 </blockquote>
 <h2 id="5-相關設定"><a aria-hidden="true" class="anchor-heading" href="#5-相關設定"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>5. 相關設定</h2>
 <h3 id="51-angular-在-ng-serve-設定---host-0000"><a aria-hidden="true" class="anchor-heading" href="#51-angular-在-ng-serve-設定---host-0000"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>5.1. Angular 在 ng serve 設定 <code>--host 0.0.0.0</code></h3>
@@ -294,6 +295,7 @@ Choose a product to download <span class="token punctuation">(</span><span class
 <blockquote>
 <p><a href="https://hackmd.io/vy1TyPnNRESPMTwMqNuPlA">(這篇筆記不公開)IIS、VirtualBox、和 android 的 remote debbuging</a></p>
 </blockquote>
+<hr>
 <p>這整篇筆記主要是參考這篇文章，</p>
 <p>要是沒有看到這篇文章我也沒機會用用看 OSX-KVM + WSL2，</p>
 <p>因為找不到作者的名字所以就只附上網址，感謝這個作者和免費好用的 WSL 還有我的新電腦 M( _ _)M。</p>

@@ -2,7 +2,7 @@
 id: o7mp336qqwyjf1d0jefmg53
 title: 0830 在 Windows 使用 MacOS 虛擬機 (使用 WSL2 + OSX-KVM) 
 desc: ''
-updated: 1666428030653
+updated: 1666432168836
 created: 1662562033027
 tags:
   - PROG.OS
@@ -273,7 +273,7 @@ qemu-img create -f qcow2 mac_hdd_ng.img 256G
 
 (1) 修改腳本
 
-先修改 `OpenCore-Boot.sh` 文件
+先修改 `OpenCore-Boot.sh` 文件，設定 MacOS 的虛擬硬體規格。
 
 ```bash
 vim ./OpenCore-Boot.sh
@@ -293,6 +293,8 @@ vim ./OpenCore-Boot.sh
 ```bash
 ./OpenCore-Boot.sh
 ```
+
+會以設定的規格打開虛擬機。
 
 (3) macOS 安裝畫面
 
@@ -336,7 +338,7 @@ https://developer.apple.com/support/xcode/
 > 最後就可以選擇自己需要的模擬器來用了。
 
 ![](/assets/images/wsl.gif)
-> 每次都這樣打開就可以使用了。
+> 每次都這樣打開就可以使用了。如果要用另一種方法開啟請參考 4.4.1.(1)。
 
 ## 5. 相關設定
 
@@ -401,6 +403,8 @@ WSL 是一個能夠執行原生 Linux 二進位可執行檔（ELF 格式）的�
 另外，下面這個筆記記錄了使用 IIS、VirtualBox、和 android 的 remote debbuging 來測網站。
 
 > [(這篇筆記不公開)IIS、VirtualBox、和 android 的 remote debbuging](https://hackmd.io/vy1TyPnNRESPMTwMqNuPlA)
+
+---
 
 這整篇筆記主要是參考這篇文章，
 
