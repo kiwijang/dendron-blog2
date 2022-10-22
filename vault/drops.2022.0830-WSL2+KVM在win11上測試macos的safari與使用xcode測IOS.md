@@ -2,7 +2,7 @@
 id: o7mp336qqwyjf1d0jefmg53
 title: 0830 在 Windows 使用 MacOS 虛擬機 (使用 WSL2 + OSX-KVM) 
 desc: ''
-updated: 1666347379186
+updated: 1666428030653
 created: 1662562033027
 tags:
   - PROG.OS
@@ -168,7 +168,9 @@ https://learn.microsoft.com/zh-tw/windows/wsl/wsl-config#wslconfig
 
 https://learn.microsoft.com/zh-cn/windows/wsl/wsl-config#configuration-setting-for-wslconfig
 
-> kernelCommandLine 是拿來設定設定 QEMU 的東西，相關參考 [怎样设置 QEMU 支持 enable_apicv 和 enable_shadow_vmcs?](https://www.zhihu.com/question/338768967) > ![](/assets/images/2022-10-20-16-06-02.png)
+- kernelCommandLine 是拿來設定設定 QEMU 的東西，相關參考 [怎样设置 QEMU 支持 enable_apicv 和 enable_shadow_vmcs?](https://www.zhihu.com/question/338768967) 
+
+![](/assets/images/2022-10-20-16-06-02.png)
 > 根據下面這個網站我的 CPU 是 i7-12700 有支持 APICv 和 shadow_vmcs
 > https://openbenchmarking.org/s/Intel+Core+i7-12700
 
@@ -194,6 +196,7 @@ wsl --shutdown
 ```bash
 sudo apt-get install qemu uml-utilities virt-manager git wget libguestfs-tools p7zip-full make -y
 ```
+> 我沒有用到 `virt-manager`，如果最後想用 `virt-manager` 可參考 [OSX-KVM#installation](https://github.com/kholia/OSX-KVM#installation) 或 [使用 virt-manager 管理](https://blog.hal.wang/7afa8fc1/#%E4%BD%BF%E7%94%A8-virt-manager-%E7%AE%A1%E7%90%86)
 
 (2) 設定參數
 
@@ -279,7 +282,7 @@ vim ./OpenCore-Boot.sh
 - `ALLOCATED_RAM` 記憶體，建議至少 8GB
 - `CPU_THREADS` CPU 執行緒
 - `CPU_CORES` CUP 核心
-- `-drive id=MacHDD,if=none,file="$REPO_PATH/mac.img",format=qcow2` 其中的 `$REPO_PATH/mac_hdd_ng.img` 是上一部建立的虛擬 HDD。
+- `-drive id=MacHDD,if=none,file="$REPO_PATH/mac.img",format=qcow2` 其中的 `$REPO_PATH/mac_hdd_ng.img` 是上一步驟建立的虛擬 HDD。
 
 ![](/assets/images/2022-10-20-18-04-53.png)
 
@@ -331,6 +334,9 @@ https://developer.apple.com/support/xcode/
 ![](/assets/images/2022-10-20-20-22-36.png)
 
 > 最後就可以選擇自己需要的模擬器來用了。
+
+![](/assets/images/wsl.gif)
+> 每次都這樣打開就可以使用了。
 
 ## 5. 相關設定
 

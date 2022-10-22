@@ -11,8 +11,8 @@
       "links": [],
       "anchors": {},
       "fname": "403",
-      "updated": 1666347385904,
-      "created": 1666347385904,
+      "updated": 1666430940094,
+      "created": 1666430940094,
       "parent": null,
       "children": [],
       "data": {}
@@ -874,6 +874,33 @@
           "to": {
             "fname": "tags.requirements"
           }
+        },
+        {
+          "type": "wiki",
+          "from": {
+            "fname": "drops.2022.0830-WSL2+KVM在win11上測試macos的safari與使用xcode測IOS",
+            "id": "o7mp336qqwyjf1d0jefmg53",
+            "vaultName": "vault"
+          },
+          "value": "tags.installation",
+          "alias": "#installation",
+          "position": {
+            "start": {
+              "line": 190,
+              "column": 58,
+              "offset": 4455
+            },
+            "end": {
+              "line": 190,
+              "column": 71,
+              "offset": 4468
+            },
+            "indent": []
+          },
+          "xvault": false,
+          "to": {
+            "fname": "tags.installation"
+          }
         }
       ],
       "anchors": {
@@ -993,7 +1020,7 @@
           "type": "header",
           "text": "4.4. 在 Ubuntu 安裝 QEMU 並安裝 MacOS",
           "value": "44-在-ubuntu-安裝-qemu-並安裝-macos",
-          "line": 180,
+          "line": 182,
           "column": 0,
           "depth": 3
         },
@@ -1001,7 +1028,7 @@
           "type": "header",
           "text": "4.4.1. 安裝 OSX-KVM 與準備安裝 MacOS",
           "value": "441-安裝-osx-kvm-與準備安裝-macos",
-          "line": 182,
+          "line": 184,
           "column": 0,
           "depth": 4
         },
@@ -1009,7 +1036,7 @@
           "type": "header",
           "text": "4.4.2. 安裝 MacOS",
           "value": "442-安裝-macos",
-          "line": 268,
+          "line": 271,
           "column": 0,
           "depth": 4
         },
@@ -1017,7 +1044,7 @@
           "type": "header",
           "text": "4.5. 打開 macOS，並安裝 xcode",
           "value": "45-打開-macos並安裝-xcode",
-          "line": 298,
+          "line": 301,
           "column": 0,
           "depth": 3
         },
@@ -1025,7 +1052,7 @@
           "type": "header",
           "text": "4.6. 在 macOS 裡下載 xcode",
           "value": "46-在-macos-裡下載-xcode",
-          "line": 312,
+          "line": 315,
           "column": 0,
           "depth": 3
         },
@@ -1033,7 +1060,7 @@
           "type": "header",
           "text": "5. 相關設定",
           "value": "5-相關設定",
-          "line": 334,
+          "line": 340,
           "column": 0,
           "depth": 2
         },
@@ -1041,7 +1068,7 @@
           "type": "header",
           "text": "5.1. Angular 在 ng serve 設定",
           "value": "51-angular-在-ng-serve-設定",
-          "line": 336,
+          "line": 342,
           "column": 0,
           "depth": 3
         },
@@ -1049,7 +1076,7 @@
           "type": "header",
           "text": "5.2. 畫面大小",
           "value": "52-畫面大小",
-          "line": 347,
+          "line": 353,
           "column": 0,
           "depth": 3
         },
@@ -1057,7 +1084,7 @@
           "type": "header",
           "text": "6. 關於 Hyper-V 和 WSL",
           "value": "6-關於-hyper-v-和-wsl",
-          "line": 365,
+          "line": 371,
           "column": 0,
           "depth": 2
         },
@@ -1065,18 +1092,18 @@
           "type": "header",
           "text": "7. 這篇筆記的起源",
           "value": "7-這篇筆記的起源",
-          "line": 376,
+          "line": 382,
           "column": 0,
           "depth": 2
         }
       },
       "fname": "drops.2022.0830-WSL2+KVM在win11上測試macos的safari與使用xcode測IOS",
-      "updated": 1666347379186,
+      "updated": 1666428030653,
       "created": 1662562033027,
       "parent": "4MPQXb6WwUg0kGHxTPD7x",
       "children": [],
       "data": {},
-      "contentHash": "238b0765c7c8d0beb314cf2dc27e8ab0",
+      "contentHash": "0a73999f955ddfccb362a01d90070216",
       "custom": {},
       "tags": [
         "PROG.OS"

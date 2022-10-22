@@ -121,9 +121,12 @@ kernelCommandLine=intel_iommu=on iommu=pt kvm.ignore_msrs=1 kvm-intel.nested=1 k
 <li><code>.wslconfig</code> 的配置及參數，微軟官網說明:</li>
 </ul>
 <p><a href="https://learn.microsoft.com/zh-cn/windows/wsl/wsl-config#configuration-setting-for-wslconfig">https://learn.microsoft.com/zh-cn/windows/wsl/wsl-config#configuration-setting-for-wslconfig</a></p>
+<ul>
+<li>kernelCommandLine 是拿來設定設定 QEMU 的東西，相關參考 <a href="https://www.zhihu.com/question/338768967">怎样设置 QEMU 支持 enable_apicv 和 enable_shadow_vmcs?</a> </li>
+</ul>
+<p><img src="/assets/images/2022-10-20-16-06-02.png"></p>
 <blockquote>
-<p>kernelCommandLine 是拿來設定設定 QEMU 的東西，相關參考 <a href="https://www.zhihu.com/question/338768967">怎样设置 QEMU 支持 enable_apicv 和 enable_shadow_vmcs?</a> > <img src="/assets/images/2022-10-20-16-06-02.png">
-根據下面這個網站我的 CPU 是 i7-12700 有支持 APICv 和 shadow_vmcs
+<p>根據下面這個網站我的 CPU 是 i7-12700 有支持 APICv 和 shadow_vmcs
 <a href="https://openbenchmarking.org/s/Intel+Core+i7-12700">https://openbenchmarking.org/s/Intel+Core+i7-12700</a></p>
 </blockquote>
 <p>(2) 設定並儲存完後，用這指令重開 WSL:</p>
@@ -144,6 +147,9 @@ kernelCommandLine=intel_iommu=on iommu=pt kvm.ignore_msrs=1 kvm-intel.nested=1 k
 <p>(1) 安裝 QEMU 和相關套件</p>
 <pre class="language-bash"><code class="language-bash"><span class="token function">sudo</span> <span class="token function">apt-get</span> <span class="token function">install</span> qemu uml-utilities virt-manager <span class="token function">git</span> <span class="token function">wget</span> libguestfs-tools p7zip-full <span class="token function">make</span> -y
 </code></pre>
+<blockquote>
+<p>我沒有用到 <code>virt-manager</code>，如果最後想用 <code>virt-manager</code> 可參考 <a href="https://github.com/kholia/OSX-KVM#installation">OSX-KVM#installation</a> 或 <a href="https://blog.hal.wang/7afa8fc1/#%E4%BD%BF%E7%94%A8-virt-manager-%E7%AE%A1%E7%90%86">使用 virt-manager 管理</a></p>
+</blockquote>
 <p>(2) 設定參數</p>
 <p>根據 <a href="https://www.ptt.cc/bbs/Linux/M.1622355127.A.128.html">這篇</a> Windows 10 會有因 KVM 的 msrs 糾錯導致 BSOD 的問題，因此也將忽略 msrs 的選項也加入</p>
 <pre class="language-bash"><code class="language-bash"><span class="token builtin class-name">echo</span> <span class="token number">1</span> <span class="token operator">></span> /sys/module/kvm/parameters/ignore_msrs
@@ -208,7 +214,7 @@ Choose a product to download <span class="token punctuation">(</span><span class
 <li><code>ALLOCATED_RAM</code> 記憶體，建議至少 8GB</li>
 <li><code>CPU_THREADS</code> CPU 執行緒</li>
 <li><code>CPU_CORES</code> CUP 核心</li>
-<li><code>-drive id=MacHDD,if=none,file="$REPO_PATH/mac.img",format=qcow2</code> 其中的 <code>$REPO_PATH/mac_hdd_ng.img</code> 是上一部建立的虛擬 HDD。</li>
+<li><code>-drive id=MacHDD,if=none,file="$REPO_PATH/mac.img",format=qcow2</code> 其中的 <code>$REPO_PATH/mac_hdd_ng.img</code> 是上一步驟建立的虛擬 HDD。</li>
 </ul>
 <p><img src="/assets/images/2022-10-20-18-04-53.png"></p>
 <blockquote>
@@ -244,6 +250,10 @@ Choose a product to download <span class="token punctuation">(</span><span class
 <p><img src="/assets/images/2022-10-20-20-22-36.png"></p>
 <blockquote>
 <p>最後就可以選擇自己需要的模擬器來用了。</p>
+</blockquote>
+<p><img src="/assets/images/wsl.gif"></p>
+<blockquote>
+<p>每次都這樣打開就可以使用了。</p>
 </blockquote>
 <h2 id="5-相關設定"><a aria-hidden="true" class="anchor-heading" href="#5-相關設定"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>5. 相關設定</h2>
 <h3 id="51-angular-在-ng-serve-設定---host-0000"><a aria-hidden="true" class="anchor-heading" href="#51-angular-在-ng-serve-設定---host-0000"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>5.1. Angular 在 ng serve 設定 <code>--host 0.0.0.0</code></h3>
