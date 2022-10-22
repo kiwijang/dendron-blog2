@@ -2,9 +2,9 @@
 
 ## 1. 簡述過程
 
-主要是想在 Windows 上使用 safari 來檢查網頁畫面是否跑版。
+想在 Windows 上使用 safari 來檢查網頁畫面是否跑版。
 
-本篇筆記主要目的是要將在 Windows 上開發中的 Angular 網站在開發時的 BrowserSync，可以同時在 MacOS 虛擬機中的 safari、IOS 虛擬機中的 safari 中顯示。
+所以要將在 Windows 上開發中的 Angular 網站在開發同時同步顯示在 MacOS 虛擬機中的 safari、IOS 虛擬機中的 safari 中。
 
 使用 WSL2 -> 安裝 Ubuntu -> 在 Ubuntu 裡面安裝 QEMU -> 透過 OSX-KVM 安裝 MacOS -> 透過 OSX-KVM 用 QEMU 開啟 MacOS 的虛擬機 -> 在 MacOS 虛擬機中安裝 Xcode 並使用 IOS 模擬器。
 
@@ -14,7 +14,7 @@
 
 ### 2.1. WSL2
 
-您必須執行 Windows 10 2004 版和更新版本， (組建 19041 和更新版本) 或 Windows 11。
+Windows 10 2004 版和更新版本， (組建 19041 和更新版本) 或 Windows 11。
 
 ### 2.2. Ubuntu
 
