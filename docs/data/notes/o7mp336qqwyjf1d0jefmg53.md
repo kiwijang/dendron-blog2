@@ -131,7 +131,7 @@ WSL2 沒有預設套嵌化，要自己設定 `nestedVirtualization=true`。
 
 設定方式:
 
-(1) 在 Windows 中，在用戶文件夾下新建一個 `.wslconfig` 檔案 C:\Users\%User%\.wslconfig。（User 是你的 Windows 系统用户名）
+(1) 在 Windows 中，在用戶文件夾下新建一個 `.wslconfig` 檔案 `C:\Users\%User%\.wslconfig`。（User 是你的 Windows 系统用户名）
 
 檔案內:
 
@@ -188,7 +188,6 @@ wsl --shutdown
 ```bash
 sudo apt-get install qemu uml-utilities virt-manager git wget libguestfs-tools p7zip-full make -y
 ```
-> 我沒有用到 `virt-manager`，如果最後想用 `virt-manager` 可參考 [OSX-KVM#installation](https://github.com/kholia/OSX-KVM#installation) 或 [使用 virt-manager 管理](https://blog.hal.wang/7afa8fc1/#%E4%BD%BF%E7%94%A8-virt-manager-%E7%AE%A1%E7%90%86)
 
 (2) 設定參數
 
@@ -331,6 +330,8 @@ https://developer.apple.com/support/xcode/
 
 ![](/assets/images/wsl.gif)
 > 每次都這樣打開就可以使用了。如果要用另一種方法開啟請參考 4.4.1.(1)。
+
+> 我沒有用到 `virt-manager`，如果最後想用 `virt-manager` 可參考 [OSX-KVM#installation](https://github.com/kholia/OSX-KVM#installation) 或 [使用 virt-manager 管理](https://blog.hal.wang/7afa8fc1/#%E4%BD%BF%E7%94%A8-virt-manager-%E7%AE%A1%E7%90%86)
 
 ## 5. 相關設定
 

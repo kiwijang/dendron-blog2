@@ -92,7 +92,7 @@
 <h4 id="431-設定套嵌化"><a aria-hidden="true" class="anchor-heading" href="#431-設定套嵌化"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>4.3.1. 設定套嵌化</h4>
 <p>WSL2 沒有預設套嵌化，要自己設定 <code>nestedVirtualization=true</code>。</p>
 <p>設定方式:</p>
-<p>(1) 在 Windows 中，在用戶文件夾下新建一個 <code>.wslconfig</code> 檔案 C:\Users\%User%.wslconfig。（User 是你的 Windows 系统用户名）</p>
+<p>(1) 在 Windows 中，在用戶文件夾下新建一個 <code>.wslconfig</code> 檔案 <code>C:\Users\%User%\.wslconfig</code>。（User 是你的 Windows 系统用户名）</p>
 <p>檔案內:</p>
 <pre class="language-xml"><code class="language-xml">[wsl2]
 networkingMode=bridged
@@ -147,9 +147,6 @@ kernelCommandLine=intel_iommu=on iommu=pt kvm.ignore_msrs=1 kvm-intel.nested=1 k
 <p>(1) 安裝 QEMU 和相關套件</p>
 <pre class="language-bash"><code class="language-bash"><span class="token function">sudo</span> <span class="token function">apt-get</span> <span class="token function">install</span> qemu uml-utilities virt-manager <span class="token function">git</span> <span class="token function">wget</span> libguestfs-tools p7zip-full <span class="token function">make</span> -y
 </code></pre>
-<blockquote>
-<p>我沒有用到 <code>virt-manager</code>，如果最後想用 <code>virt-manager</code> 可參考 <a href="https://github.com/kholia/OSX-KVM#installation">OSX-KVM#installation</a> 或 <a href="https://blog.hal.wang/7afa8fc1/#%E4%BD%BF%E7%94%A8-virt-manager-%E7%AE%A1%E7%90%86">使用 virt-manager 管理</a></p>
-</blockquote>
 <p>(2) 設定參數</p>
 <p>根據 <a href="https://www.ptt.cc/bbs/Linux/M.1622355127.A.128.html">這篇</a> Windows 10 會有因 KVM 的 msrs 糾錯導致 BSOD 的問題，因此也將忽略 msrs 的選項也加入</p>
 <pre class="language-bash"><code class="language-bash"><span class="token builtin class-name">echo</span> <span class="token number">1</span> <span class="token operator">></span> /sys/module/kvm/parameters/ignore_msrs
@@ -255,6 +252,9 @@ Choose a product to download <span class="token punctuation">(</span><span class
 <p><img src="/assets/images/wsl.gif"></p>
 <blockquote>
 <p>每次都這樣打開就可以使用了。如果要用另一種方法開啟請參考 4.4.1.(1)。</p>
+</blockquote>
+<blockquote>
+<p>我沒有用到 <code>virt-manager</code>，如果最後想用 <code>virt-manager</code> 可參考 <a href="https://github.com/kholia/OSX-KVM#installation">OSX-KVM#installation</a> 或 <a href="https://blog.hal.wang/7afa8fc1/#%E4%BD%BF%E7%94%A8-virt-manager-%E7%AE%A1%E7%90%86">使用 virt-manager 管理</a></p>
 </blockquote>
 <h2 id="5-相關設定"><a aria-hidden="true" class="anchor-heading" href="#5-相關設定"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>5. 相關設定</h2>
 <h3 id="51-angular-在-ng-serve-設定---host-0000"><a aria-hidden="true" class="anchor-heading" href="#51-angular-在-ng-serve-設定---host-0000"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>5.1. Angular 在 ng serve 設定 <code>--host 0.0.0.0</code></h3>
