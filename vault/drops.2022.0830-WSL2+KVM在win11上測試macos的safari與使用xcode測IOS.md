@@ -2,7 +2,7 @@
 id: o7mp336qqwyjf1d0jefmg53
 title: 0830 在 Windows 使用 MacOS 虛擬機 (使用 WSL2 + OSX-KVM) 
 desc: ''
-updated: 1666434391415
+updated: 1666435847104
 created: 1662562033027
 tags:
   - PROG.OS
@@ -337,7 +337,7 @@ https://developer.apple.com/support/xcode/
 > 最後就可以選擇自己需要的模擬器來用了。
 
 ![](/assets/images/wsl.gif)
-> 每次都這樣打開就可以使用了。如果要用另一種方法開啟請參考 4.4.1.(1)。
+> 每次都這樣打開就可以使用了。
 
 > 我沒有用到 `virt-manager`，如果最後想用 `virt-manager` 可參考 [OSX-KVM#installation](https://github.com/kholia/OSX-KVM#installation) 或 [使用 virt-manager 管理](https://blog.hal.wang/7afa8fc1/#%E4%BD%BF%E7%94%A8-virt-manager-%E7%AE%A1%E7%90%86)
 
