@@ -2,7 +2,7 @@
 id: o7mp336qqwyjf1d0jefmg53
 title: 0830 在 Windows 使用 MacOS 虛擬機 (使用 WSL2 + OSX-KVM) 
 desc: ''
-updated: 1666435847104
+updated: 1666439552698
 created: 1662562033027
 tags:
   - PROG.OS
@@ -12,7 +12,7 @@ tags:
 
 想在 Windows 上使用 safari 來檢查網頁畫面是否跑版。
 
-所以要將在 Windows 上開發中的 Angular 網站在開發同時同步顯示在 MacOS 虛擬機中的 safari、IOS 虛擬機中的 safari 中。
+所以要讓開發中的 Angular 網站在開發同時同步顯示在 MacOS 虛擬機中的 safari、IOS 虛擬機中的 safari 中。
 
 使用 WSL2 -> 安裝 Ubuntu -> 在 Ubuntu 裡面安裝 QEMU -> 透過 OSX-KVM 安裝 MacOS -> 透過 OSX-KVM 用 QEMU 開啟 MacOS 的虛擬機 -> 在 MacOS 虛擬機中安裝 Xcode 並使用 IOS 模擬器。
 
@@ -104,10 +104,6 @@ wsl --shutdown
 ![](/assets/images/2022-10-20-15-18-37.png)
 
 > 按下去後會開啟終端機
-
-![](/assets/images/2022-10-20-15-21-01.png)
-
-> 如果想用 windows terminal 開啟可以到 windows terminal 的這邊設定
 
 (1) 更新 ubuntu 套件
 
@@ -297,8 +293,12 @@ vim ./OpenCore-Boot.sh
 
 (3) macOS 安裝畫面
 
-接下來跟安裝 macOS 一樣 ，可以參考這篇的 STEP 14 ~ STEP 28
+接下來跟安裝 macOS 一樣 ，可以參考這幾篇:
+
+- 這篇的 STEP 14 ~ STEP 28
 [10 分鐘學會如何在 VirtualBox 安裝 macOS Monterey！](https://adersaytech.com/practical-software/install-macos-on-virtualbox.html)
+
+- [QEMU-KVM安裝macOS Montery虛擬機 (Manjaro/Arch Linux) by Ivon Huang](https://youtu.be/dOvt5wKh2S4?t=42)
 
 ### 4.5. 打開 macOS，並安裝 xcode
 
@@ -339,7 +339,7 @@ https://developer.apple.com/support/xcode/
 ![](/assets/images/wsl.gif)
 > 每次都這樣打開就可以使用了。
 
-> 我沒有用到 `virt-manager`，如果最後想用 `virt-manager` 可參考 [OSX-KVM#installation](https://github.com/kholia/OSX-KVM#installation) 或 [使用 virt-manager 管理](https://blog.hal.wang/7afa8fc1/#%E4%BD%BF%E7%94%A8-virt-manager-%E7%AE%A1%E7%90%86)
+> 我沒有用到 `virt-manager`，如果最後想用 `virt-manager` 可參考 [OSX-KVM#installation](https://github.com/kholia/OSX-KVM#installation) 或 [使用 virt-manager 管理](https://blog.hal.wang/7afa8fc1/#%E4%BD%BF%E7%94%A8-virt-manager-%E7%AE%A1%E7%90%86) 或 [QEMU/KVM for absolute beginners by Veronica Explains](https://youtu.be/BgZHbCDFODk)
 
 ## 5. 相關設定
 
