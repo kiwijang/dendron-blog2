@@ -46,15 +46,21 @@ Note: Older AMD CPU(s) are known to be problematic. AMD FX-8350 works but Phenom
 
 > 到 Microsoft Store 下載 Ubuntu 這邊是安裝 20.04.1 LTS，現在有更新的版號可以下載。
 
-![](/assets/images/2022-09-23-23-58-04.png)
+### 3.1. 設定 Windows 功能
 
-> 在開始搜尋「功能」，然後開啟「開啟或關閉 Windows 功能」
+(1) `win + R` 在執行視窗輸入 `optionalfeatures` 
+![](/assets/images/2022-10-25-09-59-45.png)
 
-然後確定這幾個功能都有被打勾
+(2) 「開啟或關閉 Windows 功能」
+
+![](/assets/images/2022-10-25-10-01-35.png)
+
+確定這幾個功能都有被打勾，並在套用後重開機。
 
 - 虛擬機器平台 (Virtual Machine Platform)
 - Windows Hypervisor 平台 (Windows Hypervisor Platform)
 - Windows 子系統 Linux 版 (Windows Subsystem for Linux)
+
 
 ## 4. 安裝要用到的套件
 
@@ -95,8 +101,21 @@ wsl --shutdown
 
 ![](/assets/images/2022-10-20-15-18-37.png)
 
-> 按下去後會開啟終端機
+> 按下去後會開啟終端機，會自動開始下載 ubuntu 的東西。
 
+注意:
+
+![](/assets/images/2022-10-25-09-51-36.png)
+> 如果遇到 `WslRegisterDistribution failed with error: 0x80370102
+Please enable the Virtual Machine Platform Windows feature and ensure virtualization is enabled in the BIOS.`  請確認 3.1.(2) 的功能有開啟並重新開機並到 BIOS 做設定，可參考華碩 intel 主機板設定 Virtualization Technology 為 Enabled，如果是 AMD 主機板的話是要檢查 SVM Mode 有沒有 Enabled。
+
+![](/assets/images/2022-10-25-09-54-57.png)
+> [圖源華碩官網 - [主機板] Intel 主機板如何通過BIOS開啟虛擬化功能(Virtualization Technology)](https://www.asus.com/tw/support/FAQ/1043786/)
+
+
+![](/assets/images/2022-10-25-10-39-25.png)
+> 可以用 cmd `wsl --list --verbose` 看到發行版的版本是 WLS2。
+ 
 (1) 更新 ubuntu 套件
 
 ```bash
@@ -340,11 +359,23 @@ https://developer.apple.com/support/xcode/
 在 `package.json` 設定 `--host 0.0.0.0` 就可以邊開發邊自動刷新模擬器上的畫面。
 ![](/assets/images/2022-10-20-21-02-37.png)
 
-wsl 的 IP 每次重啟都會變，所以要在輸入網址時要先在本機 cmd `ipconfig /all` 查看目前 IP。
+0.0.0.0 代表[預定閘門(Default Router)](https://zh.wikipedia.org/zh-tw/%E9%BB%98%E8%AE%A4%E8%B7%AF%E7%94%B1) (註: [TCP/IP 協定與 Internet 網路：第五章 網際層協定 by 粘添壽](http://www.tsnien.idv.tw/Internet_WebBook/chap5/5-2%20IP%20%E9%80%9A%E8%A8%8A%E5%8D%94%E5%AE%9A.html))
+
+Default Router 是對 IP 數據包中的目的地址找不到存在的其他路由時，路由器所選擇的路由。
+
+
+`--host 0.0.0.0` 不知道什麼原理，讓這樣可以以本機 IP host 在網路裡@@
+[How to allow access outside localhost](https://stackoverflow.com/questions/43492354/how-to-allow-access-outside-localhost)
+
+如果本機 IP 是固定的會方便很多，不用每次都要本機 cmd `ipconfig /all` 查看目前 ip。
+
+另外如果有用 hyper-v 新增內部網路的虛擬交換器也可以用這個虛擬交換器的 ip 去連線(這個 IP 不是固定的，每次電腦重開機都會更新)。
+![](/assets/images/2022-10-25-18-21-37.png)
+
 
 ![](/assets/images/2022-10-20-21-32-08.png)
 
-> 以此圖為例 vm 裡的要測試的 angular 網站網址就是: 192.168.64.1:4200
+> 以此圖為例，這是用 hyper-v 建立的虛擬交換器，每次重啟電腦都會變，所以要在輸入網址時要先在本機 cmd `ipconfig /all` 查看目前 IP。 在 VM 裡的要測試的 angular 網站網址打上 `192.168.64.1:4200` 就可以連線了。
 
 ### 5.2. 畫面大小
 
@@ -373,9 +404,16 @@ Hyper-V 虛擬機器不支援 Hyper-V 以外的虛擬化應用程式。所以在
 
 WSL 是一個能夠執行原生 Linux 二進位可執行檔（ELF 格式）的相容層。可能就是因為如此才能不用透過 Hyper-V 就能調用硬體資源讓 QEMU 跑起來。 (註: [適用於 Linux 的 Windows 子系統 - wiki](https://zh.wikipedia.org/wiki/%E9%80%82%E7%94%A8%E4%BA%8ELinux%E7%9A%84Windows%E5%AD%90%E7%B3%BB%E7%BB%9F))
 
-另外有聽到 jserv 說 WSL 還沒有完成，這樣的話不知道完成後會不會要收費(?)
+另外有聽到 jserv 說 WSL 還沒有完成。
 
-## 7. 這篇筆記的起源
+利用 VM 來收費的服務如 [Parallels](https://www.parallels.com/hk/pd/general/?gclid=Cj0KCQjwkt6aBhDKARIsAAyeLJ1gnRx2t_B5JSxFMTQ-TwghqAIBta3I7jjfDYRc0fuu4EMzX3FKOeMaAtGFEALw_wcB) 就是利用 VM 讓 Mac 上可以同時執行 Windows 和 macOS，
+付費方式有三種($99.99、$119.99/yr、$149.99/yr)。
+
+或是雲端的 VM 譬如 [Amazon EC2 Mac 執行個體](https://aws.amazon.com/tw/ec2/instance-types/mac/) 也是要收費。
+
+OSX-KVM 作者對合法性有寫了一段說明 [Is This Legal?](https://github.com/kholia/OSX-KVM#is-this-legal)。OSX-KVM 是利用 OpenCore 下載 macOS 的 [Legality of Hackintoshing](https://dortania.github.io/OpenCore-Install-Guide/why-oc.html#common-myths)。
+
+## 7. 這篇筆記的起源與感想
 
 為了測試 Apple 裝置上的 safari 和 IOS 上的 safari 但手邊沒有相關裝置，
 
@@ -395,7 +433,7 @@ WSL 是一個能夠執行原生 Linux 二進位可執行檔（ELF 格式）的�
 
 另外，下面這個筆記記錄了使用 IIS、VirtualBox、和 android 的 remote debbuging 來測網站。
 
-> [(這篇筆記不公開)IIS、VirtualBox、和 android 的 remote debbuging](https://hackmd.io/vy1TyPnNRESPMTwMqNuPlA)
+> [(這篇筆記不公開) IIS、VirtualBox、和 android 的 remote debbuging](https://hackmd.io/vy1TyPnNRESPMTwMqNuPlA)
 
 ---
 
@@ -403,6 +441,6 @@ WSL 是一個能夠執行原生 Linux 二進位可執行檔（ELF 格式）的�
 
 要是沒有看到這篇文章我也沒機會用用看 OSX-KVM + WSL2，
 
-因為找不到作者的名字所以就只附上網址，感謝這個作者和免費好用的 WSL 還有我的新電腦 M( _ _)M。
+因為找不到作者的名字所以就只附上網址，感謝這個作者、OSX-KVM 和免費好用的 WSL 還有我的新電腦和網路資源M( _ _)M。
 
 - 主要參考自: [在 Windows 上流畅使用 MacOS 虚拟机](https://blog.hal.wang/7afa8fc1/)
