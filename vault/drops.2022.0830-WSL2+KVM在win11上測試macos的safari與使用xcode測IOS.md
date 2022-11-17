@@ -2,7 +2,7 @@
 id: o7mp336qqwyjf1d0jefmg53
 title: 0830 在 Windows 使用 MacOS 虛擬機 (使用 WSL2 + OSX-KVM) 
 desc: ''
-updated: 1666695871029
+updated: 1668586390483
 created: 1662562033027
 tags:
   - PROG.OS
@@ -375,7 +375,9 @@ Default Router 是對 IP 數據包中的目的地址找不到存在的其他路�
 `--host 0.0.0.0` 不知道什麼原理，讓這樣可以以本機 IP host 在網路裡@@
 [How to allow access outside localhost](https://stackoverflow.com/questions/43492354/how-to-allow-access-outside-localhost)
 
-如果本機 IP 是固定的會方便很多，不用每次都要本機 cmd `ipconfig /all` 查看目前 ip。
+本機 IP 要看 wifi 網卡的 IP，如果是用乙太網路的話就看該網卡的 IP (譬如: 網卡 IP 為 `192.168.1.2`，就在網址列輸入 `192.168.1.2:4200` 就可以連線到該網站了)。
+
+如果本機 IP 是固定的會方便很多不用每次都要本機 cmd `ipconfig /all` 查看目前 ip。
 
 另外如果有用 hyper-v 新增內部網路的虛擬交換器也可以用這個虛擬交換器的 ip 去連線(這個 IP 不是固定的，每次電腦重開機都會更新)。
 ![](/assets/images/2022-10-25-18-21-37.png)

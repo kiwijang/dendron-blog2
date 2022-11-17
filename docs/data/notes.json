@@ -11,8 +11,8 @@
       "links": [],
       "anchors": {},
       "fname": "403",
-      "updated": 1666695877121,
-      "created": 1666695877122,
+      "updated": 1668706595322,
+      "created": 1668706595322,
       "parent": null,
       "children": [],
       "data": {}
@@ -90,6 +90,7 @@
         "8butragqifg44gfphdug6ys",
         "uFYxvNnYUjt8oxQcHtfSp",
         "3cKSNGeq54iDx1eRKcNB0",
+        "ufrvrxg5egfy06vzaaitl1h",
         "1z3qa2rt5zymm05yroq0d7c",
         "Po0jmNACWQVrxnoTRT6kr",
         "hikt5akgz6251z6wjkkmc99",
@@ -275,6 +276,34 @@
       "parent": "4nZxUaZMBAvz7oWuXizXl",
       "data": {}
     },
+    "ufrvrxg5egfy06vzaaitl1h": {
+      "id": "ufrvrxg5egfy06vzaaitl1h",
+      "title": "HTML",
+      "desc": "",
+      "updated": 1667447441933,
+      "created": 1667447441933,
+      "custom": {},
+      "fname": "tags.PROG.HTML",
+      "type": "note",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "contentHash": "aaf0ee672f4616b530bf4b0428d6e08e",
+      "links": [
+        {
+          "from": {
+            "fname": "drops.2022.1103-meta標籤設定line、fb、twitter顯示",
+            "vaultName": "vault"
+          },
+          "type": "backlink",
+          "value": "tags.PROG.HTML"
+        }
+      ],
+      "anchors": {},
+      "children": [],
+      "parent": "4nZxUaZMBAvz7oWuXizXl",
+      "data": {}
+    },
     "3cKSNGeq54iDx1eRKcNB0": {
       "id": "3cKSNGeq54iDx1eRKcNB0",
       "title": "Dendron",
@@ -400,6 +429,22 @@
         {
           "from": {
             "fname": "0drops.2022.0920-[Angular] 從 Change Detection 到 ngZone",
+            "vaultName": "vault"
+          },
+          "type": "backlink",
+          "value": "tags.PROG.Angular"
+        },
+        {
+          "from": {
+            "fname": "0drops.2022.1115-[Angular] 日期",
+            "vaultName": "vault"
+          },
+          "type": "backlink",
+          "value": "tags.PROG.Angular"
+        },
+        {
+          "from": {
+            "fname": "0drops.2022.1115-[Angular] 讓 mainjs 變小",
             "vaultName": "vault"
           },
           "type": "backlink",
@@ -548,7 +593,8 @@
         "381o3my27s1t8xm06oamjq0",
         "o7mp336qqwyjf1d0jefmg53",
         "sy14xjjozy0n9ustvre7tbo",
-        "j4z39p3vfjvc2ge3lktqajs"
+        "j4z39p3vfjvc2ge3lktqajs",
+        "ejjb68mdu83hhsukbzr8n6g"
       ],
       "data": {},
       "contentHash": "be7044143202506d877df4260d9b4fae",
@@ -556,6 +602,76 @@
       "custom": {
         "stub": true
       }
+    },
+    "ejjb68mdu83hhsukbzr8n6g": {
+      "id": "ejjb68mdu83hhsukbzr8n6g",
+      "title": "1103 Meta 標籤設定 line、fb、twitter 顯示",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [
+        {
+          "type": "frontmatterTag",
+          "from": {
+            "fname": "drops.2022.1103-meta標籤設定line、fb、twitter顯示",
+            "id": "ejjb68mdu83hhsukbzr8n6g",
+            "vaultName": "vault"
+          },
+          "value": "tags.PROG.HTML",
+          "alias": "PROG.HTML",
+          "xvault": false,
+          "to": {
+            "fname": "tags.PROG.HTML"
+          }
+        }
+      ],
+      "anchors": {
+        "html-的-meta-標籤": {
+          "type": "header",
+          "text": "HTML 的 Meta 標籤",
+          "value": "html-的-meta-標籤",
+          "line": 10,
+          "column": 0,
+          "depth": 2
+        },
+        "預覽在社群網站帳的樣子-facebook--twitter--line": {
+          "type": "header",
+          "text": "預覽在社群網站帳的樣子 (Facebook / Twitter / LINE)",
+          "value": "預覽在社群網站帳的樣子-facebook--twitter--line",
+          "line": 24,
+          "column": 0,
+          "depth": 2
+        },
+        "主要是這三個": {
+          "type": "header",
+          "text": "主要是這三個:",
+          "value": "主要是這三個",
+          "line": 30,
+          "column": 0,
+          "depth": 3
+        },
+        "小結": {
+          "type": "header",
+          "text": "小結",
+          "value": "小結",
+          "line": 42,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "fname": "drops.2022.1103-meta標籤設定line、fb、twitter顯示",
+      "updated": 1668650592501,
+      "created": 1667447309598,
+      "parent": "4MPQXb6WwUg0kGHxTPD7x",
+      "children": [],
+      "data": {},
+      "contentHash": "3150d48718a2a8ed143fee768e01b2b6",
+      "custom": {},
+      "tags": [
+        "PROG.HTML"
+      ]
     },
     "j4z39p3vfjvc2ge3lktqajs": {
       "id": "j4z39p3vfjvc2ge3lktqajs",
@@ -828,11 +944,19 @@
     "o7mp336qqwyjf1d0jefmg53": {
       "id": "o7mp336qqwyjf1d0jefmg53",
       "title": "0830 在 Windows 使用 MacOS 虛擬機 (使用 WSL2 + OSX-KVM)",
+      "desc": "",
+      "updated": 1668586390483,
+      "created": 1662562033027,
+      "tags": [
+        "PROG.OS"
+      ],
+      "custom": {},
+      "fname": "drops.2022.0830-WSL2+KVM在win11上測試macos的safari與使用xcode測IOS",
+      "type": "note",
       "vault": {
         "fsPath": "vault"
       },
-      "type": "note",
-      "desc": "",
+      "contentHash": "4b5ce1e3b872b0c7dd2f9576dbd5b7e6",
       "links": [
         {
           "type": "frontmatterTag",
@@ -846,60 +970,6 @@
           "xvault": false,
           "to": {
             "fname": "tags.PROG.OS"
-          }
-        },
-        {
-          "type": "wiki",
-          "from": {
-            "fname": "drops.2022.0830-WSL2+KVM在win11上測試macos的safari與使用xcode測IOS",
-            "id": "o7mp336qqwyjf1d0jefmg53",
-            "vaultName": "vault"
-          },
-          "value": "tags.requirements",
-          "alias": "#requirements",
-          "position": {
-            "start": {
-              "line": 40,
-              "column": 17,
-              "offset": 1098
-            },
-            "end": {
-              "line": 40,
-              "column": 30,
-              "offset": 1111
-            },
-            "indent": []
-          },
-          "xvault": false,
-          "to": {
-            "fname": "tags.requirements"
-          }
-        },
-        {
-          "type": "wiki",
-          "from": {
-            "fname": "drops.2022.0830-WSL2+KVM在win11上測試macos的safari與使用xcode測IOS",
-            "id": "o7mp336qqwyjf1d0jefmg53",
-            "vaultName": "vault"
-          },
-          "value": "tags.installation",
-          "alias": "#installation",
-          "position": {
-            "start": {
-              "line": 352,
-              "column": 58,
-              "offset": 8044
-            },
-            "end": {
-              "line": 352,
-              "column": 71,
-              "offset": 8057
-            },
-            "indent": []
-          },
-          "xvault": false,
-          "to": {
-            "fname": "tags.installation"
           }
         }
       ],
@@ -1072,10 +1142,10 @@
           "column": 0,
           "depth": 2
         },
-        "51-angular-在-ng-serve-設定": {
+        "51-angular-在-ng-serve-設定---host-0000": {
           "type": "header",
-          "text": "5.1. Angular 在 ng serve 設定",
-          "value": "51-angular-在-ng-serve-設定",
+          "text": "5.1. Angular 在 ng serve 設定 --host 0.0.0.0",
+          "value": "51-angular-在-ng-serve-設定---host-0000",
           "line": 364,
           "column": 0,
           "depth": 3
@@ -1084,7 +1154,7 @@
           "type": "header",
           "text": "5.2. 畫面大小",
           "value": "52-畫面大小",
-          "line": 387,
+          "line": 389,
           "column": 0,
           "depth": 3
         },
@@ -1092,7 +1162,7 @@
           "type": "header",
           "text": "6. 關於 Hyper-V 和 WSL",
           "value": "6-關於-hyper-v-和-wsl",
-          "line": 405,
+          "line": 407,
           "column": 0,
           "depth": 2
         },
@@ -1100,22 +1170,14 @@
           "type": "header",
           "text": "7. 這篇筆記的起源與感想",
           "value": "7-這篇筆記的起源與感想",
-          "line": 423,
+          "line": 425,
           "column": 0,
           "depth": 2
         }
       },
-      "fname": "drops.2022.0830-WSL2+KVM在win11上測試macos的safari與使用xcode測IOS",
-      "updated": 1666695871029,
-      "created": 1662562033027,
-      "parent": "4MPQXb6WwUg0kGHxTPD7x",
       "children": [],
-      "data": {},
-      "contentHash": "02593d14017af72fd1b25e2d6125a831",
-      "custom": {},
-      "tags": [
-        "PROG.OS"
-      ]
+      "parent": "4MPQXb6WwUg0kGHxTPD7x",
+      "data": {}
     },
     "381o3my27s1t8xm06oamjq0": {
       "id": "381o3my27s1t8xm06oamjq0",
@@ -2369,7 +2431,9 @@
         "05PiGJUq8nazfBg8ndqHM",
         "iwm8cxyx12fpzxdeesvfsiw",
         "7vo9q7rwhx3xyyg8auxb22s",
-        "9tqljuuooemk86j20mg6nch"
+        "9tqljuuooemk86j20mg6nch",
+        "cl8p533i8it5xfzxq3doe17",
+        "3nppj8b00bsdzmbhem8ppe9"
       ],
       "data": {},
       "contentHash": "7d34a73a99186fc6a2e7a503c6348f9c",
@@ -2377,6 +2441,97 @@
       "custom": {
         "stub": true
       }
+    },
+    "3nppj8b00bsdzmbhem8ppe9": {
+      "id": "3nppj8b00bsdzmbhem8ppe9",
+      "title": "1115-[Angular] 讓 mainjs 變小",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [
+        {
+          "type": "frontmatterTag",
+          "from": {
+            "fname": "0drops.2022.1115-[Angular] 讓 mainjs 變小",
+            "id": "3nppj8b00bsdzmbhem8ppe9",
+            "vaultName": "vault"
+          },
+          "value": "tags.PROG.Angular",
+          "alias": "PROG.Angular",
+          "xvault": false,
+          "to": {
+            "fname": "tags.PROG.Angular"
+          }
+        }
+      ],
+      "anchors": {
+        "讓-mainjs-變小": {
+          "type": "header",
+          "text": "讓 main.js 變小",
+          "value": "讓-mainjs-變小",
+          "line": 10,
+          "column": 0,
+          "depth": 2
+        },
+        "視覺化工具": {
+          "type": "header",
+          "text": "視覺化工具",
+          "value": "視覺化工具",
+          "line": 15,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "fname": "0drops.2022.1115-[Angular] 讓 mainjs 變小",
+      "updated": 1668650675126,
+      "created": 1668496095203,
+      "parent": "0YMTMineOCu8QrkzCD9rn",
+      "children": [],
+      "data": {},
+      "contentHash": "822fd1216313092cf9e83a2428bae96a",
+      "custom": {},
+      "tags": [
+        "PROG.Angular"
+      ]
+    },
+    "cl8p533i8it5xfzxq3doe17": {
+      "id": "cl8p533i8it5xfzxq3doe17",
+      "title": "1115-[Angular] 日期",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [
+        {
+          "type": "frontmatterTag",
+          "from": {
+            "fname": "0drops.2022.1115-[Angular] 日期",
+            "id": "cl8p533i8it5xfzxq3doe17",
+            "vaultName": "vault"
+          },
+          "value": "tags.PROG.Angular",
+          "alias": "PROG.Angular",
+          "xvault": false,
+          "to": {
+            "fname": "tags.PROG.Angular"
+          }
+        }
+      ],
+      "anchors": {},
+      "fname": "0drops.2022.1115-[Angular] 日期",
+      "updated": 1668648663693,
+      "created": 1668495848211,
+      "parent": "0YMTMineOCu8QrkzCD9rn",
+      "children": [],
+      "data": {},
+      "contentHash": "5bd29c7660ca910249fdd723c627ae2e",
+      "custom": {},
+      "tags": [
+        "PROG.Angular"
+      ]
     },
     "9tqljuuooemk86j20mg6nch": {
       "id": "9tqljuuooemk86j20mg6nch",
@@ -2543,7 +2698,7 @@
       "id": "iwm8cxyx12fpzxdeesvfsiw",
       "title": "0914 [Ch2Ch3]IO、OS 架構、VM",
       "desc": "",
-      "updated": 1663606961056,
+      "updated": 1668095464428,
       "created": 1663169293429,
       "tags": [
         "PROG.OS"
@@ -2557,7 +2712,7 @@
       "vault": {
         "fsPath": "vault"
       },
-      "contentHash": "38745707481b3d0ef7c6334e13a3761c",
+      "contentHash": "9416cdb3e8d66be8774deb0d5791fc8d",
       "links": [
         {
           "type": "frontmatterTag",
@@ -2574,7 +2729,128 @@
           }
         }
       ],
-      "anchors": {},
+      "anchors": {
+        "io-運作方式-interrupt-介紹hw-resource-protection": {
+          "type": "header",
+          "text": "IO 運作方式: Interrupt 介紹、HW Resource protection",
+          "value": "io-運作方式-interrupt-介紹hw-resource-protection",
+          "line": 11,
+          "column": 0,
+          "depth": 2
+        },
+        "io-運作方式": {
+          "type": "header",
+          "text": "I/O 運作方式",
+          "value": "io-運作方式",
+          "line": 13,
+          "column": 0,
+          "depth": 3
+        },
+        "polling-io-programmed-io": {
+          "type": "header",
+          "text": "polling I/O (programmed I/O)",
+          "value": "polling-io-programmed-io",
+          "line": 15,
+          "column": 0,
+          "depth": 4
+        },
+        "interrupted-io": {
+          "type": "header",
+          "text": "Interrupted I/O",
+          "value": "interrupted-io",
+          "line": 53,
+          "column": 0,
+          "depth": 4
+        },
+        "dma": {
+          "type": "header",
+          "text": "DMA",
+          "value": "dma",
+          "line": 86,
+          "column": 0,
+          "depth": 4
+        },
+        "interrupt-之處理": {
+          "type": "header",
+          "text": "Interrupt 之處理",
+          "value": "interrupt-之處理",
+          "line": 88,
+          "column": 0,
+          "depth": 4
+        },
+        "種類": {
+          "type": "header",
+          "text": "種類",
+          "value": "種類",
+          "line": 118,
+          "column": 0,
+          "depth": 4
+        },
+        "interrupt-介紹": {
+          "type": "header",
+          "text": "Interrupt 介紹",
+          "value": "interrupt-介紹",
+          "line": 120,
+          "column": 0,
+          "depth": 3
+        },
+        "hw-resource-protection": {
+          "type": "header",
+          "text": "HW Resource Protection",
+          "value": "hw-resource-protection",
+          "line": 122,
+          "column": 0,
+          "depth": 4
+        },
+        "基礎": {
+          "type": "header",
+          "text": "基礎",
+          "value": "基礎",
+          "line": 124,
+          "column": 0,
+          "depth": 4
+        },
+        "daul-mode-運作": {
+          "type": "header",
+          "text": "Daul mode 運作",
+          "value": "daul-mode-運作",
+          "line": 126,
+          "column": 0,
+          "depth": 5
+        },
+        "privileged-instructions": {
+          "type": "header",
+          "text": "privileged instructions",
+          "value": "privileged-instructions",
+          "line": 128,
+          "column": 0,
+          "depth": 5
+        },
+        "io": {
+          "type": "header",
+          "text": "I/O",
+          "value": "io",
+          "line": 130,
+          "column": 0,
+          "depth": 4
+        },
+        "memory": {
+          "type": "header",
+          "text": "memory",
+          "value": "memory",
+          "line": 132,
+          "column": 0,
+          "depth": 4
+        },
+        "cpu": {
+          "type": "header",
+          "text": "cpu",
+          "value": "cpu",
+          "line": 134,
+          "column": 0,
+          "depth": 4
+        }
+      },
       "children": [],
       "parent": "0YMTMineOCu8QrkzCD9rn",
       "data": {}

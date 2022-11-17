@@ -282,7 +282,8 @@ Choose a product to download <span class="token punctuation">(</span><span class
 <p>Default Router 是對 IP 數據包中的目的地址找不到存在的其他路由時，路由器所選擇的路由。</p>
 <p><code>--host 0.0.0.0</code> 不知道什麼原理，讓這樣可以以本機 IP host 在網路裡@@
 <a href="https://stackoverflow.com/questions/43492354/how-to-allow-access-outside-localhost">How to allow access outside localhost</a></p>
-<p>如果本機 IP 是固定的會方便很多，不用每次都要本機 cmd <code>ipconfig /all</code> 查看目前 ip。</p>
+<p>本機 IP 要看 wifi 網卡的 IP，如果是用乙太網路的話就看該網卡的 IP (譬如: 網卡 IP 為 <code>192.168.1.2</code>，就在網址列輸入 <code>192.168.1.2:4200</code> 就可以連線到該網站了)。</p>
+<p>如果本機 IP 是固定的會方便很多不用每次都要本機 cmd <code>ipconfig /all</code> 查看目前 ip。</p>
 <p>另外如果有用 hyper-v 新增內部網路的虛擬交換器也可以用這個虛擬交換器的 ip 去連線(這個 IP 不是固定的，每次電腦重開機都會更新)。
 <img src="/assets/images/2022-10-25-18-21-37.png"></p>
 <p><img src="/assets/images/2022-10-20-21-32-08.png"></p>
