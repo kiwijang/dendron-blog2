@@ -13,7 +13,7 @@
 > 
 > The Open Graph protocol was originally created at Facebook and is inspired by Dublin Core, link-rel canonical, Microformats, and RDFa. The specification described on this page is available under the Open Web Foundation Agreement, Version 0.9. This website is Open Source.
 
-## 預覽在社群網站帳的樣子 (Facebook / Twitter / LINE)
+## 預覽在社群網站的呈現 (Facebook / Twitter / LINE)
 
 這篇文章寫得超詳細:
 

@@ -2,7 +2,7 @@
 id: ejjb68mdu83hhsukbzr8n6g
 title: 1103 Meta 標籤設定 line、fb、twitter 顯示
 desc: ''
-updated: 1668650592501
+updated: 1668708420081
 created: 1667447309598
 tags:
   - PROG.HTML
@@ -22,7 +22,7 @@ tags:
 > 
 > The Open Graph protocol was originally created at Facebook and is inspired by Dublin Core, link-rel canonical, Microformats, and RDFa. The specification described on this page is available under the Open Web Foundation Agreement, Version 0.9. This website is Open Source.
 
-## 預覽在社群網站帳的樣子 (Facebook / Twitter / LINE)
+## 預覽在社群網站的呈現 (Facebook / Twitter / LINE)
 
 這篇文章寫得超詳細:
 

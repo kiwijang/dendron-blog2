@@ -11,8 +11,8 @@
       "links": [],
       "anchors": {},
       "fname": "403",
-      "updated": 1668706595322,
-      "created": 1668706595322,
+      "updated": 1668708425646,
+      "created": 1668708425646,
       "parent": null,
       "children": [],
       "data": {}
@@ -636,10 +636,10 @@
           "column": 0,
           "depth": 2
         },
-        "預覽在社群網站帳的樣子-facebook--twitter--line": {
+        "預覽在社群網站的呈現-facebook--twitter--line": {
           "type": "header",
-          "text": "預覽在社群網站帳的樣子 (Facebook / Twitter / LINE)",
-          "value": "預覽在社群網站帳的樣子-facebook--twitter--line",
+          "text": "預覽在社群網站的呈現 (Facebook / Twitter / LINE)",
+          "value": "預覽在社群網站的呈現-facebook--twitter--line",
           "line": 24,
           "column": 0,
           "depth": 2
@@ -662,12 +662,12 @@
         }
       },
       "fname": "drops.2022.1103-meta標籤設定line、fb、twitter顯示",
-      "updated": 1668650592501,
+      "updated": 1668708420081,
       "created": 1667447309598,
       "parent": "4MPQXb6WwUg0kGHxTPD7x",
       "children": [],
       "data": {},
-      "contentHash": "3150d48718a2a8ed143fee768e01b2b6",
+      "contentHash": "e029427c7f7f0190b00737468472c949",
       "custom": {},
       "tags": [
         "PROG.HTML"
