@@ -2,7 +2,7 @@
 id: iwm8cxyx12fpzxdeesvfsiw
 title: '0914 [Ch2Ch3]IO、OS 架構、VM'
 desc: ''
-updated: 1668095464428
+updated: 1669251746479
 created: 1663169293429
 tags:
   - PROG.OS
@@ -14,7 +14,10 @@ status: w
 ### I/O 運作方式
 
 #### polling I/O (programmed I/O)
+ 
 
+
+ 
 Def: 又叫 Busy waiting I/O 或 programmed I/O
 
 步驟如下:
