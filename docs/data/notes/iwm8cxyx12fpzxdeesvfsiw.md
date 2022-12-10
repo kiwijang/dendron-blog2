@@ -5,7 +5,7 @@
 ### I/O 運作方式
 
 #### polling I/O (programmed I/O)
-
+  
 Def: 又叫 Busy waiting I/O 或 programmed I/O
 
 步驟如下:

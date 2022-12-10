@@ -11,8 +11,8 @@
       "links": [],
       "anchors": {},
       "fname": "403",
-      "updated": 1668708425646,
-      "created": 1668708425646,
+      "updated": 1670683885646,
+      "created": 1670683885646,
       "parent": null,
       "children": [],
       "data": {}
@@ -61,6 +61,8 @@
       "created": 1640615341422,
       "parent": "root",
       "children": [
+        "o5fbe3ootu59zrs4c3l7gdg",
+        "zq0tsxmhzagm2pe2ngnovg3",
         "4nZxUaZMBAvz7oWuXizXl"
       ],
       "data": {},
@@ -500,6 +502,62 @@
       "parent": "4nZxUaZMBAvz7oWuXizXl",
       "data": {}
     },
+    "zq0tsxmhzagm2pe2ngnovg3": {
+      "id": "zq0tsxmhzagm2pe2ngnovg3",
+      "title": "Flutter",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [
+        {
+          "from": {
+            "fname": "drops.2022.1210-[Flutter] 使用 VS Code 在 Windows 上開發 Android App",
+            "vaultName": "vault"
+          },
+          "type": "backlink",
+          "value": "tags.Flutter"
+        }
+      ],
+      "anchors": {},
+      "fname": "tags.Flutter",
+      "updated": 1670679633990,
+      "created": 1670679633990,
+      "parent": "rEbR1FrKkZzyjo6ahAgm3",
+      "children": [],
+      "data": {},
+      "contentHash": "28b9c4d4b51ac63f16585a3e077de063",
+      "custom": {}
+    },
+    "o5fbe3ootu59zrs4c3l7gdg": {
+      "id": "o5fbe3ootu59zrs4c3l7gdg",
+      "title": "Android",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [
+        {
+          "from": {
+            "fname": "drops.2022.1210-[Flutter] 使用 VS Code 在 Windows 上開發 Android App",
+            "vaultName": "vault"
+          },
+          "type": "backlink",
+          "value": "tags.Android"
+        }
+      ],
+      "anchors": {},
+      "fname": "tags.Android",
+      "updated": 1670679647147,
+      "created": 1670679647147,
+      "parent": "rEbR1FrKkZzyjo6ahAgm3",
+      "children": [],
+      "data": {},
+      "contentHash": "c74572d8a1f66788d231f5d0d86700e5",
+      "custom": {}
+    },
     "WAKWMq3SeVmlAmZRqCbpB": {
       "id": "WAKWMq3SeVmlAmZRqCbpB",
       "title": "Other",
@@ -594,7 +652,8 @@
         "o7mp336qqwyjf1d0jefmg53",
         "sy14xjjozy0n9ustvre7tbo",
         "j4z39p3vfjvc2ge3lktqajs",
-        "ejjb68mdu83hhsukbzr8n6g"
+        "ejjb68mdu83hhsukbzr8n6g",
+        "h8cp4furnmhkdr2wzwn825j"
       ],
       "data": {},
       "contentHash": "be7044143202506d877df4260d9b4fae",
@@ -602,6 +661,195 @@
       "custom": {
         "stub": true
       }
+    },
+    "h8cp4furnmhkdr2wzwn825j": {
+      "id": "h8cp4furnmhkdr2wzwn825j",
+      "title": "1210-[Flutter] 使用 VS Code 在 Windows 上開發 Android App",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [
+        {
+          "type": "frontmatterTag",
+          "from": {
+            "fname": "drops.2022.1210-[Flutter] 使用 VS Code 在 Windows 上開發 Android App",
+            "id": "h8cp4furnmhkdr2wzwn825j",
+            "vaultName": "vault"
+          },
+          "value": "tags.Flutter",
+          "alias": "Flutter",
+          "xvault": false,
+          "to": {
+            "fname": "tags.Flutter"
+          }
+        },
+        {
+          "type": "frontmatterTag",
+          "from": {
+            "fname": "drops.2022.1210-[Flutter] 使用 VS Code 在 Windows 上開發 Android App",
+            "id": "h8cp4furnmhkdr2wzwn825j",
+            "vaultName": "vault"
+          },
+          "value": "tags.Android",
+          "alias": "Android",
+          "xvault": false,
+          "to": {
+            "fname": "tags.Android"
+          }
+        }
+      ],
+      "anchors": {
+        "flutter": {
+          "type": "header",
+          "text": "Flutter",
+          "value": "flutter",
+          "line": 11,
+          "column": 0,
+          "depth": 2
+        },
+        "dart": {
+          "type": "header",
+          "text": "Dart",
+          "value": "dart",
+          "line": 15,
+          "column": 0,
+          "depth": 3
+        },
+        "flutter-引擎": {
+          "type": "header",
+          "text": "Flutter 引擎",
+          "value": "flutter-引擎",
+          "line": 21,
+          "column": 0,
+          "depth": 3
+        },
+        "flutters-compilation-patterns-編譯方式": {
+          "type": "header",
+          "text": "Flutter’s Compilation Patterns 編譯方式",
+          "value": "flutters-compilation-patterns-編譯方式",
+          "line": 27,
+          "column": 0,
+          "depth": 3
+        },
+        "安裝-flutter": {
+          "type": "header",
+          "text": "安裝 Flutter",
+          "value": "安裝-flutter",
+          "line": 32,
+          "column": 0,
+          "depth": 3
+        },
+        "下載-flutter-sdk": {
+          "type": "header",
+          "text": "下載 flutter SDK",
+          "value": "下載-flutter-sdk",
+          "line": 36,
+          "column": 0,
+          "depth": 4
+        },
+        "將-flutter-加入使用者環境變數": {
+          "type": "header",
+          "text": "將 flutter 加入使用者環境變數",
+          "value": "將-flutter-加入使用者環境變數",
+          "line": 41,
+          "column": 0,
+          "depth": 4
+        },
+        "設定-vs-code安裝-flutter-extention": {
+          "type": "header",
+          "text": "設定 VS code(安裝 Flutter extention)",
+          "value": "設定-vs-code安裝-flutter-extention",
+          "line": 46,
+          "column": 0,
+          "depth": 3
+        },
+        "設定-android": {
+          "type": "header",
+          "text": "設定 Android",
+          "value": "設定-android",
+          "line": 50,
+          "column": 0,
+          "depth": 3
+        },
+        "用-cmd-管理-android-sdk": {
+          "type": "header",
+          "text": "用 cmd 管理 Android SDK",
+          "value": "用-cmd-管理-android-sdk",
+          "line": 75,
+          "column": 4,
+          "depth": 4
+        },
+        "關於-sdkmanager": {
+          "type": "header",
+          "text": "關於 sdkmanager",
+          "value": "關於-sdkmanager",
+          "line": 77,
+          "column": 4,
+          "depth": 5
+        },
+        "sdkmanager-下載頁面與安裝和設定-cmd-環境變數": {
+          "type": "header",
+          "text": "sdkmanager 下載頁面與安裝和設定 cmd 環境變數",
+          "value": "sdkmanager-下載頁面與安裝和設定-cmd-環境變數",
+          "line": 80,
+          "column": 4,
+          "depth": 5
+        },
+        "將-sdkmanager-cmdline-tools-加入使用者環境變數": {
+          "type": "header",
+          "text": "將 sdkmanager cmdline-tools 加入使用者環境變數",
+          "value": "將-sdkmanager-cmdline-tools-加入使用者環境變數",
+          "line": 91,
+          "column": 4,
+          "depth": 4
+        },
+        "檢查環境是否可跑-flutter": {
+          "type": "header",
+          "text": "檢查環境是否可跑 flutter",
+          "value": "檢查環境是否可跑-flutter",
+          "line": 96,
+          "column": 0,
+          "depth": 3
+        },
+        "新增一個-flutter-app": {
+          "type": "header",
+          "text": "新增一個 Flutter App",
+          "value": "新增一個-flutter-app",
+          "line": 104,
+          "column": 0,
+          "depth": 3
+        },
+        "使用-adv-manager-新增-android-模擬器": {
+          "type": "header",
+          "text": "使用 ADV Manager 新增 Android 模擬器",
+          "value": "使用-adv-manager-新增-android-模擬器",
+          "line": 108,
+          "column": 0,
+          "depth": 3
+        },
+        "flutter-devtools-in-vs-code": {
+          "type": "header",
+          "text": "Flutter Devtools in VS Code",
+          "value": "flutter-devtools-in-vs-code",
+          "line": 136,
+          "column": 0,
+          "depth": 3
+        }
+      },
+      "fname": "drops.2022.1210-[Flutter] 使用 VS Code 在 Windows 上開發 Android App",
+      "updated": 1670683881377,
+      "created": 1670674322860,
+      "parent": "4MPQXb6WwUg0kGHxTPD7x",
+      "children": [],
+      "data": {},
+      "contentHash": "c626cec948de58c4cce9ad88215b72ce",
+      "custom": {},
+      "tags": [
+        "Flutter",
+        "Android"
+      ]
     },
     "ejjb68mdu83hhsukbzr8n6g": {
       "id": "ejjb68mdu83hhsukbzr8n6g",
@@ -2697,22 +2945,11 @@
     "iwm8cxyx12fpzxdeesvfsiw": {
       "id": "iwm8cxyx12fpzxdeesvfsiw",
       "title": "0914 [Ch2Ch3]IO、OS 架構、VM",
-      "desc": "",
-      "updated": 1668095464428,
-      "created": 1663169293429,
-      "tags": [
-        "PROG.OS"
-      ],
-      "status": "w",
-      "custom": {
-        "status": "w"
-      },
-      "fname": "0drops.2022.0914-[Ch2Ch3]IO、OS 架構、VM",
-      "type": "note",
       "vault": {
         "fsPath": "vault"
       },
-      "contentHash": "9416cdb3e8d66be8774deb0d5791fc8d",
+      "type": "note",
+      "desc": "",
       "links": [
         {
           "type": "frontmatterTag",
@@ -2851,9 +3088,19 @@
           "depth": 4
         }
       },
-      "children": [],
+      "fname": "0drops.2022.0914-[Ch2Ch3]IO、OS 架構、VM",
+      "updated": 1670674264619,
+      "created": 1663169293429,
       "parent": "0YMTMineOCu8QrkzCD9rn",
-      "data": {}
+      "children": [],
+      "data": {},
+      "contentHash": "cb30f23a04f0f1b24471ea57eb4e0c2c",
+      "custom": {
+        "status": "w"
+      },
+      "tags": [
+        "PROG.OS"
+      ]
     },
     "05PiGJUq8nazfBg8ndqHM": {
       "id": "05PiGJUq8nazfBg8ndqHM",
@@ -2906,7 +3153,7 @@
       "id": "1FrZXjCCHfkMyZZeBnoL2",
       "title": "0101 Server建置與管理",
       "desc": "",
-      "updated": 1644323408431,
+      "updated": 1669082046753,
       "created": 1641043042173,
       "tags": "PROG.Server",
       "status": "w",
@@ -2918,7 +3165,7 @@
       "vault": {
         "fsPath": "vault"
       },
-      "contentHash": "b1d29e9bf31c3caaac4f21c70985f2c1",
+      "contentHash": "ffb9750bfd7c9a7819909cebcc576e51",
       "links": [
         {
           "type": "frontmatterTag",
@@ -2940,7 +3187,7 @@
           "type": "header",
           "text": "前言",
           "value": "前言",
-          "line": 10,
+          "line": 12,
           "column": 0,
           "depth": 2
         },
@@ -2948,7 +3195,7 @@
           "type": "header",
           "text": "書名: MIS 一定要懂的伺服器建置與管理知識",
           "value": "書名-mis-一定要懂的伺服器建置與管理知識",
-          "line": 16,
+          "line": 18,
           "column": 0,
           "depth": 2
         },
@@ -2956,7 +3203,7 @@
           "type": "header",
           "text": "Ch01 【序章】",
           "value": "ch01-序章",
-          "line": 22,
+          "line": 24,
           "column": 0,
           "depth": 2
         },
@@ -2964,7 +3211,7 @@
           "type": "header",
           "text": "Ch02 【伺服器管理者必備的網路基礎知識】",
           "value": "ch02-伺服器管理者必備的網路基礎知識",
-          "line": 29,
+          "line": 31,
           "column": 0,
           "depth": 2
         },
@@ -2972,7 +3219,7 @@
           "type": "header",
           "text": "Ch03 【從七大面向建立架設前置知識】",
           "value": "ch03-從七大面向建立架設前置知識",
-          "line": 33,
+          "line": 35,
           "column": 0,
           "depth": 2
         },
@@ -2980,7 +3227,7 @@
           "type": "header",
           "text": "Ch04 【企業內部的伺服器】",
           "value": "ch04-企業內部的伺服器",
-          "line": 37,
+          "line": 39,
           "column": 0,
           "depth": 2
         },
@@ -2988,7 +3235,7 @@
           "type": "header",
           "text": "Ch05 【對外營運的伺服器】",
           "value": "ch05-對外營運的伺服器",
-          "line": 41,
+          "line": 43,
           "column": 0,
           "depth": 2
         },
@@ -2996,7 +3243,7 @@
           "type": "header",
           "text": "Ch06 【預防伺服器發生故障】",
           "value": "ch06-預防伺服器發生故障",
-          "line": 45,
+          "line": 47,
           "column": 0,
           "depth": 2
         },
@@ -3004,7 +3251,7 @@
           "type": "header",
           "text": "Ch07 【伺服器的資安防護】",
           "value": "ch07-伺服器的資安防護",
-          "line": 49,
+          "line": 51,
           "column": 0,
           "depth": 2
         },
@@ -3012,7 +3259,7 @@
           "type": "header",
           "text": "Ch08 【伺服器的維運管理】",
           "value": "ch08-伺服器的維運管理",
-          "line": 53,
+          "line": 55,
           "column": 0,
           "depth": 2
         },
@@ -3020,7 +3267,7 @@
           "type": "header",
           "text": "小結",
           "value": "小結",
-          "line": 57,
+          "line": 59,
           "column": 0,
           "depth": 2
         }

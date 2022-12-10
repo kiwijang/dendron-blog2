@@ -1,7 +1,7 @@
 ---
 id: w5ej8rx5rn7c37yul52sm87
 title: 1129 Nand2tetris
-desc: ""
+desc: ''
 updated: 1669693760955
 created: 1669691084582
 ---
