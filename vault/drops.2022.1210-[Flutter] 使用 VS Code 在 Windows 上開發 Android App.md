@@ -2,7 +2,7 @@
 id: h8cp4furnmhkdr2wzwn825j
 title: '1210 [Flutter] 使用 VS Code 在 Windows 上開發 Android App'
 desc: ''
-updated: 1670684421836
+updated: 1670685054617
 created: 1670674322860
 tags:
   - Flutter
@@ -106,6 +106,8 @@ Android App 是以 Java 撰寫而成，故要有 Java 開發環境與安裝 Andr
 
 [Test drive - Flutter 官網](https://docs.flutter.dev/get-started/test-drive)
 
+> 注意檔案的所有路徑都不可以有中文，不然 `flutter run` 會失敗...
+
 ### 使用 ADV Manager 新增 Android 模擬器
 
 直接用 Android Studio 新增最方便xD
@@ -142,3 +144,8 @@ Android App 是以 Java 撰寫而成，故要有 Java 開發環境與安裝 Andr
 
 ![](/assets/images/2022-12-10-22-42-55.png)
 > 在瀏覽器中打開 devtool
+
+
+## 小結
+
+Flutter 很好用的感覺!! 之後就是來寫寫看應用程式了!!
