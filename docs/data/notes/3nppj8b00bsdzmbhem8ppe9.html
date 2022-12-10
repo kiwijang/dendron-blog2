@@ -7,6 +7,28 @@
 <h2 id="視覺化工具"><a aria-hidden="true" class="anchor-heading" href="#視覺化工具"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>視覺化工具</h2>
 <p>主要是參考這篇文章:</p>
 <p><a href="https://www.digitalocean.com/community/tutorials/angular-bundle-size">How To Analyze Angular App Bundle Sizes with webpack Bundle Analyzer or source-map-explorer by Alligator.io</a></p>
+<p>主要參考這篇文章: <a href="https://www.digitalocean.com/community/tutorials/angular-bundle-size">https://www.digitalocean.com/community/tutorials/angular-bundle-size</a></p>
+<h2 id="加入四個指令到-packagejson"><a aria-hidden="true" class="anchor-heading" href="#加入四個指令到-packagejson"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>加入四個指令到 package.json:</h2>
+<pre><code>"build:stats": "ng run client:build --configuration=sit --base-href=/xxx/ --stats-json",
+"analyze": "webpack-bundle-analyzer dist/apps/xxx/stats.json",
+"client:build:sourcemap": "ng run client:build --configuration=sit --base-href=/xxx/ --build-optimizer --source-map",
+"sourcemap:analyze": "npx source-map-explorer dist/apps/xxx/main.*.js"
+</code></pre>
+<h2 id="並有安裝套件到-devdependencies"><a aria-hidden="true" class="anchor-heading" href="#並有安裝套件到-devdependencies"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>並有安裝套件到 devDependencies:</h2>
+<pre><code>"source-map-explorer": "^2.5.2",
+"webpack-bundle-analyzer": "^4.4.2"
+</code></pre>
+<p>● 記得先更新套件:</p>
+<pre><code>npm i
+</code></pre>
+<p>● webpack-bundle-analyzer 套件依序使用這兩個指令:</p>
+<pre><code>npm run build:stats
+npm run analyze
+</code></pre>
+<p>● source-map-explorer 套件依序使用這兩個指令:</p>
+<pre><code>npm run client:build:sourcemap
+npm run sourcemap:analyze
+</code></pre>
 <hr>
 <h2 id="tags"><a aria-hidden="true" class="anchor-heading" href="#tags"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Tags</h2>
 <ol>

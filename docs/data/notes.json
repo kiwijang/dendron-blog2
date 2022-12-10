@@ -11,8 +11,8 @@
       "links": [],
       "anchors": {},
       "fname": "403",
-      "updated": 1670683885646,
-      "created": 1670683885646,
+      "updated": 1670684430298,
+      "created": 1670684430298,
       "parent": null,
       "children": [],
       "data": {}
@@ -664,7 +664,7 @@
     },
     "h8cp4furnmhkdr2wzwn825j": {
       "id": "h8cp4furnmhkdr2wzwn825j",
-      "title": "1210-[Flutter] 使用 VS Code 在 Windows 上開發 Android App",
+      "title": "1210 [Flutter] 使用 VS Code 在 Windows 上開發 Android App",
       "vault": {
         "fsPath": "vault"
       },
@@ -839,12 +839,12 @@
         }
       },
       "fname": "drops.2022.1210-[Flutter] 使用 VS Code 在 Windows 上開發 Android App",
-      "updated": 1670683881377,
+      "updated": 1670684421836,
       "created": 1670674322860,
       "parent": "4MPQXb6WwUg0kGHxTPD7x",
       "children": [],
       "data": {},
-      "contentHash": "c626cec948de58c4cce9ad88215b72ce",
+      "contentHash": "31312b707f2221fd912b3b0fa81d776e",
       "custom": {},
       "tags": [
         "Flutter",
@@ -2681,7 +2681,8 @@
         "7vo9q7rwhx3xyyg8auxb22s",
         "9tqljuuooemk86j20mg6nch",
         "cl8p533i8it5xfzxq3doe17",
-        "3nppj8b00bsdzmbhem8ppe9"
+        "3nppj8b00bsdzmbhem8ppe9",
+        "w5ej8rx5rn7c37yul52sm87"
       ],
       "data": {},
       "contentHash": "7d34a73a99186fc6a2e7a503c6348f9c",
@@ -2690,14 +2691,82 @@
         "stub": true
       }
     },
-    "3nppj8b00bsdzmbhem8ppe9": {
-      "id": "3nppj8b00bsdzmbhem8ppe9",
-      "title": "1115-[Angular] 讓 mainjs 變小",
+    "w5ej8rx5rn7c37yul52sm87": {
+      "id": "w5ej8rx5rn7c37yul52sm87",
+      "title": "1129 Nand2tetris",
+      "desc": "",
+      "updated": 1669693760955,
+      "created": 1669691084582,
+      "custom": {},
+      "fname": "0drops.2022.1129-nand2tetris",
+      "type": "note",
       "vault": {
         "fsPath": "vault"
       },
-      "type": "note",
+      "contentHash": "8fda604e106b9a3ee7c37723ad9443bc",
+      "links": [],
+      "anchors": {
+        "前言": {
+          "type": "header",
+          "text": "前言",
+          "value": "前言",
+          "line": 8,
+          "column": 0,
+          "depth": 2
+        },
+        "網路公開課-build-a-modern-computer-from-first-principles": {
+          "type": "header",
+          "text": "網路公開課 Build a Modern Computer from First Principles",
+          "value": "網路公開課-build-a-modern-computer-from-first-principles",
+          "line": 34,
+          "column": 0,
+          "depth": 3
+        },
+        "nand2tetris-網站": {
+          "type": "header",
+          "text": "Nand2tetris 網站",
+          "value": "nand2tetris-網站",
+          "line": 44,
+          "column": 0,
+          "depth": 3
+        },
+        "筆記處": {
+          "type": "header",
+          "text": "筆記處",
+          "value": "筆記處",
+          "line": 50,
+          "column": 0,
+          "depth": 2
+        },
+        "小結": {
+          "type": "header",
+          "text": "小結",
+          "value": "小結",
+          "line": 52,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "children": [],
+      "parent": "0YMTMineOCu8QrkzCD9rn",
+      "data": {}
+    },
+    "3nppj8b00bsdzmbhem8ppe9": {
+      "id": "3nppj8b00bsdzmbhem8ppe9",
+      "title": "1115-[Angular] 讓 mainjs 變小",
       "desc": "",
+      "updated": 1669692066316,
+      "created": 1668496095203,
+      "tags": [
+        "PROG.Angular"
+      ],
+      "custom": {},
+      "fname": "0drops.2022.1115-[Angular] 讓 mainjs 變小",
+      "type": "note",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "contentHash": "b17e8ab9d3b57ecefe3098d2f360544a",
       "links": [
         {
           "type": "frontmatterTag",
@@ -2730,19 +2799,27 @@
           "line": 15,
           "column": 0,
           "depth": 2
+        },
+        "加入四個指令到-packagejson": {
+          "type": "header",
+          "text": "加入四個指令到 package.json:",
+          "value": "加入四個指令到-packagejson",
+          "line": 23,
+          "column": 0,
+          "depth": 2
+        },
+        "並有安裝套件到-devdependencies": {
+          "type": "header",
+          "text": "並有安裝套件到 devDependencies:",
+          "value": "並有安裝套件到-devdependencies",
+          "line": 32,
+          "column": 0,
+          "depth": 2
         }
       },
-      "fname": "0drops.2022.1115-[Angular] 讓 mainjs 變小",
-      "updated": 1668650675126,
-      "created": 1668496095203,
-      "parent": "0YMTMineOCu8QrkzCD9rn",
       "children": [],
-      "data": {},
-      "contentHash": "822fd1216313092cf9e83a2428bae96a",
-      "custom": {},
-      "tags": [
-        "PROG.Angular"
-      ]
+      "parent": "0YMTMineOCu8QrkzCD9rn",
+      "data": {}
     },
     "cl8p533i8it5xfzxq3doe17": {
       "id": "cl8p533i8it5xfzxq3doe17",
