@@ -11,8 +11,8 @@
       "links": [],
       "anchors": {},
       "fname": "403",
-      "updated": 1670685074054,
-      "created": 1670685074054,
+      "updated": 1673695833494,
+      "created": 1673695833494,
       "parent": null,
       "children": [],
       "data": {}
@@ -23,7 +23,6 @@
       "desc": "",
       "updated": 1650381339323,
       "created": 1595961348801,
-      "stub": false,
       "custom": {
         "stub": false,
         "nav_order": 0,
@@ -49,43 +48,45 @@
     "rEbR1FrKkZzyjo6ahAgm3": {
       "id": "rEbR1FrKkZzyjo6ahAgm3",
       "title": "Tags",
+      "desc": "",
+      "updated": 1640615341422,
+      "created": 1640615341422,
+      "custom": {
+        "stub": true
+      },
+      "fname": "tags",
+      "type": "note",
       "vault": {
         "fsPath": "vault"
       },
-      "type": "note",
-      "desc": "",
+      "contentHash": "0125a94ac8b72706d767ea3ada604439",
       "links": [],
       "anchors": {},
-      "fname": "tags",
-      "updated": 1640615341422,
-      "created": 1640615341422,
-      "parent": "root",
       "children": [
         "o5fbe3ootu59zrs4c3l7gdg",
         "zq0tsxmhzagm2pe2ngnovg3",
         "4nZxUaZMBAvz7oWuXizXl"
       ],
-      "data": {},
-      "contentHash": "6a771ead4839cf7a1801894ee2cb4679",
-      "stub": false,
-      "custom": {
-        "stub": true
-      }
+      "parent": "root",
+      "data": {}
     },
     "4nZxUaZMBAvz7oWuXizXl": {
       "id": "4nZxUaZMBAvz7oWuXizXl",
       "title": "PROG",
+      "desc": "",
+      "updated": 1641048648905,
+      "created": 1640615341424,
+      "custom": {
+        "stub": true
+      },
+      "fname": "tags.PROG",
+      "type": "note",
       "vault": {
         "fsPath": "vault"
       },
-      "type": "note",
-      "desc": "",
+      "contentHash": "8849edd60fa4b37edbb7fac19f4ac66a",
       "links": [],
       "anchors": {},
-      "fname": "tags.PROG",
-      "updated": 1641048648905,
-      "created": 1640615341424,
-      "parent": "rEbR1FrKkZzyjo6ahAgm3",
       "children": [
         "gj0sitvrk6ynbtxpixc4ih4",
         "zavPiB0ApTq1sGZOGq9xJ",
@@ -99,12 +100,8 @@
         "yvz3NEjMcVQ7sYJm3trFQ",
         "5fvFLLh8nAp2yZZwxk9ku"
       ],
-      "data": {},
-      "contentHash": "3b0d5e410ccd20e44f78756d52b78a71",
-      "stub": false,
-      "custom": {
-        "stub": true
-      }
+      "parent": "rEbR1FrKkZzyjo6ahAgm3",
+      "data": {}
     },
     "5fvFLLh8nAp2yZZwxk9ku": {
       "id": "5fvFLLh8nAp2yZZwxk9ku",
@@ -290,7 +287,7 @@
       "vault": {
         "fsPath": "vault"
       },
-      "contentHash": "aaf0ee672f4616b530bf4b0428d6e08e",
+      "contentHash": "6dccbed9925f21daff6b7544a963904e",
       "links": [
         {
           "from": {
@@ -505,11 +502,16 @@
     "zq0tsxmhzagm2pe2ngnovg3": {
       "id": "zq0tsxmhzagm2pe2ngnovg3",
       "title": "Flutter",
+      "desc": "",
+      "updated": 1670679633990,
+      "created": 1670679633990,
+      "custom": {},
+      "fname": "tags.Flutter",
+      "type": "note",
       "vault": {
         "fsPath": "vault"
       },
-      "type": "note",
-      "desc": "",
+      "contentHash": "ff048d922cf2a802d72cb6848b8cbfb4",
       "links": [
         {
           "from": {
@@ -521,23 +523,23 @@
         }
       ],
       "anchors": {},
-      "fname": "tags.Flutter",
-      "updated": 1670679633990,
-      "created": 1670679633990,
-      "parent": "rEbR1FrKkZzyjo6ahAgm3",
       "children": [],
-      "data": {},
-      "contentHash": "28b9c4d4b51ac63f16585a3e077de063",
-      "custom": {}
+      "parent": "rEbR1FrKkZzyjo6ahAgm3",
+      "data": {}
     },
     "o5fbe3ootu59zrs4c3l7gdg": {
       "id": "o5fbe3ootu59zrs4c3l7gdg",
       "title": "Android",
+      "desc": "",
+      "updated": 1670679647147,
+      "created": 1670679647147,
+      "custom": {},
+      "fname": "tags.Android",
+      "type": "note",
       "vault": {
         "fsPath": "vault"
       },
-      "type": "note",
-      "desc": "",
+      "contentHash": "e7d1116663048b4e0dd22223d67d91fc",
       "links": [
         {
           "from": {
@@ -549,38 +551,32 @@
         }
       ],
       "anchors": {},
-      "fname": "tags.Android",
-      "updated": 1670679647147,
-      "created": 1670679647147,
-      "parent": "rEbR1FrKkZzyjo6ahAgm3",
       "children": [],
-      "data": {},
-      "contentHash": "c74572d8a1f66788d231f5d0d86700e5",
-      "custom": {}
+      "parent": "rEbR1FrKkZzyjo6ahAgm3",
+      "data": {}
     },
     "WAKWMq3SeVmlAmZRqCbpB": {
       "id": "WAKWMq3SeVmlAmZRqCbpB",
       "title": "Other",
+      "desc": "",
+      "updated": 1647511525104,
+      "created": 1647511525104,
+      "custom": {
+        "stub": true
+      },
+      "fname": "other",
+      "type": "note",
       "vault": {
         "fsPath": "vault"
       },
-      "type": "note",
-      "desc": "",
+      "contentHash": "6e1a197addd68c71a8bbfc54df26de21",
       "links": [],
       "anchors": {},
-      "fname": "other",
-      "updated": 1647511525104,
-      "created": 1647511525104,
-      "parent": "root",
       "children": [
         "about"
       ],
-      "data": {},
-      "contentHash": "39858e9c377607597b9208c2ab068d0e",
-      "stub": false,
-      "custom": {
-        "stub": true
-      }
+      "parent": "root",
+      "data": {}
     },
     "about": {
       "id": "about",
@@ -604,42 +600,44 @@
     "u4tSbmkJewrKonY3sL544": {
       "id": "u4tSbmkJewrKonY3sL544",
       "title": "Drops",
+      "desc": "",
+      "updated": 1640604306691,
+      "created": 1640604306691,
+      "custom": {
+        "stub": true
+      },
+      "fname": "drops",
+      "type": "note",
       "vault": {
         "fsPath": "vault"
       },
-      "type": "note",
-      "desc": "",
+      "contentHash": "ae6bf92d9cf90449307a2215d5091b56",
       "links": [],
       "anchors": {},
-      "fname": "drops",
-      "updated": 1640604306691,
-      "created": 1640604306691,
-      "parent": "root",
       "children": [
         "XVdxhzTnAX2SQnuApjkXj",
         "4MPQXb6WwUg0kGHxTPD7x"
       ],
-      "data": {},
-      "contentHash": "38bfc7f5748dedc6df3a3bd4598d5d63",
-      "stub": false,
-      "custom": {
-        "stub": true
-      }
+      "parent": "root",
+      "data": {}
     },
     "4MPQXb6WwUg0kGHxTPD7x": {
       "id": "4MPQXb6WwUg0kGHxTPD7x",
       "title": "2022",
+      "desc": "",
+      "updated": 1641648330472,
+      "created": 1641043073656,
+      "custom": {
+        "stub": true
+      },
+      "fname": "drops.2022",
+      "type": "note",
       "vault": {
         "fsPath": "vault"
       },
-      "type": "note",
-      "desc": "",
+      "contentHash": "7dc187420cf2dd5c78dc7ed634fc329c",
       "links": [],
       "anchors": {},
-      "fname": "drops.2022",
-      "updated": 1641648330472,
-      "created": 1641043073656,
-      "parent": "u4tSbmkJewrKonY3sL544",
       "children": [
         "SIdMIFLQNg5jfa6ePoqt5",
         "Ge24zKfcbPxVmQ2OpQhBY",
@@ -655,21 +653,26 @@
         "ejjb68mdu83hhsukbzr8n6g",
         "h8cp4furnmhkdr2wzwn825j"
       ],
-      "data": {},
-      "contentHash": "be7044143202506d877df4260d9b4fae",
-      "stub": false,
-      "custom": {
-        "stub": true
-      }
+      "parent": "u4tSbmkJewrKonY3sL544",
+      "data": {}
     },
     "h8cp4furnmhkdr2wzwn825j": {
       "id": "h8cp4furnmhkdr2wzwn825j",
       "title": "1210 [Flutter] 使用 VS Code 在 Windows 上開發 Android App",
+      "desc": "",
+      "updated": 1670685054617,
+      "created": 1670674322860,
+      "tags": [
+        "Flutter",
+        "Android"
+      ],
+      "custom": {},
+      "fname": "drops.2022.1210-[Flutter] 使用 VS Code 在 Windows 上開發 Android App",
+      "type": "note",
       "vault": {
         "fsPath": "vault"
       },
-      "type": "note",
-      "desc": "",
+      "contentHash": "13c1af7a0c5c43af606aef47f1f1e440",
       "links": [
         {
           "type": "frontmatterTag",
@@ -846,27 +849,26 @@
           "depth": 2
         }
       },
-      "fname": "drops.2022.1210-[Flutter] 使用 VS Code 在 Windows 上開發 Android App",
-      "updated": 1670685054617,
-      "created": 1670674322860,
-      "parent": "4MPQXb6WwUg0kGHxTPD7x",
       "children": [],
-      "data": {},
-      "contentHash": "13c1af7a0c5c43af606aef47f1f1e440",
-      "custom": {},
-      "tags": [
-        "Flutter",
-        "Android"
-      ]
+      "parent": "4MPQXb6WwUg0kGHxTPD7x",
+      "data": {}
     },
     "ejjb68mdu83hhsukbzr8n6g": {
       "id": "ejjb68mdu83hhsukbzr8n6g",
       "title": "1103 Meta 標籤設定 line、fb、twitter 顯示",
+      "desc": "",
+      "updated": 1668708420081,
+      "created": 1667447309598,
+      "tags": [
+        "PROG.HTML"
+      ],
+      "custom": {},
+      "fname": "drops.2022.1103-meta標籤設定line、fb、twitter顯示",
+      "type": "note",
       "vault": {
         "fsPath": "vault"
       },
-      "type": "note",
-      "desc": "",
+      "contentHash": "1e3c467281f0978631153fdb4dfec1f8",
       "links": [
         {
           "type": "frontmatterTag",
@@ -917,17 +919,9 @@
           "depth": 2
         }
       },
-      "fname": "drops.2022.1103-meta標籤設定line、fb、twitter顯示",
-      "updated": 1668708420081,
-      "created": 1667447309598,
-      "parent": "4MPQXb6WwUg0kGHxTPD7x",
       "children": [],
-      "data": {},
-      "contentHash": "e029427c7f7f0190b00737468472c949",
-      "custom": {},
-      "tags": [
-        "PROG.HTML"
-      ]
+      "parent": "4MPQXb6WwUg0kGHxTPD7x",
+      "data": {}
     },
     "j4z39p3vfjvc2ge3lktqajs": {
       "id": "j4z39p3vfjvc2ge3lktqajs",
@@ -944,7 +938,7 @@
       "vault": {
         "fsPath": "vault"
       },
-      "contentHash": "e880c4e88a4e1f36c5b5408cf4a3c120",
+      "contentHash": "c030c83a66efef1166fb5183c9e11538",
       "links": [
         {
           "type": "frontmatterTag",
@@ -1200,19 +1194,11 @@
     "o7mp336qqwyjf1d0jefmg53": {
       "id": "o7mp336qqwyjf1d0jefmg53",
       "title": "0830 在 Windows 使用 MacOS 虛擬機 (使用 WSL2 + OSX-KVM)",
-      "desc": "",
-      "updated": 1668586390483,
-      "created": 1662562033027,
-      "tags": [
-        "PROG.OS"
-      ],
-      "custom": {},
-      "fname": "drops.2022.0830-WSL2+KVM在win11上測試macos的safari與使用xcode測IOS",
-      "type": "note",
       "vault": {
         "fsPath": "vault"
       },
-      "contentHash": "4b5ce1e3b872b0c7dd2f9576dbd5b7e6",
+      "type": "note",
+      "desc": "",
       "links": [
         {
           "type": "frontmatterTag",
@@ -1226,6 +1212,60 @@
           "xvault": false,
           "to": {
             "fname": "tags.PROG.OS"
+          }
+        },
+        {
+          "type": "wiki",
+          "from": {
+            "fname": "drops.2022.0830-WSL2+KVM在win11上測試macos的safari與使用xcode測IOS",
+            "id": "o7mp336qqwyjf1d0jefmg53",
+            "vaultName": "vault"
+          },
+          "value": "tags.requirements",
+          "alias": "#requirements",
+          "position": {
+            "start": {
+              "line": 40,
+              "column": 17,
+              "offset": 1098
+            },
+            "end": {
+              "line": 40,
+              "column": 30,
+              "offset": 1111
+            },
+            "indent": []
+          },
+          "xvault": false,
+          "to": {
+            "fname": "tags.requirements"
+          }
+        },
+        {
+          "type": "wiki",
+          "from": {
+            "fname": "drops.2022.0830-WSL2+KVM在win11上測試macos的safari與使用xcode測IOS",
+            "id": "o7mp336qqwyjf1d0jefmg53",
+            "vaultName": "vault"
+          },
+          "value": "tags.installation",
+          "alias": "#installation",
+          "position": {
+            "start": {
+              "line": 352,
+              "column": 58,
+              "offset": 8044
+            },
+            "end": {
+              "line": 352,
+              "column": 71,
+              "offset": 8057
+            },
+            "indent": []
+          },
+          "xvault": false,
+          "to": {
+            "fname": "tags.installation"
           }
         }
       ],
@@ -1398,11 +1438,19 @@
           "column": 0,
           "depth": 2
         },
-        "51-angular-在-ng-serve-設定---host-0000": {
+        "51-angular-在-ng-serve-設定": {
           "type": "header",
-          "text": "5.1. Angular 在 ng serve 設定 --host 0.0.0.0",
-          "value": "51-angular-在-ng-serve-設定---host-0000",
+          "text": "5.1. Angular 在 ng serve 設定",
+          "value": "51-angular-在-ng-serve-設定",
           "line": 364,
+          "column": 0,
+          "depth": 3
+        },
+        "511-沒辦法在-qemu-成功瀏覽": {
+          "type": "header",
+          "text": "5.1.1 沒辦法在 qemu 成功瀏覽",
+          "value": "511-沒辦法在-qemu-成功瀏覽",
+          "line": 389,
           "column": 0,
           "depth": 3
         },
@@ -1410,7 +1458,7 @@
           "type": "header",
           "text": "5.2. 畫面大小",
           "value": "52-畫面大小",
-          "line": 389,
+          "line": 399,
           "column": 0,
           "depth": 3
         },
@@ -1418,7 +1466,7 @@
           "type": "header",
           "text": "6. 關於 Hyper-V 和 WSL",
           "value": "6-關於-hyper-v-和-wsl",
-          "line": 407,
+          "line": 417,
           "column": 0,
           "depth": 2
         },
@@ -1426,14 +1474,22 @@
           "type": "header",
           "text": "7. 這篇筆記的起源與感想",
           "value": "7-這篇筆記的起源與感想",
-          "line": 425,
+          "line": 435,
           "column": 0,
           "depth": 2
         }
       },
-      "children": [],
+      "fname": "drops.2022.0830-WSL2+KVM在win11上測試macos的safari與使用xcode測IOS",
+      "updated": 1673695827983,
+      "created": 1662562033027,
       "parent": "4MPQXb6WwUg0kGHxTPD7x",
-      "data": {}
+      "children": [],
+      "data": {},
+      "contentHash": "bd30965f837c0d421605bf519d5bd602",
+      "custom": {},
+      "tags": [
+        "PROG.OS"
+      ]
     },
     "381o3my27s1t8xm06oamjq0": {
       "id": "381o3my27s1t8xm06oamjq0",
@@ -2266,27 +2322,26 @@
     "XVdxhzTnAX2SQnuApjkXj": {
       "id": "XVdxhzTnAX2SQnuApjkXj",
       "title": "2021",
+      "desc": "",
+      "updated": 1640704824635,
+      "created": 1640704824635,
+      "custom": {
+        "stub": true
+      },
+      "fname": "drops.2021",
+      "type": "note",
       "vault": {
         "fsPath": "vault"
       },
-      "type": "note",
-      "desc": "",
+      "contentHash": "d60ac62e11ce6f30352931c6b964f08e",
       "links": [],
       "anchors": {},
-      "fname": "drops.2021",
-      "updated": 1640704824635,
-      "created": 1640704824635,
-      "parent": "u4tSbmkJewrKonY3sL544",
       "children": [
         "DTeYpEuPv3KIHugUyqZPu",
         "Ee1iUWT8QmZe4CAuuwQxs"
       ],
-      "data": {},
-      "contentHash": "52e17190695b0cfe5fd698bb4f432733",
-      "stub": false,
-      "custom": {
-        "stub": true
-      }
+      "parent": "u4tSbmkJewrKonY3sL544",
+      "data": {}
     },
     "Ee1iUWT8QmZe4CAuuwQxs": {
       "id": "Ee1iUWT8QmZe4CAuuwQxs",
@@ -2647,41 +2702,43 @@
     "Cybv0wy1d2NbWoMaJ9Xst": {
       "id": "Cybv0wy1d2NbWoMaJ9Xst",
       "title": "pending notes",
+      "desc": "pending notes",
+      "updated": 1644324650888,
+      "created": 1644323343019,
+      "custom": {
+        "stub": true
+      },
+      "fname": "0drops",
+      "type": "note",
       "vault": {
         "fsPath": "vault"
       },
-      "type": "note",
-      "desc": "pending notes",
+      "contentHash": "7b97026f8ae3612b3d53c11ee947c8c1",
       "links": [],
       "anchors": {},
-      "fname": "0drops",
-      "updated": 1644324650888,
-      "created": 1644323343019,
-      "parent": "root",
       "children": [
         "0YMTMineOCu8QrkzCD9rn"
       ],
-      "data": {},
-      "contentHash": "92e9d94cb1a06c5c3c4ee0345f634ea0",
-      "stub": false,
-      "custom": {
-        "stub": true
-      }
+      "parent": "root",
+      "data": {}
     },
     "0YMTMineOCu8QrkzCD9rn": {
       "id": "0YMTMineOCu8QrkzCD9rn",
       "title": "2022",
+      "desc": "",
+      "updated": 1644323343019,
+      "created": 1644323343019,
+      "custom": {
+        "stub": true
+      },
+      "fname": "0drops.2022",
+      "type": "note",
       "vault": {
         "fsPath": "vault"
       },
-      "type": "note",
-      "desc": "",
+      "contentHash": "d39c76e8797a4ec8b5c545e453dff6db",
       "links": [],
       "anchors": {},
-      "fname": "0drops.2022",
-      "updated": 1644323343019,
-      "created": 1644323343019,
-      "parent": "Cybv0wy1d2NbWoMaJ9Xst",
       "children": [
         "1FrZXjCCHfkMyZZeBnoL2",
         "05PiGJUq8nazfBg8ndqHM",
@@ -2692,12 +2749,8 @@
         "3nppj8b00bsdzmbhem8ppe9",
         "w5ej8rx5rn7c37yul52sm87"
       ],
-      "data": {},
-      "contentHash": "7d34a73a99186fc6a2e7a503c6348f9c",
-      "stub": false,
-      "custom": {
-        "stub": true
-      }
+      "parent": "Cybv0wy1d2NbWoMaJ9Xst",
+      "data": {}
     },
     "w5ej8rx5rn7c37yul52sm87": {
       "id": "w5ej8rx5rn7c37yul52sm87",
@@ -2832,11 +2885,19 @@
     "cl8p533i8it5xfzxq3doe17": {
       "id": "cl8p533i8it5xfzxq3doe17",
       "title": "1115-[Angular] 日期",
+      "desc": "",
+      "updated": 1668648663693,
+      "created": 1668495848211,
+      "tags": [
+        "PROG.Angular"
+      ],
+      "custom": {},
+      "fname": "0drops.2022.1115-[Angular] 日期",
+      "type": "note",
       "vault": {
         "fsPath": "vault"
       },
-      "type": "note",
-      "desc": "",
+      "contentHash": "475e56cfd90372a196dba5c8e757920a",
       "links": [
         {
           "type": "frontmatterTag",
@@ -2854,17 +2915,9 @@
         }
       ],
       "anchors": {},
-      "fname": "0drops.2022.1115-[Angular] 日期",
-      "updated": 1668648663693,
-      "created": 1668495848211,
-      "parent": "0YMTMineOCu8QrkzCD9rn",
       "children": [],
-      "data": {},
-      "contentHash": "5bd29c7660ca910249fdd723c627ae2e",
-      "custom": {},
-      "tags": [
-        "PROG.Angular"
-      ]
+      "parent": "0YMTMineOCu8QrkzCD9rn",
+      "data": {}
     },
     "9tqljuuooemk86j20mg6nch": {
       "id": "9tqljuuooemk86j20mg6nch",
@@ -2884,7 +2937,7 @@
       "vault": {
         "fsPath": "vault"
       },
-      "contentHash": "5bc30d6dfbfba1865b2d93a09c5f1a07",
+      "contentHash": "c093279cadc894396192055eaf5dcf52",
       "links": [
         {
           "type": "frontmatterTag",
@@ -2924,7 +2977,7 @@
       "vault": {
         "fsPath": "vault"
       },
-      "contentHash": "278d578956196688992398c0130f9be3",
+      "contentHash": "8f569710d59441b580634082cb8d651b",
       "links": [
         {
           "type": "frontmatterTag",
@@ -3030,11 +3083,22 @@
     "iwm8cxyx12fpzxdeesvfsiw": {
       "id": "iwm8cxyx12fpzxdeesvfsiw",
       "title": "0914 [Ch2Ch3]IO、OS 架構、VM",
+      "desc": "",
+      "updated": 1670674264619,
+      "created": 1663169293429,
+      "tags": [
+        "PROG.OS"
+      ],
+      "status": "w",
+      "custom": {
+        "status": "w"
+      },
+      "fname": "0drops.2022.0914-[Ch2Ch3]IO、OS 架構、VM",
+      "type": "note",
       "vault": {
         "fsPath": "vault"
       },
-      "type": "note",
-      "desc": "",
+      "contentHash": "cb30f23a04f0f1b24471ea57eb4e0c2c",
       "links": [
         {
           "type": "frontmatterTag",
@@ -3173,19 +3237,9 @@
           "depth": 4
         }
       },
-      "fname": "0drops.2022.0914-[Ch2Ch3]IO、OS 架構、VM",
-      "updated": 1670674264619,
-      "created": 1663169293429,
-      "parent": "0YMTMineOCu8QrkzCD9rn",
       "children": [],
-      "data": {},
-      "contentHash": "cb30f23a04f0f1b24471ea57eb4e0c2c",
-      "custom": {
-        "status": "w"
-      },
-      "tags": [
-        "PROG.OS"
-      ]
+      "parent": "0YMTMineOCu8QrkzCD9rn",
+      "data": {}
     },
     "05PiGJUq8nazfBg8ndqHM": {
       "id": "05PiGJUq8nazfBg8ndqHM",
@@ -3369,7 +3423,6 @@
       "desc": "",
       "updated": 1650381339323,
       "created": 1595961348801,
-      "stub": false,
       "custom": {
         "stub": false,
         "nav_order": 0,
@@ -3400,7 +3453,6 @@
     "desc": "",
     "updated": 1650381339323,
     "created": 1595961348801,
-    "stub": false,
     "custom": {
       "stub": false,
       "nav_order": 0,

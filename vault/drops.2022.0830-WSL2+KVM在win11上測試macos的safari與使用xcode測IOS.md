@@ -2,7 +2,7 @@
 id: o7mp336qqwyjf1d0jefmg53
 title: 0830 在 Windows 使用 MacOS 虛擬機 (使用 WSL2 + OSX-KVM) 
 desc: ''
-updated: 1668586390483
+updated: 1673695827983
 created: 1662562033027
 tags:
   - PROG.OS
@@ -386,6 +386,16 @@ Default Router 是對 IP 數據包中的目的地址找不到存在的其他路�
 ![](/assets/images/2022-10-20-21-32-08.png)
 
 > 以此圖為例，這是用 hyper-v 建立的虛擬交換器，每次重啟電腦都會變，所以要在輸入網址時要先在本機 cmd `ipconfig /all` 查看目前 IP。 在 VM 裡的要測試的 angular 網站網址打上 `192.168.64.1:4200` 就可以連線了。
+
+### 5.1.1 沒辦法在 qemu 成功瀏覽
+
+在本機 windows `ng serve --host 0.0.0.0` 後打開 qemu。
+
+如果在 qemu 裡 `ping <你的網卡ip>` 可以成功，
+
+但在 qemu `http://<你的網卡ip>:4200` 沒辦法成功瀏覽的話，
+
+要到本機 windows 設定開啟 tcp 4200 port 的防火牆輸入/輸出規則。
 
 ### 5.2. 畫面大小
 

@@ -290,6 +290,11 @@ Choose a product to download <span class="token punctuation">(</span><span class
 <blockquote>
 <p>以此圖為例，這是用 hyper-v 建立的虛擬交換器，每次重啟電腦都會變，所以要在輸入網址時要先在本機 cmd <code>ipconfig /all</code> 查看目前 IP。 在 VM 裡的要測試的 angular 網站網址打上 <code>192.168.64.1:4200</code> 就可以連線了。</p>
 </blockquote>
+<h3 id="511-沒辦法在-qemu-成功瀏覽"><a aria-hidden="true" class="anchor-heading" href="#511-沒辦法在-qemu-成功瀏覽"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>5.1.1 沒辦法在 qemu 成功瀏覽</h3>
+<p>在本機 windows <code>ng serve --host 0.0.0.0</code> 後打開 qemu。</p>
+<p>如果在 qemu 裡 <code>ping &#x3C;你的網卡ip></code> 可以成功，</p>
+<p>但在 qemu <code>http://&#x3C;你的網卡ip>:4200</code> 沒辦法成功瀏覽的話，</p>
+<p>要到本機 windows 設定開啟 tcp 4200 port 的防火牆輸入/輸出規則。</p>
 <h3 id="52-畫面大小"><a aria-hidden="true" class="anchor-heading" href="#52-畫面大小"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>5.2. 畫面大小</h3>
 <p>選 About This Mac 後選擇 Display
 <img src="/assets/images/2022-10-20-22-33-47.png"></p>
