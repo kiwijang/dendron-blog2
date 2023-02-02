@@ -11,8 +11,8 @@
       "links": [],
       "anchors": {},
       "fname": "403",
-      "updated": 1673695833494,
-      "created": 1673695833494,
+      "updated": 1675333730474,
+      "created": 1675333730474,
       "parent": null,
       "children": [],
       "data": {}
@@ -443,14 +443,6 @@
         },
         {
           "from": {
-            "fname": "0drops.2022.1115-[Angular] 讓 mainjs 變小",
-            "vaultName": "vault"
-          },
-          "type": "backlink",
-          "value": "tags.PROG.Angular"
-        },
-        {
-          "from": {
             "fname": "drops.2022.0208-Live Server 開啟 build 檔案",
             "vaultName": "vault"
           },
@@ -460,6 +452,14 @@
         {
           "from": {
             "fname": "drops.2022.0919-[Angular] Subject",
+            "vaultName": "vault"
+          },
+          "type": "backlink",
+          "value": "tags.PROG.Angular"
+        },
+        {
+          "from": {
+            "fname": "drops.2022.1115-[Angular] 讓 mainjs 變小",
             "vaultName": "vault"
           },
           "type": "backlink",
@@ -616,10 +616,100 @@
       "anchors": {},
       "children": [
         "XVdxhzTnAX2SQnuApjkXj",
-        "4MPQXb6WwUg0kGHxTPD7x"
+        "4MPQXb6WwUg0kGHxTPD7x",
+        "unroh28we8qrl7g9sfhmx0v"
       ],
       "parent": "root",
       "data": {}
+    },
+    "unroh28we8qrl7g9sfhmx0v": {
+      "id": "unroh28we8qrl7g9sfhmx0v",
+      "title": "2023",
+      "desc": "",
+      "updated": 1673882676858,
+      "created": 1673882676858,
+      "custom": {},
+      "fname": "drops.2023",
+      "type": "note",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "contentHash": "a27432a08366491bc1adf9a16164200c",
+      "links": [],
+      "anchors": {},
+      "children": [
+        "gx16d7c6i4t6nj34zen2bu6"
+      ],
+      "parent": "u4tSbmkJewrKonY3sL544",
+      "data": {}
+    },
+    "gx16d7c6i4t6nj34zen2bu6": {
+      "id": "gx16d7c6i4t6nj34zen2bu6",
+      "title": "0202 [Javascript] CSV 檔數字千分位、字串都是數字",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {
+        "csv-檔數字千分位字串都是數字": {
+          "type": "header",
+          "text": "CSV 檔數字千分位、字串都是數字",
+          "value": "csv-檔數字千分位字串都是數字",
+          "line": 8,
+          "column": 0,
+          "depth": 2
+        },
+        "demo": {
+          "type": "header",
+          "text": "Demo",
+          "value": "demo",
+          "line": 10,
+          "column": 0,
+          "depth": 3
+        },
+        "csv": {
+          "type": "header",
+          "text": "csv",
+          "value": "csv",
+          "line": 16,
+          "column": 0,
+          "depth": 3
+        },
+        "下載-csv": {
+          "type": "header",
+          "text": "下載 csv",
+          "value": "下載-csv",
+          "line": 43,
+          "column": 0,
+          "depth": 3
+        },
+        "千分位加逗號": {
+          "type": "header",
+          "text": "千分位加逗號",
+          "value": "千分位加逗號",
+          "line": 150,
+          "column": 0,
+          "depth": 3
+        },
+        "小結": {
+          "type": "header",
+          "text": "小結",
+          "value": "小結",
+          "line": 199,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "fname": "drops.2023.0202-[Javascript] CSV 檔數字千分位、字串都是數字",
+      "updated": 1675332833043,
+      "created": 1675303666200,
+      "parent": "unroh28we8qrl7g9sfhmx0v",
+      "children": [],
+      "data": {},
+      "contentHash": "ceb56a86108fa7d572300afdf8673b08",
+      "custom": {}
     },
     "4MPQXb6WwUg0kGHxTPD7x": {
       "id": "4MPQXb6WwUg0kGHxTPD7x",
@@ -651,6 +741,7 @@
         "sy14xjjozy0n9ustvre7tbo",
         "j4z39p3vfjvc2ge3lktqajs",
         "ejjb68mdu83hhsukbzr8n6g",
+        "3nppj8b00bsdzmbhem8ppe9",
         "h8cp4furnmhkdr2wzwn825j"
       ],
       "parent": "u4tSbmkJewrKonY3sL544",
@@ -852,6 +943,76 @@
       "children": [],
       "parent": "4MPQXb6WwUg0kGHxTPD7x",
       "data": {}
+    },
+    "3nppj8b00bsdzmbhem8ppe9": {
+      "id": "3nppj8b00bsdzmbhem8ppe9",
+      "title": "1115 [Angular] 讓 mainjs 變小",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [
+        {
+          "type": "frontmatterTag",
+          "from": {
+            "fname": "drops.2022.1115-[Angular] 讓 mainjs 變小",
+            "id": "3nppj8b00bsdzmbhem8ppe9",
+            "vaultName": "vault"
+          },
+          "value": "tags.PROG.Angular",
+          "alias": "PROG.Angular",
+          "xvault": false,
+          "to": {
+            "fname": "tags.PROG.Angular"
+          }
+        }
+      ],
+      "anchors": {
+        "讓-mainjs-變小": {
+          "type": "header",
+          "text": "讓 main.js 變小",
+          "value": "讓-mainjs-變小",
+          "line": 10,
+          "column": 0,
+          "depth": 2
+        },
+        "視覺化工具": {
+          "type": "header",
+          "text": "視覺化工具",
+          "value": "視覺化工具",
+          "line": 15,
+          "column": 0,
+          "depth": 2
+        },
+        "加入四個指令到-packagejson": {
+          "type": "header",
+          "text": "加入四個指令到 package.json:",
+          "value": "加入四個指令到-packagejson",
+          "line": 23,
+          "column": 0,
+          "depth": 2
+        },
+        "並有安裝套件到-devdependencies": {
+          "type": "header",
+          "text": "並有安裝套件到 devDependencies:",
+          "value": "並有安裝套件到-devdependencies",
+          "line": 32,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "fname": "drops.2022.1115-[Angular] 讓 mainjs 變小",
+      "updated": 1675332833044,
+      "created": 1668496095203,
+      "parent": "4MPQXb6WwUg0kGHxTPD7x",
+      "children": [],
+      "data": {},
+      "contentHash": "e58afe720b63d3ebb8933560156969a6",
+      "custom": {},
+      "tags": [
+        "PROG.Angular"
+      ]
     },
     "ejjb68mdu83hhsukbzr8n6g": {
       "id": "ejjb68mdu83hhsukbzr8n6g",
@@ -2717,10 +2878,54 @@
       "links": [],
       "anchors": {},
       "children": [
-        "0YMTMineOCu8QrkzCD9rn"
+        "0YMTMineOCu8QrkzCD9rn",
+        "tkhXy6Th6dfxRQQTpoPmx"
       ],
       "parent": "root",
       "data": {}
+    },
+    "tkhXy6Th6dfxRQQTpoPmx": {
+      "id": "tkhXy6Th6dfxRQQTpoPmx",
+      "title": "2023",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "fname": "0drops.2023",
+      "updated": 1675331099187,
+      "created": 1675331099187,
+      "parent": "Cybv0wy1d2NbWoMaJ9Xst",
+      "children": [
+        "bj6aqj09i6xs27ma9hjqbyr"
+      ],
+      "data": {},
+      "contentHash": "7dd86b6490a0ed949df9cfa2e48edd33",
+      "stub": false,
+      "custom": {
+        "stub": true
+      }
+    },
+    "bj6aqj09i6xs27ma9hjqbyr": {
+      "id": "bj6aqj09i6xs27ma9hjqbyr",
+      "title": "0116 [Angular] onChange 還是 get set 好",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "type": "note",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "fname": "0drops.2023.0116-[Angular] onChange 還是 get set 好",
+      "updated": 1675332831851,
+      "created": 1673882830396,
+      "parent": "tkhXy6Th6dfxRQQTpoPmx",
+      "children": [],
+      "data": {},
+      "contentHash": "64e3f8d95753819a1fda21d8ebb9bd67",
+      "custom": {}
     },
     "0YMTMineOCu8QrkzCD9rn": {
       "id": "0YMTMineOCu8QrkzCD9rn",
@@ -2746,7 +2951,6 @@
         "7vo9q7rwhx3xyyg8auxb22s",
         "9tqljuuooemk86j20mg6nch",
         "cl8p533i8it5xfzxq3doe17",
-        "3nppj8b00bsdzmbhem8ppe9",
         "w5ej8rx5rn7c37yul52sm87"
       ],
       "parent": "Cybv0wy1d2NbWoMaJ9Xst",
@@ -2804,76 +3008,6 @@
           "text": "小結",
           "value": "小結",
           "line": 52,
-          "column": 0,
-          "depth": 2
-        }
-      },
-      "children": [],
-      "parent": "0YMTMineOCu8QrkzCD9rn",
-      "data": {}
-    },
-    "3nppj8b00bsdzmbhem8ppe9": {
-      "id": "3nppj8b00bsdzmbhem8ppe9",
-      "title": "1115-[Angular] 讓 mainjs 變小",
-      "desc": "",
-      "updated": 1669692066316,
-      "created": 1668496095203,
-      "tags": [
-        "PROG.Angular"
-      ],
-      "custom": {},
-      "fname": "0drops.2022.1115-[Angular] 讓 mainjs 變小",
-      "type": "note",
-      "vault": {
-        "fsPath": "vault"
-      },
-      "contentHash": "b17e8ab9d3b57ecefe3098d2f360544a",
-      "links": [
-        {
-          "type": "frontmatterTag",
-          "from": {
-            "fname": "0drops.2022.1115-[Angular] 讓 mainjs 變小",
-            "id": "3nppj8b00bsdzmbhem8ppe9",
-            "vaultName": "vault"
-          },
-          "value": "tags.PROG.Angular",
-          "alias": "PROG.Angular",
-          "xvault": false,
-          "to": {
-            "fname": "tags.PROG.Angular"
-          }
-        }
-      ],
-      "anchors": {
-        "讓-mainjs-變小": {
-          "type": "header",
-          "text": "讓 main.js 變小",
-          "value": "讓-mainjs-變小",
-          "line": 10,
-          "column": 0,
-          "depth": 2
-        },
-        "視覺化工具": {
-          "type": "header",
-          "text": "視覺化工具",
-          "value": "視覺化工具",
-          "line": 15,
-          "column": 0,
-          "depth": 2
-        },
-        "加入四個指令到-packagejson": {
-          "type": "header",
-          "text": "加入四個指令到 package.json:",
-          "value": "加入四個指令到-packagejson",
-          "line": 23,
-          "column": 0,
-          "depth": 2
-        },
-        "並有安裝套件到-devdependencies": {
-          "type": "header",
-          "text": "並有安裝套件到 devDependencies:",
-          "value": "並有安裝套件到-devdependencies",
-          "line": 32,
           "column": 0,
           "depth": 2
         }
