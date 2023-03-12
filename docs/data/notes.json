@@ -11,8 +11,8 @@
       "links": [],
       "anchors": {},
       "fname": "403",
-      "updated": 1677998395473,
-      "created": 1677998395473,
+      "updated": 1678641849506,
+      "created": 1678641849506,
       "parent": null,
       "children": [],
       "data": {}
@@ -648,47 +648,60 @@
     "19rot6rnw1l3mlyuy10m3sf": {
       "id": "19rot6rnw1l3mlyuy10m3sf",
       "title": "0304 [unbuntu&windows]進入 BIOS",
+      "desc": "",
+      "updated": 1678641116428,
+      "created": 1677902208561,
+      "custom": {},
+      "fname": "drops.2023.0304-[unbuntu&windows]進入 BIOS",
+      "type": "note",
       "vault": {
         "fsPath": "vault"
       },
-      "type": "note",
-      "desc": "",
+      "contentHash": "ec578dbbf4c112e2e4fac5393b360498",
       "links": [],
       "anchors": {
         "ubuntu-22042-lts": {
           "type": "header",
           "text": "Ubuntu 22.04.2 LTS",
           "value": "ubuntu-22042-lts",
-          "line": 8,
+          "line": 10,
           "column": 0,
           "depth": 2
+        },
+        "關掉-grub-挑選畫面": {
+          "type": "header",
+          "text": "關掉 GRUB 挑選畫面",
+          "value": "關掉-grub-挑選畫面",
+          "line": 40,
+          "column": 0,
+          "depth": 3
         },
         "windows-11": {
           "type": "header",
           "text": "Windows 11",
           "value": "windows-11",
-          "line": 38,
+          "line": 50,
           "column": 0,
           "depth": 2
         }
       },
-      "fname": "drops.2023.0304-[unbuntu&windows]進入 BIOS",
-      "updated": 1677994864082,
-      "created": 1677902208561,
-      "parent": "unroh28we8qrl7g9sfhmx0v",
       "children": [],
-      "data": {},
-      "contentHash": "e549d2b4d2701714822c3c88387fda9a",
-      "custom": {}
+      "parent": "unroh28we8qrl7g9sfhmx0v",
+      "data": {}
     },
     "rq15t9h86v2unohimfajaw0": {
       "id": "rq15t9h86v2unohimfajaw0",
       "title": "0226 圖片 RWD 與不變形和壓縮",
+      "desc": "",
+      "updated": 1678640664089,
+      "created": 1677392795595,
+      "custom": {},
+      "fname": "drops.2023.0226-圖片 RWD 與不變形和壓縮",
+      "type": "note",
       "vault": {
         "fsPath": "vault"
       },
-      "type": "note",
-      "desc": "",
+      "contentHash": "ad5c724401cd92370fff84f49e2c8ef3",
       "links": [],
       "anchors": {
         "1-圖片-rwd-與不變形和壓縮": {
@@ -715,63 +728,98 @@
           "column": 0,
           "depth": 2
         },
-        "21-指定不同像素密度的圖片版本": {
+        "21-html-img-和-source-的屬性": {
           "type": "header",
-          "text": "2.1. 指定不同像素密度的圖片版本",
-          "value": "21-指定不同像素密度的圖片版本",
+          "text": "2.1. HTML <img> 和 <source> 的屬性",
+          "value": "21-html-img-和-source-的屬性",
           "line": 28,
           "column": 0,
           "depth": 3
         },
-        "22-指定不同螢幕寬度的圖片版本": {
+        "22-指定不同像素密度的圖片版本": {
           "type": "header",
-          "text": "2.2. 指定不同螢幕寬度的圖片版本",
-          "value": "22-指定不同螢幕寬度的圖片版本",
-          "line": 44,
+          "text": "2.2. 指定不同像素密度的圖片版本",
+          "value": "22-指定不同像素密度的圖片版本",
+          "line": 94,
           "column": 0,
           "depth": 3
         },
-        "23-指定多種格式的圖片版本": {
+        "23-指定不同螢幕寬度的圖片版本": {
           "type": "header",
-          "text": "2.3. 指定多種格式的圖片版本",
-          "value": "23-指定多種格式的圖片版本",
-          "line": 67,
-          "column": 0,
-          "depth": 3
-        },
-        "3-圖片解析度-dpippilpi": {
-          "type": "header",
-          "text": "3. 圖片解析度? DPI、PPI、LPI?",
-          "value": "3-圖片解析度-dpippilpi",
-          "line": 96,
-          "column": 0,
-          "depth": 2
-        },
-        "31-lpi-和-dpi-通常用來描述印刷品的解析度和清晰度": {
-          "type": "header",
-          "text": "3.1. LPI 和 DPI 通常用來描述印刷品的解析度和清晰度",
-          "value": "31-lpi-和-dpi-通常用來描述印刷品的解析度和清晰度",
-          "line": 98,
-          "column": 0,
-          "depth": 3
-        },
-        "32-ppi-圖像的解析度": {
-          "type": "header",
-          "text": "3.2. PPI 圖像的解析度",
-          "value": "32-ppi-圖像的解析度",
+          "text": "2.3. 指定不同螢幕寬度的圖片版本",
+          "value": "23-指定不同螢幕寬度的圖片版本",
           "line": 134,
           "column": 0,
           "depth": 3
+        },
+        "24-指定多種格式的圖片版本": {
+          "type": "header",
+          "text": "2.4. 指定多種格式的圖片版本",
+          "value": "24-指定多種格式的圖片版本",
+          "line": 159,
+          "column": 0,
+          "depth": 3
+        },
+        "3-混用": {
+          "type": "header",
+          "text": "3. 混用",
+          "value": "3-混用",
+          "line": 190,
+          "column": 0,
+          "depth": 2
+        },
+        "4-圖片解析度-dpippilpi": {
+          "type": "header",
+          "text": "4. 圖片解析度? DPI、PPI、LPI?",
+          "value": "4-圖片解析度-dpippilpi",
+          "line": 204,
+          "column": 0,
+          "depth": 2
+        },
+        "41-lpi-和-dpi-通常用來描述印刷品的解析度和清晰度": {
+          "type": "header",
+          "text": "4.1. LPI 和 DPI 通常用來描述印刷品的解析度和清晰度",
+          "value": "41-lpi-和-dpi-通常用來描述印刷品的解析度和清晰度",
+          "line": 206,
+          "column": 0,
+          "depth": 3
+        },
+        "42-ppi-圖像的解析度": {
+          "type": "header",
+          "text": "4.2. PPI 圖像的解析度",
+          "value": "42-ppi-圖像的解析度",
+          "line": 242,
+          "column": 0,
+          "depth": 3
+        },
+        "5-css-設定-dpr-與-dpi-media-query": {
+          "type": "header",
+          "text": "5. CSS 設定 DPR 與 DPI media query",
+          "value": "5-css-設定-dpr-與-dpi-media-query",
+          "line": 258,
+          "column": 0,
+          "depth": 2
+        },
+        "6-使用-sharp-來將-svg-轉檔": {
+          "type": "header",
+          "text": "6. 使用 sharp 來將 svg 轉檔",
+          "value": "6-使用-sharp-來將-svg-轉檔",
+          "line": 279,
+          "column": 0,
+          "depth": 2
+        },
+        "小結": {
+          "type": "header",
+          "text": "小結",
+          "value": "小結",
+          "line": 360,
+          "column": 0,
+          "depth": 2
         }
       },
-      "fname": "drops.2023.0226-圖片 RWD 與不變形和壓縮",
-      "updated": 1677998385448,
-      "created": 1677392795595,
-      "parent": "unroh28we8qrl7g9sfhmx0v",
       "children": [],
-      "data": {},
-      "contentHash": "3e5b86ddf8b5a90b9bd02ac5634b21b0",
-      "custom": {}
+      "parent": "unroh28we8qrl7g9sfhmx0v",
+      "data": {}
     },
     "gx16d7c6i4t6nj34zen2bu6": {
       "id": "gx16d7c6i4t6nj34zen2bu6",

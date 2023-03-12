@@ -2,7 +2,7 @@
 id: 19rot6rnw1l3mlyuy10m3sf
 title: "0304 [unbuntu&windows]進入 BIOS"
 desc: ""
-updated: 1678011133718
+updated: 1678641116428
 created: 1677902208561
 ---
 
@@ -37,6 +37,16 @@ sudo systemctl reboot --firmware-setup
   需要注意的是，systemctl 命令需要以超級用戶權限運行，可以使用 sudo 命令來運行。
 
 - `--firmware-setup`：這個選項指示系統在重新啟動時進入固件設置模式。當系統進入固件設置模式時，您可以更改許多與硬件設置有關的選項，例如啟動順序、CPU 頻率、記憶體時序等等。在固件設置模式下，您可以使用鍵盤和滑鼠進行選擇和更改。
+
+### 關掉 GRUB 挑選畫面
+
+- 打開檔案 `sudo gedit /etc/grub.d/30_os-prober`
+
+- 並修改成 `quick_boot="0"`
+
+![](/assets/images/2023-03-13-01-10-22.png)
+
+> 參考 [How to Hide Grub Boot Menu in Ubuntu 20.04, 21.10 (Updated)](https://ubuntuhandbook.org/index.php/2020/06/hide-grub-boot-menu-ubuntu-20-04-lts/)
 
 ## Windows 11
 
