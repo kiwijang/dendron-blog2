@@ -1,0 +1,55 @@
+<h1 id="0304-unbuntuwindows進入-bios"><a aria-hidden="true" class="anchor-heading" href="#0304-unbuntuwindows進入-bios"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>0304 [unbuntu&#x26;windows]進入 BIOS</h1>
+<p>快速開機真的有夠難按到 <code>Del</code>，以下是在系統裡重開機進入 BIOS 的指令。</p>
+<h2 id="ubuntu-22042-lts"><a aria-hidden="true" class="anchor-heading" href="#ubuntu-22042-lts"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Ubuntu 22.04.2 LTS</h2>
+<pre class="language-bash"><code class="language-bash"><span class="token function">sudo</span> systemctl <span class="token function">reboot</span> --firmware-setup
+</code></pre>
+<p>用來重新啟動系統並進入固件設置模式（也稱為 BIOS 或 UEFI 設置模式）的命令。</p>
+<p>它由以下三部分組成：</p>
+<ul>
+<li>
+<p><code>sudo</code>：這個關鍵字表示需要使用超級用戶權限運行命令。請注意，在運行這個命令之前，系統會要求您輸入您的密碼。</p>
+</li>
+<li>
+<p><code>systemctl reboot</code>：這部分命令用來重新啟動系統。它會將系統關閉，然後重新啟動系統。</p>
+<ul>
+<li><code>systemctl</code> 是一個用於管理 <code>Systemd</code> 系統和服務的命令行工具。<code>Systemd</code> 是一個用於管理 Linux 系統的系統和服務的守護進程，它負責管理系統的各種組件和進程，例如初始化進程、網絡服務、日誌記錄、進程控制等。</li>
+</ul>
+<p><code>systemctl</code> 命令可以用來<strong>啟動、停止、重啟和查詢系統中運行的 Systemd 服務</strong>。使用 systemctl 命令還可以查看服務的運行狀態、啟動時間、最後一次啟動的結果等詳細信息。在 Linux 系統管理中，systemctl 是一個非常有用的命令行工具，它可以幫助管理員更好地了解系統的運行狀態和服務的運行情況。</p>
+<p>以下是一些常用的 <code>systemctl</code> 命令：</p>
+<p><code>systemctl start service</code>：啟動一個服務
+<code>systemctl stop service</code>：停止一個服務
+<code>systemctl restart service</code>：重啟一個服務
+<code>systemctl status service</code>：查詢一個服務的狀態
+<code>systemctl enable service</code>：將一個服務設置為開機啟動
+<code>systemctl disable service</code>：將一個服務設置為不開機啟動
+需要注意的是，systemctl 命令需要以超級用戶權限運行，可以使用 sudo 命令來運行。</p>
+</li>
+<li>
+<p><code>--firmware-setup</code>：這個選項指示系統在重新啟動時進入固件設置模式。當系統進入固件設置模式時，您可以更改許多與硬件設置有關的選項，例如啟動順序、CPU 頻率、記憶體時序等等。在固件設置模式下，您可以使用鍵盤和滑鼠進行選擇和更改。</p>
+</li>
+</ul>
+<h3 id="關掉-grub-挑選畫面"><a aria-hidden="true" class="anchor-heading" href="#關掉-grub-挑選畫面"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>關掉 GRUB 挑選畫面</h3>
+<ul>
+<li>
+<p>打開檔案 <code>sudo gedit /etc/grub.d/30_os-prober</code></p>
+</li>
+<li>
+<p>並修改成 <code>quick_boot="0"</code></p>
+</li>
+</ul>
+<p><img src="/assets/images/2023-03-13-01-10-22.png"></p>
+<blockquote>
+<p>參考 <a href="https://ubuntuhandbook.org/index.php/2020/06/hide-grub-boot-menu-ubuntu-20-04-lts/">How to Hide Grub Boot Menu in Ubuntu 20.04, 21.10 (Updated)</a></p>
+</blockquote>
+<h2 id="windows-11"><a aria-hidden="true" class="anchor-heading" href="#windows-11"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Windows 11</h2>
+<pre class="language-cmd"><code class="language-cmd">shutdown /r /fw /t 0
+</code></pre>
+<p>這是一個使用 <code>shutdown.exe</code> 的命令，它告訴 Windows 在關閉電腦之前等待 0 秒（立即關閉），
+然後重新啟動並進入 UEFI 固件設置。</p>
+<p>這個命令中的參數含義如下：</p>
+<ul>
+<li><code>/r</code>：這個選項表示 Windows 將重啟電腦，而不是直接關閉電腦。</li>
+<li><code>/fw</code>：這個選項表示 Windows 將在重啟後進入 UEFI 固件設置。進入 UEFI 固件設置後，您可以更改許多 BIOS/UEFI 相關的設置。</li>
+<li><code>/t 0</code>：這個選項表示 Windows 不需要等待即可關閉電腦。如果您希望 Windows 等待一段時間後關閉電腦，可以將 /t 參數後面的數字更改為所需的等待時間（以秒為單位）。</li>
+</ul>
+<p>總之，<code>shutdown /r /fw /t 0</code> 命令會將 Windows 關閉，立即重新啟動，並進入 UEFI 固件設置。如果您希望在進入 UEFI 固件設置之前有一些時間來保存任何未保存的工作，可以將 <code>/t</code> 參數後面的數字更改為所需的等待時間。</p>

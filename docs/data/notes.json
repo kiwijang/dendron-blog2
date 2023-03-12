@@ -11,8 +11,8 @@
       "links": [],
       "anchors": {},
       "fname": "403",
-      "updated": 1675333730474,
-      "created": 1675333730474,
+      "updated": 1678641849506,
+      "created": 1678641849506,
       "parent": null,
       "children": [],
       "data": {}
@@ -33,7 +33,7 @@
       "vault": {
         "fsPath": "vault"
       },
-      "contentHash": "acc933de5170843ff0ca0380d9ab6de4",
+      "contentHash": "7760ffb80fec59f813a8350ce254bcb0",
       "links": [],
       "anchors": {},
       "children": [
@@ -59,7 +59,7 @@
       "vault": {
         "fsPath": "vault"
       },
-      "contentHash": "0125a94ac8b72706d767ea3ada604439",
+      "contentHash": "4ae42d9bb196a344085b4961997ddc8d",
       "links": [],
       "anchors": {},
       "children": [
@@ -84,7 +84,7 @@
       "vault": {
         "fsPath": "vault"
       },
-      "contentHash": "8849edd60fa4b37edbb7fac19f4ac66a",
+      "contentHash": "ad8de72f2984f9b7a08b8914a1d8e637",
       "links": [],
       "anchors": {},
       "children": [
@@ -115,7 +115,7 @@
       "vault": {
         "fsPath": "vault"
       },
-      "contentHash": "ac8dc2ee31bd001bc4a23886287a91d1",
+      "contentHash": "80b103314c05291fc1df394e2e74d157",
       "links": [
         {
           "from": {
@@ -143,7 +143,7 @@
       "vault": {
         "fsPath": "vault"
       },
-      "contentHash": "c49da50bd4f8e20257834416ecfa3e18",
+      "contentHash": "af30c097c46ec39a7d000f6ec85a3404",
       "links": [
         {
           "from": {
@@ -179,7 +179,7 @@
       "vault": {
         "fsPath": "vault"
       },
-      "contentHash": "217a636eb04eadfde0896ca0b1745acd",
+      "contentHash": "2c00180370abeea653eb93bc9ee5aeb6",
       "links": [
         {
           "from": {
@@ -231,7 +231,7 @@
       "vault": {
         "fsPath": "vault"
       },
-      "contentHash": "c71ea0c53ac2180f1a07ecf00f0da897",
+      "contentHash": "91b87e638e7a67efe28b919991ea610c",
       "links": [
         {
           "from": {
@@ -259,7 +259,7 @@
       "vault": {
         "fsPath": "vault"
       },
-      "contentHash": "433381270aaf182782abdc2bfd270446",
+      "contentHash": "00ae12d876e98aa8a36ae9402ab9234a",
       "links": [
         {
           "from": {
@@ -287,7 +287,7 @@
       "vault": {
         "fsPath": "vault"
       },
-      "contentHash": "6dccbed9925f21daff6b7544a963904e",
+      "contentHash": "aaf0ee672f4616b530bf4b0428d6e08e",
       "links": [
         {
           "from": {
@@ -315,7 +315,7 @@
       "vault": {
         "fsPath": "vault"
       },
-      "contentHash": "49eadc744d2d8752f608c49383bed90f",
+      "contentHash": "59f7ec0cd754289c3f7f5faf6378f941",
       "links": [
         {
           "from": {
@@ -343,7 +343,7 @@
       "vault": {
         "fsPath": "vault"
       },
-      "contentHash": "b00930870e521ddff36f75e78b162c76",
+      "contentHash": "526e069bfbe645ae25063a56fea76c34",
       "links": [
         {
           "from": {
@@ -387,7 +387,7 @@
       "vault": {
         "fsPath": "vault"
       },
-      "contentHash": "cb7b5d9eefa2306f39661ac5cab1e861",
+      "contentHash": "c6704ace3a142baeb428380accf04ee2",
       "links": [
         {
           "from": {
@@ -415,7 +415,7 @@
       "vault": {
         "fsPath": "vault"
       },
-      "contentHash": "248ac04510aa502b2b5c2fa9cb7c16ca",
+      "contentHash": "40fdf219b2d7d952d549f75fa24522e5",
       "links": [
         {
           "from": {
@@ -483,7 +483,7 @@
       "vault": {
         "fsPath": "vault"
       },
-      "contentHash": "d703a10fef53f0b900d25b7deb6aa3fb",
+      "contentHash": "6074138df5c20f529b079a9439ac7221",
       "links": [
         {
           "from": {
@@ -511,7 +511,7 @@
       "vault": {
         "fsPath": "vault"
       },
-      "contentHash": "ff048d922cf2a802d72cb6848b8cbfb4",
+      "contentHash": "28b9c4d4b51ac63f16585a3e077de063",
       "links": [
         {
           "from": {
@@ -539,7 +539,7 @@
       "vault": {
         "fsPath": "vault"
       },
-      "contentHash": "e7d1116663048b4e0dd22223d67d91fc",
+      "contentHash": "c74572d8a1f66788d231f5d0d86700e5",
       "links": [
         {
           "from": {
@@ -569,7 +569,7 @@
       "vault": {
         "fsPath": "vault"
       },
-      "contentHash": "6e1a197addd68c71a8bbfc54df26de21",
+      "contentHash": "756b7b2f8b7fa3078384fb92fdcbb8a9",
       "links": [],
       "anchors": {},
       "children": [
@@ -590,7 +590,7 @@
       "vault": {
         "fsPath": "vault"
       },
-      "contentHash": "c89a661f5e9d02082325271d44a4c1f0",
+      "contentHash": "c1db9fea40c68d94c6eeeb635462468c",
       "links": [],
       "anchors": {},
       "children": [],
@@ -611,7 +611,7 @@
       "vault": {
         "fsPath": "vault"
       },
-      "contentHash": "ae6bf92d9cf90449307a2215d5091b56",
+      "contentHash": "fc8cf2812ea205f21b492f0c8586070f",
       "links": [],
       "anchors": {},
       "children": [
@@ -638,19 +638,202 @@
       "links": [],
       "anchors": {},
       "children": [
-        "gx16d7c6i4t6nj34zen2bu6"
+        "gx16d7c6i4t6nj34zen2bu6",
+        "rq15t9h86v2unohimfajaw0",
+        "19rot6rnw1l3mlyuy10m3sf"
       ],
       "parent": "u4tSbmkJewrKonY3sL544",
+      "data": {}
+    },
+    "19rot6rnw1l3mlyuy10m3sf": {
+      "id": "19rot6rnw1l3mlyuy10m3sf",
+      "title": "0304 [unbuntu&windows]進入 BIOS",
+      "desc": "",
+      "updated": 1678641116428,
+      "created": 1677902208561,
+      "custom": {},
+      "fname": "drops.2023.0304-[unbuntu&windows]進入 BIOS",
+      "type": "note",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "contentHash": "ec578dbbf4c112e2e4fac5393b360498",
+      "links": [],
+      "anchors": {
+        "ubuntu-22042-lts": {
+          "type": "header",
+          "text": "Ubuntu 22.04.2 LTS",
+          "value": "ubuntu-22042-lts",
+          "line": 10,
+          "column": 0,
+          "depth": 2
+        },
+        "關掉-grub-挑選畫面": {
+          "type": "header",
+          "text": "關掉 GRUB 挑選畫面",
+          "value": "關掉-grub-挑選畫面",
+          "line": 40,
+          "column": 0,
+          "depth": 3
+        },
+        "windows-11": {
+          "type": "header",
+          "text": "Windows 11",
+          "value": "windows-11",
+          "line": 50,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "children": [],
+      "parent": "unroh28we8qrl7g9sfhmx0v",
+      "data": {}
+    },
+    "rq15t9h86v2unohimfajaw0": {
+      "id": "rq15t9h86v2unohimfajaw0",
+      "title": "0226 圖片 RWD 與不變形和壓縮",
+      "desc": "",
+      "updated": 1678640664089,
+      "created": 1677392795595,
+      "custom": {},
+      "fname": "drops.2023.0226-圖片 RWD 與不變形和壓縮",
+      "type": "note",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "contentHash": "ad5c724401cd92370fff84f49e2c8ef3",
+      "links": [],
+      "anchors": {
+        "1-圖片-rwd-與不變形和壓縮": {
+          "type": "header",
+          "text": "1. 圖片 RWD 與不變形和壓縮",
+          "value": "1-圖片-rwd-與不變形和壓縮",
+          "line": 8,
+          "column": 0,
+          "depth": 2
+        },
+        "11-在網頁上的圖片格式": {
+          "type": "header",
+          "text": "1.1. 在網頁上的圖片格式",
+          "value": "11-在網頁上的圖片格式",
+          "line": 10,
+          "column": 0,
+          "depth": 3
+        },
+        "2-html-圖片的載入像素密度螢幕寬度多種格式": {
+          "type": "header",
+          "text": "2. HTML 圖片的載入(像素密度、螢幕寬度、多種格式)",
+          "value": "2-html-圖片的載入像素密度螢幕寬度多種格式",
+          "line": 24,
+          "column": 0,
+          "depth": 2
+        },
+        "21-html-img-和-source-的屬性": {
+          "type": "header",
+          "text": "2.1. HTML <img> 和 <source> 的屬性",
+          "value": "21-html-img-和-source-的屬性",
+          "line": 28,
+          "column": 0,
+          "depth": 3
+        },
+        "22-指定不同像素密度的圖片版本": {
+          "type": "header",
+          "text": "2.2. 指定不同像素密度的圖片版本",
+          "value": "22-指定不同像素密度的圖片版本",
+          "line": 94,
+          "column": 0,
+          "depth": 3
+        },
+        "23-指定不同螢幕寬度的圖片版本": {
+          "type": "header",
+          "text": "2.3. 指定不同螢幕寬度的圖片版本",
+          "value": "23-指定不同螢幕寬度的圖片版本",
+          "line": 134,
+          "column": 0,
+          "depth": 3
+        },
+        "24-指定多種格式的圖片版本": {
+          "type": "header",
+          "text": "2.4. 指定多種格式的圖片版本",
+          "value": "24-指定多種格式的圖片版本",
+          "line": 159,
+          "column": 0,
+          "depth": 3
+        },
+        "3-混用": {
+          "type": "header",
+          "text": "3. 混用",
+          "value": "3-混用",
+          "line": 190,
+          "column": 0,
+          "depth": 2
+        },
+        "4-圖片解析度-dpippilpi": {
+          "type": "header",
+          "text": "4. 圖片解析度? DPI、PPI、LPI?",
+          "value": "4-圖片解析度-dpippilpi",
+          "line": 204,
+          "column": 0,
+          "depth": 2
+        },
+        "41-lpi-和-dpi-通常用來描述印刷品的解析度和清晰度": {
+          "type": "header",
+          "text": "4.1. LPI 和 DPI 通常用來描述印刷品的解析度和清晰度",
+          "value": "41-lpi-和-dpi-通常用來描述印刷品的解析度和清晰度",
+          "line": 206,
+          "column": 0,
+          "depth": 3
+        },
+        "42-ppi-圖像的解析度": {
+          "type": "header",
+          "text": "4.2. PPI 圖像的解析度",
+          "value": "42-ppi-圖像的解析度",
+          "line": 242,
+          "column": 0,
+          "depth": 3
+        },
+        "5-css-設定-dpr-與-dpi-media-query": {
+          "type": "header",
+          "text": "5. CSS 設定 DPR 與 DPI media query",
+          "value": "5-css-設定-dpr-與-dpi-media-query",
+          "line": 258,
+          "column": 0,
+          "depth": 2
+        },
+        "6-使用-sharp-來將-svg-轉檔": {
+          "type": "header",
+          "text": "6. 使用 sharp 來將 svg 轉檔",
+          "value": "6-使用-sharp-來將-svg-轉檔",
+          "line": 279,
+          "column": 0,
+          "depth": 2
+        },
+        "小結": {
+          "type": "header",
+          "text": "小結",
+          "value": "小結",
+          "line": 360,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "children": [],
+      "parent": "unroh28we8qrl7g9sfhmx0v",
       "data": {}
     },
     "gx16d7c6i4t6nj34zen2bu6": {
       "id": "gx16d7c6i4t6nj34zen2bu6",
       "title": "0202 [Javascript] CSV 檔數字千分位、字串都是數字",
+      "desc": "",
+      "updated": 1675332833043,
+      "created": 1675303666200,
+      "custom": {},
+      "fname": "drops.2023.0202-[Javascript] CSV 檔數字千分位、字串都是數字",
+      "type": "note",
       "vault": {
         "fsPath": "vault"
       },
-      "type": "note",
-      "desc": "",
+      "contentHash": "ceb56a86108fa7d572300afdf8673b08",
       "links": [],
       "anchors": {
         "csv-檔數字千分位字串都是數字": {
@@ -702,14 +885,9 @@
           "depth": 2
         }
       },
-      "fname": "drops.2023.0202-[Javascript] CSV 檔數字千分位、字串都是數字",
-      "updated": 1675332833043,
-      "created": 1675303666200,
-      "parent": "unroh28we8qrl7g9sfhmx0v",
       "children": [],
-      "data": {},
-      "contentHash": "ceb56a86108fa7d572300afdf8673b08",
-      "custom": {}
+      "parent": "unroh28we8qrl7g9sfhmx0v",
+      "data": {}
     },
     "4MPQXb6WwUg0kGHxTPD7x": {
       "id": "4MPQXb6WwUg0kGHxTPD7x",
@@ -725,7 +903,7 @@
       "vault": {
         "fsPath": "vault"
       },
-      "contentHash": "7dc187420cf2dd5c78dc7ed634fc329c",
+      "contentHash": "8a490d4c3dfdbfcc5953d9977751ec37",
       "links": [],
       "anchors": {},
       "children": [
@@ -763,7 +941,7 @@
       "vault": {
         "fsPath": "vault"
       },
-      "contentHash": "13c1af7a0c5c43af606aef47f1f1e440",
+      "contentHash": "bb21747bb2726ff90815d084c2b05237",
       "links": [
         {
           "type": "frontmatterTag",
@@ -947,11 +1125,19 @@
     "3nppj8b00bsdzmbhem8ppe9": {
       "id": "3nppj8b00bsdzmbhem8ppe9",
       "title": "1115 [Angular] 讓 mainjs 變小",
+      "desc": "",
+      "updated": 1675332833044,
+      "created": 1668496095203,
+      "tags": [
+        "PROG.Angular"
+      ],
+      "custom": {},
+      "fname": "drops.2022.1115-[Angular] 讓 mainjs 變小",
+      "type": "note",
       "vault": {
         "fsPath": "vault"
       },
-      "type": "note",
-      "desc": "",
+      "contentHash": "d61d78b0cce87dd375bbad945ceebb06",
       "links": [
         {
           "type": "frontmatterTag",
@@ -1002,17 +1188,9 @@
           "depth": 2
         }
       },
-      "fname": "drops.2022.1115-[Angular] 讓 mainjs 變小",
-      "updated": 1675332833044,
-      "created": 1668496095203,
-      "parent": "4MPQXb6WwUg0kGHxTPD7x",
       "children": [],
-      "data": {},
-      "contentHash": "e58afe720b63d3ebb8933560156969a6",
-      "custom": {},
-      "tags": [
-        "PROG.Angular"
-      ]
+      "parent": "4MPQXb6WwUg0kGHxTPD7x",
+      "data": {}
     },
     "ejjb68mdu83hhsukbzr8n6g": {
       "id": "ejjb68mdu83hhsukbzr8n6g",
@@ -1029,7 +1207,7 @@
       "vault": {
         "fsPath": "vault"
       },
-      "contentHash": "1e3c467281f0978631153fdb4dfec1f8",
+      "contentHash": "e029427c7f7f0190b00737468472c949",
       "links": [
         {
           "type": "frontmatterTag",
@@ -1099,7 +1277,7 @@
       "vault": {
         "fsPath": "vault"
       },
-      "contentHash": "c030c83a66efef1166fb5183c9e11538",
+      "contentHash": "e880c4e88a4e1f36c5b5408cf4a3c120",
       "links": [
         {
           "type": "frontmatterTag",
@@ -1265,7 +1443,7 @@
       "vault": {
         "fsPath": "vault"
       },
-      "contentHash": "bc8b1d5b7f18db6bfffccb286bd07c11",
+      "contentHash": "996aa29e4d7f6c1c0ab7413a7ba5b2d7",
       "links": [
         {
           "type": "frontmatterTag",
@@ -1355,11 +1533,19 @@
     "o7mp336qqwyjf1d0jefmg53": {
       "id": "o7mp336qqwyjf1d0jefmg53",
       "title": "0830 在 Windows 使用 MacOS 虛擬機 (使用 WSL2 + OSX-KVM)",
+      "desc": "",
+      "updated": 1673695827983,
+      "created": 1662562033027,
+      "tags": [
+        "PROG.OS"
+      ],
+      "custom": {},
+      "fname": "drops.2022.0830-WSL2+KVM在win11上測試macos的safari與使用xcode測IOS",
+      "type": "note",
       "vault": {
         "fsPath": "vault"
       },
-      "type": "note",
-      "desc": "",
+      "contentHash": "24e960f8850c70235b4cd8ded508edcf",
       "links": [
         {
           "type": "frontmatterTag",
@@ -1373,60 +1559,6 @@
           "xvault": false,
           "to": {
             "fname": "tags.PROG.OS"
-          }
-        },
-        {
-          "type": "wiki",
-          "from": {
-            "fname": "drops.2022.0830-WSL2+KVM在win11上測試macos的safari與使用xcode測IOS",
-            "id": "o7mp336qqwyjf1d0jefmg53",
-            "vaultName": "vault"
-          },
-          "value": "tags.requirements",
-          "alias": "#requirements",
-          "position": {
-            "start": {
-              "line": 40,
-              "column": 17,
-              "offset": 1098
-            },
-            "end": {
-              "line": 40,
-              "column": 30,
-              "offset": 1111
-            },
-            "indent": []
-          },
-          "xvault": false,
-          "to": {
-            "fname": "tags.requirements"
-          }
-        },
-        {
-          "type": "wiki",
-          "from": {
-            "fname": "drops.2022.0830-WSL2+KVM在win11上測試macos的safari與使用xcode測IOS",
-            "id": "o7mp336qqwyjf1d0jefmg53",
-            "vaultName": "vault"
-          },
-          "value": "tags.installation",
-          "alias": "#installation",
-          "position": {
-            "start": {
-              "line": 352,
-              "column": 58,
-              "offset": 8044
-            },
-            "end": {
-              "line": 352,
-              "column": 71,
-              "offset": 8057
-            },
-            "indent": []
-          },
-          "xvault": false,
-          "to": {
-            "fname": "tags.installation"
           }
         }
       ],
@@ -1599,10 +1731,10 @@
           "column": 0,
           "depth": 2
         },
-        "51-angular-在-ng-serve-設定": {
+        "51-angular-在-ng-serve-設定---host-0000": {
           "type": "header",
-          "text": "5.1. Angular 在 ng serve 設定",
-          "value": "51-angular-在-ng-serve-設定",
+          "text": "5.1. Angular 在 ng serve 設定 --host 0.0.0.0",
+          "value": "51-angular-在-ng-serve-設定---host-0000",
           "line": 364,
           "column": 0,
           "depth": 3
@@ -1640,17 +1772,9 @@
           "depth": 2
         }
       },
-      "fname": "drops.2022.0830-WSL2+KVM在win11上測試macos的safari與使用xcode測IOS",
-      "updated": 1673695827983,
-      "created": 1662562033027,
-      "parent": "4MPQXb6WwUg0kGHxTPD7x",
       "children": [],
-      "data": {},
-      "contentHash": "bd30965f837c0d421605bf519d5bd602",
-      "custom": {},
-      "tags": [
-        "PROG.OS"
-      ]
+      "parent": "4MPQXb6WwUg0kGHxTPD7x",
+      "data": {}
     },
     "381o3my27s1t8xm06oamjq0": {
       "id": "381o3my27s1t8xm06oamjq0",
@@ -1664,7 +1788,7 @@
       "vault": {
         "fsPath": "vault"
       },
-      "contentHash": "a495a1740c4db6cc2cc82c6f34f689d4",
+      "contentHash": "c36850b7769597f24ae1925d8fb1781b",
       "links": [],
       "anchors": {
         "組了一台桌電": {
@@ -1743,7 +1867,7 @@
       "vault": {
         "fsPath": "vault"
       },
-      "contentHash": "fa74f1843f1a9dd8a2a074850e93316e",
+      "contentHash": "e788aa794166f6f488bfedbc6a1e1b41",
       "links": [
         {
           "type": "frontmatterTag",
@@ -1771,12 +1895,12 @@
             "start": {
               "line": 10,
               "column": 1,
-              "offset": 180
+              "offset": 171
             },
             "end": {
               "line": 10,
               "column": 59,
-              "offset": 238
+              "offset": 229
             },
             "indent": []
           },
@@ -1823,7 +1947,7 @@
       "vault": {
         "fsPath": "vault"
       },
-      "contentHash": "f5b1166c634580cfb76ccaee7ccfec20",
+      "contentHash": "5a4d921657834b94888b00d9b82302b6",
       "links": [
         {
           "type": "frontmatterTag",
@@ -1934,7 +2058,7 @@
       "vault": {
         "fsPath": "vault"
       },
-      "contentHash": "b63d5d4076185406aeebfedd560d0ec6",
+      "contentHash": "5cfa5dc4dde347cad0d5ca6e147c986b",
       "links": [
         {
           "type": "frontmatterTag",
@@ -2002,7 +2126,7 @@
       "vault": {
         "fsPath": "vault"
       },
-      "contentHash": "6d3d5b4ac60cb16351f8205e35fccfde",
+      "contentHash": "a9a7534ffc6a99bff8da75d1adf5c91e",
       "links": [
         {
           "type": "frontmatterTag",
@@ -2112,7 +2236,7 @@
       "vault": {
         "fsPath": "vault"
       },
-      "contentHash": "f7d5c667eacd2d7c9ef14785e1ce6a78",
+      "contentHash": "44e4d2dd4113fb98cca87ec15c6d14d7",
       "links": [
         {
           "type": "frontmatterTag",
@@ -2183,7 +2307,7 @@
       "vault": {
         "fsPath": "vault"
       },
-      "contentHash": "c77ecf65b4380bd79b7fb4b6b6ac0f02",
+      "contentHash": "7b8b1de8f4fc2801654acec1cd60d812",
       "links": [
         {
           "type": "frontmatterTag",
@@ -2273,7 +2397,7 @@
       "vault": {
         "fsPath": "vault"
       },
-      "contentHash": "bc662c531cf3319f7e670a7464bf78e4",
+      "contentHash": "3daa88684b35d4f763d37be57c326838",
       "links": [
         {
           "type": "frontmatterTag",
@@ -2494,7 +2618,7 @@
       "vault": {
         "fsPath": "vault"
       },
-      "contentHash": "d60ac62e11ce6f30352931c6b964f08e",
+      "contentHash": "3fc64f8720af06888e6945ce2131fec2",
       "links": [],
       "anchors": {},
       "children": [
@@ -2519,7 +2643,7 @@
       "vault": {
         "fsPath": "vault"
       },
-      "contentHash": "47c710730e8369eca3102432d7f4aeff",
+      "contentHash": "b464634d1ac0e64cedccdf1517de6faf",
       "links": [
         {
           "type": "frontmatterTag",
@@ -2757,7 +2881,7 @@
       "vault": {
         "fsPath": "vault"
       },
-      "contentHash": "884069d9df55da4ca1f14c072bad324f",
+      "contentHash": "fb2f4a1681576ecb382566139bf6c317",
       "links": [
         {
           "type": "frontmatterTag",
@@ -2874,7 +2998,7 @@
       "vault": {
         "fsPath": "vault"
       },
-      "contentHash": "7b97026f8ae3612b3d53c11ee947c8c1",
+      "contentHash": "86e2285a6836cca9ce377abb68990b6e",
       "links": [],
       "anchors": {},
       "children": [
@@ -2887,45 +3011,44 @@
     "tkhXy6Th6dfxRQQTpoPmx": {
       "id": "tkhXy6Th6dfxRQQTpoPmx",
       "title": "2023",
+      "desc": "",
+      "updated": 1675331099187,
+      "created": 1675331099187,
+      "custom": {
+        "stub": true
+      },
+      "fname": "0drops.2023",
+      "type": "note",
       "vault": {
         "fsPath": "vault"
       },
-      "type": "note",
-      "desc": "",
+      "contentHash": "7dd86b6490a0ed949df9cfa2e48edd33",
       "links": [],
       "anchors": {},
-      "fname": "0drops.2023",
-      "updated": 1675331099187,
-      "created": 1675331099187,
-      "parent": "Cybv0wy1d2NbWoMaJ9Xst",
       "children": [
         "bj6aqj09i6xs27ma9hjqbyr"
       ],
-      "data": {},
-      "contentHash": "7dd86b6490a0ed949df9cfa2e48edd33",
-      "stub": false,
-      "custom": {
-        "stub": true
-      }
+      "parent": "Cybv0wy1d2NbWoMaJ9Xst",
+      "data": {}
     },
     "bj6aqj09i6xs27ma9hjqbyr": {
       "id": "bj6aqj09i6xs27ma9hjqbyr",
       "title": "0116 [Angular] onChange 還是 get set 好",
+      "desc": "",
+      "updated": 1675332831851,
+      "created": 1673882830396,
+      "custom": {},
+      "fname": "0drops.2023.0116-[Angular] onChange 還是 get set 好",
+      "type": "note",
       "vault": {
         "fsPath": "vault"
       },
-      "type": "note",
-      "desc": "",
+      "contentHash": "64e3f8d95753819a1fda21d8ebb9bd67",
       "links": [],
       "anchors": {},
-      "fname": "0drops.2023.0116-[Angular] onChange 還是 get set 好",
-      "updated": 1675332831851,
-      "created": 1673882830396,
-      "parent": "tkhXy6Th6dfxRQQTpoPmx",
       "children": [],
-      "data": {},
-      "contentHash": "64e3f8d95753819a1fda21d8ebb9bd67",
-      "custom": {}
+      "parent": "tkhXy6Th6dfxRQQTpoPmx",
+      "data": {}
     },
     "0YMTMineOCu8QrkzCD9rn": {
       "id": "0YMTMineOCu8QrkzCD9rn",
@@ -2941,7 +3064,7 @@
       "vault": {
         "fsPath": "vault"
       },
-      "contentHash": "d39c76e8797a4ec8b5c545e453dff6db",
+      "contentHash": "443b51396c65dbe01da23df15e70b53c",
       "links": [],
       "anchors": {},
       "children": [
@@ -2968,7 +3091,7 @@
       "vault": {
         "fsPath": "vault"
       },
-      "contentHash": "8fda604e106b9a3ee7c37723ad9443bc",
+      "contentHash": "ea0ca4840820998fec5045cd4b8e9c51",
       "links": [],
       "anchors": {
         "前言": {
@@ -3031,7 +3154,7 @@
       "vault": {
         "fsPath": "vault"
       },
-      "contentHash": "475e56cfd90372a196dba5c8e757920a",
+      "contentHash": "5bd29c7660ca910249fdd723c627ae2e",
       "links": [
         {
           "type": "frontmatterTag",
@@ -3071,7 +3194,7 @@
       "vault": {
         "fsPath": "vault"
       },
-      "contentHash": "c093279cadc894396192055eaf5dcf52",
+      "contentHash": "5bc30d6dfbfba1865b2d93a09c5f1a07",
       "links": [
         {
           "type": "frontmatterTag",
@@ -3111,7 +3234,7 @@
       "vault": {
         "fsPath": "vault"
       },
-      "contentHash": "8f569710d59441b580634082cb8d651b",
+      "contentHash": "278d578956196688992398c0130f9be3",
       "links": [
         {
           "type": "frontmatterTag",
@@ -3232,7 +3355,7 @@
       "vault": {
         "fsPath": "vault"
       },
-      "contentHash": "cb30f23a04f0f1b24471ea57eb4e0c2c",
+      "contentHash": "712bc1e0a5c711cdd4239d3bd9965780",
       "links": [
         {
           "type": "frontmatterTag",
@@ -3391,7 +3514,7 @@
       "vault": {
         "fsPath": "vault"
       },
-      "contentHash": "b2c3251bbcb22fd2a7ad33f76e64ebdc",
+      "contentHash": "ea57b2e9273fb5b1f9435236ae857384",
       "links": [
         {
           "type": "frontmatterTag",
@@ -3438,7 +3561,7 @@
       "vault": {
         "fsPath": "vault"
       },
-      "contentHash": "ffb9750bfd7c9a7819909cebcc576e51",
+      "contentHash": "a8edf447bc0d9add14c1cac9cbbb8231",
       "links": [
         {
           "type": "frontmatterTag",
@@ -3567,7 +3690,7 @@
       "vault": {
         "fsPath": "vault"
       },
-      "contentHash": "acc933de5170843ff0ca0380d9ab6de4",
+      "contentHash": "7760ffb80fec59f813a8350ce254bcb0",
       "links": [],
       "anchors": {},
       "children": [
@@ -3578,7 +3701,7 @@
       ],
       "parent": null,
       "data": {},
-      "body": "\n\r\nDendron 官網: https://wiki.dendron.so/\r\n\r\n<!-- ![[首次使用 Dendron 紀錄|drops.2021.1226-first-day#使用-dendron-紀錄:#*]] -->\r\n<!-- <div class=\"portal-container\">\r\n<div class=\"portal-head\">\r\n<div class=\"portal-backlink\">\r\n<div class=\"portal-title\">From <span class=\"portal-text-title\">1226 使用 Dendron 紀錄</span></div>\r\n<a href=\"/notes/DTeYpEuPv3KIHugUyqZPu\" class=\"portal-arrow\">Go to text <span class=\"right-arrow\">→</span></a>\r\n</div>\r\n</div>\r\n<div id=\"portal-parent-anchor\" class=\"portal-parent\" markdown=\"1\">\r\n<div class=\"portal-parent-fader-top\"></div>\r\n<div class=\"portal-parent-fader-bottom\"></div><h2 id=\"使用-dendron-紀錄\"><a aria-hidden=\"true\" class=\"anchor-heading\" href=\"#使用-dendron-紀錄\"><svg aria-hidden=\"true\" viewBox=\"0 0 16 16\"><use xlink:href=\"#svg-link\"></use></svg></a>使用 Dendron 紀錄</h2>\r\n</div></div> -->\r\n"
+      "body": "\nDendron 官網: https://wiki.dendron.so/\n\n<!-- ![[首次使用 Dendron 紀錄|drops.2021.1226-first-day#使用-dendron-紀錄:#*]] -->\n<!-- <div class=\"portal-container\">\n<div class=\"portal-head\">\n<div class=\"portal-backlink\">\n<div class=\"portal-title\">From <span class=\"portal-text-title\">1226 使用 Dendron 紀錄</span></div>\n<a href=\"/notes/DTeYpEuPv3KIHugUyqZPu\" class=\"portal-arrow\">Go to text <span class=\"right-arrow\">→</span></a>\n</div>\n</div>\n<div id=\"portal-parent-anchor\" class=\"portal-parent\" markdown=\"1\">\n<div class=\"portal-parent-fader-top\"></div>\n<div class=\"portal-parent-fader-bottom\"></div><h2 id=\"使用-dendron-紀錄\"><a aria-hidden=\"true\" class=\"anchor-heading\" href=\"#使用-dendron-紀錄\"><svg aria-hidden=\"true\" viewBox=\"0 0 16 16\"><use xlink:href=\"#svg-link\"></use></svg></a>使用 Dendron 紀錄</h2>\n</div></div> -->\n"
     }
   ],
   "noteIndex": {
@@ -3597,7 +3720,7 @@
     "vault": {
       "fsPath": "vault"
     },
-    "contentHash": "acc933de5170843ff0ca0380d9ab6de4",
+    "contentHash": "7760ffb80fec59f813a8350ce254bcb0",
     "links": [],
     "anchors": {},
     "children": [
@@ -3608,7 +3731,7 @@
     ],
     "parent": null,
     "data": {},
-    "body": "\n\r\nDendron 官網: https://wiki.dendron.so/\r\n\r\n<!-- ![[首次使用 Dendron 紀錄|drops.2021.1226-first-day#使用-dendron-紀錄:#*]] -->\r\n<!-- <div class=\"portal-container\">\r\n<div class=\"portal-head\">\r\n<div class=\"portal-backlink\">\r\n<div class=\"portal-title\">From <span class=\"portal-text-title\">1226 使用 Dendron 紀錄</span></div>\r\n<a href=\"/notes/DTeYpEuPv3KIHugUyqZPu\" class=\"portal-arrow\">Go to text <span class=\"right-arrow\">→</span></a>\r\n</div>\r\n</div>\r\n<div id=\"portal-parent-anchor\" class=\"portal-parent\" markdown=\"1\">\r\n<div class=\"portal-parent-fader-top\"></div>\r\n<div class=\"portal-parent-fader-bottom\"></div><h2 id=\"使用-dendron-紀錄\"><a aria-hidden=\"true\" class=\"anchor-heading\" href=\"#使用-dendron-紀錄\"><svg aria-hidden=\"true\" viewBox=\"0 0 16 16\"><use xlink:href=\"#svg-link\"></use></svg></a>使用 Dendron 紀錄</h2>\r\n</div></div> -->\r\n"
+    "body": "\nDendron 官網: https://wiki.dendron.so/\n\n<!-- ![[首次使用 Dendron 紀錄|drops.2021.1226-first-day#使用-dendron-紀錄:#*]] -->\n<!-- <div class=\"portal-container\">\n<div class=\"portal-head\">\n<div class=\"portal-backlink\">\n<div class=\"portal-title\">From <span class=\"portal-text-title\">1226 使用 Dendron 紀錄</span></div>\n<a href=\"/notes/DTeYpEuPv3KIHugUyqZPu\" class=\"portal-arrow\">Go to text <span class=\"right-arrow\">→</span></a>\n</div>\n</div>\n<div id=\"portal-parent-anchor\" class=\"portal-parent\" markdown=\"1\">\n<div class=\"portal-parent-fader-top\"></div>\n<div class=\"portal-parent-fader-bottom\"></div><h2 id=\"使用-dendron-紀錄\"><a aria-hidden=\"true\" class=\"anchor-heading\" href=\"#使用-dendron-紀錄\"><svg aria-hidden=\"true\" viewBox=\"0 0 16 16\"><use xlink:href=\"#svg-link\"></use></svg></a>使用 Dendron 紀錄</h2>\n</div></div> -->\n"
   },
   "vaults": [
     {
