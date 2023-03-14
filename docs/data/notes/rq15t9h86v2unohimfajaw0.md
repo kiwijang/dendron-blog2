@@ -40,6 +40,7 @@
   ```
 
   > `<img>` 可以設定 `loading="lazy"` 來延遲載入圖片。
+  > 這樣會載入一張圖片，首次載入頁面瀏覽器會根據 `srcset` 判斷要顯示哪張圖，之後用 `sizes` 判斷要顯示哪個尺寸。
 
   - `<source>` 內使用方式 ：
 
@@ -52,10 +53,9 @@
         /img/html/vangogh-lg.jpg 278w
       "
       sizes="(max-width: 710px) 120px,
-                   (max-width: 991px) 193px,
-                   278px"
+             (max-width: 991px) 193px,
+             278px"
     />
-
     <img
       src="/img/html/vangogh-lg.jpg"
       alt="Vincent Van Gogh"
@@ -72,11 +72,12 @@
     圖片寬度 278w 時用 vangogh-lg.jpg
 
   - `sizes` 代表，可以用來設定圖片大小：
-    在寬度在 0 到 710px 的螢幕上，會使用一張寬度為 120px 的小圖片。
 
-    在寬度在 711px 到 991px 的螢幕上，會使用一張寬度為 193px 的中等大小的圖片。
+    在寬度在 0 到 710px 的螢幕上，圖片寬度為 120px。
 
-    在寬度為 992px 及以上的螢幕上，會使用一張寬度為 278px 的大圖片。
+    在寬度在 711px 到 991px 的螢幕上，圖片寬度為 193px。
+
+    在寬度為 992px 及以上的螢幕上，圖片寬度為 278px。
 
 使用方式：
 
@@ -193,7 +194,7 @@ widest.jpg：DPR = 2000/600 = 3.33
 />
 ```
 
-參考自： [High DPI images for variable pixel densities](https://web.dev/high-dpi/)
+參考自： [High DPI images for variable pixel densities - web.dev](https://web.dev/high-dpi/)
 
 ## 4. 圖片解析度? DPI、PPI、LPI?
 
@@ -302,6 +303,13 @@ iphone 最高畫質為 476 PPI，ipad 最高畫質為 326 PPI。
   />
   <source
     srcset="
+      /assets/images/tutor/tutor_LG/tutor_LG-1170.jpeg
+    "
+    media="(min-width: 1170px)"
+    type="image/jpeg"
+  />
+  <source
+    srcset="
       /assets/images/tutor/tutor_MD/tutor_MD-768.avif,
       /assets/images/tutor/tutor_MD/tutor_MD-1.5x.avif 1.5x
     "
@@ -318,6 +326,13 @@ iphone 最高畫質為 476 PPI，ipad 最高畫質為 326 PPI。
   />
   <source
     srcset="
+      /assets/images/tutor/tutor_MD/tutor_MD-768.jpeg
+    "
+    media="(min-width: 768px)"
+    type="image/jpeg"
+  />
+  <source
+    srcset="
       /assets/images/tutor/tutor_SM/tutor_SM-320.avif,
       /assets/images/tutor/tutor_SM/tutor_SM-1.5x.avif 1.5x
     "
@@ -331,6 +346,13 @@ iphone 最高畫質為 476 PPI，ipad 最高畫質為 326 PPI。
     "
     media="(min-width: 320px)"
     type="image/webp"
+  />
+  <source
+    srcset="
+      /assets/images/tutor/tutor_SM/tutor_SM-320.jpeg
+    "
+    media="(min-width: 320px)"
+    type="image/jpeg"
   />
   <img
     alt="tutor image"
@@ -360,3 +382,11 @@ iphone 最高畫質為 476 PPI，ipad 最高畫質為 326 PPI。
 點陣圖要 `jpeg` 檔案會比較省空間。（用了 `sharp` 才發現 `png` 會比 `jpeg` 大）。
 
 另外轉 `avif` 和 `webp` 就交給 `sharp`。
+
+## IIS 設定 MIME 類型
+
+如果 IIS 沒有該類型要記得去設定不然你前端打一堆，server 都會誤以為 avif 和 webp 是 `text/html` 而無法顯示。
+
+- [How to add a MIME type to a Web site or application - Microsoft](https://learn.microsoft.com/en-us/iis/configuration/system.webserver/staticcontent/mimemap)
+
+- [How to Serve AVIF Image on IIS](https://www.itnota.com/serving-avif-image-iis/)

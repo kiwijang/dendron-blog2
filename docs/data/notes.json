@@ -11,8 +11,8 @@
       "links": [],
       "anchors": {},
       "fname": "403",
-      "updated": 1678641849506,
-      "created": 1678641849506,
+      "updated": 1678809964168,
+      "created": 1678809964168,
       "parent": null,
       "children": [],
       "data": {}
@@ -692,16 +692,11 @@
     "rq15t9h86v2unohimfajaw0": {
       "id": "rq15t9h86v2unohimfajaw0",
       "title": "0226 圖片 RWD 與不變形和壓縮",
-      "desc": "",
-      "updated": 1678640664089,
-      "created": 1677392795595,
-      "custom": {},
-      "fname": "drops.2023.0226-圖片 RWD 與不變形和壓縮",
-      "type": "note",
       "vault": {
         "fsPath": "vault"
       },
-      "contentHash": "ad5c724401cd92370fff84f49e2c8ef3",
+      "type": "note",
+      "desc": "",
       "links": [],
       "anchors": {
         "1-圖片-rwd-與不變形和壓縮": {
@@ -728,10 +723,10 @@
           "column": 0,
           "depth": 2
         },
-        "21-html-img-和-source-的屬性": {
+        "21-html--和--的屬性": {
           "type": "header",
-          "text": "2.1. HTML <img> 和 <source> 的屬性",
-          "value": "21-html-img-和-source-的屬性",
+          "text": "2.1. HTML  和  的屬性",
+          "value": "21-html--和--的屬性",
           "line": 28,
           "column": 0,
           "depth": 3
@@ -740,7 +735,7 @@
           "type": "header",
           "text": "2.2. 指定不同像素密度的圖片版本",
           "value": "22-指定不同像素密度的圖片版本",
-          "line": 94,
+          "line": 95,
           "column": 0,
           "depth": 3
         },
@@ -748,7 +743,7 @@
           "type": "header",
           "text": "2.3. 指定不同螢幕寬度的圖片版本",
           "value": "23-指定不同螢幕寬度的圖片版本",
-          "line": 134,
+          "line": 135,
           "column": 0,
           "depth": 3
         },
@@ -756,7 +751,7 @@
           "type": "header",
           "text": "2.4. 指定多種格式的圖片版本",
           "value": "24-指定多種格式的圖片版本",
-          "line": 159,
+          "line": 160,
           "column": 0,
           "depth": 3
         },
@@ -764,7 +759,7 @@
           "type": "header",
           "text": "3. 混用",
           "value": "3-混用",
-          "line": 190,
+          "line": 191,
           "column": 0,
           "depth": 2
         },
@@ -772,7 +767,7 @@
           "type": "header",
           "text": "4. 圖片解析度? DPI、PPI、LPI?",
           "value": "4-圖片解析度-dpippilpi",
-          "line": 204,
+          "line": 205,
           "column": 0,
           "depth": 2
         },
@@ -780,7 +775,7 @@
           "type": "header",
           "text": "4.1. LPI 和 DPI 通常用來描述印刷品的解析度和清晰度",
           "value": "41-lpi-和-dpi-通常用來描述印刷品的解析度和清晰度",
-          "line": 206,
+          "line": 207,
           "column": 0,
           "depth": 3
         },
@@ -788,7 +783,7 @@
           "type": "header",
           "text": "4.2. PPI 圖像的解析度",
           "value": "42-ppi-圖像的解析度",
-          "line": 242,
+          "line": 243,
           "column": 0,
           "depth": 3
         },
@@ -796,7 +791,7 @@
           "type": "header",
           "text": "5. CSS 設定 DPR 與 DPI media query",
           "value": "5-css-設定-dpr-與-dpi-media-query",
-          "line": 258,
+          "line": 259,
           "column": 0,
           "depth": 2
         },
@@ -804,7 +799,7 @@
           "type": "header",
           "text": "6. 使用 sharp 來將 svg 轉檔",
           "value": "6-使用-sharp-來將-svg-轉檔",
-          "line": 279,
+          "line": 280,
           "column": 0,
           "depth": 2
         },
@@ -812,14 +807,27 @@
           "type": "header",
           "text": "小結",
           "value": "小結",
-          "line": 360,
+          "line": 382,
+          "column": 0,
+          "depth": 2
+        },
+        "iis-設定-mime-類型": {
+          "type": "header",
+          "text": "IIS 設定 MIME 類型",
+          "value": "iis-設定-mime-類型",
+          "line": 392,
           "column": 0,
           "depth": 2
         }
       },
-      "children": [],
+      "fname": "drops.2023.0226-圖片 RWD 與不變形和壓縮",
+      "updated": 1678809950283,
+      "created": 1677392795595,
       "parent": "unroh28we8qrl7g9sfhmx0v",
-      "data": {}
+      "children": [],
+      "data": {},
+      "contentHash": "94a09c8e24732053c79818dee6e3779f",
+      "custom": {}
     },
     "gx16d7c6i4t6nj34zen2bu6": {
       "id": "gx16d7c6i4t6nj34zen2bu6",

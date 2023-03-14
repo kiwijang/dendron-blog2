@@ -43,7 +43,8 @@
 <span class="token punctuation">/></span></span>
 </code></pre>
 <blockquote>
-<p><code>&#x3C;img></code> 可以設定 <code>loading="lazy"</code> 來延遲載入圖片。</p>
+<p><code>&#x3C;img></code> 可以設定 <code>loading="lazy"</code> 來延遲載入圖片。
+這樣會載入一張圖片，首次載入頁面瀏覽器會根據 <code>srcset</code> 判斷要顯示哪張圖，之後用 <code>sizes</code> 判斷要顯示哪個尺寸。</p>
 </blockquote>
 <ul>
 <li><code>&#x3C;source></code> 內使用方式 ：</li>
@@ -56,10 +57,9 @@
       /img/html/vangogh-lg.jpg 278w
     <span class="token punctuation">"</span></span>
     <span class="token attr-name">sizes</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>(max-width: 710px) 120px,
-                 (max-width: 991px) 193px,
-                 278px<span class="token punctuation">"</span></span>
+           (max-width: 991px) 193px,
+           278px<span class="token punctuation">"</span></span>
   <span class="token punctuation">/></span></span>
-
   <span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>img</span>
     <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>/img/html/vangogh-lg.jpg<span class="token punctuation">"</span></span>
     <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>Vincent Van Gogh<span class="token punctuation">"</span></span>
@@ -74,10 +74,10 @@
 <p>圖片寬度 278w 時用 vangogh-lg.jpg</p>
 </li>
 <li>
-<p><code>sizes</code> 代表，可以用來設定圖片大小：
-在寬度在 0 到 710px 的螢幕上，會使用一張寬度為 120px 的小圖片。</p>
-<p>在寬度在 711px 到 991px 的螢幕上，會使用一張寬度為 193px 的中等大小的圖片。</p>
-<p>在寬度為 992px 及以上的螢幕上，會使用一張寬度為 278px 的大圖片。</p>
+<p><code>sizes</code> 代表，可以用來設定圖片大小：</p>
+<p>在寬度在 0 到 710px 的螢幕上，圖片寬度為 120px。</p>
+<p>在寬度在 711px 到 991px 的螢幕上，圖片寬度為 193px。</p>
+<p>在寬度為 992px 及以上的螢幕上，圖片寬度為 278px。</p>
 </li>
 </ul>
 </li>
@@ -166,7 +166,7 @@ widest.jpg：DPR = 2000/600 = 3.33
   <span class="token attr-name">srcset</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>banner-HD.jpeg 2x, banner-phone.jpeg 640w, banner-phone-HD.jpeg 640w 2x<span class="token punctuation">"</span></span>
 <span class="token punctuation">/></span></span>
 </code></pre>
-<p>參考自： <a href="https://web.dev/high-dpi/">High DPI images for variable pixel densities</a></p>
+<p>參考自： <a href="https://web.dev/high-dpi/">High DPI images for variable pixel densities - web.dev</a></p>
 <h2 id="4-圖片解析度-dpippilpi"><a aria-hidden="true" class="anchor-heading" href="#4-圖片解析度-dpippilpi"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>4. 圖片解析度? DPI、PPI、LPI?</h2>
 <h3 id="41-lpi-和-dpi-通常用來描述印刷品的解析度和清晰度"><a aria-hidden="true" class="anchor-heading" href="#41-lpi-和-dpi-通常用來描述印刷品的解析度和清晰度"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>4.1. LPI 和 DPI 通常用來描述印刷品的解析度和清晰度</h3>
 <ul>
@@ -256,6 +256,13 @@ widest.jpg：DPR = 2000/600 = 3.33
   <span class="token punctuation">/></span></span>
   <span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>source</span>
     <span class="token attr-name">srcset</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>
+      /assets/images/tutor/tutor_LG/tutor_LG-1170.jpeg
+    <span class="token punctuation">"</span></span>
+    <span class="token attr-name">media</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>(min-width: 1170px)<span class="token punctuation">"</span></span>
+    <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>image/jpeg<span class="token punctuation">"</span></span>
+  <span class="token punctuation">/></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>source</span>
+    <span class="token attr-name">srcset</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>
       /assets/images/tutor/tutor_MD/tutor_MD-768.avif,
       /assets/images/tutor/tutor_MD/tutor_MD-1.5x.avif 1.5x
     <span class="token punctuation">"</span></span>
@@ -272,6 +279,13 @@ widest.jpg：DPR = 2000/600 = 3.33
   <span class="token punctuation">/></span></span>
   <span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>source</span>
     <span class="token attr-name">srcset</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>
+      /assets/images/tutor/tutor_MD/tutor_MD-768.jpeg
+    <span class="token punctuation">"</span></span>
+    <span class="token attr-name">media</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>(min-width: 768px)<span class="token punctuation">"</span></span>
+    <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>image/jpeg<span class="token punctuation">"</span></span>
+  <span class="token punctuation">/></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>source</span>
+    <span class="token attr-name">srcset</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>
       /assets/images/tutor/tutor_SM/tutor_SM-320.avif,
       /assets/images/tutor/tutor_SM/tutor_SM-1.5x.avif 1.5x
     <span class="token punctuation">"</span></span>
@@ -285,6 +299,13 @@ widest.jpg：DPR = 2000/600 = 3.33
     <span class="token punctuation">"</span></span>
     <span class="token attr-name">media</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>(min-width: 320px)<span class="token punctuation">"</span></span>
     <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>image/webp<span class="token punctuation">"</span></span>
+  <span class="token punctuation">/></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>source</span>
+    <span class="token attr-name">srcset</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>
+      /assets/images/tutor/tutor_SM/tutor_SM-320.jpeg
+    <span class="token punctuation">"</span></span>
+    <span class="token attr-name">media</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>(min-width: 320px)<span class="token punctuation">"</span></span>
+    <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>image/jpeg<span class="token punctuation">"</span></span>
   <span class="token punctuation">/></span></span>
   <span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>img</span>
     <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>tutor image<span class="token punctuation">"</span></span>
@@ -309,3 +330,13 @@ widest.jpg：DPR = 2000/600 = 3.33
 <p>不然就要直接跟對方要最大尺寸的 <code>jpeg</code> 圖片。(72ppi，如果是要 1170px 寬的，就要跟他要個 1.5 倍或 2 倍大小的圖，這樣才能往下縮小並產生對應的檔案類型)。</p>
 <p>點陣圖要 <code>jpeg</code> 檔案會比較省空間。（用了 <code>sharp</code> 才發現 <code>png</code> 會比 <code>jpeg</code> 大）。</p>
 <p>另外轉 <code>avif</code> 和 <code>webp</code> 就交給 <code>sharp</code>。</p>
+<h2 id="iis-設定-mime-類型"><a aria-hidden="true" class="anchor-heading" href="#iis-設定-mime-類型"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>IIS 設定 MIME 類型</h2>
+<p>如果 IIS 沒有該類型要記得去設定不然你前端打一堆，server 都會誤以為 avif 和 webp 是 <code>text/html</code> 而無法顯示。</p>
+<ul>
+<li>
+<p><a href="https://learn.microsoft.com/en-us/iis/configuration/system.webserver/staticcontent/mimemap">How to add a MIME type to a Web site or application - Microsoft</a></p>
+</li>
+<li>
+<p><a href="https://www.itnota.com/serving-avif-image-iis/">How to Serve AVIF Image on IIS</a></p>
+</li>
+</ul>
