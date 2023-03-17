@@ -11,8 +11,8 @@
       "links": [],
       "anchors": {},
       "fname": "403",
-      "updated": 1679047940311,
-      "created": 1679047940311,
+      "updated": 1679048510755,
+      "created": 1679048510755,
       "parent": null,
       "children": [],
       "data": {}
@@ -803,30 +803,30 @@
           "column": 0,
           "depth": 2
         },
-        "小結": {
+        "7-小結": {
           "type": "header",
-          "text": "小結",
-          "value": "小結",
+          "text": "7. 小結",
+          "value": "7-小結",
           "line": 382,
           "column": 0,
           "depth": 2
         },
-        "iis-設定-mime-類型": {
+        "8-iis-設定-mime-類型": {
           "type": "header",
-          "text": "IIS 設定 MIME 類型",
-          "value": "iis-設定-mime-類型",
+          "text": "8. IIS 設定 MIME 類型",
+          "value": "8-iis-設定-mime-類型",
           "line": 413,
           "column": 0,
           "depth": 2
         }
       },
       "fname": "drops.2023.0226-圖片 RWD 與不變形和壓縮",
-      "updated": 1679047929067,
+      "updated": 1679048498724,
       "created": 1677392795595,
       "parent": "unroh28we8qrl7g9sfhmx0v",
       "children": [],
       "data": {},
-      "contentHash": "f007fc23187d6b130882c38d7514bb4d",
+      "contentHash": "6f3ea62931beca74e12d01296851d7a8",
       "custom": {}
     },
     "gx16d7c6i4t6nj34zen2bu6": {

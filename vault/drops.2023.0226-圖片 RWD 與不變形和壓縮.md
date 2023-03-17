@@ -2,7 +2,7 @@
 id: rq15t9h86v2unohimfajaw0
 title: 0226 圖片 RWD 與不變形和壓縮
 desc: ""
-updated: 1679047929067
+updated: 1679048498724
 created: 1677392795595
 ---
 
@@ -380,7 +380,7 @@ iphone 最高畫質為 476 PPI，ipad 最高畫質為 326 PPI。
 
 ![](/assets/images/2023-03-13-00-45-19.png)
 
-## 小結
+## 7. 小結
 
 - 以後就知道圖片可以跟設計師要 `svg` 轉檔會最方便。
 
@@ -411,7 +411,7 @@ iphone 最高畫質為 476 PPI，ipad 最高畫質為 326 PPI。
 
 > 如果要伸縮時動態更新圖檔，要使用 `source` 的 `media` 屬性或使用 css 的 `media query` 。
 
-## IIS 設定 MIME 類型
+## 8. IIS 設定 MIME 類型
 
 如果 IIS 沒有該類型要記得去設定，不然 server 會誤以為 avif 和 webp 是 `text/html` 而無法顯示。
 
