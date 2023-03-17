@@ -326,12 +326,34 @@ widest.jpg：DPR = 2000/600 = 3.33
 </ul>
 <p><img src="/assets/images/2023-03-13-00-45-19.png"></p>
 <h2 id="小結"><a aria-hidden="true" class="anchor-heading" href="#小結"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>小結</h2>
-<p>以後就知道圖片可以跟設計師要 <code>svg</code> 轉檔會最方便。</p>
+<ul>
+<li>以後就知道圖片可以跟設計師要 <code>svg</code> 轉檔會最方便。</li>
+</ul>
 <p>不然就要直接跟對方要最大尺寸的 <code>jpeg</code> 圖片。(72ppi，如果是要 1170px 寬的，就要跟他要個 1.5 倍或 2 倍大小的圖，這樣才能往下縮小並產生對應的檔案類型)。</p>
 <p>點陣圖要 <code>jpeg</code> 檔案會比較省空間。（用了 <code>sharp</code> 才發現 <code>png</code> 會比 <code>jpeg</code> 大）。</p>
 <p>另外轉 <code>avif</code> 和 <code>webp</code> 就交給 <code>sharp</code>。</p>
+<ul>
+<li><code>img</code> 的 <code>srcset</code> 一次只會載入一張圖。如果要畫面伸縮時根據寬度更新成另一張圖檔，要使用 <code>source</code> 的 <code>media</code> 或使用 css 的 <code>media query</code>。</li>
+</ul>
+<p>如下，不管畫面伸縮成何尺寸，都只會載入第一次載入畫面的那一張圖檔，但伸縮畫面時這張圖會根據 <code>sizes</code> 顯示指定尺寸。</p>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>img</span>
+  <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>tutor image<span class="token punctuation">"</span></span>
+  <span class="token attr-name">sizes</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>(max-width: 767px) 320px,
+                (max-width: 1169px) 768px,
+                1170px<span class="token punctuation">"</span></span>
+  <span class="token attr-name">srcset</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>
+    /assets/images/tutor/tutor_SM/tutor_SM-320.jpeg   320w,
+    /assets/images/tutor/tutor_MD/tutor_MD-768.jpeg   768w,
+    /assets/images/tutor/tutor_LG/tutor_LG-1170.jpeg 1170w
+  <span class="token punctuation">"</span></span>
+  <span class="token attr-name">loading</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>lazy<span class="token punctuation">"</span></span>
+<span class="token punctuation">/></span></span>
+</code></pre>
+<blockquote>
+<p>如果要伸縮時動態更新圖檔，要使用 <code>source</code> 的 <code>media</code> 屬性或使用 css 的 <code>media query</code> 。</p>
+</blockquote>
 <h2 id="iis-設定-mime-類型"><a aria-hidden="true" class="anchor-heading" href="#iis-設定-mime-類型"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>IIS 設定 MIME 類型</h2>
-<p>如果 IIS 沒有該類型要記得去設定不然你前端打一堆，server 都會誤以為 avif 和 webp 是 <code>text/html</code> 而無法顯示。</p>
+<p>如果 IIS 沒有該類型要記得去設定，不然 server 會誤以為 avif 和 webp 是 <code>text/html</code> 而無法顯示。</p>
 <ul>
 <li>
 <p><a href="https://learn.microsoft.com/en-us/iis/configuration/system.webserver/staticcontent/mimemap">How to add a MIME type to a Web site or application - Microsoft</a></p>

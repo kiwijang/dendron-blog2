@@ -375,7 +375,7 @@ iphone 最高畫質為 476 PPI，ipad 最高畫質為 326 PPI。
 
 ## 小結
 
-以後就知道圖片可以跟設計師要 `svg` 轉檔會最方便。
+- 以後就知道圖片可以跟設計師要 `svg` 轉檔會最方便。
 
 不然就要直接跟對方要最大尺寸的 `jpeg` 圖片。(72ppi，如果是要 1170px 寬的，就要跟他要個 1.5 倍或 2 倍大小的圖，這樣才能往下縮小並產生對應的檔案類型)。
 
@@ -383,9 +383,30 @@ iphone 最高畫質為 476 PPI，ipad 最高畫質為 326 PPI。
 
 另外轉 `avif` 和 `webp` 就交給 `sharp`。
 
+- `img` 的 `srcset` 一次只會載入一張圖。如果要畫面伸縮時根據寬度更新成另一張圖檔，要使用 `source` 的 `media` 或使用 css 的 `media query`。
+
+如下，不管畫面伸縮成何尺寸，都只會載入第一次載入畫面的那一張圖檔，但伸縮畫面時這張圖會根據 `sizes` 顯示指定尺寸。
+
+```html
+<img
+  alt="tutor image"
+  sizes="(max-width: 767px) 320px,
+                (max-width: 1169px) 768px,
+                1170px"
+  srcset="
+    /assets/images/tutor/tutor_SM/tutor_SM-320.jpeg   320w,
+    /assets/images/tutor/tutor_MD/tutor_MD-768.jpeg   768w,
+    /assets/images/tutor/tutor_LG/tutor_LG-1170.jpeg 1170w
+  "
+  loading="lazy"
+/>
+```
+
+> 如果要伸縮時動態更新圖檔，要使用 `source` 的 `media` 屬性或使用 css 的 `media query` 。
+
 ## IIS 設定 MIME 類型
 
-如果 IIS 沒有該類型要記得去設定不然你前端打一堆，server 都會誤以為 avif 和 webp 是 `text/html` 而無法顯示。
+如果 IIS 沒有該類型要記得去設定，不然 server 會誤以為 avif 和 webp 是 `text/html` 而無法顯示。
 
 - [How to add a MIME type to a Web site or application - Microsoft](https://learn.microsoft.com/en-us/iis/configuration/system.webserver/staticcontent/mimemap)
 
