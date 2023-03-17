@@ -11,8 +11,8 @@
       "links": [],
       "anchors": {},
       "fname": "403",
-      "updated": 1679048510755,
-      "created": 1679048510755,
+      "updated": 1679048866282,
+      "created": 1679048866282,
       "parent": null,
       "children": [],
       "data": {}
@@ -723,10 +723,10 @@
           "column": 0,
           "depth": 2
         },
-        "21-html--和--的屬性": {
+        "21-picture-元素還有-img-和-source-的屬性": {
           "type": "header",
-          "text": "2.1. HTML  和  的屬性",
-          "value": "21-html--和--的屬性",
+          "text": "2.1. picture 元素！還有 img 和 source 的屬性",
+          "value": "21-picture-元素還有-img-和-source-的屬性",
           "line": 28,
           "column": 0,
           "depth": 3
@@ -755,26 +755,26 @@
           "column": 0,
           "depth": 3
         },
-        "3-混用": {
+        "3-混用螢幕寬度和像素密度": {
           "type": "header",
-          "text": "3. 混用",
-          "value": "3-混用",
+          "text": "3. 混用螢幕寬度和像素密度",
+          "value": "3-混用螢幕寬度和像素密度",
           "line": 191,
           "column": 0,
           "depth": 2
         },
-        "4-圖片解析度-dpippilpi": {
+        "4-圖片解析度-dpilpippi": {
           "type": "header",
-          "text": "4. 圖片解析度? DPI、PPI、LPI?",
-          "value": "4-圖片解析度-dpippilpi",
+          "text": "4. 圖片解析度? DPI、LPI、PPI?",
+          "value": "4-圖片解析度-dpilpippi",
           "line": 205,
           "column": 0,
           "depth": 2
         },
-        "41-lpi-和-dpi-通常用來描述印刷品的解析度和清晰度": {
+        "41-dpi-和-lpi-通常用來描述印刷品的解析度和清晰度": {
           "type": "header",
-          "text": "4.1. LPI 和 DPI 通常用來描述印刷品的解析度和清晰度",
-          "value": "41-lpi-和-dpi-通常用來描述印刷品的解析度和清晰度",
+          "text": "4.1. DPI 和 LPI 通常用來描述印刷品的解析度和清晰度",
+          "value": "41-dpi-和-lpi-通常用來描述印刷品的解析度和清晰度",
           "line": 207,
           "column": 0,
           "depth": 3
@@ -821,12 +821,12 @@
         }
       },
       "fname": "drops.2023.0226-圖片 RWD 與不變形和壓縮",
-      "updated": 1679048498724,
+      "updated": 1679048861516,
       "created": 1677392795595,
       "parent": "unroh28we8qrl7g9sfhmx0v",
       "children": [],
       "data": {},
-      "contentHash": "6f3ea62931beca74e12d01296851d7a8",
+      "contentHash": "a64ab04a7195673a27b5a1455777bc11",
       "custom": {}
     },
     "gx16d7c6i4t6nj34zen2bu6": {

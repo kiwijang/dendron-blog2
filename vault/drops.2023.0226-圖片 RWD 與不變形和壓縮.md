@@ -2,7 +2,7 @@
 id: rq15t9h86v2unohimfajaw0
 title: 0226 圖片 RWD 與不變形和壓縮
 desc: ""
-updated: 1679048498724
+updated: 1679048861516
 created: 1677392795595
 ---
 
@@ -26,7 +26,7 @@ created: 1677392795595
 
 `srcset` 屬於 HTML 中 `<img>` 或 `<source>` 標籤的屬性，可用於指定可替代圖片的多種版本，並讓瀏覽器根據不同的設備和網路環境自動選擇最適合的圖片版本載入。srcset 屬性支援的圖片格式包括 `PNG`、`JPEG`、`WebP`、`AVIF` 等。常見的用法有以下幾種：
 
-### 2.1. HTML `<img>` 和 `<source>` 的屬性
+### 2.1. picture 元素！還有 img 和 source 的屬性
 
 - `srcset`、`sizes` 屬於 HTML 中 `<img>` 或 `<source>` 標籤的屬性。
 
@@ -189,7 +189,7 @@ widest.jpg：DPR = 2000/600 = 3.33
 
 參考： [Responsive images - web.dev](https://web.dev/responsive-images/#art-direction-in-responsive-images-with-picture)
 
-## 3. 混用
+## 3. 混用螢幕寬度和像素密度
 
 `w` 和 `x` 可以混用。
 
@@ -203,9 +203,9 @@ widest.jpg：DPR = 2000/600 = 3.33
 
 參考自： [High DPI images for variable pixel densities - web.dev](https://web.dev/high-dpi/)
 
-## 4. 圖片解析度? DPI、PPI、LPI?
+## 4. 圖片解析度? DPI、LPI、PPI?
 
-### 4.1. LPI 和 DPI 通常用來描述印刷品的解析度和清晰度
+### 4.1. DPI 和 LPI 通常用來描述印刷品的解析度和清晰度
 
 - DPI (Dot per inch)：為每英吋多少點，DPI 是用來描述數位影像解析度的單位，通常用於電腦顯示器或數位印刷上。
 

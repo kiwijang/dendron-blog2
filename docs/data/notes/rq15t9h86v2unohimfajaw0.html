@@ -23,7 +23,7 @@
 </ul>
 <h2 id="2-html-圖片的載入像素密度螢幕寬度多種格式"><a aria-hidden="true" class="anchor-heading" href="#2-html-圖片的載入像素密度螢幕寬度多種格式"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>2. HTML 圖片的載入(像素密度、螢幕寬度、多種格式)</h2>
 <p><code>srcset</code> 屬於 HTML 中 <code>&#x3C;img></code> 或 <code>&#x3C;source></code> 標籤的屬性，可用於指定可替代圖片的多種版本，並讓瀏覽器根據不同的設備和網路環境自動選擇最適合的圖片版本載入。srcset 屬性支援的圖片格式包括 <code>PNG</code>、<code>JPEG</code>、<code>WebP</code>、<code>AVIF</code> 等。常見的用法有以下幾種：</p>
-<h3 id="21-html-img-和-source-的屬性"><a aria-hidden="true" class="anchor-heading" href="#21-html-img-和-source-的屬性"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>2.1. HTML <code>&#x3C;img></code> 和 <code>&#x3C;source></code> 的屬性</h3>
+<h3 id="21-picture-元素還有-img-和-source-的屬性"><a aria-hidden="true" class="anchor-heading" href="#21-picture-元素還有-img-和-source-的屬性"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>2.1. picture 元素！還有 img 和 source 的屬性</h3>
 <ul>
 <li>
 <p><code>srcset</code>、<code>sizes</code> 屬於 HTML 中 <code>&#x3C;img></code> 或 <code>&#x3C;source></code> 標籤的屬性。</p>
@@ -158,7 +158,7 @@ widest.jpg：DPR = 2000/600 = 3.33
 </code></pre>
 <p>這個圖片使用了 <code>&#x3C;picture></code> 元素，並在其中嵌套了 <code>&#x3C;source></code> 和 <code>&#x3C;img></code> 元素。當瀏覽器加載圖片時，它會首先從 <code>&#x3C;source></code> 中選擇符合條件的圖像，如果沒有符合條件的，則會載入 <code>&#x3C;img></code> 中指定的圖片。</p>
 <p>參考： <a href="https://web.dev/responsive-images/#art-direction-in-responsive-images-with-picture">Responsive images - web.dev</a></p>
-<h2 id="3-混用"><a aria-hidden="true" class="anchor-heading" href="#3-混用"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>3. 混用</h2>
+<h2 id="3-混用螢幕寬度和像素密度"><a aria-hidden="true" class="anchor-heading" href="#3-混用螢幕寬度和像素密度"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>3. 混用螢幕寬度和像素密度</h2>
 <p><code>w</code> 和 <code>x</code> 可以混用。</p>
 <pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&#x3C;</span>img</span>
   <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>my awesome image<span class="token punctuation">"</span></span>
@@ -167,8 +167,8 @@ widest.jpg：DPR = 2000/600 = 3.33
 <span class="token punctuation">/></span></span>
 </code></pre>
 <p>參考自： <a href="https://web.dev/high-dpi/">High DPI images for variable pixel densities - web.dev</a></p>
-<h2 id="4-圖片解析度-dpippilpi"><a aria-hidden="true" class="anchor-heading" href="#4-圖片解析度-dpippilpi"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>4. 圖片解析度? DPI、PPI、LPI?</h2>
-<h3 id="41-lpi-和-dpi-通常用來描述印刷品的解析度和清晰度"><a aria-hidden="true" class="anchor-heading" href="#41-lpi-和-dpi-通常用來描述印刷品的解析度和清晰度"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>4.1. LPI 和 DPI 通常用來描述印刷品的解析度和清晰度</h3>
+<h2 id="4-圖片解析度-dpilpippi"><a aria-hidden="true" class="anchor-heading" href="#4-圖片解析度-dpilpippi"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>4. 圖片解析度? DPI、LPI、PPI?</h2>
+<h3 id="41-dpi-和-lpi-通常用來描述印刷品的解析度和清晰度"><a aria-hidden="true" class="anchor-heading" href="#41-dpi-和-lpi-通常用來描述印刷品的解析度和清晰度"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>4.1. DPI 和 LPI 通常用來描述印刷品的解析度和清晰度</h3>
 <ul>
 <li>
 <p>DPI (Dot per inch)：為每英吋多少點，DPI 是用來描述數位影像解析度的單位，通常用於電腦顯示器或數位印刷上。</p>
