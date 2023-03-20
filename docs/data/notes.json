@@ -11,8 +11,8 @@
       "links": [],
       "anchors": {},
       "fname": "403",
-      "updated": 1679048866282,
-      "created": 1679048866282,
+      "updated": 1679224690368,
+      "created": 1679224690368,
       "parent": null,
       "children": [],
       "data": {}
@@ -691,7 +691,7 @@
     },
     "rq15t9h86v2unohimfajaw0": {
       "id": "rq15t9h86v2unohimfajaw0",
-      "title": "0226 圖片 RWD 與不變形和壓縮",
+      "title": "0226 圖片 RWD 與壓縮",
       "vault": {
         "fsPath": "vault"
       },
@@ -699,10 +699,10 @@
       "desc": "",
       "links": [],
       "anchors": {
-        "1-圖片-rwd-與不變形和壓縮": {
+        "1-圖片-rwd-與壓縮": {
           "type": "header",
-          "text": "1. 圖片 RWD 與不變形和壓縮",
-          "value": "1-圖片-rwd-與不變形和壓縮",
+          "text": "1. 圖片 RWD 與壓縮",
+          "value": "1-圖片-rwd-與壓縮",
           "line": 8,
           "column": 0,
           "depth": 2
@@ -821,12 +821,12 @@
         }
       },
       "fname": "drops.2023.0226-圖片 RWD 與不變形和壓縮",
-      "updated": 1679048861516,
+      "updated": 1679224685682,
       "created": 1677392795595,
       "parent": "unroh28we8qrl7g9sfhmx0v",
       "children": [],
       "data": {},
-      "contentHash": "a64ab04a7195673a27b5a1455777bc11",
+      "contentHash": "c5d77c81d0e0337866d80a19f334b161",
       "custom": {}
     },
     "gx16d7c6i4t6nj34zen2bu6": {

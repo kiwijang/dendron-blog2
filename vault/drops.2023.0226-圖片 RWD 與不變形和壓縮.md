@@ -1,12 +1,12 @@
 ---
 id: rq15t9h86v2unohimfajaw0
-title: 0226 圖片 RWD 與不變形和壓縮
+title: 0226 圖片 RWD 與壓縮
 desc: ""
-updated: 1679048861516
+updated: 1679224685682
 created: 1677392795595
 ---
 
-## 1. 圖片 RWD 與不變形和壓縮
+## 1. 圖片 RWD 與壓縮
 
 ### 1.1. 在網頁上的圖片格式
 
