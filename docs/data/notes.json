@@ -11,8 +11,8 @@
       "links": [],
       "anchors": {},
       "fname": "403",
-      "updated": 1679224690368,
-      "created": 1679224690368,
+      "updated": 1679456122210,
+      "created": 1679456122210,
       "parent": null,
       "children": [],
       "data": {}
@@ -640,9 +640,54 @@
       "children": [
         "gx16d7c6i4t6nj34zen2bu6",
         "rq15t9h86v2unohimfajaw0",
-        "19rot6rnw1l3mlyuy10m3sf"
+        "19rot6rnw1l3mlyuy10m3sf",
+        "m17ahpfhbayt08u17edqude"
       ],
       "parent": "u4tSbmkJewrKonY3sL544",
+      "data": {}
+    },
+    "m17ahpfhbayt08u17edqude": {
+      "id": "m17ahpfhbayt08u17edqude",
+      "title": "0319-LSTM",
+      "desc": "",
+      "updated": 1679247521200,
+      "created": 1679233398795,
+      "custom": {},
+      "fname": "drops.2023.0319-LSTM",
+      "type": "note",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "contentHash": "cec6b4161a9cbd9fcf397326ffb821b5",
+      "links": [],
+      "anchors": {
+        "遞歸神經網路rnn和長短期記憶模型lstm的運作原理": {
+          "type": "header",
+          "text": "遞歸神經網路（RNN）和長短期記憶模型（LSTM）的運作原理",
+          "value": "遞歸神經網路rnn和長短期記憶模型lstm的運作原理",
+          "line": 8,
+          "column": 0,
+          "depth": 2
+        },
+        "安裝": {
+          "type": "header",
+          "text": "安裝",
+          "value": "安裝",
+          "line": 12,
+          "column": 0,
+          "depth": 2
+        },
+        "下載檔案": {
+          "type": "header",
+          "text": "下載檔案",
+          "value": "下載檔案",
+          "line": 14,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "children": [],
+      "parent": "unroh28we8qrl7g9sfhmx0v",
       "data": {}
     },
     "19rot6rnw1l3mlyuy10m3sf": {
@@ -832,16 +877,11 @@
     "gx16d7c6i4t6nj34zen2bu6": {
       "id": "gx16d7c6i4t6nj34zen2bu6",
       "title": "0202 [Javascript] CSV 檔數字千分位、字串都是數字",
-      "desc": "",
-      "updated": 1675332833043,
-      "created": 1675303666200,
-      "custom": {},
-      "fname": "drops.2023.0202-[Javascript] CSV 檔數字千分位、字串都是數字",
-      "type": "note",
       "vault": {
         "fsPath": "vault"
       },
-      "contentHash": "ceb56a86108fa7d572300afdf8673b08",
+      "type": "note",
+      "desc": "",
       "links": [],
       "anchors": {
         "csv-檔數字千分位字串都是數字": {
@@ -880,7 +920,7 @@
           "type": "header",
           "text": "千分位加逗號",
           "value": "千分位加逗號",
-          "line": 150,
+          "line": 154,
           "column": 0,
           "depth": 3
         },
@@ -888,14 +928,19 @@
           "type": "header",
           "text": "小結",
           "value": "小結",
-          "line": 199,
+          "line": 203,
           "column": 0,
           "depth": 2
         }
       },
-      "children": [],
+      "fname": "drops.2023.0202-[Javascript] CSV 檔數字千分位、字串都是數字",
+      "updated": 1679456054808,
+      "created": 1675303666200,
       "parent": "unroh28we8qrl7g9sfhmx0v",
-      "data": {}
+      "children": [],
+      "data": {},
+      "contentHash": "45e06d8a14172d9134c3e8f8fde2645d",
+      "custom": {}
     },
     "4MPQXb6WwUg0kGHxTPD7x": {
       "id": "4MPQXb6WwUg0kGHxTPD7x",

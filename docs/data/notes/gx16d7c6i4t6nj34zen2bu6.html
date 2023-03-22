@@ -12,10 +12,10 @@
 </blockquote>
 <p>所以 csv 是人類可讀的純文字。</p>
 <p>以 Demo 的內容為例，用逗號 <code>,</code> 分隔，可以看出這是一個表格:</p>
-<pre class="language-javascript"><code class="language-javascript">代號<span class="token punctuation">,</span>時間<span class="token punctuation">,</span>貨幣 <span class="token comment">// 表頭 </span>
-<span class="token operator">=</span><span class="token string">"123"</span><span class="token punctuation">,</span><span class="token number">2023</span><span class="token operator">-</span><span class="token number">02</span><span class="token operator">-</span><span class="token number">02</span><span class="token punctuation">,</span><span class="token string">"TWD 19,832,391,293"</span> <span class="token comment">// 第1行 </span>
-<span class="token operator">=</span><span class="token string">"000004324"</span><span class="token punctuation">,</span><span class="token number">2023</span><span class="token operator">-</span><span class="token number">03</span><span class="token operator">-</span><span class="token number">01</span><span class="token punctuation">,</span><span class="token string">"TWD 0.231123"</span>  <span class="token comment">// 第2行  </span>
-<span class="token maybe-class-name">Bfwer123213f</span><span class="token punctuation">,</span><span class="token number">2023</span><span class="token operator">-</span><span class="token number">05</span><span class="token operator">-</span><span class="token number">09</span><span class="token punctuation">,</span><span class="token string">"TWD -291,032,903.12312"</span> <span class="token comment">// 第3行  </span>
+<pre class="language-javascript"><code class="language-javascript">代號<span class="token punctuation">,</span>時間<span class="token punctuation">,</span>貨幣 <span class="token comment">// 表頭</span>
+<span class="token operator">=</span><span class="token string">"123"</span><span class="token punctuation">,</span><span class="token number">2023</span><span class="token operator">-</span><span class="token number">02</span><span class="token operator">-</span><span class="token number">02</span><span class="token punctuation">,</span><span class="token string">"TWD 19,832,391,293"</span> <span class="token comment">// 第1行</span>
+<span class="token operator">=</span><span class="token string">"000004324"</span><span class="token punctuation">,</span><span class="token number">2023</span><span class="token operator">-</span><span class="token number">03</span><span class="token operator">-</span><span class="token number">01</span><span class="token punctuation">,</span><span class="token string">"TWD 0.231123"</span>  <span class="token comment">// 第2行</span>
+<span class="token maybe-class-name">Bfwer123213f</span><span class="token punctuation">,</span><span class="token number">2023</span><span class="token operator">-</span><span class="token number">05</span><span class="token operator">-</span><span class="token number">09</span><span class="token punctuation">,</span><span class="token string">"TWD -291,032,903.12312"</span> <span class="token comment">// 第3行</span>
 </code></pre>
 <p>備註:</p>
 <ul>
@@ -77,13 +77,17 @@ demoData <span class="token operator">=</span> <span class="token punctuation">[
 
         <span class="token keyword control-flow">return</span> arr<span class="token punctuation">;</span>
     <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    
+
     <span class="token comment">// csv 表頭格式</span>
     <span class="token keyword">let</span> csv <span class="token operator">=</span> headerName<span class="token punctuation">.</span><span class="token method function property-access">join</span><span class="token punctuation">(</span><span class="token string">','</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">'\n'</span><span class="token punctuation">;</span>
 
     <span class="token comment">// 將自訂的 tbody 格式轉換為 csv 格式</span>
     csvFileData<span class="token punctuation">.</span><span class="token method function property-access">forEach</span><span class="token punctuation">(</span><span class="token punctuation">(</span>row<span class="token punctuation">)</span> <span class="token arrow operator">=></span> <span class="token punctuation">{</span>
         row <span class="token operator">=</span> row<span class="token punctuation">.</span><span class="token method function property-access">map</span><span class="token punctuation">(</span><span class="token punctuation">(</span>r<span class="token punctuation">,</span> idx<span class="token punctuation">)</span> <span class="token arrow operator">=></span> <span class="token punctuation">{</span>
+        <span class="token comment">// 空值要轉 --</span>
+        <span class="token keyword control-flow">if</span> <span class="token punctuation">(</span>r <span class="token operator">===</span> <span class="token keyword null nil">null</span> <span class="token operator">||</span> r <span class="token operator">===</span> <span class="token keyword nil">undefined</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          <span class="token keyword control-flow">return</span> <span class="token string">'--'</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
         <span class="token comment">// idx !== 0 是指不是 [代號] 欄位才要加千分位，</span>
         <span class="token comment">// 其餘欄位若是數字就加千分位</span>
         <span class="token keyword control-flow">if</span> <span class="token punctuation">(</span>idx <span class="token operator">!==</span> <span class="token number">0</span> <span class="token operator">&#x26;&#x26;</span> <span class="token punctuation">(</span><span class="token keyword">typeof</span> r <span class="token operator">===</span> <span class="token string">'number'</span> <span class="token operator">||</span> <span class="token operator">!</span><span class="token function">isNaN</span><span class="token punctuation">(</span><span class="token operator">+</span>r<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
@@ -132,7 +136,7 @@ demoData <span class="token operator">=</span> <span class="token punctuation">[
 <li>
 <p><a href="https://zh.wikipedia.org/zh-hant/%E4%BD%8D%E5%85%83%E7%B5%84%E9%A0%86%E5%BA%8F%E8%A8%98%E8%99%9F">位元組順序記號</a></p>
 <blockquote>
-<p>位元組順序記號（英語：byte-order mark，BOM）是位於碼點U+FEFF的統一碼字符的名稱。當以UTF-16或UTF-32來將UCS/統一碼字符所組成的字串編碼時，這個字符被用來標示其位元組序。它常被用來當做標示文件是以UTF-8、UTF-16或UTF-32編碼的記號。</p>
+<p>位元組順序記號（英語：byte-order mark，BOM）是位於碼點 U+FEFF 的統一碼字符的名稱。當以 UTF-16 或 UTF-32 來將 UCS/統一碼字符所組成的字串編碼時，這個字符被用來標示其位元組序。它常被用來當做標示文件是以 UTF-8、UTF-16 或 UTF-32 編碼的記號。</p>
 </blockquote>
 </li>
 </ul>
@@ -193,7 +197,7 @@ demoData <span class="token operator">=</span> <span class="token punctuation">[
 </ul>
 <pre class="language-javascript"><code class="language-javascript">
  <span class="token comment">// 正→負排列圖:</span>
- → <span class="token punctuation">[</span><span class="token number">1.4</span><span class="token punctuation">]</span> →  → → <span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> → <span class="token punctuation">[</span><span class="token operator">-</span><span class="token number">1.4</span><span class="token punctuation">]</span> → 
+ → <span class="token punctuation">[</span><span class="token number">1.4</span><span class="token punctuation">]</span> →  → → <span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> → <span class="token punctuation">[</span><span class="token operator">-</span><span class="token number">1.4</span><span class="token punctuation">]</span> →
 
  <span class="token comment">// 無條件捨去</span>
               ↓                      ↓

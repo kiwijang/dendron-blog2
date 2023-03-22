@@ -1,8 +1,8 @@
 ---
 id: gx16d7c6i4t6nj34zen2bu6
-title: '0202 [Javascript] CSV 檔數字千分位、字串都是數字'
-desc: ''
-updated: 1675332833043
+title: "0202 [Javascript] CSV 檔數字千分位、字串都是數字"
+desc: ""
+updated: 1679456054808
 created: 1675303666200
 ---
 
@@ -29,10 +29,10 @@ created: 1675303666200
 以 Demo 的內容為例，用逗號 `,` 分隔，可以看出這是一個表格:
 
 ```javascript
-代號,時間,貨幣 // 表頭 
-="123",2023-02-02,"TWD 19,832,391,293" // 第1行 
-="000004324",2023-03-01,"TWD 0.231123"  // 第2行  
-Bfwer123213f,2023-05-09,"TWD -291,032,903.12312" // 第3行  
+代號,時間,貨幣 // 表頭
+="123",2023-02-02,"TWD 19,832,391,293" // 第1行
+="000004324",2023-03-01,"TWD 0.231123"  // 第2行
+Bfwer123213f,2023-05-09,"TWD -291,032,903.12312" // 第3行
 ```
 
 備註:
@@ -94,13 +94,17 @@ downloadCSV2() {
 
         return arr;
     });
-    
+
     // csv 表頭格式
     let csv = headerName.join(',') + '\n';
 
     // 將自訂的 tbody 格式轉換為 csv 格式
     csvFileData.forEach((row) => {
         row = row.map((r, idx) => {
+        // 空值要轉 --
+        if (r === null || r === undefined) {
+          return '--';
+        }
         // idx !== 0 是指不是 [代號] 欄位才要加千分位，
         // 其餘欄位若是數字就加千分位
         if (idx !== 0 && (typeof r === 'number' || !isNaN(+r))) {
@@ -140,13 +144,13 @@ downloadCSV2() {
 
 - `data:text/csv;charset=utf-8,\ufeff` 是 data URIs，代表 `text/csv` MIME 類型、以 `utf-8` 編碼、`\ufeff` 避免亂碼。更多詳情請參閱 [data URIs - MDN](https://developer.mozilla.org/zh-TW/docs/Web/HTTP/Basics_of_HTTP/Data_URLs)。
 
-    > data URIs, 由 RFC 2397 文件定義, 允許作者在文件中嵌入檔案.
+  > data URIs, 由 RFC 2397 文件定義, 允許作者在文件中嵌入檔案.
 
 - 要加 `\ufeff` 是為了避免 excel 開啟為亂碼，參考自 [JavaScript 瀏覽器端產生 csv 檔案 by jimmy8646](https://bonze.tw/javascript-client-generate-csv/)。
 
 - [位元組順序記號](https://zh.wikipedia.org/zh-hant/%E4%BD%8D%E5%85%83%E7%B5%84%E9%A0%86%E5%BA%8F%E8%A8%98%E8%99%9F)
 
-    > 位元組順序記號（英語：byte-order mark，BOM）是位於碼點U+FEFF的統一碼字符的名稱。當以UTF-16或UTF-32來將UCS/統一碼字符所組成的字串編碼時，這個字符被用來標示其位元組序。它常被用來當做標示文件是以UTF-8、UTF-16或UTF-32編碼的記號。
+  > 位元組順序記號（英語：byte-order mark，BOM）是位於碼點 U+FEFF 的統一碼字符的名稱。當以 UTF-16 或 UTF-32 來將 UCS/統一碼字符所組成的字串編碼時，這個字符被用來標示其位元組序。它常被用來當做標示文件是以 UTF-8、UTF-16 或 UTF-32 編碼的記號。
 
 ### 千分位加逗號
 
@@ -206,7 +210,7 @@ downloadCSV2() {
 ```javascript
 
  // 正→負排列圖:
- → [1.4] →  → → [0] → [-1.4] → 
+ → [1.4] →  → → [0] → [-1.4] →
 
  // 無條件捨去
               ↓                      ↓
