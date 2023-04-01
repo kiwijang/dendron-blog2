@@ -1,4 +1,5 @@
 
+
 ## IEnumerable vs List - 如何使用? 他們是如何運作的?
 
 以下取自: https://stackoverflow.com/questions/3628425/ienumerable-vs-list-what-to-use-how-do-they-work/3628465
