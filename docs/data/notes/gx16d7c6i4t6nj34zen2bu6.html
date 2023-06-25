@@ -1,9 +1,9 @@
-<h1 id="0202-javascript-csv-檔數字千分位字串都是數字"><a aria-hidden="true" class="anchor-heading" href="#0202-javascript-csv-檔數字千分位字串都是數字"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>0202 [Javascript] CSV 檔數字千分位、字串都是數字</h1>
-<h2 id="csv-檔數字千分位字串都是數字"><a aria-hidden="true" class="anchor-heading" href="#csv-檔數字千分位字串都是數字"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>CSV 檔數字千分位、字串都是數字</h2>
-<h3 id="demo"><a aria-hidden="true" class="anchor-heading" href="#demo"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Demo</h3>
+<h1 id="0202-javascript-csv-檔數字千分位字串都是數字">0202 [Javascript] CSV 檔數字千分位、字串都是數字<a aria-hidden="true" class="anchor-heading icon-link" href="#0202-javascript-csv-檔數字千分位字串都是數字"></a></h1>
+<h2 id="csv-檔數字千分位字串都是數字">CSV 檔數字千分位、字串都是數字<a aria-hidden="true" class="anchor-heading icon-link" href="#csv-檔數字千分位字串都是數字"></a></h2>
+<h3 id="demo">Demo<a aria-hidden="true" class="anchor-heading icon-link" href="#demo"></a></h3>
 <p><a href="https://kiwijang.github.io/csvDemo/">Demo</a></p>
 <p><img src="/assets/images/2023-02-02-16-25-57.png"></p>
-<h3 id="csv"><a aria-hidden="true" class="anchor-heading" href="#csv"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>csv</h3>
+<h3 id="csv">csv<a aria-hidden="true" class="anchor-heading icon-link" href="#csv"></a></h3>
 <p><a href="https://zh.wikipedia.org/zh-tw/%E9%80%97%E5%8F%B7%E5%88%86%E9%9A%94%E5%80%BC">CSV - wiki</a></p>
 <p>逗號分隔值（Comma-Separated Values，CSV，有時也稱為字元分隔值，因為分隔字元也可以不是逗號），其檔案以純文字形式儲存表格資料（數字和文字）。純文字意味著該檔案是一個字元序列，不含必須像二進位數字那樣被解讀的資料。</p>
 <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types">MIME text - MDN</a></p>
@@ -26,7 +26,7 @@
 <p><code>"TWD 19,832,391,293"</code> 貨幣有千分號所以要多加 <code>"</code> 去做區隔，不然會被 csv 誤解。</p>
 </li>
 </ul>
-<h3 id="下載-csv"><a aria-hidden="true" class="anchor-heading" href="#下載-csv"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>下載 csv</h3>
+<h3 id="下載-csv">下載 csv<a aria-hidden="true" class="anchor-heading icon-link" href="#下載-csv"></a></h3>
 <pre class="language-typescript"><code class="language-typescript">
 <span class="token comment">// 我自訂的表格資料格式，要將這些資料轉換成上方用逗號個開的格式</span>
 demoData <span class="token operator">=</span> <span class="token punctuation">[</span>
@@ -140,7 +140,7 @@ demoData <span class="token operator">=</span> <span class="token punctuation">[
 </blockquote>
 </li>
 </ul>
-<h3 id="千分位加逗號"><a aria-hidden="true" class="anchor-heading" href="#千分位加逗號"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>千分位加逗號</h3>
+<h3 id="千分位加逗號">千分位加逗號<a aria-hidden="true" class="anchor-heading icon-link" href="#千分位加逗號"></a></h3>
 <pre class="language-typescript"><code class="language-typescript">  <span class="token doc-comment comment">/**
    * 千分位加逗號
    * <span class="token keyword">@param</span> <span class="token parameter">numberStr</span> string | number
@@ -186,7 +186,7 @@ demoData <span class="token operator">=</span> <span class="token punctuation">[
     <span class="token keyword control-flow">return</span> isMinus <span class="token operator">?</span> <span class="token string">'-'</span> <span class="token operator">+</span> result <span class="token operator">:</span> result<span class="token punctuation">;</span>
   <span class="token punctuation">}</span>
 </code></pre>
-<h2 id="小結"><a aria-hidden="true" class="anchor-heading" href="#小結"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>小結</h2>
+<h2 id="小結">小結<a aria-hidden="true" class="anchor-heading icon-link" href="#小結"></a></h2>
 <ul>
 <li>
 <p>設定格式的 Data URIs <code>data:text/csv;charset=utf-8,\ufeff</code> 包含 MIME 類型、編碼、<code>utf-8</code> 的十六進位用 <code>\ufeff</code> 表示。</p>

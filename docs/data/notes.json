@@ -1,20 +1,21 @@
 {
   "notes": {
     "403": {
-      "id": "403",
-      "title": "This page has not yet sprouted",
       "vault": {
         "fsPath": "vault"
       },
+      "fname": "403",
+      "id": "403",
+      "title": "This page has not yet sprouted",
+      "schemaStub": false,
       "type": "note",
+      "updated": 1687697187566,
+      "created": 1687697187566,
       "desc": "",
       "links": [],
       "anchors": {},
-      "fname": "403",
-      "updated": 1687626967431,
-      "created": 1687626967431,
-      "parent": null,
       "children": [],
+      "parent": null,
       "data": {}
     },
     "root": {
@@ -34,110 +35,18 @@
       "vault": {
         "fsPath": "vault"
       },
-      "contentHash": "acc933de5170843ff0ca0380d9ab6de4",
+      "contentHash": "7760ffb80fec59f813a8350ce254bcb0",
       "links": [],
       "anchors": {},
       "children": [
         "Cybv0wy1d2NbWoMaJ9Xst",
+        "jJJHMSzIVnRXuspVex7z3",
         "u4tSbmkJewrKonY3sL544",
         "WAKWMq3SeVmlAmZRqCbpB",
-        "rEbR1FrKkZzyjo6ahAgm3",
-        "jJJHMSzIVnRXuspVex7z3"
+        "rEbR1FrKkZzyjo6ahAgm3"
       ],
       "parent": null,
       "data": {}
-    },
-    "jJJHMSzIVnRXuspVex7z3": {
-      "id": "jJJHMSzIVnRXuspVex7z3",
-      "title": "Diary",
-      "vault": {
-        "fsPath": "vault"
-      },
-      "type": "note",
-      "desc": "",
-      "links": [],
-      "anchors": {},
-      "fname": "diary",
-      "updated": 1687626966756,
-      "created": 1687626966756,
-      "parent": "root",
-      "children": [
-        "oOzEqsLt1mv3xRZjL4EQH"
-      ],
-      "data": {},
-      "stub": false
-    },
-    "oOzEqsLt1mv3xRZjL4EQH": {
-      "id": "oOzEqsLt1mv3xRZjL4EQH",
-      "title": "2023",
-      "vault": {
-        "fsPath": "vault"
-      },
-      "type": "note",
-      "desc": "",
-      "links": [],
-      "anchors": {},
-      "fname": "diary.2023",
-      "updated": 1687626966757,
-      "created": 1687626966757,
-      "parent": "jJJHMSzIVnRXuspVex7z3",
-      "children": [
-        "1hmguwjh0m2q4slup1xcg03"
-      ],
-      "data": {},
-      "stub": false
-    },
-    "1hmguwjh0m2q4slup1xcg03": {
-      "id": "1hmguwjh0m2q4slup1xcg03",
-      "title": "0624 關於換到第三份工作的感想",
-      "vault": {
-        "fsPath": "vault"
-      },
-      "type": "note",
-      "desc": "",
-      "links": [],
-      "anchors": {
-        "第一份工作": {
-          "type": "header",
-          "text": "第一份工作",
-          "value": "第一份工作",
-          "line": 19,
-          "column": 0,
-          "depth": 2
-        },
-        "第二份工作": {
-          "type": "header",
-          "text": "第二份工作",
-          "value": "第二份工作",
-          "line": 43,
-          "column": 0,
-          "depth": 2
-        },
-        "換工作": {
-          "type": "header",
-          "text": "換工作",
-          "value": "換工作",
-          "line": 146,
-          "column": 0,
-          "depth": 2
-        },
-        "第三份工作": {
-          "type": "header",
-          "text": "第三份工作",
-          "value": "第三份工作",
-          "line": 165,
-          "column": 0,
-          "depth": 2
-        }
-      },
-      "fname": "diary.2023.0624",
-      "updated": 1687626887579,
-      "created": 1687618830597,
-      "parent": "oOzEqsLt1mv3xRZjL4EQH",
-      "children": [],
-      "data": {},
-      "contentHash": "7058cfdc9b640d8cea4384e924f8ca8e",
-      "custom": {}
     },
     "rEbR1FrKkZzyjo6ahAgm3": {
       "id": "rEbR1FrKkZzyjo6ahAgm3",
@@ -145,7 +54,6 @@
       "desc": "",
       "updated": 1640615341422,
       "created": 1640615341422,
-      "stub": false,
       "custom": {
         "stub": true
       },
@@ -154,7 +62,7 @@
       "vault": {
         "fsPath": "vault"
       },
-      "contentHash": "0125a94ac8b72706d767ea3ada604439",
+      "contentHash": "96a328a99bbd764eacaba2d57eacd8ba",
       "links": [],
       "anchors": {},
       "children": [
@@ -171,7 +79,6 @@
       "desc": "",
       "updated": 1641048648905,
       "created": 1640615341424,
-      "stub": false,
       "custom": {
         "stub": true
       },
@@ -180,7 +87,7 @@
       "vault": {
         "fsPath": "vault"
       },
-      "contentHash": "8849edd60fa4b37edbb7fac19f4ac66a",
+      "contentHash": "3e87e2595dd859498d62819c53f827cb",
       "links": [],
       "anchors": {},
       "children": [
@@ -216,6 +123,7 @@
         {
           "from": {
             "fname": "0drops.2022.0109-TypeScript",
+            "id": "05PiGJUq8nazfBg8ndqHM",
             "vaultName": "vault"
           },
           "type": "backlink",
@@ -244,6 +152,7 @@
         {
           "from": {
             "fname": "0drops.2022.0101-server建置與管理",
+            "id": "1FrZXjCCHfkMyZZeBnoL2",
             "vaultName": "vault"
           },
           "type": "backlink",
@@ -252,6 +161,7 @@
         {
           "from": {
             "fname": "drops.2022.0208-Live Server 開啟 build 檔案",
+            "id": "Ge24zKfcbPxVmQ2OpQhBY",
             "vaultName": "vault"
           },
           "type": "backlink",
@@ -266,15 +176,21 @@
     "hikt5akgz6251z6wjkkmc99": {
       "id": "hikt5akgz6251z6wjkkmc99",
       "title": "OS",
+      "desc": "",
+      "updated": 1650380320047,
+      "created": 1650380320047,
+      "custom": {},
+      "fname": "tags.PROG.OS",
+      "type": "note",
       "vault": {
         "fsPath": "vault"
       },
-      "type": "note",
-      "desc": "",
+      "contentHash": "2c00180370abeea653eb93bc9ee5aeb6",
       "links": [
         {
           "from": {
             "fname": "0drops.2022.0914-[Ch2Ch3]IO、OS 架構、VM",
+            "id": "iwm8cxyx12fpzxdeesvfsiw",
             "vaultName": "vault"
           },
           "type": "backlink",
@@ -283,6 +199,7 @@
         {
           "from": {
             "fname": "drops.2022.0419-[Ch1]作業系統簡介與常見系統類型(二)",
+            "id": "tjo1srktkmfjj2wz4e5bn7c",
             "vaultName": "vault"
           },
           "type": "backlink",
@@ -291,6 +208,7 @@
         {
           "from": {
             "fname": "drops.2022.0419-[系列文目錄] OS (一)",
+            "id": "e7gwr2vcb0hk4n2yxqn0ha6",
             "vaultName": "vault"
           },
           "type": "backlink",
@@ -299,6 +217,7 @@
         {
           "from": {
             "fname": "drops.2022.0830-WSL2+KVM在win11上測試macos的safari與使用xcode測IOS",
+            "id": "o7mp336qqwyjf1d0jefmg53",
             "vaultName": "vault"
           },
           "type": "backlink",
@@ -306,14 +225,9 @@
         }
       ],
       "anchors": {},
-      "fname": "tags.PROG.OS",
-      "updated": 1650380320047,
-      "created": 1650380320047,
-      "parent": "4nZxUaZMBAvz7oWuXizXl",
       "children": [],
-      "data": {},
-      "contentHash": "2c00180370abeea653eb93bc9ee5aeb6",
-      "custom": {}
+      "parent": "4nZxUaZMBAvz7oWuXizXl",
+      "data": {}
     },
     "Po0jmNACWQVrxnoTRT6kr": {
       "id": "Po0jmNACWQVrxnoTRT6kr",
@@ -327,11 +241,12 @@
       "vault": {
         "fsPath": "vault"
       },
-      "contentHash": "c71ea0c53ac2180f1a07ecf00f0da897",
+      "contentHash": "91b87e638e7a67efe28b919991ea610c",
       "links": [
         {
           "from": {
             "fname": "drops.2021.1227-從Nx入門monorepo",
+            "id": "Ee1iUWT8QmZe4CAuuwQxs",
             "vaultName": "vault"
           },
           "type": "backlink",
@@ -360,6 +275,7 @@
         {
           "from": {
             "fname": "drops.2022.0320-js小知識(一)",
+            "id": "o8n23ae0i8b5o5go3ipx4os",
             "vaultName": "vault"
           },
           "type": "backlink",
@@ -383,11 +299,12 @@
       "vault": {
         "fsPath": "vault"
       },
-      "contentHash": "6dccbed9925f21daff6b7544a963904e",
+      "contentHash": "aaf0ee672f4616b530bf4b0428d6e08e",
       "links": [
         {
           "from": {
             "fname": "drops.2022.1103-meta標籤設定line、fb、twitter顯示",
+            "id": "ejjb68mdu83hhsukbzr8n6g",
             "vaultName": "vault"
           },
           "type": "backlink",
@@ -411,11 +328,12 @@
       "vault": {
         "fsPath": "vault"
       },
-      "contentHash": "49eadc744d2d8752f608c49383bed90f",
+      "contentHash": "59f7ec0cd754289c3f7f5faf6378f941",
       "links": [
         {
           "from": {
             "fname": "drops.2021.1226-first-day",
+            "id": "DTeYpEuPv3KIHugUyqZPu",
             "vaultName": "vault"
           },
           "type": "backlink",
@@ -430,15 +348,21 @@
     "uFYxvNnYUjt8oxQcHtfSp": {
       "id": "uFYxvNnYUjt8oxQcHtfSp",
       "title": "CSS",
+      "desc": "",
+      "updated": 1641648157421,
+      "created": 1641648157421,
+      "custom": {},
+      "fname": "tags.PROG.CSS",
+      "type": "note",
       "vault": {
         "fsPath": "vault"
       },
-      "type": "note",
-      "desc": "",
+      "contentHash": "526e069bfbe645ae25063a56fea76c34",
       "links": [
         {
           "from": {
             "fname": "drops.2022.0107-PostCSS和SASS",
+            "id": "SIdMIFLQNg5jfa6ePoqt5",
             "vaultName": "vault"
           },
           "type": "backlink",
@@ -447,6 +371,7 @@
         {
           "from": {
             "fname": "drops.2022.0322-RWD排版固定或流動",
+            "id": "0c40o7nje4ye5vu97b7iwaj",
             "vaultName": "vault"
           },
           "type": "backlink",
@@ -455,6 +380,7 @@
         {
           "from": {
             "fname": "drops.2022.0327-關於 monospace 字體",
+            "id": "6wmc3n6c6adplh04u9vsu95",
             "vaultName": "vault"
           },
           "type": "backlink",
@@ -462,27 +388,28 @@
         }
       ],
       "anchors": {},
-      "fname": "tags.PROG.CSS",
-      "updated": 1641648157421,
-      "created": 1641648157421,
-      "parent": "4nZxUaZMBAvz7oWuXizXl",
       "children": [],
-      "data": {},
-      "contentHash": "526e069bfbe645ae25063a56fea76c34",
-      "custom": {}
+      "parent": "4nZxUaZMBAvz7oWuXizXl",
+      "data": {}
     },
     "8butragqifg44gfphdug6ys": {
       "id": "8butragqifg44gfphdug6ys",
       "title": "C#",
+      "desc": "",
+      "updated": 1662562076271,
+      "created": 1662562076271,
+      "custom": {},
+      "fname": "tags.PROG.C#",
+      "type": "note",
       "vault": {
         "fsPath": "vault"
       },
-      "type": "note",
-      "desc": "",
+      "contentHash": "c6704ace3a142baeb428380accf04ee2",
       "links": [
         {
           "from": {
             "fname": "drops.2022.0907-[C#]從List到IEnumerable和IQueryable",
+            "id": "sy14xjjozy0n9ustvre7tbo",
             "vaultName": "vault"
           },
           "type": "backlink",
@@ -490,27 +417,28 @@
         }
       ],
       "anchors": {},
-      "fname": "tags.PROG.C#",
-      "updated": 1662562076271,
-      "created": 1662562076271,
-      "parent": "4nZxUaZMBAvz7oWuXizXl",
       "children": [],
-      "data": {},
-      "contentHash": "c6704ace3a142baeb428380accf04ee2",
-      "custom": {}
+      "parent": "4nZxUaZMBAvz7oWuXizXl",
+      "data": {}
     },
     "zavPiB0ApTq1sGZOGq9xJ": {
       "id": "zavPiB0ApTq1sGZOGq9xJ",
       "title": "Angular",
+      "desc": "",
+      "updated": 1644317530598,
+      "created": 1644317530598,
+      "custom": {},
+      "fname": "tags.PROG.Angular",
+      "type": "note",
       "vault": {
         "fsPath": "vault"
       },
-      "type": "note",
-      "desc": "",
+      "contentHash": "40fdf219b2d7d952d549f75fa24522e5",
       "links": [
         {
           "from": {
             "fname": "0drops.2022.0919-[Angular] 驗證與共用元件",
+            "id": "7vo9q7rwhx3xyyg8auxb22s",
             "vaultName": "vault"
           },
           "type": "backlink",
@@ -519,6 +447,7 @@
         {
           "from": {
             "fname": "0drops.2022.0920-[Angular] ngZone 和 Change Detection",
+            "id": "9tqljuuooemk86j20mg6nch",
             "vaultName": "vault"
           },
           "type": "backlink",
@@ -527,6 +456,7 @@
         {
           "from": {
             "fname": "0drops.2022.1115-[Angular] 日期",
+            "id": "cl8p533i8it5xfzxq3doe17",
             "vaultName": "vault"
           },
           "type": "backlink",
@@ -535,6 +465,7 @@
         {
           "from": {
             "fname": "drops.2022.0208-Live Server 開啟 build 檔案",
+            "id": "Ge24zKfcbPxVmQ2OpQhBY",
             "vaultName": "vault"
           },
           "type": "backlink",
@@ -543,6 +474,7 @@
         {
           "from": {
             "fname": "drops.2022.0919-[Angular] Subject",
+            "id": "j4z39p3vfjvc2ge3lktqajs",
             "vaultName": "vault"
           },
           "type": "backlink",
@@ -551,6 +483,7 @@
         {
           "from": {
             "fname": "drops.2022.1115-[Angular] 讓 mainjs 變小",
+            "id": "3nppj8b00bsdzmbhem8ppe9",
             "vaultName": "vault"
           },
           "type": "backlink",
@@ -558,27 +491,28 @@
         }
       ],
       "anchors": {},
-      "fname": "tags.PROG.Angular",
-      "updated": 1644317530598,
-      "created": 1644317530598,
-      "parent": "4nZxUaZMBAvz7oWuXizXl",
       "children": [],
-      "data": {},
-      "contentHash": "40fdf219b2d7d952d549f75fa24522e5",
-      "custom": {}
+      "parent": "4nZxUaZMBAvz7oWuXizXl",
+      "data": {}
     },
     "gj0sitvrk6ynbtxpixc4ih4": {
       "id": "gj0sitvrk6ynbtxpixc4ih4",
       "title": "Android",
+      "desc": "",
+      "updated": 1648397261924,
+      "created": 1648397261924,
+      "custom": {},
+      "fname": "tags.PROG.Android",
+      "type": "note",
       "vault": {
         "fsPath": "vault"
       },
-      "type": "note",
-      "desc": "",
+      "contentHash": "6074138df5c20f529b079a9439ac7221",
       "links": [
         {
           "from": {
             "fname": "drops.2022.0327-關於 monospace 字體",
+            "id": "6wmc3n6c6adplh04u9vsu95",
             "vaultName": "vault"
           },
           "type": "backlink",
@@ -586,14 +520,9 @@
         }
       ],
       "anchors": {},
-      "fname": "tags.PROG.Android",
-      "updated": 1648397261924,
-      "created": 1648397261924,
-      "parent": "4nZxUaZMBAvz7oWuXizXl",
       "children": [],
-      "data": {},
-      "contentHash": "6074138df5c20f529b079a9439ac7221",
-      "custom": {}
+      "parent": "4nZxUaZMBAvz7oWuXizXl",
+      "data": {}
     },
     "zq0tsxmhzagm2pe2ngnovg3": {
       "id": "zq0tsxmhzagm2pe2ngnovg3",
@@ -607,11 +536,12 @@
       "vault": {
         "fsPath": "vault"
       },
-      "contentHash": "ff048d922cf2a802d72cb6848b8cbfb4",
+      "contentHash": "28b9c4d4b51ac63f16585a3e077de063",
       "links": [
         {
           "from": {
             "fname": "drops.2022.1210-[Flutter] 使用 VS Code 在 Windows 上開發 Android App",
+            "id": "h8cp4furnmhkdr2wzwn825j",
             "vaultName": "vault"
           },
           "type": "backlink",
@@ -635,11 +565,12 @@
       "vault": {
         "fsPath": "vault"
       },
-      "contentHash": "e7d1116663048b4e0dd22223d67d91fc",
+      "contentHash": "c74572d8a1f66788d231f5d0d86700e5",
       "links": [
         {
           "from": {
             "fname": "drops.2022.1210-[Flutter] 使用 VS Code 在 Windows 上開發 Android App",
+            "id": "h8cp4furnmhkdr2wzwn825j",
             "vaultName": "vault"
           },
           "type": "backlink",
@@ -657,7 +588,6 @@
       "desc": "",
       "updated": 1647511525104,
       "created": 1647511525104,
-      "stub": false,
       "custom": {
         "stub": true
       },
@@ -666,7 +596,7 @@
       "vault": {
         "fsPath": "vault"
       },
-      "contentHash": "6e1a197addd68c71a8bbfc54df26de21",
+      "contentHash": "04a4bf2fee2666a124aedede6889467c",
       "links": [],
       "anchors": {},
       "children": [
@@ -678,21 +608,21 @@
     "about": {
       "id": "about",
       "title": "About",
+      "desc": "",
+      "updated": 1663249615500,
+      "created": 1641017236114,
+      "custom": {},
+      "fname": "other.about",
+      "type": "note",
       "vault": {
         "fsPath": "vault"
       },
-      "type": "note",
-      "desc": "",
+      "contentHash": "c1db9fea40c68d94c6eeeb635462468c",
       "links": [],
       "anchors": {},
-      "fname": "other.about",
-      "updated": 1663249615500,
-      "created": 1641017236114,
-      "parent": "WAKWMq3SeVmlAmZRqCbpB",
       "children": [],
-      "data": {},
-      "contentHash": "c1db9fea40c68d94c6eeeb635462468c",
-      "custom": {}
+      "parent": "WAKWMq3SeVmlAmZRqCbpB",
+      "data": {}
     },
     "u4tSbmkJewrKonY3sL544": {
       "id": "u4tSbmkJewrKonY3sL544",
@@ -700,7 +630,6 @@
       "desc": "",
       "updated": 1640604306691,
       "created": 1640604306691,
-      "stub": false,
       "custom": {
         "stub": true
       },
@@ -709,7 +638,7 @@
       "vault": {
         "fsPath": "vault"
       },
-      "contentHash": "ae6bf92d9cf90449307a2215d5091b56",
+      "contentHash": "926f57d757cf894a1c3647c4c88d37a0",
       "links": [],
       "anchors": {},
       "children": [
@@ -732,7 +661,7 @@
       "vault": {
         "fsPath": "vault"
       },
-      "contentHash": "c8199465c90b34bd317852ca05a66e33",
+      "contentHash": "a27432a08366491bc1adf9a16164200c",
       "links": [],
       "anchors": {},
       "children": [
@@ -757,7 +686,7 @@
       "vault": {
         "fsPath": "vault"
       },
-      "contentHash": "baab03c8e4b2b776cbb6820097e21838",
+      "contentHash": "b835c6848528ad5189ff12ba687d0e6c",
       "links": [],
       "anchors": {
         "網頁的可用性和可讀性": {
@@ -809,7 +738,7 @@
       "vault": {
         "fsPath": "vault"
       },
-      "contentHash": "ea0f62f10d423ddb04308d7c212a0fe4",
+      "contentHash": "cec6b4161a9cbd9fcf397326ffb821b5",
       "links": [],
       "anchors": {
         "遞歸神經網路rnn和長短期記憶模型lstm的運作原理": {
@@ -853,7 +782,7 @@
       "vault": {
         "fsPath": "vault"
       },
-      "contentHash": "7fed053624e0b26b7c0dae3d71c5fcd3",
+      "contentHash": "ec578dbbf4c112e2e4fac5393b360498",
       "links": [],
       "anchors": {
         "ubuntu-22042-lts": {
@@ -897,7 +826,7 @@
       "vault": {
         "fsPath": "vault"
       },
-      "contentHash": "15f1c7c92bf37de9d7b9fbd1085c944f",
+      "contentHash": "c5d77c81d0e0337866d80a19f334b161",
       "links": [],
       "anchors": {
         "1-圖片-rwd-與壓縮": {
@@ -1037,7 +966,7 @@
       "vault": {
         "fsPath": "vault"
       },
-      "contentHash": "6dfb26e294dc5f724f1eeeeab6bc4a88",
+      "contentHash": "45e06d8a14172d9134c3e8f8fde2645d",
       "links": [],
       "anchors": {
         "csv-檔數字千分位字串都是數字": {
@@ -1099,7 +1028,6 @@
       "desc": "",
       "updated": 1641648330472,
       "created": 1641043073656,
-      "stub": false,
       "custom": {
         "stub": true
       },
@@ -1108,7 +1036,7 @@
       "vault": {
         "fsPath": "vault"
       },
-      "contentHash": "7dc187420cf2dd5c78dc7ed634fc329c",
+      "contentHash": "dd47f9d75e7b5101c83e7a2f3634de31",
       "links": [],
       "anchors": {},
       "children": [
@@ -1146,7 +1074,7 @@
       "vault": {
         "fsPath": "vault"
       },
-      "contentHash": "13c1af7a0c5c43af606aef47f1f1e440",
+      "contentHash": "bb21747bb2726ff90815d084c2b05237",
       "links": [
         {
           "type": "frontmatterTag",
@@ -1342,7 +1270,7 @@
       "vault": {
         "fsPath": "vault"
       },
-      "contentHash": "e58afe720b63d3ebb8933560156969a6",
+      "contentHash": "d61d78b0cce87dd375bbad945ceebb06",
       "links": [
         {
           "type": "frontmatterTag",
@@ -1412,7 +1340,7 @@
       "vault": {
         "fsPath": "vault"
       },
-      "contentHash": "1e3c467281f0978631153fdb4dfec1f8",
+      "contentHash": "e029427c7f7f0190b00737468472c949",
       "links": [
         {
           "type": "frontmatterTag",
@@ -1482,7 +1410,7 @@
       "vault": {
         "fsPath": "vault"
       },
-      "contentHash": "c030c83a66efef1166fb5183c9e11538",
+      "contentHash": "e880c4e88a4e1f36c5b5408cf4a3c120",
       "links": [
         {
           "type": "frontmatterTag",
@@ -1636,11 +1564,19 @@
     "sy14xjjozy0n9ustvre7tbo": {
       "id": "sy14xjjozy0n9ustvre7tbo",
       "title": "0907 [C#] 從 List 到 IEnumerable 和 IQueryable",
+      "desc": "",
+      "updated": 1662567583552,
+      "created": 1662559527764,
+      "tags": [
+        "PROG.C#"
+      ],
+      "custom": {},
+      "fname": "drops.2022.0907-[C#]從List到IEnumerable和IQueryable",
+      "type": "note",
       "vault": {
         "fsPath": "vault"
       },
-      "type": "note",
-      "desc": "",
+      "contentHash": "996aa29e4d7f6c1c0ab7413a7ba5b2d7",
       "links": [
         {
           "type": "frontmatterTag",
@@ -1690,10 +1626,10 @@
           "column": 0,
           "depth": 2
         },
-        "vs": {
+        "ienumerable-vs-iqueryable": {
           "type": "header",
-          "text": "vs",
-          "value": "vs",
+          "text": "IEnumerable vs IQueryable",
+          "value": "ienumerable-vs-iqueryable",
           "line": 54,
           "column": 0,
           "depth": 2
@@ -1723,17 +1659,9 @@
           "depth": 2
         }
       },
-      "fname": "drops.2022.0907-[C#]從List到IEnumerable和IQueryable",
-      "updated": 1662567583552,
-      "created": 1662559527764,
-      "parent": "4MPQXb6WwUg0kGHxTPD7x",
       "children": [],
-      "data": {},
-      "contentHash": "996aa29e4d7f6c1c0ab7413a7ba5b2d7",
-      "custom": {},
-      "tags": [
-        "PROG.C#"
-      ]
+      "parent": "4MPQXb6WwUg0kGHxTPD7x",
+      "data": {}
     },
     "o7mp336qqwyjf1d0jefmg53": {
       "id": "o7mp336qqwyjf1d0jefmg53",
@@ -1750,7 +1678,7 @@
       "vault": {
         "fsPath": "vault"
       },
-      "contentHash": "bd30965f837c0d421605bf519d5bd602",
+      "contentHash": "24e960f8850c70235b4cd8ded508edcf",
       "links": [
         {
           "type": "frontmatterTag",
@@ -1984,11 +1912,16 @@
     "381o3my27s1t8xm06oamjq0": {
       "id": "381o3my27s1t8xm06oamjq0",
       "title": "0608 組了一台桌電!",
+      "desc": "",
+      "updated": 1662621142629,
+      "created": 1654694411104,
+      "custom": {},
+      "fname": "drops.2022.0608-組了一台桌電!",
+      "type": "note",
       "vault": {
         "fsPath": "vault"
       },
-      "type": "note",
-      "desc": "",
+      "contentHash": "c36850b7769597f24ae1925d8fb1781b",
       "links": [],
       "anchors": {
         "組了一台桌電": {
@@ -2048,23 +1981,26 @@
           "depth": 3
         }
       },
-      "fname": "drops.2022.0608-組了一台桌電!",
-      "updated": 1662621142629,
-      "created": 1654694411104,
-      "parent": "4MPQXb6WwUg0kGHxTPD7x",
       "children": [],
-      "data": {},
-      "contentHash": "c36850b7769597f24ae1925d8fb1781b",
-      "custom": {}
+      "parent": "4MPQXb6WwUg0kGHxTPD7x",
+      "data": {}
     },
     "e7gwr2vcb0hk4n2yxqn0ha6": {
       "id": "e7gwr2vcb0hk4n2yxqn0ha6",
       "title": "0419 [系列文目錄] OS (一)",
+      "desc": "",
+      "updated": 1650382023561,
+      "created": 1650380285555,
+      "tags": [
+        "PROG.OS"
+      ],
+      "custom": {},
+      "fname": "drops.2022.0419-[系列文目錄] OS (一)",
+      "type": "note",
       "vault": {
         "fsPath": "vault"
       },
-      "type": "note",
-      "desc": "",
+      "contentHash": "e788aa794166f6f488bfedbc6a1e1b41",
       "links": [
         {
           "type": "frontmatterTag",
@@ -2125,26 +2061,26 @@
           "depth": 2
         }
       },
-      "fname": "drops.2022.0419-[系列文目錄] OS (一)",
-      "updated": 1650382023561,
-      "created": 1650380285555,
-      "parent": "4MPQXb6WwUg0kGHxTPD7x",
       "children": [],
-      "data": {},
-      "contentHash": "e788aa794166f6f488bfedbc6a1e1b41",
-      "custom": {},
-      "tags": [
-        "PROG.OS"
-      ]
+      "parent": "4MPQXb6WwUg0kGHxTPD7x",
+      "data": {}
     },
     "tjo1srktkmfjj2wz4e5bn7c": {
       "id": "tjo1srktkmfjj2wz4e5bn7c",
       "title": "0419 [Ch1]作業系統簡介與常見系統類型(二)",
+      "desc": "",
+      "updated": 1663165644718,
+      "created": 1650381132068,
+      "tags": [
+        "PROG.OS"
+      ],
+      "custom": {},
+      "fname": "drops.2022.0419-[Ch1]作業系統簡介與常見系統類型(二)",
+      "type": "note",
       "vault": {
         "fsPath": "vault"
       },
-      "type": "note",
-      "desc": "",
+      "contentHash": "5a4d921657834b94888b00d9b82302b6",
       "links": [
         {
           "type": "frontmatterTag",
@@ -2235,26 +2171,27 @@
           "depth": 4
         }
       },
-      "fname": "drops.2022.0419-[Ch1]作業系統簡介與常見系統類型(二)",
-      "updated": 1663165644718,
-      "created": 1650381132068,
-      "parent": "4MPQXb6WwUg0kGHxTPD7x",
       "children": [],
-      "data": {},
-      "contentHash": "5a4d921657834b94888b00d9b82302b6",
-      "custom": {},
-      "tags": [
-        "PROG.OS"
-      ]
+      "parent": "4MPQXb6WwUg0kGHxTPD7x",
+      "data": {}
     },
     "6wmc3n6c6adplh04u9vsu95": {
       "id": "6wmc3n6c6adplh04u9vsu95",
       "title": "0327 關於 Monospace 字型在不同裝置顯示",
+      "desc": "",
+      "updated": 1648393503809,
+      "created": 1648393503809,
+      "tags": [
+        "PROG.CSS",
+        "PROG.Android"
+      ],
+      "custom": {},
+      "fname": "drops.2022.0327-關於 monospace 字體",
+      "type": "note",
       "vault": {
         "fsPath": "vault"
       },
-      "type": "note",
-      "desc": "",
+      "contentHash": "5cfa5dc4dde347cad0d5ca6e147c986b",
       "links": [
         {
           "type": "frontmatterTag",
@@ -2303,27 +2240,26 @@
           "depth": 2
         }
       },
-      "fname": "drops.2022.0327-關於 monospace 字體",
-      "updated": 1648393503809,
-      "created": 1648393503809,
-      "parent": "4MPQXb6WwUg0kGHxTPD7x",
       "children": [],
-      "data": {},
-      "contentHash": "5cfa5dc4dde347cad0d5ca6e147c986b",
-      "custom": {},
-      "tags": [
-        "PROG.CSS",
-        "PROG.Android"
-      ]
+      "parent": "4MPQXb6WwUg0kGHxTPD7x",
+      "data": {}
     },
     "0c40o7nje4ye5vu97b7iwaj": {
       "id": "0c40o7nje4ye5vu97b7iwaj",
       "title": "0322 RWD 排版固定或流動",
+      "desc": "",
+      "updated": 1649072749829,
+      "created": 1647931558726,
+      "tags": [
+        "PROG.CSS"
+      ],
+      "custom": {},
+      "fname": "drops.2022.0322-RWD排版固定或流動",
+      "type": "note",
       "vault": {
         "fsPath": "vault"
       },
-      "type": "note",
-      "desc": "",
+      "contentHash": "a9a7534ffc6a99bff8da75d1adf5c91e",
       "links": [
         {
           "type": "frontmatterTag",
@@ -2414,26 +2350,26 @@
           "depth": 2
         }
       },
-      "fname": "drops.2022.0322-RWD排版固定或流動",
-      "updated": 1649072749829,
-      "created": 1647931558726,
-      "parent": "4MPQXb6WwUg0kGHxTPD7x",
       "children": [],
-      "data": {},
-      "contentHash": "a9a7534ffc6a99bff8da75d1adf5c91e",
-      "custom": {},
-      "tags": [
-        "PROG.CSS"
-      ]
+      "parent": "4MPQXb6WwUg0kGHxTPD7x",
+      "data": {}
     },
     "o8n23ae0i8b5o5go3ipx4os": {
       "id": "o8n23ae0i8b5o5go3ipx4os",
       "title": "0320 JS 小知識(一)",
+      "desc": "",
+      "updated": 1647931393974,
+      "created": 1647774542471,
+      "tags": [
+        "PROG.JavaScript"
+      ],
+      "custom": {},
+      "fname": "drops.2022.0320-js小知識(一)",
+      "type": "note",
       "vault": {
         "fsPath": "vault"
       },
-      "type": "note",
-      "desc": "",
+      "contentHash": "44e4d2dd4113fb98cca87ec15c6d14d7",
       "links": [
         {
           "type": "frontmatterTag",
@@ -2484,26 +2420,27 @@
           "depth": 2
         }
       },
-      "fname": "drops.2022.0320-js小知識(一)",
-      "updated": 1647931393974,
-      "created": 1647774542471,
-      "parent": "4MPQXb6WwUg0kGHxTPD7x",
       "children": [],
-      "data": {},
-      "contentHash": "44e4d2dd4113fb98cca87ec15c6d14d7",
-      "custom": {},
-      "tags": [
-        "PROG.JavaScript"
-      ]
+      "parent": "4MPQXb6WwUg0kGHxTPD7x",
+      "data": {}
     },
     "Ge24zKfcbPxVmQ2OpQhBY": {
       "id": "Ge24zKfcbPxVmQ2OpQhBY",
       "title": "0208 Live Server 開啟 build 檔案",
+      "desc": "",
+      "updated": 1644456757297,
+      "created": 1644317231901,
+      "tags": [
+        "PROG.Angular",
+        "PROG.Server"
+      ],
+      "custom": {},
+      "fname": "drops.2022.0208-Live Server 開啟 build 檔案",
+      "type": "note",
       "vault": {
         "fsPath": "vault"
       },
-      "type": "note",
-      "desc": "",
+      "contentHash": "7b8b1de8f4fc2801654acec1cd60d812",
       "links": [
         {
           "type": "frontmatterTag",
@@ -2576,27 +2513,24 @@
           "depth": 2
         }
       },
-      "fname": "drops.2022.0208-Live Server 開啟 build 檔案",
-      "updated": 1644456757297,
-      "created": 1644317231901,
-      "parent": "4MPQXb6WwUg0kGHxTPD7x",
       "children": [],
-      "data": {},
-      "contentHash": "7b8b1de8f4fc2801654acec1cd60d812",
-      "custom": {},
-      "tags": [
-        "PROG.Angular",
-        "PROG.Server"
-      ]
+      "parent": "4MPQXb6WwUg0kGHxTPD7x",
+      "data": {}
     },
     "SIdMIFLQNg5jfa6ePoqt5": {
       "id": "SIdMIFLQNg5jfa6ePoqt5",
       "title": "0107 PostCSS 和 Sass",
+      "desc": "",
+      "updated": 1647711602708,
+      "created": 1641561592013,
+      "tags": "PROG.CSS",
+      "custom": {},
+      "fname": "drops.2022.0107-PostCSS和SASS",
+      "type": "note",
       "vault": {
         "fsPath": "vault"
       },
-      "type": "note",
-      "desc": "",
+      "contentHash": "3daa88684b35d4f763d37be57c326838",
       "links": [
         {
           "type": "frontmatterTag",
@@ -2799,15 +2733,9 @@
           "depth": 2
         }
       },
-      "fname": "drops.2022.0107-PostCSS和SASS",
-      "updated": 1647711602708,
-      "created": 1641561592013,
-      "parent": "4MPQXb6WwUg0kGHxTPD7x",
       "children": [],
-      "data": {},
-      "contentHash": "3daa88684b35d4f763d37be57c326838",
-      "custom": {},
-      "tags": "PROG.CSS"
+      "parent": "4MPQXb6WwUg0kGHxTPD7x",
+      "data": {}
     },
     "XVdxhzTnAX2SQnuApjkXj": {
       "id": "XVdxhzTnAX2SQnuApjkXj",
@@ -2815,7 +2743,6 @@
       "desc": "",
       "updated": 1640704824635,
       "created": 1640704824635,
-      "stub": false,
       "custom": {
         "stub": true
       },
@@ -2824,7 +2751,7 @@
       "vault": {
         "fsPath": "vault"
       },
-      "contentHash": "d60ac62e11ce6f30352931c6b964f08e",
+      "contentHash": "85e4878de28de6d5bf9da6959e95ef22",
       "links": [],
       "anchors": {},
       "children": [
@@ -2837,11 +2764,19 @@
     "Ee1iUWT8QmZe4CAuuwQxs": {
       "id": "Ee1iUWT8QmZe4CAuuwQxs",
       "title": "1227 從 Nx 入門 monorepo",
+      "desc": "",
+      "updated": 1662620120470,
+      "created": 1640615759253,
+      "tags": [
+        "PROG.Nx"
+      ],
+      "custom": {},
+      "fname": "drops.2021.1227-從Nx入門monorepo",
+      "type": "note",
       "vault": {
         "fsPath": "vault"
       },
-      "type": "note",
-      "desc": "",
+      "contentHash": "b464634d1ac0e64cedccdf1517de6faf",
       "links": [
         {
           "type": "frontmatterTag",
@@ -3060,26 +2995,26 @@
           "depth": 3
         }
       },
-      "fname": "drops.2021.1227-從Nx入門monorepo",
-      "updated": 1662620120470,
-      "created": 1640615759253,
-      "parent": "XVdxhzTnAX2SQnuApjkXj",
       "children": [],
-      "data": {},
-      "contentHash": "47c710730e8369eca3102432d7f4aeff",
-      "custom": {},
-      "tags": [
-        "PROG.Nx"
-      ]
+      "parent": "XVdxhzTnAX2SQnuApjkXj",
+      "data": {}
     },
     "DTeYpEuPv3KIHugUyqZPu": {
       "id": "DTeYpEuPv3KIHugUyqZPu",
       "title": "1226 使用 Dendron 紀錄",
+      "desc": "",
+      "updated": 1647711639804,
+      "created": 1640525260857,
+      "tags": [
+        "PROG.Dendron"
+      ],
+      "custom": {},
+      "fname": "drops.2021.1226-first-day",
+      "type": "note",
       "vault": {
         "fsPath": "vault"
       },
-      "type": "note",
-      "desc": "",
+      "contentHash": "fb2f4a1681576ecb382566139bf6c317",
       "links": [
         {
           "type": "frontmatterTag",
@@ -3178,17 +3113,107 @@
           "depth": 3
         }
       },
-      "fname": "drops.2021.1226-first-day",
-      "updated": 1647711639804,
-      "created": 1640525260857,
-      "parent": "XVdxhzTnAX2SQnuApjkXj",
       "children": [],
-      "data": {},
-      "contentHash": "884069d9df55da4ca1f14c072bad324f",
+      "parent": "XVdxhzTnAX2SQnuApjkXj",
+      "data": {}
+    },
+    "jJJHMSzIVnRXuspVex7z3": {
+      "id": "jJJHMSzIVnRXuspVex7z3",
+      "title": "Diary",
+      "desc": "",
+      "updated": 1687689465227,
+      "created": 1687626966756,
+      "custom": {
+        "stub": true
+      },
+      "fname": "diary",
+      "type": "note",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "contentHash": "d2e5c26a83376b7321f79ff7511cb1f2",
+      "links": [],
+      "anchors": {},
+      "children": [
+        "oOzEqsLt1mv3xRZjL4EQH"
+      ],
+      "parent": "root",
+      "data": {}
+    },
+    "oOzEqsLt1mv3xRZjL4EQH": {
+      "id": "oOzEqsLt1mv3xRZjL4EQH",
+      "title": "2023",
+      "desc": "",
+      "updated": 1687689466082,
+      "created": 1687626966757,
+      "custom": {
+        "stub": true
+      },
+      "fname": "diary.2023",
+      "type": "note",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "contentHash": "c80e000bcec086958815fcfda06fa76f",
+      "links": [],
+      "anchors": {},
+      "children": [
+        "1hmguwjh0m2q4slup1xcg03"
+      ],
+      "parent": "jJJHMSzIVnRXuspVex7z3",
+      "data": {}
+    },
+    "1hmguwjh0m2q4slup1xcg03": {
+      "id": "1hmguwjh0m2q4slup1xcg03",
+      "title": "0624 關於換到第三份工作的感想",
+      "desc": "",
+      "updated": 1687694860205,
+      "created": 1687618830597,
       "custom": {},
-      "tags": [
-        "PROG.Dendron"
-      ]
+      "fname": "diary.2023.0624",
+      "type": "note",
+      "vault": {
+        "fsPath": "vault"
+      },
+      "contentHash": "e48a4c38b53cdbdf0d280fa19218acba",
+      "links": [],
+      "anchors": {
+        "第一份工作": {
+          "type": "header",
+          "text": "第一份工作",
+          "value": "第一份工作",
+          "line": 19,
+          "column": 0,
+          "depth": 2
+        },
+        "第二份工作": {
+          "type": "header",
+          "text": "第二份工作",
+          "value": "第二份工作",
+          "line": 46,
+          "column": 0,
+          "depth": 2
+        },
+        "換工作": {
+          "type": "header",
+          "text": "換工作",
+          "value": "換工作",
+          "line": 179,
+          "column": 0,
+          "depth": 2
+        },
+        "第三份工作": {
+          "type": "header",
+          "text": "第三份工作",
+          "value": "第三份工作",
+          "line": 198,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "children": [],
+      "parent": "oOzEqsLt1mv3xRZjL4EQH",
+      "data": {}
     },
     "Cybv0wy1d2NbWoMaJ9Xst": {
       "id": "Cybv0wy1d2NbWoMaJ9Xst",
@@ -3196,7 +3221,6 @@
       "desc": "pending notes",
       "updated": 1644324650888,
       "created": 1644323343019,
-      "stub": false,
       "custom": {
         "stub": true
       },
@@ -3205,7 +3229,7 @@
       "vault": {
         "fsPath": "vault"
       },
-      "contentHash": "7b97026f8ae3612b3d53c11ee947c8c1",
+      "contentHash": "038db656ff90b9c88cf37813c212cd54",
       "links": [],
       "anchors": {},
       "children": [
@@ -3221,7 +3245,6 @@
       "desc": "",
       "updated": 1675331099187,
       "created": 1675331099187,
-      "stub": false,
       "custom": {
         "stub": true
       },
@@ -3230,7 +3253,7 @@
       "vault": {
         "fsPath": "vault"
       },
-      "contentHash": "f046495acefba7dd8ed309d490183bdd",
+      "contentHash": "38a87af7cdb3466b0cf3b7c4b8f149f9",
       "links": [],
       "anchors": {},
       "children": [
@@ -3251,7 +3274,7 @@
       "vault": {
         "fsPath": "vault"
       },
-      "contentHash": "c15e2d923dfd39ee6ffb37355aadf75d",
+      "contentHash": "64e3f8d95753819a1fda21d8ebb9bd67",
       "links": [],
       "anchors": {},
       "children": [],
@@ -3264,7 +3287,6 @@
       "desc": "",
       "updated": 1644323343019,
       "created": 1644323343019,
-      "stub": false,
       "custom": {
         "stub": true
       },
@@ -3273,7 +3295,7 @@
       "vault": {
         "fsPath": "vault"
       },
-      "contentHash": "d39c76e8797a4ec8b5c545e453dff6db",
+      "contentHash": "b9e127e6d7b9f83c932d56de58b52e05",
       "links": [],
       "anchors": {},
       "children": [
@@ -3300,7 +3322,7 @@
       "vault": {
         "fsPath": "vault"
       },
-      "contentHash": "78a7bc7a681e03cc486be98b0c2f46db",
+      "contentHash": "c4357b18f86138a88d5d12e1f6d7e8f3",
       "links": [],
       "anchors": {
         "前言": {
@@ -3435,7 +3457,7 @@
       "vault": {
         "fsPath": "vault"
       },
-      "contentHash": "475e56cfd90372a196dba5c8e757920a",
+      "contentHash": "5bd29c7660ca910249fdd723c627ae2e",
       "links": [
         {
           "type": "frontmatterTag",
@@ -3475,7 +3497,7 @@
       "vault": {
         "fsPath": "vault"
       },
-      "contentHash": "4ab1dac1a915cbe4c99f1f2dfee7d19c",
+      "contentHash": "946558747c5a48537f2a447daa46e356",
       "links": [
         {
           "type": "frontmatterTag",
@@ -3572,7 +3594,7 @@
       "vault": {
         "fsPath": "vault"
       },
-      "contentHash": "8f569710d59441b580634082cb8d651b",
+      "contentHash": "278d578956196688992398c0130f9be3",
       "links": [
         {
           "type": "frontmatterTag",
@@ -3693,7 +3715,7 @@
       "vault": {
         "fsPath": "vault"
       },
-      "contentHash": "cb30f23a04f0f1b24471ea57eb4e0c2c",
+      "contentHash": "712bc1e0a5c711cdd4239d3bd9965780",
       "links": [
         {
           "type": "frontmatterTag",
@@ -3839,11 +3861,20 @@
     "05PiGJUq8nazfBg8ndqHM": {
       "id": "05PiGJUq8nazfBg8ndqHM",
       "title": "0109-TypeScript(未完)",
+      "desc": "",
+      "updated": 1644422458278,
+      "created": 1641697334942,
+      "tags": "PROG.TypeScript",
+      "status": "w",
+      "custom": {
+        "status": "w"
+      },
+      "fname": "0drops.2022.0109-TypeScript",
+      "type": "note",
       "vault": {
         "fsPath": "vault"
       },
-      "type": "note",
-      "desc": "",
+      "contentHash": "ea57b2e9273fb5b1f9435236ae857384",
       "links": [
         {
           "type": "frontmatterTag",
@@ -3870,17 +3901,9 @@
           "depth": 2
         }
       },
-      "fname": "0drops.2022.0109-TypeScript",
-      "updated": 1644422458278,
-      "created": 1641697334942,
-      "parent": "0YMTMineOCu8QrkzCD9rn",
       "children": [],
-      "data": {},
-      "contentHash": "ea57b2e9273fb5b1f9435236ae857384",
-      "custom": {
-        "status": "w"
-      },
-      "tags": "PROG.TypeScript"
+      "parent": "0YMTMineOCu8QrkzCD9rn",
+      "data": {}
     },
     "1FrZXjCCHfkMyZZeBnoL2": {
       "id": "1FrZXjCCHfkMyZZeBnoL2",
@@ -3898,7 +3921,7 @@
       "vault": {
         "fsPath": "vault"
       },
-      "contentHash": "ffb9750bfd7c9a7819909cebcc576e51",
+      "contentHash": "a8edf447bc0d9add14c1cac9cbbb8231",
       "links": [
         {
           "type": "frontmatterTag",
@@ -4028,19 +4051,19 @@
       "vault": {
         "fsPath": "vault"
       },
-      "contentHash": "acc933de5170843ff0ca0380d9ab6de4",
+      "contentHash": "7760ffb80fec59f813a8350ce254bcb0",
       "links": [],
       "anchors": {},
       "children": [
         "Cybv0wy1d2NbWoMaJ9Xst",
+        "jJJHMSzIVnRXuspVex7z3",
         "u4tSbmkJewrKonY3sL544",
         "WAKWMq3SeVmlAmZRqCbpB",
-        "rEbR1FrKkZzyjo6ahAgm3",
-        "jJJHMSzIVnRXuspVex7z3"
+        "rEbR1FrKkZzyjo6ahAgm3"
       ],
       "parent": null,
       "data": {},
-      "body": "\n\r\nDendron 官網: https://wiki.dendron.so/\r\n\r\n<!-- ![[首次使用 Dendron 紀錄|drops.2021.1226-first-day#使用-dendron-紀錄:#*]] -->\r\n<!-- <div class=\"portal-container\">\r\n<div class=\"portal-head\">\r\n<div class=\"portal-backlink\">\r\n<div class=\"portal-title\">From <span class=\"portal-text-title\">1226 使用 Dendron 紀錄</span></div>\r\n<a href=\"/notes/DTeYpEuPv3KIHugUyqZPu\" class=\"portal-arrow\">Go to text <span class=\"right-arrow\">→</span></a>\r\n</div>\r\n</div>\r\n<div id=\"portal-parent-anchor\" class=\"portal-parent\" markdown=\"1\">\r\n<div class=\"portal-parent-fader-top\"></div>\r\n<div class=\"portal-parent-fader-bottom\"></div><h2 id=\"使用-dendron-紀錄\"><a aria-hidden=\"true\" class=\"anchor-heading\" href=\"#使用-dendron-紀錄\"><svg aria-hidden=\"true\" viewBox=\"0 0 16 16\"><use xlink:href=\"#svg-link\"></use></svg></a>使用 Dendron 紀錄</h2>\r\n</div></div> -->\r\n"
+      "body": "\nDendron 官網: https://wiki.dendron.so/\n\n<!-- ![[首次使用 Dendron 紀錄|drops.2021.1226-first-day#使用-dendron-紀錄:#*]] -->\n<!-- <div class=\"portal-container\">\n<div class=\"portal-head\">\n<div class=\"portal-backlink\">\n<div class=\"portal-title\">From <span class=\"portal-text-title\">1226 使用 Dendron 紀錄</span></div>\n<a href=\"/notes/DTeYpEuPv3KIHugUyqZPu\" class=\"portal-arrow\">Go to text <span class=\"right-arrow\">→</span></a>\n</div>\n</div>\n<div id=\"portal-parent-anchor\" class=\"portal-parent\" markdown=\"1\">\n<div class=\"portal-parent-fader-top\"></div>\n<div class=\"portal-parent-fader-bottom\"></div><h2 id=\"使用-dendron-紀錄\"><a aria-hidden=\"true\" class=\"anchor-heading\" href=\"#使用-dendron-紀錄\"><svg aria-hidden=\"true\" viewBox=\"0 0 16 16\"><use xlink:href=\"#svg-link\"></use></svg></a>使用 Dendron 紀錄</h2>\n</div></div> -->\n"
     }
   ],
   "noteIndex": {
@@ -4060,19 +4083,19 @@
     "vault": {
       "fsPath": "vault"
     },
-    "contentHash": "acc933de5170843ff0ca0380d9ab6de4",
+    "contentHash": "7760ffb80fec59f813a8350ce254bcb0",
     "links": [],
     "anchors": {},
     "children": [
       "Cybv0wy1d2NbWoMaJ9Xst",
+      "jJJHMSzIVnRXuspVex7z3",
       "u4tSbmkJewrKonY3sL544",
       "WAKWMq3SeVmlAmZRqCbpB",
-      "rEbR1FrKkZzyjo6ahAgm3",
-      "jJJHMSzIVnRXuspVex7z3"
+      "rEbR1FrKkZzyjo6ahAgm3"
     ],
     "parent": null,
     "data": {},
-    "body": "\n\r\nDendron 官網: https://wiki.dendron.so/\r\n\r\n<!-- ![[首次使用 Dendron 紀錄|drops.2021.1226-first-day#使用-dendron-紀錄:#*]] -->\r\n<!-- <div class=\"portal-container\">\r\n<div class=\"portal-head\">\r\n<div class=\"portal-backlink\">\r\n<div class=\"portal-title\">From <span class=\"portal-text-title\">1226 使用 Dendron 紀錄</span></div>\r\n<a href=\"/notes/DTeYpEuPv3KIHugUyqZPu\" class=\"portal-arrow\">Go to text <span class=\"right-arrow\">→</span></a>\r\n</div>\r\n</div>\r\n<div id=\"portal-parent-anchor\" class=\"portal-parent\" markdown=\"1\">\r\n<div class=\"portal-parent-fader-top\"></div>\r\n<div class=\"portal-parent-fader-bottom\"></div><h2 id=\"使用-dendron-紀錄\"><a aria-hidden=\"true\" class=\"anchor-heading\" href=\"#使用-dendron-紀錄\"><svg aria-hidden=\"true\" viewBox=\"0 0 16 16\"><use xlink:href=\"#svg-link\"></use></svg></a>使用 Dendron 紀錄</h2>\r\n</div></div> -->\r\n"
+    "body": "\nDendron 官網: https://wiki.dendron.so/\n\n<!-- ![[首次使用 Dendron 紀錄|drops.2021.1226-first-day#使用-dendron-紀錄:#*]] -->\n<!-- <div class=\"portal-container\">\n<div class=\"portal-head\">\n<div class=\"portal-backlink\">\n<div class=\"portal-title\">From <span class=\"portal-text-title\">1226 使用 Dendron 紀錄</span></div>\n<a href=\"/notes/DTeYpEuPv3KIHugUyqZPu\" class=\"portal-arrow\">Go to text <span class=\"right-arrow\">→</span></a>\n</div>\n</div>\n<div id=\"portal-parent-anchor\" class=\"portal-parent\" markdown=\"1\">\n<div class=\"portal-parent-fader-top\"></div>\n<div class=\"portal-parent-fader-bottom\"></div><h2 id=\"使用-dendron-紀錄\"><a aria-hidden=\"true\" class=\"anchor-heading\" href=\"#使用-dendron-紀錄\"><svg aria-hidden=\"true\" viewBox=\"0 0 16 16\"><use xlink:href=\"#svg-link\"></use></svg></a>使用 Dendron 紀錄</h2>\n</div></div> -->\n"
   },
   "vaults": [
     {

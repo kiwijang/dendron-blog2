@@ -1,5 +1,5 @@
-<h1 id="0907-c-從-list-到-ienumerable-和-iqueryable"><a aria-hidden="true" class="anchor-heading" href="#0907-c-從-list-到-ienumerable-和-iqueryable"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>0907 [C#] 從 List 到 IEnumerable 和 IQueryable</h1>
-<h2 id="ienumerable-vs-list---如何使用-他們是如何運作的"><a aria-hidden="true" class="anchor-heading" href="#ienumerable-vs-list---如何使用-他們是如何運作的"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>IEnumerable vs List - 如何使用? 他們是如何運作的?</h2>
+<h1 id="0907-c-從-list-到-ienumerable-和-iqueryable">0907 [C#] 從 List 到 IEnumerable 和 IQueryable<a aria-hidden="true" class="anchor-heading icon-link" href="#0907-c-從-list-到-ienumerable-和-iqueryable"></a></h1>
+<h2 id="ienumerable-vs-list---如何使用-他們是如何運作的">IEnumerable vs List - 如何使用? 他們是如何運作的?<a aria-hidden="true" class="anchor-heading icon-link" href="#ienumerable-vs-list---如何使用-他們是如何運作的"></a></h2>
 <p>以下取自: <a href="https://stackoverflow.com/questions/3628425/ienumerable-vs-list-what-to-use-how-do-they-work/3628465">https://stackoverflow.com/questions/3628425/ienumerable-vs-list-what-to-use-how-do-they-work/3628465</a></p>
 <ul>
 <li>
@@ -33,7 +33,7 @@
 </blockquote>
 </li>
 </ul>
-<h2 id="linq-不會產生-sql-去查詢query資料庫直到你列舉enumerate他"><a aria-hidden="true" class="anchor-heading" href="#linq-不會產生-sql-去查詢query資料庫直到你列舉enumerate他"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>LINQ 不會產生 Sql 去查詢(query)資料庫，直到你列舉(enumerate)他</h2>
+<h2 id="linq-不會產生-sql-去查詢query資料庫直到你列舉enumerate他">LINQ 不會產生 Sql 去查詢(query)資料庫，直到你列舉(enumerate)他<a aria-hidden="true" class="anchor-heading icon-link" href="#linq-不會產生-sql-去查詢query資料庫直到你列舉enumerate他"></a></h2>
 <pre><code>> LINQ doesn't generate the SQL to query the database until you enumerate it
 </code></pre>
 <ul>
@@ -44,12 +44,12 @@
 <p>e.g 當你用 <code>foreach</code> 列舉，或者使用 <code>ToList()</code> 才會執行查詢資料庫的動作。</p>
 </li>
 </ul>
-<h1 id="小結"><a aria-hidden="true" class="anchor-heading" href="#小結"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>小結</h1>
+<h1 id="小結">小結<a aria-hidden="true" class="anchor-heading icon-link" href="#小結"></a></h1>
 <p>因為 linq 在你列舉他之前，不會去馬上去資料庫抓資料。
 列舉就是指 foreach 和 toList()
 他說 IEnumerable 可以拿來放 LINQ expressions。
 最後要拿資料再 toList() 就好</p>
-<h2 id="ienumberable-的大缺點"><a aria-hidden="true" class="anchor-heading" href="#ienumberable-的大缺點"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>IEnumberable 的大缺點</h2>
+<h2 id="ienumberable-的大缺點">IEnumberable 的大缺點<a aria-hidden="true" class="anchor-heading icon-link" href="#ienumberable-的大缺點"></a></h2>
 <ul>
 <li>
 <p><a href="https://www.cnblogs.com/powertoolsteam/p/4936818.html">最全数据结构详述: List VS IEnumerable VS IQueryable VS ICollection VS IDictionary</a></p>
@@ -58,7 +58,7 @@
 </blockquote>
 </li>
 </ul>
-<h2 id="ienumerable-vs-iqueryable"><a aria-hidden="true" class="anchor-heading" href="#ienumerable-vs-iqueryable"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a><code>IEnumerable</code> vs <code>IQueryable</code></h2>
+<h2 id="ienumerable-vs-iqueryable"><code>IEnumerable</code> vs <code>IQueryable</code><a aria-hidden="true" class="anchor-heading icon-link" href="#ienumerable-vs-iqueryable"></a></h2>
 <ul>
 <li>
 <p><a href="https://stackoverflow.com/questions/2876616/returning-ienumerablet-vs-iqueryablet">Returning <code>IEnumerable&#x3C;T></code> vs. <code>IQueryable&#x3C;T></code></a></p>
@@ -70,7 +70,7 @@
 </blockquote>
 </li>
 </ul>
-<h2 id="小結-1"><a aria-hidden="true" class="anchor-heading" href="#小結-1"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>小結</h2>
+<h2 id="小結-1">小結<a aria-hidden="true" class="anchor-heading icon-link" href="#小結-1"></a></h2>
 <ul>
 <li>
 <p>先備觀念:
@@ -96,7 +96,7 @@ linq 在列舉後才會到資料庫撈資料。</p>
 </ol>
 </li>
 </ul>
-<h3 id="可以看這兩篇範例會更清楚"><a aria-hidden="true" class="anchor-heading" href="#可以看這兩篇範例會更清楚"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>可以看這兩篇範例，會更清楚</h3>
+<h3 id="可以看這兩篇範例會更清楚">可以看這兩篇範例，會更清楚<a aria-hidden="true" class="anchor-heading icon-link" href="#可以看這兩篇範例會更清楚"></a></h3>
 <ul>
 <li>
 <p><a href="https://blog.darkthread.net/blog/iqueryable-experiment/">關於<code>IQueryable&#x3C;T></code>特性的小實驗</a></p>
@@ -108,7 +108,7 @@ linq 在列舉後才會到資料庫撈資料。</p>
 </blockquote>
 </li>
 </ul>
-<h2 id="參考資料"><a aria-hidden="true" class="anchor-heading" href="#參考資料"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>參考資料</h2>
+<h2 id="參考資料">參考資料<a aria-hidden="true" class="anchor-heading icon-link" href="#參考資料"></a></h2>
 <ul>
 <li>
 <p><a href="https://blog.darkthread.net/blog/iqueryable-experiment/">關於 <code>IQueryable&#x3C;T></code> 特性的小實驗</a></p>
@@ -124,7 +124,7 @@ linq 在列舉後才會到資料庫撈資料。</p>
 </li>
 </ul>
 <hr>
-<h2 id="tags"><a aria-hidden="true" class="anchor-heading" href="#tags"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Tags</h2>
+<h2 id="tags">Tags<a aria-hidden="true" class="anchor-heading icon-link" href="#tags"></a></h2>
 <ol>
 <li><a class="color-tag" style="--tag-color: #c292a1;" href="/notes/8butragqifg44gfphdug6ys">PROG.C#</a></li>
 </ol>

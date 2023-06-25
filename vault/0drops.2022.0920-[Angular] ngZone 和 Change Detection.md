@@ -1,7 +1,7 @@
 ---
 id: 9tqljuuooemk86j20mg6nch
-title: "1213 [Angular] ngZone 和 Change Detection"
-desc: ""
+title: '1213 [Angular] ngZone 和 Change Detection'
+desc: ''
 updated: 1672149805071
 created: 1663605777459
 tags:
