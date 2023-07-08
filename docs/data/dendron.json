@@ -25,10 +25,7 @@
     "insertNoteIndex": {
       "enableMarker": false
     },
-    "copyNoteLink": {
-      "aliasMode": "title"
-    },
-    "templateHierarchy": "template"
+    "copyNoteLink": {}
   },
   "workspace": {
     "vaults": [
@@ -68,15 +65,10 @@
         "L": "low"
       },
       "todoIntegration": false,
-      "createTaskSelectionType": "selection2link",
-      "taskCompleteStatus": [
-        "done",
-        "x"
-      ]
+      "createTaskSelectionType": "selection2link"
     },
     "graph": {
-      "zoomSpeed": 1,
-      "createStub": false
+      "zoomSpeed": 1
     },
     "enableAutoCreateOnDefinition": false,
     "enableXVaultWikiLink": false,
@@ -104,14 +96,26 @@
   "publishing": {
     "enableFMTitle": true,
     "enableNoteTitleForLink": true,
+    "enableMermaid": true,
     "enablePrettyRefs": true,
     "enableKatex": true,
     "copyAssets": true,
     "siteHierarchies": [
       "root"
     ],
-    "writeStubs": false,
+    "enableSiteLastModified": true,
     "siteRootDir": "docs",
+    "siteUrl": "https://kiwijang.github.io",
+    "enableFrontmatterTags": true,
+    "enableHashesForFMTags": false,
+    "enableRandomlyColoredTags": true,
+    "duplicateNoteBehavior": {
+      "action": "useVault",
+      "payload": [
+        "vault"
+      ]
+    },
+    "writeStubs": false,
     "seo": {
       "title": "/ᐠ ._. ᐟ\\✧",
       "description": "網頁開發技術筆記"
@@ -123,23 +127,7 @@
       "editViewMode": "tree",
       "editRepository": "https://github.com/kiwijang/kiwijang.github.io.git"
     },
-    "enableSiteLastModified": true,
-    "enableFrontmatterTags": true,
-    "enableHashesForFMTags": false,
-    "enableRandomlyColoredTags": true,
-    "enableTaskNotes": true,
-    "enablePrettyLinks": true,
-    "searchMode": "lookup",
-    "enableMermaid": true,
-    "siteUrl": "https://kiwijang.github.io",
-    "duplicateNoteBehavior": {
-      "action": "useVault",
-      "payload": [
-        "vault"
-      ]
-    },
-    "siteFaviconPath": "favicon.ico",
-    "siteIndex": "root"
+    "enablePrettyLinks": true
   },
   "site": {
     "siteHierarchies": [
@@ -147,6 +135,24 @@
     ],
     "siteRootDir": "docs",
     "siteUrl": "https://kiwijang.github.io",
-    "title": "/ᐠ ._. ᐟ\\✧"
-  }
+    "title": "/ᐠ ._. ᐟ\\✧",
+    "copyAssets": true,
+    "usePrettyRefs": true,
+    "description": "Personal knowledge space",
+    "siteLastModified": true,
+    "gh_edit_branch": "main",
+    "usePrettyLinks": true,
+    "siteNotesDir": "notes",
+    "siteFaviconPath": "favicon.ico",
+    "gh_edit_link": true,
+    "gh_edit_link_text": "Edit this page on GitHub",
+    "gh_root": "docs/",
+    "gh_edit_view_mode": "edit",
+    "writeStubs": true,
+    "siteIndex": "root"
+  },
+  "useFMTitle": true,
+  "useNoteTitleForLink": true,
+  "mermaid": true,
+  "useKatex": true
 }

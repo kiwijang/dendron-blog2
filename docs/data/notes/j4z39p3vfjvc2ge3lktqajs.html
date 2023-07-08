@@ -1,41 +1,41 @@
-<h1 id="0919-angular-subject">0919 [Angular] Subject<a aria-hidden="true" class="anchor-heading icon-link" href="#0919-angular-subject"></a></h1>
+<h1 id="0919-angular-subject"><a aria-hidden="true" class="anchor-heading" href="#0919-angular-subject"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>0919 [Angular] Subject</h1>
 <!-- 
 date: 2020-05-16 09:34:52
  -->
-<h2 id="初探-angular-subject">初探 Angular Subject<a aria-hidden="true" class="anchor-heading icon-link" href="#初探-angular-subject"></a></h2>
+<h2 id="初探-angular-subject"><a aria-hidden="true" class="anchor-heading" href="#初探-angular-subject"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>初探 Angular Subject</h2>
 <p>從 Angular Subject 看到 RxJS Subject</p>
 <!-- more -->
-<h3 id="angular-subject">Angular Subject<a aria-hidden="true" class="anchor-heading icon-link" href="#angular-subject"></a></h3>
+<h3 id="angular-subject"><a aria-hidden="true" class="anchor-heading" href="#angular-subject"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Angular Subject</h3>
 <blockquote>
 <p>Every Subject is an Observable. Every Subject is an Observer.
 subject 是 observable 也是 observer。</p>
 </blockquote>
 <p>EventEmitter 是繼承 Subject 的 Class，之前有用到 EventEmitter 的地方在元件的溝通。
 <img src="https://i.imgur.com/6bjsuRk.png"></p>
-<h2 id="angular-元件的溝通">Angular 元件的溝通<a aria-hidden="true" class="anchor-heading icon-link" href="#angular-元件的溝通"></a></h2>
+<h2 id="angular-元件的溝通"><a aria-hidden="true" class="anchor-heading" href="#angular-元件的溝通"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Angular 元件的溝通</h2>
 <p>資料來源: <a href="https://stackoverflow.com/questions/37587732/how-to-call-another-components-function-in-angular2">https://stackoverflow.com/questions/37587732/how-to-call-another-components-function-in-angular2</a>
 元件溝通有四種，父傳子、子傳父、相鄰子元件、不相關的元件
 <img src="https://i.imgur.com/8RYwc55.png"></p>
-<h2 id="子傳父">子傳父<a aria-hidden="true" class="anchor-heading icon-link" href="#子傳父"></a></h2>
+<h2 id="子傳父"><a aria-hidden="true" class="anchor-heading" href="#子傳父"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>子傳父</h2>
 <p>用到 EventEmitter。
 <img src="https://i.imgur.com/ZHZMY5h.png"></p>
-<h2 id="元件傳元件">元件傳元件<a aria-hidden="true" class="anchor-heading icon-link" href="#元件傳元件"></a></h2>
+<h2 id="元件傳元件"><a aria-hidden="true" class="anchor-heading" href="#元件傳元件"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>元件傳元件</h2>
 <p>用到 BehaviorSubject。
 <img src="https://i.imgur.com/XJGFBXh.png"></p>
 <hr>
-<h1 id="rxjs-subject">RxJS Subject<a aria-hidden="true" class="anchor-heading icon-link" href="#rxjs-subject"></a></h1>
-<h2 id="什麼是-subject-">什麼是 Subject ?<a aria-hidden="true" class="anchor-heading icon-link" href="#什麼是-subject-"></a></h2>
+<h1 id="rxjs-subject"><a aria-hidden="true" class="anchor-heading" href="#rxjs-subject"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>RxJS Subject</h1>
+<h2 id="什麼是-subject-"><a aria-hidden="true" class="anchor-heading" href="#什麼是-subject-"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>什麼是 Subject ?</h2>
 <p>Subject 是 Observable 也是 Observer 。</p>
-<h3 id="observable可觀察的物件">Observable(可觀察的物件)<a aria-hidden="true" class="anchor-heading icon-link" href="#observable可觀察的物件"></a></h3>
+<h3 id="observable可觀察的物件"><a aria-hidden="true" class="anchor-heading" href="#observable可觀察的物件"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Observable(可觀察的物件)</h3>
 <p>代表一組未來即將產生的事件資料(被觀察的物件)</p>
-<h3 id="observer-觀察者物件">Observer (觀察者物件)<a aria-hidden="true" class="anchor-heading icon-link" href="#observer-觀察者物件"></a></h3>
+<h3 id="observer-觀察者物件"><a aria-hidden="true" class="anchor-heading" href="#observer-觀察者物件"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Observer (觀察者物件)</h3>
 <p>代表一個用來接收「<strong>觀察結果</strong>」的物件(收到的就是<strong>事件資料</strong>)
 觀察者物件就是一個物件包含 <strong>3</strong> 個含有<strong>回呼函式</strong>的屬性(<strong>next, error, complete</strong>)</p>
-<h3 id="subscription-訂閱物件">Subscription (訂閱物件)<a aria-hidden="true" class="anchor-heading icon-link" href="#subscription-訂閱物件"></a></h3>
+<h3 id="subscription-訂閱物件"><a aria-hidden="true" class="anchor-heading" href="#subscription-訂閱物件"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Subscription (訂閱物件)</h3>
 <p>代表正在執行 Observable/Observer 的執行個體(可用來<strong>取消訂閱</strong>)</p>
-<h3 id="subject-主體物件">Subject (主體物件)<a aria-hidden="true" class="anchor-heading icon-link" href="#subject-主體物件"></a></h3>
+<h3 id="subject-主體物件"><a aria-hidden="true" class="anchor-heading" href="#subject-主體物件"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Subject (主體物件)</h3>
 <p>如同 EventEmitter 一樣，主要用來<strong>廣播</strong>收到的事件資料給多位 Observer (觀察者) </p>
-<h2 id="什麼是-subject--1">什麼是 Subject ?<a aria-hidden="true" class="anchor-heading icon-link" href="#什麼是-subject--1"></a></h2>
+<h2 id="什麼是-subject--1"><a aria-hidden="true" class="anchor-heading" href="#什麼是-subject--1"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>什麼是 Subject ?</h2>
 <p>Subject 是 Observable 也是 Observer 。</p>
 <blockquote>
 <p>observable.subscribe(observer); </p>
@@ -46,13 +46,13 @@ subject 是 observable 也是 observer。</p>
 <a href="https://rxjs.dev/guide/subject">https://rxjs.dev/guide/subject</a>
 <a href="http://reactivex.io/documentation/subject.html">http://reactivex.io/documentation/subject.html</a>
 <a href="https://medium.com/angular-in-depth/mastering-rxjs-operators-and-functions-that-can-bite-you-when-you-dont-expect-cb2047cf5d4c">https://medium.com/angular-in-depth/mastering-rxjs-operators-and-functions-that-can-bite-you-when-you-dont-expect-cb2047cf5d4c</a></p>
-<h2 id="subjectbehaviorsubject">Subject、BehaviorSubject<a aria-hidden="true" class="anchor-heading icon-link" href="#subjectbehaviorsubject"></a></h2>
+<h2 id="subjectbehaviorsubject"><a aria-hidden="true" class="anchor-heading" href="#subjectbehaviorsubject"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Subject、BehaviorSubject</h2>
 <p>回傳訂閱前後到complete()前的範圍
 <img src="https://i.imgur.com/H0Jty8h.png">
 回傳訂閱後到complete()前的範圍
 <img src="https://i.imgur.com/is3H2L9.png">
 <a href="https://codepen.io/kiwijang/pen/abvGGwy?editors=0012">Subject、BehaviorSubject Demo</a></p>
-<h2 id="replaysubject-asyncsubject">ReplaySubject、 AsyncSubject<a aria-hidden="true" class="anchor-heading icon-link" href="#replaysubject-asyncsubject"></a></h2>
+<h2 id="replaysubject-asyncsubject"><a aria-hidden="true" class="anchor-heading" href="#replaysubject-asyncsubject"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>ReplaySubject、 AsyncSubject</h2>
 <p><img src="https://i.imgur.com/HNrqWS5.png">
 第一次訂閱:回傳訂閱前後到complete()前的範圍
 之後訂閱:回傳訂閱前所有值(無視complete())</p>
@@ -60,7 +60,7 @@ subject 是 observable 也是 observer。</p>
 <img src="https://i.imgur.com/Vp7NzCY.png">
 <img src="https://i.imgur.com/zeniMhc.png">
 <a href="https://codepen.io/kiwijang/pen/vYNjrBw">ReplaySubject、 AsyncSubject Demo</a></p>
-<h3 id="小結">小結<a aria-hidden="true" class="anchor-heading icon-link" href="#小結"></a></h3>
+<h3 id="小結"><a aria-hidden="true" class="anchor-heading" href="#小結"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>小結</h3>
 <p><img src="https://i.imgur.com/WHqXqic.png"></p>
 <ul>
 <li>observable 被 subscribe 以後會有一個 observer 物件</li>
@@ -68,7 +68,7 @@ subject 是 observable 也是 observer。</p>
 <li>subscribe 會 return subscription(訂閱物件)</li>
 </ul>
 <hr>
-<h3 id="簡寫-observer">簡寫 observer<a aria-hidden="true" class="anchor-heading icon-link" href="#簡寫-observer"></a></h3>
+<h3 id="簡寫-observer"><a aria-hidden="true" class="anchor-heading" href="#簡寫-observer"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>簡寫 observer</h3>
 <p><img src="https://i.imgur.com/DDj8Wrd.png"></p>
 <hr>
 <p>參考資料:</p>
@@ -83,7 +83,7 @@ subject 是 observable 也是 observer。</p>
 <li><a href="https://github.com/kekeqy/ebook/blob/master/%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BARxJS.pdf">深入浅出RxJS.pdf</a></li>
 </ul>
 <hr>
-<h2 id="tags">Tags<a aria-hidden="true" class="anchor-heading icon-link" href="#tags"></a></h2>
+<h2 id="tags"><a aria-hidden="true" class="anchor-heading" href="#tags"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Tags</h2>
 <ol>
 <li><a class="color-tag" style="--tag-color: #017371;" href="/notes/zavPiB0ApTq1sGZOGq9xJ">PROG.Angular</a></li>
 </ol>

@@ -1,7 +1,7 @@
-<h1 id="0914-ch2ch3ioos-架構vm">0914 [Ch2Ch3]IO、OS 架構、VM<a aria-hidden="true" class="anchor-heading icon-link" href="#0914-ch2ch3ioos-架構vm"></a></h1>
-<h2 id="io-運作方式-interrupt-介紹hw-resource-protection">IO 運作方式: Interrupt 介紹、HW Resource protection<a aria-hidden="true" class="anchor-heading icon-link" href="#io-運作方式-interrupt-介紹hw-resource-protection"></a></h2>
-<h3 id="io-運作方式">I/O 運作方式<a aria-hidden="true" class="anchor-heading icon-link" href="#io-運作方式"></a></h3>
-<h4 id="polling-io-programmed-io">polling I/O (programmed I/O)<a aria-hidden="true" class="anchor-heading icon-link" href="#polling-io-programmed-io"></a></h4>
+<h1 id="0914-ch2ch3ioos-架構vm"><a aria-hidden="true" class="anchor-heading" href="#0914-ch2ch3ioos-架構vm"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>0914 [Ch2Ch3]IO、OS 架構、VM</h1>
+<h2 id="io-運作方式-interrupt-介紹hw-resource-protection"><a aria-hidden="true" class="anchor-heading" href="#io-運作方式-interrupt-介紹hw-resource-protection"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>IO 運作方式: Interrupt 介紹、HW Resource protection</h2>
+<h3 id="io-運作方式"><a aria-hidden="true" class="anchor-heading" href="#io-運作方式"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>I/O 運作方式</h3>
+<h4 id="polling-io-programmed-io"><a aria-hidden="true" class="anchor-heading" href="#polling-io-programmed-io"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>polling I/O (programmed I/O)</h4>
 <p>Def: 又叫 Busy waiting I/O 或 programmed I/O</p>
 <p>步驟如下:</p>
 <ol>
@@ -34,7 +34,7 @@ driver -( request I/O subsystem )-> OS</li>
     D[device driver] -->|5 I/O 命令| F[6 I/O decvice 硬體 - 好了不會通知]
     A ---->|8 polling - CPU 要一直檢查好了沒| F
 </div>
-<h4 id="interrupted-io">Interrupted I/O<a aria-hidden="true" class="anchor-heading icon-link" href="#interrupted-io"></a></h4>
+<h4 id="interrupted-io"><a aria-hidden="true" class="anchor-heading" href="#interrupted-io"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Interrupted I/O</h4>
 <ol start="8">
 <li>當 I/O 運作完成，I/O-device controller 會發出一個 "I/O-completed" interrupt 通知 CPU(OS)</li>
 <li>OS 收到中斷通知後(可能)會先暫停目前執行中的 process(eg. PB execution -> ready state)</li>
@@ -63,8 +63,8 @@ driver -( request I/O subsystem )-> OS</li>
 <li>Interrupt 之處理仍需耗費 cpu time (eg 查表.執行 ISR 保存中斷前 process 之 state etc)</li>
 <li></li>
 </ul>
-<h4 id="dma">DMA<a aria-hidden="true" class="anchor-heading icon-link" href="#dma"></a></h4>
-<h4 id="interrupt-之處理">Interrupt 之處理<a aria-hidden="true" class="anchor-heading icon-link" href="#interrupt-之處理"></a></h4>
+<h4 id="dma"><a aria-hidden="true" class="anchor-heading" href="#dma"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>DMA</h4>
+<h4 id="interrupt-之處理"><a aria-hidden="true" class="anchor-heading" href="#interrupt-之處理"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Interrupt 之處理</h4>
 <p>Def: DMA controller 負責 I/O-Device 與 memory 之間的 Data transfer 工作。此 transfer 過程不須 cpu 參與。</p>
 <p>所以 CPU 有更多時間用於 process exec 上。
 另外 DMA 適合用在 block-transfer oriented I/O Device。例如 Disk。
@@ -81,17 +81,17 @@ note: 可以降低 I/O completed 中斷頻率。不適合 Byte transfer oriented
 alu ← signal 通知</p>
 <p>當 conflict 時，通常給 DMA 高優先權。</p>
 <p>理由: DMA 對 memory、bus 上使用頻率低於 cpu 很多，優先配給 DMA (給需求量少的人)會有比較小的平均 waiting time 及較高之產出(throughput)。</p>
-<h4 id="種類">種類<a aria-hidden="true" class="anchor-heading icon-link" href="#種類"></a></h4>
-<h3 id="interrupt-介紹">Interrupt 介紹<a aria-hidden="true" class="anchor-heading icon-link" href="#interrupt-介紹"></a></h3>
-<h4 id="hw-resource-protection">HW Resource Protection<a aria-hidden="true" class="anchor-heading icon-link" href="#hw-resource-protection"></a></h4>
-<h4 id="基礎">基礎<a aria-hidden="true" class="anchor-heading icon-link" href="#基礎"></a></h4>
-<h5 id="daul-mode-運作">Daul mode 運作<a aria-hidden="true" class="anchor-heading icon-link" href="#daul-mode-運作"></a></h5>
-<h5 id="privileged-instructions">privileged instructions<a aria-hidden="true" class="anchor-heading icon-link" href="#privileged-instructions"></a></h5>
-<h4 id="io">I/O<a aria-hidden="true" class="anchor-heading icon-link" href="#io"></a></h4>
-<h4 id="memory">memory<a aria-hidden="true" class="anchor-heading icon-link" href="#memory"></a></h4>
-<h4 id="cpu">cpu<a aria-hidden="true" class="anchor-heading icon-link" href="#cpu"></a></h4>
+<h4 id="種類"><a aria-hidden="true" class="anchor-heading" href="#種類"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>種類</h4>
+<h3 id="interrupt-介紹"><a aria-hidden="true" class="anchor-heading" href="#interrupt-介紹"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Interrupt 介紹</h3>
+<h4 id="hw-resource-protection"><a aria-hidden="true" class="anchor-heading" href="#hw-resource-protection"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>HW Resource Protection</h4>
+<h4 id="基礎"><a aria-hidden="true" class="anchor-heading" href="#基礎"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>基礎</h4>
+<h5 id="daul-mode-運作"><a aria-hidden="true" class="anchor-heading" href="#daul-mode-運作"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Daul mode 運作</h5>
+<h5 id="privileged-instructions"><a aria-hidden="true" class="anchor-heading" href="#privileged-instructions"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>privileged instructions</h5>
+<h4 id="io"><a aria-hidden="true" class="anchor-heading" href="#io"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>I/O</h4>
+<h4 id="memory"><a aria-hidden="true" class="anchor-heading" href="#memory"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>memory</h4>
+<h4 id="cpu"><a aria-hidden="true" class="anchor-heading" href="#cpu"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>cpu</h4>
 <hr>
-<h2 id="tags">Tags<a aria-hidden="true" class="anchor-heading icon-link" href="#tags"></a></h2>
+<h2 id="tags"><a aria-hidden="true" class="anchor-heading" href="#tags"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Tags</h2>
 <ol>
 <li><a class="color-tag" style="--tag-color: #de7e5d;" href="/notes/hikt5akgz6251z6wjkkmc99">PROG.OS</a></li>
 </ol>

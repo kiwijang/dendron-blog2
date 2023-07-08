@@ -1,6 +1,6 @@
-<h1 id="0304-unbuntuwindows進入-bios">0304 [unbuntu&#x26;windows]進入 BIOS<a aria-hidden="true" class="anchor-heading icon-link" href="#0304-unbuntuwindows進入-bios"></a></h1>
+<h1 id="0304-unbuntuwindows進入-bios"><a aria-hidden="true" class="anchor-heading" href="#0304-unbuntuwindows進入-bios"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>0304 [unbuntu&#x26;windows]進入 BIOS</h1>
 <p>快速開機真的有夠難按到 <code>Del</code>，以下是在系統裡重開機進入 BIOS 的指令。</p>
-<h2 id="ubuntu-22042-lts">Ubuntu 22.04.2 LTS<a aria-hidden="true" class="anchor-heading icon-link" href="#ubuntu-22042-lts"></a></h2>
+<h2 id="ubuntu-22042-lts"><a aria-hidden="true" class="anchor-heading" href="#ubuntu-22042-lts"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Ubuntu 22.04.2 LTS</h2>
 <pre class="language-bash"><code class="language-bash"><span class="token function">sudo</span> systemctl <span class="token function">reboot</span> --firmware-setup
 </code></pre>
 <p>用來重新啟動系統並進入固件設置模式（也稱為 BIOS 或 UEFI 設置模式）的命令。</p>
@@ -28,7 +28,7 @@
 <p><code>--firmware-setup</code>：這個選項指示系統在重新啟動時進入固件設置模式。當系統進入固件設置模式時，您可以更改許多與硬件設置有關的選項，例如啟動順序、CPU 頻率、記憶體時序等等。在固件設置模式下，您可以使用鍵盤和滑鼠進行選擇和更改。</p>
 </li>
 </ul>
-<h3 id="關掉-grub-挑選畫面">關掉 GRUB 挑選畫面<a aria-hidden="true" class="anchor-heading icon-link" href="#關掉-grub-挑選畫面"></a></h3>
+<h3 id="關掉-grub-挑選畫面"><a aria-hidden="true" class="anchor-heading" href="#關掉-grub-挑選畫面"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>關掉 GRUB 挑選畫面</h3>
 <ul>
 <li>
 <p>打開檔案 <code>sudo gedit /etc/grub.d/30_os-prober</code></p>
@@ -41,7 +41,7 @@
 <blockquote>
 <p>參考 <a href="https://ubuntuhandbook.org/index.php/2020/06/hide-grub-boot-menu-ubuntu-20-04-lts/">How to Hide Grub Boot Menu in Ubuntu 20.04, 21.10 (Updated)</a></p>
 </blockquote>
-<h2 id="windows-11">Windows 11<a aria-hidden="true" class="anchor-heading icon-link" href="#windows-11"></a></h2>
+<h2 id="windows-11"><a aria-hidden="true" class="anchor-heading" href="#windows-11"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Windows 11</h2>
 <pre class="language-cmd"><code class="language-cmd">shutdown /r /fw /t 0
 </code></pre>
 <p>這是一個使用 <code>shutdown.exe</code> 的命令，它告訴 Windows 在關閉電腦之前等待 0 秒（立即關閉），

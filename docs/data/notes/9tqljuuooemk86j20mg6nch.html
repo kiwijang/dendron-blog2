@@ -1,7 +1,7 @@
-<h1 id="1213-angular-ngzone-和-change-detection">1213 [Angular] ngZone 和 Change Detection<a aria-hidden="true" class="anchor-heading icon-link" href="#1213-angular-ngzone-和-change-detection"></a></h1>
-<h2 id="先備知識">先備知識<a aria-hidden="true" class="anchor-heading icon-link" href="#先備知識"></a></h2>
+<h1 id="1213-angular-ngzone-和-change-detection"><a aria-hidden="true" class="anchor-heading" href="#1213-angular-ngzone-和-change-detection"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>1213 [Angular] ngZone 和 Change Detection</h1>
+<h2 id="先備知識"><a aria-hidden="true" class="anchor-heading" href="#先備知識"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>先備知識</h2>
 <p>ES6 的 class 是一種為了讓 JavaScript 的類別更容易使用的語法糖。這種語法糖提供了一個更直覺和更易於使用的方法來定義物件，允許您使用更簡潔和模塊化的代碼來實現物件導向程式設計。這種語法糖在 ES6 中引入，提供了一種新的方法來定義類別，並允許您定義類別成員，包括屬性和方法。</p>
-<h3 id="原型鏈">原型鏈<a aria-hidden="true" class="anchor-heading icon-link" href="#原型鏈"></a></h3>
+<h3 id="原型鏈"><a aria-hidden="true" class="anchor-heading" href="#原型鏈"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>原型鏈</h3>
 <pre class="language-javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function"><span class="token maybe-class-name">Person</span></span><span class="token punctuation">(</span>
   <span class="token parameter">firstName<span class="token punctuation">,</span>
   lastName</span>
@@ -23,7 +23,7 @@
     <span class="token punctuation">)</span><span class="token punctuation">;</span>
   <span class="token punctuation">}</span><span class="token punctuation">;</span>
 </code></pre>
-<h3 id="語法糖">語法糖<a aria-hidden="true" class="anchor-heading icon-link" href="#語法糖"></a></h3>
+<h3 id="語法糖"><a aria-hidden="true" class="anchor-heading" href="#語法糖"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>語法糖</h3>
 <pre class="language-javascript"><code class="language-javascript"><span class="token keyword">class</span> <span class="token class-name">Person</span> <span class="token punctuation">{</span>
   <span class="token function">constructor</span><span class="token punctuation">(</span>
     <span class="token parameter">firstName<span class="token punctuation">,</span>
@@ -65,7 +65,7 @@
   person<span class="token punctuation">.</span><span class="token method function property-access">fullName</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
 <span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// prints "John Doe"</span>
 </code></pre>
-<h3 id="angular-compiler">Angular compiler<a aria-hidden="true" class="anchor-heading icon-link" href="#angular-compiler"></a></h3>
+<h3 id="angular-compiler"><a aria-hidden="true" class="anchor-heading" href="#angular-compiler"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Angular compiler</h3>
 <p>Angular 的 compiler 是基於 TypeScript 語言實作的，並且使用了一些類似於 AST（抽象語法樹）的技術來分析和處理應用程式的源代碼。在轉換過程中，compiler 會進行語法分析、符號檢查和代碼生成等步驟，最終產生能夠在瀏覽器中執行的 JavaScript 代碼。</p>
 <p>TypeScript 是一種由 Microsoft 開發的程式語言，它是 JavaScript 的超集，提供了類型系統和面向對象编程的特性。Angular 的 compiler 可以將 TypeScript 編譯成 JavaScript，讓瀏覽器可以理解和執行。</p>
 <p>當 Angular 程式碼被加載到瀏覽器時，Angular 的 compiler 會在背景執行，負責解析模板並生成對應的 JavaScript 代碼。這些代碼會被執行，用來更新網頁內容，以反應使用者的互動。</p>
@@ -74,7 +74,7 @@
 <blockquote>
 <p>在 Angular 中我們可以用裝飾器給 calss 一些 metadata。就是要寫給 compiler 看的。</p>
 </blockquote>
-<h3 id="angular-decorator-裝飾器">Angular Decorator 裝飾器<a aria-hidden="true" class="anchor-heading icon-link" href="#angular-decorator-裝飾器"></a></h3>
+<h3 id="angular-decorator-裝飾器"><a aria-hidden="true" class="anchor-heading" href="#angular-decorator-裝飾器"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Angular Decorator 裝飾器</h3>
 <p>Angular 裝飾器是一種特殊的語法，可以用來修改程式碼中的類別定義。裝飾器可以添加、修改或刪除類別的某些屬性或方法，並且可以控制類別如何被編譯。</p>
 <p>Angular 裝飾器的用途非常廣泛，它可以用來實現許多不同的功能。例如，裝飾器可以用來標記一個類別是一個 Angular 組件，或者標記一個屬性是一個輸入變量，或者標記一個方法是一個事件處理器等。</p>
 <p>裝飾器非常方便，可以讓開發人員更快速地定義和使用類別，並且可以讓類別更加結構化和模組化。它是 Angular 的一個重要特性，在 Angular 程式碼中經常被用到。</p>
@@ -233,11 +233,11 @@
 <span class="token punctuation">}</span>
 </code></pre>
 <p>Angular 支援自訂裝飾器，這又是另一個需要探討的主題了。</p>
-<h2 id="angular-是怎麼更新畫面的">Angular 是怎麼更新畫面的?<a aria-hidden="true" class="anchor-heading icon-link" href="#angular-是怎麼更新畫面的"></a></h2>
+<h2 id="angular-是怎麼更新畫面的"><a aria-hidden="true" class="anchor-heading" href="#angular-是怎麼更新畫面的"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Angular 是怎麼更新畫面的?</h2>
 <p>在 Angular 中，更新畫面主要是通過應用程式的觀察者模式 (observer pattern) 來實現的。具體來說，Angular 會監聽應用程式中的模型變量，當它們發生改變時，Angular 就會更新相應的畫面元素。</p>
 <p>在 Angular 中，應用程式的模型變量是存儲在特定的類中的。這些類通常會繼承自 Angular 框架中的一個基礎類，比如 Angular 中的 Component 等類。當這些類中的模型變量發生改變時，Angular 就會根據定義的模板更新畫面。</p>
 <p>總的來說，Angular 主要是通過監聽模型變量的變化來更新畫面的，而這些模型變量通常是存儲在特定的類中的。</p>
-<h2 id="ngzone-和-change-detection">ngZone 和 Change Detection<a aria-hidden="true" class="anchor-heading icon-link" href="#ngzone-和-change-detection"></a></h2>
+<h2 id="ngzone-和-change-detection"><a aria-hidden="true" class="anchor-heading" href="#ngzone-和-change-detection"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>ngZone 和 Change Detection</h2>
 <p>Change Detection 和 ngZone 是 Angular 中的兩個功能，用於處理應用程式中的變化和狀態更新。</p>
 <p>Change Detection 是 Angular 的一個核心功能，用於監測應用程式中的變化，並在必要時更新應用程式的使用者界面。它會檢查組件的輸入變數，並在變數更改時進行更新。</p>
 <p>ngZone 是 Angular 中的一個服務，用於將代碼放入「觸發網路更新的區域」（zone）中。這有助於檢測代碼執行的更改，並在必要時觸發 Angular 的 Change Detection 過程。這可以幫助應用程式保持最新，並確保使用者界面與應用程式的狀態保持同步。</p>
@@ -261,7 +261,7 @@
 </ul>
 <p>在總的來看，Change Detection 過程是一個自動過程，用於監測應用程式中的變化，並在必要時更新使用者界面。</p>
 <hr>
-<h2 id="tags">Tags<a aria-hidden="true" class="anchor-heading icon-link" href="#tags"></a></h2>
+<h2 id="tags"><a aria-hidden="true" class="anchor-heading" href="#tags"><svg aria-hidden="true" viewBox="0 0 16 16"><use xlink:href="#svg-link"></use></svg></a>Tags</h2>
 <ol>
 <li><a class="color-tag" style="--tag-color: #017371;" href="/notes/zavPiB0ApTq1sGZOGq9xJ">PROG.Angular</a></li>
 </ol>
